@@ -381,7 +381,13 @@ client.on('error', e => error('Client error thrown:', e))
       // Run the command
       try {
         // Send the message object
-        await command.execute(interaction).catch(e => {
+        await command.execute(interaction).then(async e => {
+          addStatistic(interaction.user, `!${command.name}`);
+          const commandsSent = await addStatistic(interaction.user, 'commands');
+          if (commandsSent >= 1000) {
+            await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Cascade);
+          }
+        }).catch(e => {
           throw(e);
         });
       } catch (err) {
@@ -422,7 +428,13 @@ client.on('error', e => error('Client error thrown:', e))
       // Run the command
       try {
         // Send the message object
-        await command.execute(interaction).catch(e => {
+        await command.execute(interaction).then(async e => {
+          addStatistic(interaction.user, `!${command.name}`);
+          const commandsSent = await addStatistic(interaction.user, 'commands');
+          if (commandsSent >= 1000) {
+            await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Cascade);
+          }
+        }).catch(e => {
           throw(e);
         });
       } catch (err) {
