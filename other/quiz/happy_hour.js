@@ -29,8 +29,8 @@ const endHappyHour = async (guild) => {
   if (!quizChannelID) return;
   const quiz_channel = await guild.channels.cache.find(c => c.id == quizChannelID);
   if (!quiz_channel) return;
-  // players can only type once per 5 seconds
-  quiz_channel.setRateLimitPerUser(5, 'Happy Hour!').catch(O_o=>{});
+  // players can only type once per 4 seconds
+  quiz_channel.setRateLimitPerUser(4, 'Happy Hour!').catch(O_o=>{});
 
   const embed = new EmbedBuilder()
     .setTitle('Happy Hour is over!')
