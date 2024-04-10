@@ -40,7 +40,7 @@ const newQuiz = async (guild, reoccur = false) => {
 
   // Check if happy hour starts before this question finishes
   if (!happyHour && new Date(Date.now() + time_limit) > nextHappyHour()) {
-    time_limit = (nextHappyHour() - Date.now()) + 5 * SECOND;
+    time_limit = (nextHappyHour() - Date.now()) + (ANSWER_TIME_LIMIT * 2);
   }
 
   // If it's happy hour, reduce the time limit between questions
