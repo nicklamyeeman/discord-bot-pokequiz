@@ -11,8 +11,10 @@ const {
   MINUTE,
   HOUR,
   DAY,
+  TIME_BETWEEN_DAILY_CLAIMS,
+  TIME_TO_RESET_DAILY_STREAK,
+  PAUSED_TIME_TO_RESET_STREAK,
 } = require('../helpers.js');
-const time_between_claims = 23 * HOUR;
 
 const claimAmount = 100;
 
@@ -41,12 +43,12 @@ module.exports = {
     let { last_claim, streak, paused } = await getLastClaim(msg.author, 'daily_claim');
 
     if (last_claim > Date.now()) {
-      last_claim = Date.now() - (time_between_claims + 1000);
+      last_claim = Date.now() - (TIME_BETWEEN_DAILY_CLAIMS + 1000);
     }
 
     // User already claimed within last 23 hours
-    if (last_claim >= (Date.now() - time_between_claims)) {
-      const time_left = (+last_claim + time_between_claims) - Date.now();
+    if (last_claim >= (Date.now() - TIME_BETWEEN_DAILY_CLAIMS)) {
+      const time_left = (+last_claim + TIME_BETWEEN_DAILY_CLAIMS) - Date.now();
       const hours = Math.floor(time_left % DAY / HOUR);
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
@@ -59,7 +61,7 @@ module.exports = {
           new EmbedBuilder()
             .setColor('#e74c3c')
             .setFooter({ text: 'Next claim' })
-            .setTimestamp(time_between_claims + (+last_claim))
+            .setTimestamp(TIME_BETWEEN_DAILY_CLAIMS + (+last_claim))
             .setDescription(`${msg.author}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
         ],
         allowedMentions: { repliedUser: false },
@@ -67,7 +69,7 @@ module.exports = {
     }
 
     // Should the claim streak be reset (if more than 14 days, or 61 days if paused)
-    if (last_claim < (Date.now() - ((paused ? 61 : 14) * DAY))) {
+    if (last_claim < (Date.now() - (paused ? PAUSED_TIME_TO_RESET_STREAK : TIME_TO_RESET_DAILY_STREAK))) {
       await resetClaimStreak(msg.author, 'daily_claim');
       streak = 0;
     }
@@ -112,7 +114,7 @@ module.exports = {
     
     let footer = '';
     if (msg.member.roles.cache.has(autoReminderRoleID)) {
-      const reminderTime = new Date(Date.now() + time_between_claims);
+      const reminderTime = new Date(Date.now() + TIME_BETWEEN_DAILY_CLAIMS);
 
       addReminder(msg.author, reminderTime, '/claim\nhttps://discord.com/channels/450412847017754644/1204292652871450696/1204293235472867338');
 

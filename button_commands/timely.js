@@ -11,9 +11,11 @@ const {
   MINUTE,
   HOUR,
   DAY,
+  TIME_BETWEEN_TIMELY_CLAIMS,
+  TIME_TO_RESET_TIMELY_STREAK,
+  PAUSED_TIME_TO_RESET_STREAK,
 } = require('../helpers.js');
 const { getRecentClaims } = require('../helpers/claim.js');
-const time_between_claims = 2 * HOUR;
 
 const timelyAmount = 10;
 
@@ -42,12 +44,12 @@ module.exports = {
 
     // If last claim is newer than now, just reset it to now
     if (last_claim > Date.now()) {
-      last_claim = Date.now() - (time_between_claims + 1000);
+      last_claim = Date.now() - (TIME_BETWEEN_TIMELY_CLAIMS + 1000);
     }
 
     // User already claimed within last 2 hours
-    if (last_claim >= (Date.now() - time_between_claims)) {
-      const time_left = (+last_claim + time_between_claims) - Date.now();
+    if (last_claim >= (Date.now() - TIME_BETWEEN_TIMELY_CLAIMS)) {
+      const time_left = (+last_claim + TIME_BETWEEN_TIMELY_CLAIMS) - Date.now();
       const hours = Math.floor(time_left % DAY / HOUR);
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
@@ -60,7 +62,7 @@ module.exports = {
           new EmbedBuilder()
             .setColor('#e74c3c')
             .setFooter({ text: 'Next timely' })
-            .setTimestamp(time_between_claims + (+last_claim))
+            .setTimestamp(TIME_BETWEEN_TIMELY_CLAIMS + (+last_claim))
             .setDescription(`${interaction.user}\nYou've already claimed your ${serverIcons.money} too recently\nYou can claim again in ${timeRemaining}`),
         ],
         ephemeral: true,
@@ -68,7 +70,7 @@ module.exports = {
     }
 
     // Should the claim streak be reset (if more than 14 days, or 61 days if paused)
-    if (last_claim < (Date.now() - ((paused ? 61 : 14) * DAY))) {
+    if (last_claim < (Date.now() - (paused ? PAUSED_TIME_TO_RESET_STREAK : TIME_TO_RESET_TIMELY_STREAK))) {
       await resetClaimStreak(interaction.user, 'timely_claim');
       streak = 0;
     }
@@ -113,7 +115,7 @@ module.exports = {
     
     let footer = '';
     if (interaction.member.roles.cache.has(autoReminderRoleID)) {
-      const reminderTime = new Date(Date.now() + time_between_claims);
+      const reminderTime = new Date(Date.now() + TIME_BETWEEN_TIMELY_CLAIMS);
 
       addReminder(interaction.user, reminderTime, '/timely\nhttps://discord.com/channels/450412847017754644/1204292652871450696/1204293235472867338');
 
