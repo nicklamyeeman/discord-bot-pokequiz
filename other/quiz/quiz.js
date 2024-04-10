@@ -1,16 +1,15 @@
 const { EmbedBuilder } = require('discord.js');
-const { quizChannelID, ownerID, serverIcons } = require('../../config.js');
+const { quizChannelID, serverIcons } = require('../../config.js');
 const { addAmount, addStatistic, addPurchased } = require('../../database.js');
 const {
   SECOND,
   MINUTE,
   error,
   warn,
-  log,
   trainerCardBadgeTypes,
 } = require('../../helpers.js');
 const { getQuizQuestion } = require('./quiz_questions.js');
-const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
+const { happyHourBonus, isHappyHour, nextHappyHour } = require('./happy_hour.js');
 const { trainerCardBadges } = require('../../helpers/trainer_card.js');
 
 // Between 1 and 6 minutes until the next question
@@ -69,15 +68,17 @@ const newQuiz = async (guild, reoccur = false) => {
   const winners = new Set();
   const winner_data = [];
 
-  const collector = quiz_channel.createMessageCollector({ filter, time: time_limit });
-  collector.on('collect', async m => {
+  // Gather correct answers
+  const correctCollector = quiz_channel.createMessageCollector({ filter, time: time_limit });
+  correctCollector.on('collect', async m => {
     const user = m.author;
 
     // If this is the first answer
     if (!finished) {
       finished = m.createdTimestamp;
     } else {
-      if (winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT) {
+      // If player already answered, return
+      if (winners.has(user.id)) {
         return;
       }
       quiz.amount = Math.ceil(quiz.amount * 0.66);
@@ -122,31 +123,14 @@ const newQuiz = async (guild, reoccur = false) => {
     winner_data.push({user, amount, balance, answered, url: m.url});
   });
 
-  const incorrectFilter = quiz_channel.createMessageCollector({ filter: (m) => !filter(m), time: time_limit});
-  incorrectFilter.on('collect', async m => {
-    const user = m.author;
-    // stop doing emoji when we're already done pls thx you
-    if (finished && (winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT)) {
-      return;
-    }
-
+  // Gather incorrect answers
+  const incorrectCollector = quiz_channel.createMessageCollector({ filter: (m) => !filter(m), time: time_limit});
+  incorrectCollector.on('collect', async m => {
     const reaction = quiz.incorrectReaction?.(m.content);
 
     if (reaction) {
       m.react(reaction);
     }
-  });
-    
-  // If code reaction, console log the expected answer
-  const answerFilter = (reaction, user) => reaction.emoji.id === '761083768614027265' && user.id === ownerID;
-
-  // Allow reactions for up to x ms
-  const timer = 12e5; // (1200 seconds)
-  const logAnswer = bot_message.createReactionCollector({ filter: answerFilter, time: timer });
-
-  logAnswer.on('collect', async r => {
-    bot_message.reactions.removeAll().catch(O_o=>{});
-    log(quiz.answer);
   });
 
   // errors: ['time'] treats ending because of the time limit as an error
@@ -155,6 +139,10 @@ const newQuiz = async (guild, reoccur = false) => {
       // Update the message
       const botEmbed = bot_message.embeds[0];
       setTimeout(() => {
+        // Stop collecting answers
+        correctCollector.stop();
+        incorrectCollector.stop();
+
         // Send out the correct users and amounts
         if (winner_data.length) {
           const description = winner_data.sort((a,b) => b.amount - a.amount).map(w => `${w.user}: **+${w.amount} ${serverIcons.money}**`);
