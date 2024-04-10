@@ -13,7 +13,7 @@ const { getQuizQuestion } = require('./quiz_questions.js');
 const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
 const { trainerCardBadges } = require('../../helpers/trainer_card.js');
 
-// Between 1 and 6 minutes
+// Between 1 and 6 minutes until the next question
 const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
 const ANSWER_TIME_LIMIT = 5 * SECOND;
 
@@ -33,17 +33,19 @@ const newQuiz = async (guild, reoccur = false) => {
     }
   }
 
-  // Time limit in minutes (2 → 10 minutes)
+  // How long until the next question
   let time_limit = getTimeLimit();
 
+  // Is it happy hour?
   const happyHour = isHappyHour();
 
-  // 3 x more questions
+  // If it's happy hour, reduce the time limit between questions
   if (happyHour) {
     time_limit /= happyHourBonus;
     quiz.embed.setFooter({ text: `Happy Hour!\n(${happyHourBonus} × Faster Questions, ${happyHourBonus} × Shiny Chance)` });
   }
 
+  // Send the question
   const bot_message = await quiz_channel.send({ embeds: [quiz.embed], files: quiz.files }).catch((...args) => warn('Unable to send quiz question', ...args));
 
   // If no bot message for whatever reason, try again in 1 minute
@@ -55,8 +57,10 @@ const newQuiz = async (guild, reoccur = false) => {
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content.replace(/\s*(town|city|island)/i, ''));
 
+  // Our finished timestamp
   let finished = 0;
 
+  // Our list of winners
   const winners = new Set();
   const winner_data = [];
 
