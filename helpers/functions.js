@@ -88,6 +88,10 @@ const humanifyString = string => string.replace(/_/g, ' ');
 
 const randomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
 
+const enumStrings = (enumerable) => Object.keys(enumerable).filter((k) => Number.isNaN(Number(k)));
+
+const enumNumbers = (enumerable) => Object.keys(enumerable).map(Number).filter((k) => !Number.isNaN(k));
+
 const addOrderedReactions = async (message, reactions) => {
   const addReaction = (reaction, cb) =>{
     setTimeout(async () => {
@@ -270,6 +274,8 @@ module.exports = {
   upperCaseFirstLetter,
   humanifyString,
   randomFromArray,
+  enumStrings,
+  enumNumbers,
   addOrderedReactions,
   randomString,
   processSaveFile,
