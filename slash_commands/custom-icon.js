@@ -36,11 +36,15 @@ module.exports = {
           new StringSelectMenuOptionBuilder()
             .setLabel(role.name)
             .setValue(iconRole.name)
-            // .setDescription(`Select the ${role.name} color`)
-            // .setEmoji((role.emoji?.match(/:(\d+)>/) ?? [role.emoji ?? '879542136549298216'])[1])
             .setDefault(member.roles.cache.has(iconRole.id))
         );
       });
+      select.addOptions(
+        new StringSelectMenuOptionBuilder()
+          .setLabel('None')
+          .setValue('none')
+          .setDefault(!member.roles.cache.find(r => r.name.startsWith('icon-')))
+      );
       selects.addComponents(select);
       return selects;
     };

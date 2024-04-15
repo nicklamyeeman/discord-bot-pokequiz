@@ -36,11 +36,15 @@ module.exports = {
           new StringSelectMenuOptionBuilder()
             .setLabel(role.name)
             .setValue(colorRole.name)
-            // .setDescription(`Select the ${role.name} color`)
-            // .setEmoji((role.emoji?.match(/:(\d+)>/) ?? [role.emoji ?? '879542136549298216'])[1])
             .setDefault(member.roles.cache.has(colorRole.id))
         );
       });
+      select.addOptions(
+        new StringSelectMenuOptionBuilder()
+          .setLabel('None')
+          .setValue('none')
+          .setDefault(!member.roles.cache.find(r => r.name.startsWith('color-')))
+      );
       selects.addComponents(select);
       return selects;
     };
@@ -71,7 +75,9 @@ module.exports = {
       }
 
       // Apply new color
-      await member.roles.add(role.id, 'Self applied role color').catch(O_o=>{});
+      if (role) {
+        await member.roles.add(role.id, 'Self applied role color').catch(O_o=>{});
+      }
     });
 
     // Clear all the reactions once we aren't listening
