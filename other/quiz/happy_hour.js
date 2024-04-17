@@ -2,7 +2,7 @@ const { EmbedBuilder } = require('discord.js');
 const { quizChannelID } = require('../../config.js');
 const { HOUR } = require('../../helpers.js');
 
-const happyHourBonus = 6;
+const happyHourBonus = 7;
 const happyHourHours = 7;
 const slowModeSeconds = 4;
 const isHappyHour = () => Date.now() % (happyHourHours * HOUR) < HOUR;
