@@ -288,11 +288,11 @@ module.exports = [
     },
   },
   {
-    regex: /#(\d{3,4})\b/,
+    regex: /#(\d{4})\b/,
     execute: (message, client) => {
-      const PRs = message.content.match(/#(\d{3,4})\b/g);
+      const PRs = message.content.match(/#(\d{4})\b/g);
       
-      message.reply(`Linked PRs detected\n\n${PRs.map(pr => `https://github.com/pokeclicker/pokeclicker/pull/${pr.replace('#', '')}`).join('\n')}`);
+      message.reply(`Linked PRs detected\n\n${PRs.map(pr => `[PokéClicker PR${pr}](https://github.com/pokeclicker/pokeclicker/pull/${pr.replace('#', '')})`).join('\n')}`);
     },
   },
 ];
