@@ -97,7 +97,7 @@ const whosThatPokemon = () => new Promise(resolve => {
 
 const whosThePokemonEvolution = () => new Promise(resolve => {
   (async () => {
-    const pokemon = randomFromArray(pokemonListWithEvolution.filter(p => p.evolutions.length > 5));
+    const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
     const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
     
