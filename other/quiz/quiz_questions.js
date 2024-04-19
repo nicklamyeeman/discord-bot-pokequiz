@@ -97,8 +97,9 @@ const whosThatPokemon = () => new Promise(resolve => {
 
 const whosThePokemonEvolution = () => new Promise(resolve => {
   (async () => {
-    const pokemon = randomFromArray(pokemonListWithEvolution);
-    const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => pokemonNameNormalized(p.evolvedPokemon)).join('|')})\\b`, 'i');
+    const pokemon = randomFromArray(pokemonListWithEvolution.filter(p => p.evolutions.length > 5));
+    const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
+    const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
     
     let amount = getAmount();
 
@@ -130,10 +131,11 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
       shiny,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0].evolvedPokemon), shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(evolutions[0]), shiny);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
-          .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
+          .setTitle('The evolutions are')
+          .setDescription(`${evolutions.splice(0, 10).join('\n')}${evolutions.length ? '\nand more..' : ''}`)
           .setImage('attachment://whoFinal.png')
           .setColor('#e74c3c');
         m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
