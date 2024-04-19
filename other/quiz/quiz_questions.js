@@ -695,7 +695,7 @@ const typeGymLeader = () => {
     embed,
     answer,
     amount,
-    end: defaultEndFunction(`The leaders are ${leaders.splice(0, 10).join(', ')}${leaders.length ? ' and more..' : '!'}`, image),
+    end: defaultEndFunction('The leaders are', image, `${leaders.splice(0, 10).join('\n')}${leaders.length ? '\nand more..' : '!'}`),
   };
 };
 
