@@ -36,6 +36,17 @@ const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolu
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
 const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]));
 const allGyms = Object.keys(GymList);
+const allGymTypes = {};
+Object.keys(GymList).forEach(gym => {
+  const pokemonNames = GymList[gym].pokemons.map(p => p.name);
+  const pokemon = pokemonList.filter(p => pokemonNames.includes(p.name));
+  const types = pokemon.map(p => p.type).flat();
+  const typeCount = {};
+  types.forEach(t => typeCount[t] = (typeCount[t] || 0) + 1);
+  const maxTypeAmount = Math.max(...Object.values(typeCount));
+  const mainTypes = Object.entries(typeCount).filter(([t, c]) => c >= maxTypeAmount).map(([t]) => PokemonType[t]);
+  allGymTypes[gym] = mainTypes;
+});
 
 const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
@@ -660,14 +671,14 @@ const gymLeaderBadge = () => {
 
 const typeGymLeader = () => {
   const type = randomFromArray(enumStrings(PokemonType).filter(t => t != 'None'));
-  const gyms = allGyms.filter(g => GymList[g].pokemons.some(p => pokemonList.find(l => l.name == p.name).type.includes(PokemonType[type])));
+  const gyms = allGyms.filter(g => allGymTypes[g].includes(type));
   const leaders = gyms.map(g => GymList[g].leaderName);
   const leadersRegex = leaders.map(l => l.replace(/\W/g, '.?').replace(/(Cipher\.\?Admin)/gi, '($1)?')).join('|');
   const answer = new RegExp(`^\\W*(${leadersRegex})\\b`, 'i');
   
   const amount = getAmount();
 
-  const description = ['Which Gym Leader uses this Pokémon type?'];
+  const description = ['Which Gym Leader uses this main Pokémon type?'];
   description.push(`${pokemonTypeIcons[type]} ${type}`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
@@ -687,14 +698,9 @@ const typeGymLeader = () => {
 };
 
 const gymLeaderType = () => {
-  const gym = GymList[randomFromArray(allGyms)];
-  const pokemonNames = gym.pokemons.map(p => p.name);
-  const pokemon = pokemonList.filter(p => pokemonNames.includes(p.name));
-  const types = pokemon.map(p => p.type).flat();
-  const typeCount = {};
-  types.forEach(t => typeCount[t] = (typeCount[t] || 0) + 1);
-  const maxTypeAmount = Math.max(...Object.values(typeCount));
-  const mainTypes = Object.entries(typeCount).filter(([t, c]) => c >= maxTypeAmount).map(([t]) => PokemonType[t]);
+  const gymTown = randomFromArray(allGyms);
+  const gym = GymList[gymTown];
+  const mainTypes = allGymTypes[gymTown];
   const answer = new RegExp(`^\\W*(${mainTypes.join('|')})\\b`, 'i');
   
   const amount = getAmount();
@@ -750,7 +756,7 @@ const quizTypes = [
   new WeightedOption(badgeGymLeader, 10),
   new WeightedOption(badgeGymLocation, 10),
   new WeightedOption(pokemonGymLeader, 10),
-  new WeightedOption(typeGymLeader, 5),
+  new WeightedOption(typeGymLeader, 20),
   new WeightedOption(gymLeaderType, 20),
   new WeightedOption(gymLeaderPokemon, 20),
   new WeightedOption(gymLeaderLocation, 10),
