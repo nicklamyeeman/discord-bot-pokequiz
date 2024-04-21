@@ -22,7 +22,7 @@ const check = async (message) => {
     modLog(
       message.member.guild,
       `**Mod:** ${message.member.guild.members.me.toString()}
-      **User:** ${message.member.toString()}
+      **User:** ${message.member.toString()} (${message.member.id})
       **Action:** Muted
       **Reason:** _spamming_
       **Duration:** _${formatDateToString(time)}_
@@ -42,7 +42,7 @@ const check = async (message) => {
     modLog(
       message.member.guild,
       `**Mod:** ${message.member.guild.members.me.toString()}
-      **User:** ${message.member.toString()}
+      **User:** ${message.member.toString()} (${message.member.id})
       **Action:** Muted
       **Reason:** _spamming (duplicate messages)_
       **Duration:** _${formatDateToString(time)}_

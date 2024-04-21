@@ -43,7 +43,7 @@ module.exports = {
     if (member && member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to ban the bot
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot ban me trainer!');
@@ -53,7 +53,7 @@ module.exports = {
     if (member && member.roles.highest.position >= interaction.member.roles.highest.position) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to ban user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to kick has higher or equal roles than you!');

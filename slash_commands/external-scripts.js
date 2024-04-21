@@ -56,7 +56,7 @@ module.exports = {
     if (member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to apply ${role} to the bot`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot apply that role to me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
@@ -74,7 +74,7 @@ module.exports = {
 
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Applied ${role}`);
 
       return interaction.reply({ embeds: [embed] });
@@ -90,7 +90,7 @@ module.exports = {
 
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Removed  ${role}`);
 
       return interaction.reply({ embeds: [embed] });

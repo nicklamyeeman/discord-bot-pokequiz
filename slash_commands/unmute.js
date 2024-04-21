@@ -32,7 +32,7 @@ module.exports = {
     if (member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to unmute the bot
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot unmute me trainer?!');
@@ -45,7 +45,7 @@ module.exports = {
     ) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to unmute user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to unmute has higher or equal roles than you!');
@@ -58,7 +58,7 @@ module.exports = {
     output.push(member);
     modLog(interaction.guild,
       `**Mod:** ${interaction.member.toString()}
-      **User:** ${member.toString()}
+      **User:** ${member.toString()} (${member.id})
       **Action:** Unmuted`);
 
     const embed = new EmbedBuilder().setColor('#3498db').setDescription(output.join('\n'));

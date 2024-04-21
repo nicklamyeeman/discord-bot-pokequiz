@@ -38,7 +38,7 @@ module.exports = {
     if (member && member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to warn the bot
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot warn me trainer!');

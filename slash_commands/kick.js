@@ -36,7 +36,7 @@ module.exports = {
     if (member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to kick the bot
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot kick me trainer!');
@@ -46,7 +46,7 @@ module.exports = {
     if (member.roles.highest.position >= interaction.member.roles.highest.position) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to kick user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to kick has higher or equal roles than you!');
@@ -88,7 +88,7 @@ module.exports = {
 
     modLog(interaction.guild,
       `**Mod:** ${interaction.member.toString()}
-      **User:** ${member.toString()}
+      **User:** ${member.toString()} (${member.id})
       **Action:** User Kicked
       **Reason:** ${reason || 'Unknown'}`);
 

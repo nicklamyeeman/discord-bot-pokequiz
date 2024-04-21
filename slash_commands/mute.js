@@ -42,7 +42,7 @@ module.exports = {
     if (member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to mute the bot
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
@@ -55,7 +55,7 @@ module.exports = {
     ) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
-        **User:** ${member.toString()}
+        **User:** ${member.toString()} (${member.id})
         **Action:** Attempted to mute user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to mute has higher or equal roles than you!');
@@ -130,7 +130,7 @@ module.exports = {
         embed.setDescription(`${output.join('\n')}\n\n_user will be un-muted in ${formatDateToString(value)}_`);
         modLog(interaction.guild,
           `**Mod:** ${interaction.member.toString()}
-          **User:** ${member.toString()}
+          **User:** ${member.toString()} (${member.id})
           **Action:** Muted
           **Duration:** _${formatDateToString(value)}_`);
         addScheduleItem('un-mute', user, date, `${interaction.guild.id}|${formatDateToString(+i.values[0])}`);
@@ -143,7 +143,7 @@ module.exports = {
         interaction.editReply({ components: [] }).catch(O_o=>{});
         modLog(interaction.guild,
           `**Mod:** ${interaction.member.toString()}
-          **User:** ${member.toString()}
+          **User:** ${member.toString()} (${member.id})
           **Action:** Muted
           **Duration:** _Manual unmute_`);
       }
