@@ -91,7 +91,7 @@ module.exports = {
 
     modLog(interaction.guild,
       `**Mod:** ${interaction.member.toString()}
-      **User:** ${member?.toString?.() || user?.toString?.() || id}
+      **User:** ${member?.toString?.() || user?.toString?.() || id} (${id})
       **Action:** User Banned
       **Reason:** ${reason || 'Unknown'}`);
 
