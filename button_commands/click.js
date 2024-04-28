@@ -1,5 +1,9 @@
 const { EmbedBuilder } = require('discord.js');
 const { addStatistic, getOverallStatistic } = require('../database.js');
+const { SECOND } = require('../helpers/constants.js');
+
+// Cool down in seconds
+const cooldown = 30;
 
 module.exports = {
   name        : 'click',
@@ -7,7 +11,7 @@ module.exports = {
   description : 'Click the button',
   args        : [],
   guildOnly   : true,
-  cooldown    : 30,
+  cooldown    : cooldown,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   channels    : ['claims'],
@@ -15,8 +19,13 @@ module.exports = {
     addStatistic(interaction.user, 'clicks');
 
     interaction.reply({
-      embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription('+1 click')],
+      embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(`+1 click 🖱️\n\n*next click: <t:${Math.round((Date.now() + (SECOND * 30)) / 1000)}:R>*`)],
       ephemeral: true,
+    }).then(m => {
+      // Try delete the message once they can click again
+      try {
+        setTimeout(() => m.delete(), cooldown * SECOND);
+      } catch (e) {}
     });
 
     // Update the bot message with the new claim amount
