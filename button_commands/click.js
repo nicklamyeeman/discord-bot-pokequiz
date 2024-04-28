@@ -16,10 +16,17 @@ module.exports = {
   userperms   : [],
   channels    : ['claims'],
   execute     : async (interaction) => {
-    addStatistic(interaction.user, 'clicks');
+    const clicks = await addStatistic(interaction.user, 'clicks');
 
     interaction.reply({
-      embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(`+1 click 🖱️\n\n*next click: <t:${Math.round((Date.now() + (SECOND * 30)) / 1000)}:R>*`)],
+      embeds: [
+        new EmbedBuilder().setColor('#2ecc71').setDescription(
+          `**+1 click 🖱️**
+
+*next click: <t:${Math.round((Date.now() + (SECOND * 30)) / 1000)}:R>*
+${clicks % 100 === 0 ? `\n🎉 **You have contributed ${clicks.toLocaleString()} clicks!** 🎉` : ''}`
+        ),
+      ],
       ephemeral: true,
     }).then(m => {
       // Try delete the message once they can click again
