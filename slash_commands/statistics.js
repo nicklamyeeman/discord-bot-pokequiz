@@ -1,4 +1,5 @@
 const { EmbedBuilder, ApplicationCommandType, ApplicationCommandOptionType } = require('discord.js');
+const { getLastClaim } = require('../helpers.js');
 const { getStatistic } = require('../database.js');
 
 module.exports = {
@@ -41,6 +42,10 @@ module.exports = {
     const [
       messages,
       commands,
+      // Other
+      daily_claim,
+      timely_claim,
+      clicks,
       // Games Corner
       gc_games_played,
       gc_games_won,
@@ -54,6 +59,9 @@ module.exports = {
     ] = await Promise.all([
       getStatistic(user, 'messages'),
       getStatistic(user, 'commands'),
+      getLastClaim(user, 'daily_claim'),
+      getLastClaim(user, 'timely_claim'),
+      getStatistic(user, 'clicks'),
       // Games Corner
       getStatistic(user, 'gc_games_played'),
       getStatistic(user, 'gc_games_won'),
@@ -71,6 +79,15 @@ module.exports = {
       value: [
         `**❯ Messages:** ${messages.toLocaleString('en-US')}`,
         `**❯ Commands:** ${commands.toLocaleString('en-US')}`,
+      ].join('\n'),
+    });
+
+    embed.addFields({
+      name: '__***#claims***__',
+      value: [
+        `**❯ Claim:** ${daily_claim.streak.toLocaleString('en-US')}`,
+        `**❯ Timely:** ${timely_claim.streak.toLocaleString('en-US')}`,
+        `**❯ Clicks:** ${clicks.toLocaleString('en-US')}`,
       ].join('\n'),
     });
 
