@@ -38,7 +38,7 @@ module.exports = {
   cooldown    : 60,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
-  channels    : ['game-corner', 'bot-commands'],
+  channels    : ['claims'],
   execute     : async (interaction) => {
     let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'daily_claim');
 
