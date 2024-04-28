@@ -293,7 +293,7 @@ module.exports = [
     execute: (message, client) => {
       const PRs = message.content.match(/#(\d{1,5})\b/g);
       // Ensure it matches at least once
-      if (!PRs.length) {
+      if (!PRs || !PRs.length) {
         return;
       }
       message.reply(`Linked PRs detected: ${PRs.map(pr => `[${pr}](https://github.com/pokeclicker/pokeclicker/pull/${pr.slice(1)})`).join(' ')}`);
