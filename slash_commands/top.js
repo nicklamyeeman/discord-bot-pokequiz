@@ -39,6 +39,10 @@ module.exports = {
           value: 'daily',
         },
         {
+          name: 'Clicks',
+          value: 'clicks',
+        },
+        {
           name: 'Coins',
           value: 'coins',
         },
@@ -89,6 +93,12 @@ module.exports = {
         results = await getTop(100, 'commands');
         resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0} commands\` <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} commands used:***__`, ...resultsText.splice(0, 10)]).map(i => ({ content: i.join('\n') }));
+        break;
+      case 'clicks':
+      case 'click':
+        results = await getTop(100, 'clicks');
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0} clicks\` <@!${res.user}>`);
+        pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} clicks:***__`, ...resultsText.splice(0, 10)]).map(i => ({ content: i.join('\n') }));
         break;
       case 'coins-won':
         results = await getTop(100, 'coins-won');
