@@ -121,6 +121,9 @@ module.exports = [
       // #bot-commands
       const botCommands = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'bot-commands') || '#bot-commands' : '#bot-commands';
       if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
+
+      // companion
+      description.push('The [PokéClicker Companion](https://companion.pokeclicker.com/) has some useful tools.');
     
       // wiki
       description.push('The [PokéClicker Wiki](https://wiki.pokeclicker.com/) also contains a lot of valuable information.');
