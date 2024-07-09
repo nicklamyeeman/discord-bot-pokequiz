@@ -16,12 +16,12 @@
   "dependencies": {
     "@napi-rs/canvas": "^0.1.51",
     "discord.js": "^14.14.1",
-    "eslint": "^7.32.0",
     "fuzzyset": "^1.0.7",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7-rc.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "puppeteer": "^21.6.1"
   }
 }
