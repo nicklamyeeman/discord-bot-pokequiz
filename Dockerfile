@@ -1,13 +1,9 @@
 # docker-compose build --no-cache
-FROM node:18-alpine
+FROM node:22-alpine
 
 # Install app dependencies
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD="true"
-ENV CHROMIUM_PATH="/usr/bin/chromium-browser"
-ENV PUPPETEER_EXECUTABLE_PATH="${CHROMIUM_PATH}"
 RUN apk add --no-cache \
     git \
-    chromium \
     ;
 
 # Install PM2 and auto pull for updates
@@ -20,7 +16,7 @@ WORKDIR /usr/src/bot
 
 # Copy and Install the bot dependencies
 COPY ./package.json /usr/src/bot/package.json
-RUN npm install
+RUN npm install --omit=dev
 
 # NOTES:
 # To re-build without cache:
