@@ -11,15 +11,22 @@ const {
   GymList,
   warn,
   pokemonTypeIcons,
+  StoneType,
 } = require('../../helpers.js');
-const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
-const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage } = require('./quiz_functions.js');
+const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
+const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
 
 // Between 30 and 60 coins per question
 const getAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 54;
-const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour() ? chance / happyHourBonus : chance));
+const isShiny = (chance = shinyChance) => {
+  const shiny = !Math.floor(Math.random() * (isHappyHour() ? chance / happyHourBonus : chance));
+  if (shiny && isHappyHour()) {
+    incrementHappyHourShinyCount();
+  }
+  return shiny;
+};
 const defaultEndFunction = (title, image, description) => async (m, e) => {
   const embed = new EmbedBuilder()
     .setTitle(title)
@@ -29,7 +36,8 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/(Valencian|Pinkan|Pink|Noble|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?');
+const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*');
+const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
@@ -56,6 +64,7 @@ const whosThatPokemon = () => new Promise(resolve => {
     let amount = getAmount();
 
     const shiny = isShiny();
+    const female = isFemale(pokemon);
 
     const description = ['Name the Pokémon!'];
     description.push(`**+${amount} ${serverIcons.money}**`);
@@ -67,7 +76,7 @@ const whosThatPokemon = () => new Promise(resolve => {
       amount += shiny_amount;
     }
 
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
     const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
     const embed = new EmbedBuilder()
@@ -83,10 +92,91 @@ const whosThatPokemon = () => new Promise(resolve => {
       shiny,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny, female);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
           .setTitle(`It's ${pokemon.name}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
+    });
+  })();
+});
+
+const howDoesThisPokemonEvole = () => new Promise(resolve => {
+  (async () => {
+    const pokemon = randomFromArray(pokemonListWithEvolution.filter(p => p.evolutions.some(e => e.trigger === 1 || e.trigger === 2)));
+    const allEligableEvolutions = pokemon.evolutions.filter(e => e.trigger === 1 || e.trigger === 2);
+    const allEvolvedNames = [... new Set(allEligableEvolutions.map(e => e.evolvedPokemon))];
+    const levelEvolution = [
+      ... new Set(allEligableEvolutions
+        .flatMap(evolution => evolution.restrictions)
+        .filter(restriction => restriction.__class === 'PokemonLevelRequirement')
+        .map(restriction => `Level ${restriction.requiredValue}`)),
+    ];
+
+    const itemEvolution = [
+      ... new Set(allEligableEvolutions
+        .map(e => StoneType[e.stone])
+        .filter(e => e != undefined)),
+    ];
+
+    const allAnswers = [...levelEvolution, ...itemEvolution].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
+    const answer = new RegExp(`^\\W*#?${(allAnswers.map(e => evolutionsNormalized(e)).join('|'))}\\b`, 'i');
+    let amount = getAmount();
+
+    const shiny = isShiny();
+    const female = isFemale(pokemon);
+
+    const description = ['What is needed to evolve this Pokémon?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
+      amount += shiny_amount;
+    }
+
+    const incorrectReaction = (m) => {
+      const levelRegEx = /^(Level\s*)?(\d+).*/i;
+      const match = m.match(levelRegEx);
+      const guessedLvl = match ? match[2] : 'no match';
+      if (isNaN(guessedLvl) || levelEvolution.length == 0) {
+        return undefined;
+      }
+      if (levelEvolution.some(e => parseFloat(e.match(levelRegEx)[2]) > guessedLvl)) {
+        return '⬆️';
+      }
+
+      if (levelEvolution.some(e => parseFloat(e.match(levelRegEx)[2]) < guessedLvl)) {
+        return '⬇️';
+      }
+    };
+
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
+
+    const embed = new EmbedBuilder()
+      .setTitle('How does this Pokémon evolve?')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      incorrectReaction,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(randomFromArray(allEvolvedNames)), shiny, female);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle('The methods are:')
+          .setDescription(`${allAnswers.splice(0, 10).join('\n')}${allAnswers.length ? '\nand more..' : ''}`)
           .setImage('attachment://whoFinal.png')
           .setColor('#e74c3c');
         m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
@@ -104,6 +194,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     let amount = getAmount();
 
     const shiny = isShiny();
+    const female = isFemale(pokemon);
 
     const description = ['Who can this Pokémon evolve to?'];
     description.push(`**+${amount} ${serverIcons.money}**`);
@@ -115,7 +206,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
       amount += shiny_amount;
     }
 
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
     const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
     const embed = new EmbedBuilder()
@@ -131,7 +222,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
       shiny,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(evolutions[0]), shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(randomFromArray(evolutions)), shiny, female);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
           .setTitle('The evolutions are')
@@ -154,6 +245,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
     let amount = getAmount();
 
     const shiny = isShiny();
+    const female = isFemale(pokemon);
 
     const description = ['Who does this Pokémon evolve from?'];
     description.push(`**+${amount} ${serverIcons.money}**`);
@@ -165,7 +257,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
       amount += shiny_amount;
     }
 
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
     const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
     const embed = new EmbedBuilder()
@@ -181,7 +273,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
       shiny,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(prevolution, shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(prevolution, shiny, female);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
           .setTitle(`It's ${prevolution.name}!`)
@@ -206,6 +298,7 @@ const pokemonType = () => new Promise(resolve => {
     let amount = getAmount();
 
     const shiny = isShiny();
+    const female = isFemale(pokemon);
 
     const description = ['What is this Pokémons type(s)?'];
     description.push(`**+${amount} ${serverIcons.money}**`);
@@ -217,7 +310,7 @@ const pokemonType = () => new Promise(resolve => {
       amount += shiny_amount;
     }
 
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
     const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
     const embed = new EmbedBuilder()
@@ -233,7 +326,7 @@ const pokemonType = () => new Promise(resolve => {
       shiny,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny, female);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
           .setTitle(`It's ${types.join(' & ')}!`)
@@ -253,6 +346,7 @@ const pokemonID = () => new Promise(resolve => {
     let amount = getAmount();
 
     const shiny = isShiny();
+    const female = isFemale(pokemon);
 
     const description = ['What is this Pokémons national Pokédex ID?'];
     description.push(`**+${amount} ${serverIcons.money}**`);
@@ -279,7 +373,7 @@ const pokemonID = () => new Promise(resolve => {
       }
     };
   
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
     const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
     const embed = new EmbedBuilder()
@@ -296,7 +390,7 @@ const pokemonID = () => new Promise(resolve => {
       incorrectReaction,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny, female);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
           .setTitle(`It's ${pokemon.id < 0 ? '-': ''}#${Math.floor(Math.abs(pokemon.id)).toString().padStart(3, '0')}!`)
@@ -316,6 +410,7 @@ const pokemonRegion = () => new Promise(resolve => {
     let amount = getAmount();
 
     const shiny = isShiny();
+    const female = isFemale(pokemon);
 
     const description = ['What is this Pokémons native region?'];
     description.push(`**+${amount} ${serverIcons.money}**`);
@@ -327,7 +422,7 @@ const pokemonRegion = () => new Promise(resolve => {
       amount += shiny_amount;
     }
 
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const base64Image = await getWhosThatPokemonImage(pokemon, female);
     const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
     const embed = new EmbedBuilder()
@@ -343,7 +438,7 @@ const pokemonRegion = () => new Promise(resolve => {
       shiny,
       files: [attachment],
       end: async (m, e) => {
-        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny, female);
         const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
         const embed = new EmbedBuilder()
           .setTitle(`It's ${upperCaseFirstLetter(GameConstants.Region[pokemon.nativeRegion])}!`)
@@ -388,6 +483,7 @@ const fossilPokemon = () => {
     embed,
     answer,
     amount,
+    shiny,
     end: defaultEndFunction(`It's ${pokemon}!`, pokemonImage),
   };
 };
@@ -489,7 +585,7 @@ const badgeGymLeader = () => {
   const amount = getAmount();
 
   const description = ['Which Gym Leader awards this badge?'];
-  description.push(`||${badge} Badge||`);
+  description.push(`***${badge} Badge***`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new EmbedBuilder()
@@ -498,7 +594,7 @@ const badgeGymLeader = () => {
     .setThumbnail(encodeURI(`${website}assets/images/badges/${badge}.svg`))
     .setColor('#3498db');
 
-  const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
+  const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${gym.optionalArgs.imageName?? gym.leaderName}.png`);
 
   return {
     embed,
@@ -541,7 +637,8 @@ const pokemonGymLeader = () => {
   const gym = GymList[randomFromArray(allGyms)];
   const pokemonName = randomFromArray(gym.pokemons).name;
   const pokemon = pokemonList.find(p => p.name == pokemonName);
-  const leaders = Object.values(GymList).filter(g => g.pokemons.find(p => p.name == pokemonName)).map(l => l.leaderName);
+  const gyms = allGyms.filter(g => GymList[g].pokemons.find(p => p.name == pokemonName));
+  const leaders = gyms.map(g => GymList[g].leaderName);
   const leadersRegex = leaders.map(l => l.replace(/\W/g, '.?').replace(/(Cipher\.\?Admin)/gi, '($1)?')).join('|');
   const answer = new RegExp(`^\\W*(${leadersRegex})\\b`, 'i');
   
@@ -551,6 +648,7 @@ const pokemonGymLeader = () => {
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   const shiny = isShiny();
+  const female = isFemale(pokemon);
 
   // If shiny award more coins
   if (shiny) {
@@ -562,10 +660,11 @@ const pokemonGymLeader = () => {
   const embed = new EmbedBuilder()
     .setTitle('Who\'s the Gym Leader?')
     .setDescription(description.join('\n'))
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`)
     .setColor('#3498db');
 
-  const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${leaders[0]}.png`);
+  const gymLeaderToShow = GymList[randomFromArray(gyms)];
+  const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${gymLeaderToShow.optionalArgs.imageName?? gymLeaderToShow.leaderName}.png`);
 
   return {
     embed,
@@ -589,6 +688,7 @@ const gymLeaderPokemon = () => {
 
   const shiny = isShiny();
 
+
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
@@ -596,7 +696,7 @@ const gymLeaderPokemon = () => {
     amount += shiny_amount;
   }
 
-  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.optionalArgs.imageName?? gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('Which Pokemon?')
@@ -604,13 +704,15 @@ const gymLeaderPokemon = () => {
     .setThumbnail(image)
     .setColor('#3498db');
 
-  const pokemonData = getPokemonByName(gym.pokemons[0].name);
-  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}.png`;
+  const pokemonData = getPokemonByName(randomFromArray(gym.pokemons).name);
+  const female = isFemale(pokemonData);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}${female ? '-f' : ''}.png`;
 
   return {
     embed,
     answer,
     amount,
+    shiny,
     end: defaultEndFunction('The Pokémon are:', pokemonImage, [...new Set(gym.pokemons.map(p => p.name))].join('\n')),
   };
 };
@@ -625,7 +727,7 @@ const gymLeaderLocation = () => {
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.optionalArgs.imageName?? gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('Where are they?')
@@ -648,12 +750,11 @@ const gymLeaderBadge = () => {
   const answer = new RegExp(`^\\W*${badge.replace(regionRegex, '').replace(/\W|_/g, '.?')}\\b`, 'i');
   
   const amount = getAmount();
-
   const description = ['Which Badge does this Gym Leader award?'];
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.optionalArgs.imageName?? gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('What\'s the Badge?')
@@ -684,7 +785,9 @@ const typeGymLeader = () => {
   description.push(`${pokemonTypeIcons[type]} ${type}`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/npcs/${leaders[0]}.png`);
+
+  const gymLeaderToShow = GymList[randomFromArray(gyms)];
+  const image = encodeURI(`${website}assets/images/npcs/${gymLeaderToShow.optionalArgs.imageName?? gymLeaderToShow.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('Who\'s the Gym Leader?')
@@ -711,7 +814,7 @@ const gymLeaderType = () => {
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.optionalArgs.imageName?? gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('What\'s the Type?')
@@ -746,21 +849,22 @@ const selectWeightedOption = (options_array) => {
 
 const quizTypes = [
   new WeightedOption(whosThatPokemon, 150),
-  new WeightedOption(pokemonType, 100),
+  new WeightedOption(pokemonType, 85),
+  new WeightedOption(howDoesThisPokemonEvole, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
-  new WeightedOption(pokemonRegion, 50),
-  new WeightedOption(pokemonID, 50),
-  new WeightedOption(fossilPokemon, 10),
-  new WeightedOption(pokemonFossil, 10),
+  new WeightedOption(pokemonRegion, 45),
+  new WeightedOption(pokemonID, 60),
+  new WeightedOption(fossilPokemon, 5),
+  new WeightedOption(pokemonFossil, 5),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
   new WeightedOption(badgeGymLeader, 10),
-  new WeightedOption(badgeGymLocation, 10),
-  new WeightedOption(pokemonGymLeader, 10),
-  new WeightedOption(typeGymLeader, 20),
-  new WeightedOption(gymLeaderType, 20),
-  new WeightedOption(gymLeaderPokemon, 20),
+  new WeightedOption(badgeGymLocation, 5),
+  new WeightedOption(pokemonGymLeader, 45),
+  new WeightedOption(typeGymLeader, 30),
+  new WeightedOption(gymLeaderType, 35),
+  new WeightedOption(gymLeaderPokemon, 40),
   new WeightedOption(gymLeaderLocation, 10),
   new WeightedOption(gymLeaderBadge, 10),
   // new WeightedOption(___, 1),
