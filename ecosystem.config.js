@@ -1,12 +1,12 @@
 // pm2 start ecosystem.config.js
 module.exports = {
-  apps : [
+  apps: [
     {
-      name: 'Pokeclicker-bot',
-      script: 'index.js',
+      name: "PokeQuiz-bot",
+      script: "index.js",
       autorestart: true,
       watch: false,
-      max_memory_restart: '200M',
+      max_memory_restart: "200M",
     },
   ],
 };

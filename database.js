@@ -1,44 +1,53 @@
-const sqlite = require('sqlite');
-const sqlite3 = require('sqlite3');
-const { backupChannelID } = require('./config.js');
-const { AttachmentBuilder } = require('discord.js');
-const { warn } = require('./helpers/logging.js');
-const { trainerCardBadgeTypes } = require('./helpers/trainer_card.js');
-const { version: botVersion } = require('./package.json');
+const sqlite = require("sqlite");
+const sqlite3 = require("sqlite3");
+const { backupChannelID } = require("./config.js");
+const { AttachmentBuilder } = require("discord.js");
+const { warn } = require("./helpers/logging.js");
+const { trainerCardBadgeTypes } = require("./helpers/trainer_card.js");
+const { version: botVersion } = require("./package.json");
 
 // current version, possibly older version
-const isOlderVersion = (version, compareVersion) => compareVersion.localeCompare(version, undefined, { numeric: true }) === 1;
+const isOlderVersion = (version, compareVersion) =>
+  compareVersion.localeCompare(version, undefined, { numeric: true }) === 1;
 
-const database_dir = './db/';
-const database_filename = 'database.sqlite';
+const database_dir = "./db/";
+const database_filename = "database.sqlite";
 const database_fullpath = database_dir + database_filename;
 
-async function getDB(){
+async function getDB() {
   return await sqlite.open({
     filename: database_fullpath,
     driver: sqlite3.Database,
   });
 }
 
-async function setupDB(){
+async function setupDB() {
   const db = await getDB();
   await Promise.all([
     // Keep track of any application data we need
-    db.run('CREATE TABLE IF NOT EXISTS application(name TEXT(1024) UNIQUE ON CONFLICT IGNORE NOT NULL, value TEXT(1024) NOT NULL, PRIMARY KEY (name))'),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS application(name TEXT(1024) UNIQUE ON CONFLICT IGNORE NOT NULL, value TEXT(1024) NOT NULL, PRIMARY KEY (name))"
+    ),
     // User data
-    db.run('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default \'0\', trainer INT(3) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', badge TEXT(1024) NOT NULL default \'\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', paused INT(1) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', paused INT(1) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)"
+    ),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default '0', trainer INT(3) NOT NULL default '0', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)"
+    ),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default '1', trainer TEXT(1024) NOT NULL default '11', badge TEXT(1024) NOT NULL default '', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)"
+    ),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default '0', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)"
+    ),
     // User Statistics
-    db.run('CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
-    // Checked on interval
-    db.run('CREATE TABLE IF NOT EXISTS reminders(id INTEGER PRIMARY KEY AUTOINCREMENT, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, message TEXT(2048) NOT NULL default \'\')'),
-    db.run('CREATE TABLE IF NOT EXISTS schedule_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS schedule(id INTEGER PRIMARY KEY AUTOINCREMENT, type TEXT(1024) NOT NULL, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, value TEXT(2048) NOT NULL default \'\', FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES schedule_types (id) ON DELETE CASCADE)'),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)"
+    ),
+    db.run(
+      "CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default '0', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)"
+    ),
   ]);
 
   db.close();
@@ -46,75 +55,108 @@ async function setupDB(){
   return;
 }
 
-async function updateDB(){
+async function updateDB() {
   const db = await getDB();
-  let version = await db.get('SELECT * FROM application WHERE name=?', 'version');
+  let version = await db.get(
+    "SELECT * FROM application WHERE name=?",
+    "version"
+  );
 
   // Will only update the version if it doesn't already exist
   if (!version || !version.value) {
-    await db.run('INSERT INTO application (name, value) values (?, ?)', 'version', botVersion);
+    await db.run(
+      "INSERT INTO application (name, value) values (?, ?)",
+      "version",
+      botVersion
+    );
     version = botVersion;
   } else {
     version = version.value;
   }
 
-  if (isOlderVersion(version, '1.1.0')) {
-    version = '1.1.0';
-    await db.run('ALTER TABLE purchased ADD badge TEXT(1024) NOT NULL default \'\'');
-    await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', version);
+  if (isOlderVersion(version, "1.1.0")) {
+    version = "1.1.0";
+    await db.run(
+      "ALTER TABLE purchased ADD badge TEXT(1024) NOT NULL default ''"
+    );
+    await db.run(
+      "INSERT OR REPLACE INTO application (name, value) values (?, ?)",
+      "version",
+      version
+    );
   }
-  if (isOlderVersion(version, '1.2.0')) {
-    version = '1.2.0';
-    await db.run('ALTER TABLE daily_claim ADD paused INT(1) NOT NULL default \'0\'');
-    await db.run('ALTER TABLE timely_claim ADD paused INT(1) NOT NULL default \'0\'');
-    await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', version);
+  if (isOlderVersion(version, "1.2.0")) {
+    version = "1.2.0";
+    await db.run(
+      "INSERT OR REPLACE INTO application (name, value) values (?, ?)",
+      "version",
+      version
+    );
   }
-  
-  await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', botVersion);
+
+  await db.run(
+    "INSERT OR REPLACE INTO application (name, value) values (?, ?)",
+    "version",
+    botVersion
+  );
 
   db.close();
 }
 
-async function backupDB(guild){
+async function backupDB(guild) {
   // Check if this guild has a backup channel
-  const backup_channel = await guild.channels.cache.find(c => c.id == backupChannelID);
-  if (!backup_channel) return warn('Backup channel not found!');
+  const backup_channel = await guild.channels.cache.find(
+    (c) => c.id == backupChannelID
+  );
+  if (!backup_channel) return warn("Backup channel not found!");
 
-  const attachment = await new AttachmentBuilder().setFile(database_fullpath, { name: 'database.backup.sqlite' });
+  const attachment = new AttachmentBuilder().setFile(database_fullpath, {
+    name: "database.backup.sqlite",
+  });
 
-  backup_channel.send({
-    content: `__***Database Backup:***__\n_${new Date().toJSON().replace(/T/g,' ').replace(/\.\w+$/,'')}_`,
-    files: [attachment],
-  }).catch(warn);
+  backup_channel
+    .send({
+      content: `__***Database Backup:***__\n_${new Date()
+        .toJSON()
+        .replace(/T/g, " ")
+        .replace(/\.\w+$/, "")}_`,
+      files: [attachment],
+    })
+    .catch(warn);
 }
 
-async function getUserID(user){
+async function getUserID(user) {
   const data = {
     $user: user.id,
     $tag: user.tag,
   };
 
   const db = await getDB();
-  await db.run('INSERT OR REPLACE INTO users (id, user, tag) values ((SELECT id FROM users WHERE user = $user), $user, $tag);', data);
-  const { user_id = 0 } = await db.get('SELECT last_insert_rowid() AS user_id;');
+  await db.run(
+    "INSERT OR REPLACE INTO users (id, user, tag) values ((SELECT id FROM users WHERE user = $user), $user, $tag);",
+    data
+  );
+  const { user_id = 0 } = await db.get(
+    "SELECT last_insert_rowid() AS user_id;"
+  );
   db.close();
 
   return user_id;
 }
 
-async function getAmount(user, table = 'coins'){
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+async function getAmount(user, table = "coins") {
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
-  let result = await db.get(`SELECT amount FROM ${table} WHERE user=?`, user_id);
+  let result = await db.get(
+    `SELECT amount FROM ${table} WHERE user=?`,
+    user_id
+  );
   // If user doesn't exist yet, set them up (with 1000 coins)
   if (!result) {
-    await db.run(`INSERT OR REPLACE INTO ${table} (user, amount) VALUES (?, 1000)`, user_id);
+    await db.run(
+      `INSERT OR REPLACE INTO ${table} (user, amount) VALUES (?, 1000)`,
+      user_id
+    );
     // try get the users points again
     result = await db.get(`SELECT amount FROM ${table} WHERE user=?`, user_id);
   }
@@ -125,23 +167,17 @@ async function getAmount(user, table = 'coins'){
   return +amount;
 }
 
-async function addAmount(user, amount = 1, table = 'coins'){
+async function addAmount(user, amount = 1, table = "coins") {
   // Check amount is valid
   amount = +amount;
   if (isNaN(amount)) return;
   amount += await getAmount(user, table);
 
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
   // If user has more than 25k coins, give them the Soul Badge
   if (amount >= 25e3) {
-    await addPurchased(user, 'badge', trainerCardBadgeTypes.Soul);
+    await addPurchased(user, "badge", trainerCardBadgeTypes.Soul);
   }
 
   const data = {
@@ -155,22 +191,16 @@ async function addAmount(user, amount = 1, table = 'coins'){
   return amount;
 }
 
-async function removeAmount(user, amount = 1, table = 'coins'){
+async function removeAmount(user, amount = 1, table = "coins") {
   return await addAmount(user, -amount, table);
 }
 
-async function setAmount(user, amount = 1, table = 'coins'){
+async function setAmount(user, amount = 1, table = "coins") {
   // Check amount is valid
   amount = +amount;
   if (isNaN(amount)) return;
 
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
   const data = {
     $user_id: user_id,
@@ -183,7 +213,7 @@ async function setAmount(user, amount = 1, table = 'coins'){
   return amount;
 }
 
-async function getTop(amount = 10, table = 'coins'){
+async function getTop(amount = 10, table = "coins") {
   if (isNaN(amount)) amount = 10;
   amount = Math.max(1, amount);
 
@@ -191,114 +221,113 @@ async function getTop(amount = 10, table = 'coins'){
 
   const db = await getDB();
   switch (table) {
-    case 'timely':
-      results = await db.all(`SELECT users.user, streak as amount, RANK () OVER ( ORDER BY streak DESC ) rank FROM timely_claim INNER JOIN users ON users.id = timely_claim.user ORDER BY amount DESC LIMIT ${amount}`);
+    case "coins":
+      results = await db.all(
+        `SELECT users.user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins INNER JOIN users ON users.id = coins.user ORDER BY amount DESC LIMIT ${amount}`
+      );
       break;
-    case 'daily':
-    case 'claim':
-      results = await db.all(`SELECT users.user, streak as amount, RANK () OVER ( ORDER BY streak DESC ) rank FROM daily_claim INNER JOIN users ON users.id = daily_claim.user ORDER BY amount DESC LIMIT ${amount}`);
+    case "coins-bet":
+      results = await db.all(
+        `SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_bet' ORDER BY amount DESC LIMIT ${amount}`
+      );
       break;
-    case 'coins':
-      results = await db.all(`SELECT users.user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins INNER JOIN users ON users.id = coins.user ORDER BY amount DESC LIMIT ${amount}`);
+    case "coins-won":
+      results = await db.all(
+        `SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_won' ORDER BY amount DESC LIMIT ${amount}`
+      );
       break;
-    case 'coins-bet':
-      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_bet' ORDER BY amount DESC LIMIT ${amount}`);
+    case "coins-lost":
+      results = await db.all(
+        `SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_won' ORDER BY amount ASC LIMIT ${amount}`
+      );
       break;
-    case 'coins-won':
-      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_won' ORDER BY amount DESC LIMIT ${amount}`);
-      break;
-    case 'coins-lost':
-      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_won' ORDER BY amount ASC LIMIT ${amount}`);
-      break;
-    case 'messages':
-    case 'qz_answered':
+    case "qz_answered":
     default:
-      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='${table}' ORDER BY amount DESC LIMIT ${amount}`);
+      results = await db.all(
+        `SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='${table}' ORDER BY amount DESC LIMIT ${amount}`
+      );
   }
   db.close();
 
   return results;
 }
 
-async function getRank(user, table = 'coins'){
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+async function getRank(user, table = "coins") {
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
-  const result = await db.get('SELECT * FROM ( SELECT user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins ) WHERE user=?', user_id);
+  const result = await db.get(
+    "SELECT * FROM ( SELECT user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins ) WHERE user=?",
+    user_id
+  );
   db.close();
 
   return result.rank || 0;
 }
 
-async function getTrainerCard(user){
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+async function getTrainerCard(user) {
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
-  let result = await db.get('SELECT * FROM trainer_card WHERE user=?', user_id);
+  let result = await db.get("SELECT * FROM trainer_card WHERE user=?", user_id);
   // If user doesn't exist yet, set them up
   if (!result) {
-    await db.run('INSERT OR REPLACE INTO trainer_card (user) VALUES (?)', user_id);
+    await db.run(
+      "INSERT OR REPLACE INTO trainer_card (user) VALUES (?)",
+      user_id
+    );
     // try get the users points again
-    result = await db.get('SELECT * FROM trainer_card WHERE user=?', user_id);
+    result = await db.get("SELECT * FROM trainer_card WHERE user=?", user_id);
   }
   db.close();
 
   return result;
 }
 
-async function setTrainerCard(user, type, index){
-  if (!type) return console.error('No type specified to set on trainer card');
-  if (index == undefined) return console.error('No item index specified to set on trainer card');
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
+async function setTrainerCard(user, type, index) {
+  if (!type) return console.error("No type specified to set on trainer card");
+  if (index == undefined)
+    return console.error("No item index specified to set on trainer card");
+  const [db, user_id] = await Promise.all([
     getDB(),
     getUserID(user),
     getTrainerCard(user), // We want this incase the profile isn't created yet
   ]);
 
-  const result = await db.run(`UPDATE trainer_card SET ${type}=? WHERE user=?`, index, user_id);
+  const result = await db.run(
+    `UPDATE trainer_card SET ${type}=? WHERE user=?`,
+    index,
+    user_id
+  );
   db.close();
 
   return result;
 }
 
-async function getPurchased(user, type){
-  if (!type) return console.error('No purchase type to get specified');
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+async function getPurchased(user, type) {
+  if (!type) return console.error("No purchase type to get specified");
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
-  let result = await db.get(`SELECT ${type} FROM purchased WHERE user=?`, user_id);
+  let result = await db.get(
+    `SELECT ${type} FROM purchased WHERE user=?`,
+    user_id
+  );
   // If user doesn't exist yet, set them up
   if (!result) {
-    await db.run('INSERT OR REPLACE INTO purchased (user) VALUES (?)', user_id);
+    await db.run("INSERT OR REPLACE INTO purchased (user) VALUES (?)", user_id);
     // try get the users points again
-    result = await db.get(`SELECT ${type} FROM purchased WHERE user=?`, user_id);
+    result = await db.get(
+      `SELECT ${type} FROM purchased WHERE user=?`,
+      user_id
+    );
   }
   db.close();
 
-  return result[type].split('').map(Number);
+  return result[type].split("").map(Number);
 }
 
-async function addPurchased(user, type, index){
-  if (!type) return console.error('No type to purchase specified');
-  if (index == undefined) return console.error('No item index to purchase specified');
+async function addPurchased(user, type, index) {
+  if (!type) return console.error("No type to purchase specified");
+  if (index == undefined)
+    return console.error("No item index to purchase specified");
 
   // Get currently purchased items
   let purchased = await getPurchased(user, type);
@@ -309,77 +338,88 @@ async function addPurchased(user, type, index){
   // Set our item as purchased
   purchased[index] = 1;
   // Any empty items need to be 0
-  purchased = Array.from(purchased, i => i ? 1 : 0).join('');
+  purchased = Array.from(purchased, (i) => (i ? 1 : 0)).join("");
 
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  const [db, user_id] = await Promise.all([getDB(), getUserID(user)]);
 
-  const result = await db.run(`UPDATE purchased SET ${type}=? WHERE user=?`, purchased, user_id);
+  const result = await db.run(
+    `UPDATE purchased SET ${type}=? WHERE user=?`,
+    purchased,
+    user_id
+  );
   db.close();
 
   return result?.changes ? true : false;
 }
 
-async function getStatisticTypeID(type){
+async function getStatisticTypeID(type) {
   const data = {
     $type: type,
   };
 
   const db = await getDB();
-  await db.run('INSERT OR REPLACE INTO statistic_types (id, name) values ((SELECT id FROM statistic_types WHERE name = $type), $type);', data);
-  const { type_id = 0 } = await db.get('SELECT last_insert_rowid() AS type_id;');
+  await db.run(
+    "INSERT OR REPLACE INTO statistic_types (id, name) values ((SELECT id FROM statistic_types WHERE name = $type), $type);",
+    data
+  );
+  const { type_id = 0 } = await db.get(
+    "SELECT last_insert_rowid() AS type_id;"
+  );
   db.close();
 
   return type_id;
 }
 
-async function getStatisticTypes(){
+async function getStatisticTypes() {
   const db = await getDB();
-  const results = await db.all('SELECT * FROM statistic_types;');
+  const results = await db.all("SELECT * FROM statistic_types;");
   db.close();
 
   return results || [];
 }
 
-async function getOverallStatistic(stat_type){
-  const [
-    db,
-    type_id,
-  ] = await Promise.all([
+async function getOverallStatistic(stat_type) {
+  const [db, type_id] = await Promise.all([
     getDB(),
     getStatisticTypeID(stat_type),
   ]);
 
-  const result = await db.get('SELECT name, COUNT(user) AS users, SUM(value) AS value FROM statistics INNER JOIN statistic_types ON statistic_types.id = type WHERE type=? GROUP BY type;', type_id);
+  const result = await db.get(
+    "SELECT name, COUNT(user) AS users, SUM(value) AS value FROM statistics INNER JOIN statistic_types ON statistic_types.id = type WHERE type=? GROUP BY type;",
+    type_id
+  );
   db.close();
 
-  const { name = 'not found', users = 0, value = 0 } = result || {};
+  const { name = "not found", users = 0, value = 0 } = result || {};
 
   return { name, users, value };
 }
 
-async function getStatistic(user, type){
-  const [
-    db,
-    user_id,
-    type_id,
-  ] = await Promise.all([
+async function getStatistic(user, type) {
+  const [db, user_id, type_id] = await Promise.all([
     getDB(),
     getUserID(user),
     getStatisticTypeID(type),
   ]);
 
-  let result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
+  let result = await db.get(
+    "SELECT value FROM statistics WHERE user=? AND type=?",
+    user_id,
+    type_id
+  );
   // If user doesn't exist yet, set them up
   if (!result) {
-    await db.run('INSERT OR REPLACE INTO statistics (user, type) VALUES (?, ?)', user_id, type_id);
+    await db.run(
+      "INSERT OR REPLACE INTO statistics (user, type) VALUES (?, ?)",
+      user_id,
+      type_id
+    );
     // try get the users points again
-    result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
+    result = await db.get(
+      "SELECT value FROM statistics WHERE user=? AND type=?",
+      user_id,
+      type_id
+    );
   }
   db.close();
 
@@ -388,17 +428,13 @@ async function getStatistic(user, type){
   return +value;
 }
 
-async function addStatistic(user, type, amount = 1){
+async function addStatistic(user, type, amount = 1) {
   // Check amount is valid
   amount = +amount;
   if (isNaN(amount)) return;
   amount += await getStatistic(user, type);
 
-  const [
-    db,
-    user_id,
-    type_id,
-  ] = await Promise.all([
+  const [db, user_id, type_id] = await Promise.all([
     getDB(),
     getUserID(user),
     getStatisticTypeID(type),
@@ -410,106 +446,13 @@ async function addStatistic(user, type, amount = 1){
     $amount: amount,
   };
 
-  await db.run('UPDATE statistics SET value=$amount WHERE user=$user_id AND type=$type_id', data);
+  await db.run(
+    "UPDATE statistics SET value=$amount WHERE user=$user_id AND type=$type_id",
+    data
+  );
   db.close();
 
   return amount;
-}
-
-async function addReminder(user, time, message = ''){
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
-
-  const result = await db.run('INSERT INTO reminders (user, datetime, message) VALUES (?, ?, ?)', user_id, Math.floor(+time), message);
-  db.close();
-
-  return result;
-}
-
-async function getOldReminders(date = Date.now()){
-  const db = await getDB();
-
-  const results = await db.all(`SELECT reminders.id, users.user, reminders.message FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.datetime <= ${+date} ORDER BY reminders.id ASC`);
-  db.close();
-
-  return results;
-}
-
-async function getUserReminders(user){
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
-
-  const results = await db.all(`SELECT reminders.id, users.user, reminders.message, reminders.datetime FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.user = ${user_id} ORDER BY reminders.id ASC`);
-  db.close();
-
-  return results;
-}
-
-async function clearReminders(ids = []){
-  const db = await getDB();
-
-  const results = await db.run(`DELETE FROM reminders WHERE reminders.id IN (${ids.join(',')})`);
-  db.close();
-
-  return results;
-}
-
-async function getScheduleTypeID(type){
-  const data = {
-    $type: type,
-  };
-
-  const db = await getDB();
-  await db.run('INSERT OR REPLACE INTO schedule_types (id, name) values ((SELECT id FROM schedule_types WHERE name = $type), $type);', data);
-  const { type_id = 0 } = await db.get('SELECT last_insert_rowid() AS type_id;');
-  db.close();
-
-  return type_id;
-}
-
-async function getScheduleItems(date = Date.now()){
-  const db = await getDB();
-
-  const results = await db.all(`SELECT schedule.id, schedule_types.name AS type, users.user, schedule.value, schedule.datetime FROM schedule INNER JOIN users ON users.id = schedule.user INNER JOIN schedule_types ON schedule_types.id = type WHERE schedule.datetime <= ${+date} ORDER BY schedule.id ASC`);
-  db.close();
-
-  return results;
-}
-
-async function addScheduleItem(type, user, time, value = ''){
-  const [
-    db,
-    user_id,
-    type_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-    getScheduleTypeID(type),
-  ]);
-
-  const result = await db.run('INSERT INTO schedule (type, user, datetime, value) VALUES (?, ?, ?, ?)', type_id, user_id, Math.floor(+time), value);
-  db.close();
-
-  return result;
-}
-
-async function clearScheduleItems(ids = []){
-  const db = await getDB();
-
-  const results = await db.run(`DELETE FROM schedule WHERE schedule.id IN (${ids.join(',')})`);
-  db.close();
-
-  return results;
 }
 
 module.exports = {
@@ -532,12 +475,4 @@ module.exports = {
   getOverallStatistic,
   getStatistic,
   addStatistic,
-  addReminder,
-  getOldReminders,
-  getUserReminders,
-  clearReminders,
-  getScheduleTypeID,
-  getScheduleItems,
-  addScheduleItem,
-  clearScheduleItems,
 };

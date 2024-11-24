@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot-pokeclicker",
+  "name": "discord-bot-pokequiz",
   "version": "1.2.0",
   "description": "",
   "engines": {
@@ -8,8 +8,7 @@
   "scripts": {
     "start": "node index",
     "test": "eslint ./",
-    "fix": "eslint ./ --fix",
-    "build": "node updateData"
+    "fix": "eslint ./ --fix"
   },
   "author": "",
   "license": "ISC",

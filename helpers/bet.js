@@ -1,30 +1,25 @@
-const {
-  addStatistic,
-  addPurchased,
-} = require('../database.js');
-const {
-  trainerCardBadgeTypes,
-} = require('./trainer_card.js');
+const { addStatistic, addPurchased } = require("../database.js");
+const { trainerCardBadgeTypes } = require("./trainer_card.js");
 
 const betRegex = /^(\d+|all|half|quarter|random|\d+e\d{1,2}|\d{1,2}%|100%)$/i;
 
 // if it fails the regex check or is less than 0, then it is invalid (NaN isn't <= 0)
-const invalidBet = bet => !betRegex.test(bet) || +bet <= 0;
-const validBet = bet => !invalidBet(bet);
+const invalidBet = (bet) => !betRegex.test(bet) || +bet <= 0;
+const validBet = (bet) => !invalidBet(bet);
 
 const calcBetAmount = (bet, balance) => {
-  if (bet.toString().endsWith('%')){
+  if (bet.toString().endsWith("%")) {
     const percentage = parseInt(bet) / 100;
     return Math.max(1, Math.floor(balance * percentage));
   }
-  switch(bet.toString().toLowerCase()) {
-    case 'all':
+  switch (bet.toString().toLowerCase()) {
+    case "all":
       return balance;
-    case 'half':
+    case "half":
       return Math.max(1, Math.floor(balance / 2));
-    case 'quarter':
+    case "quarter":
       return Math.max(1, Math.floor(balance / 4));
-    case 'random':
+    case "random":
       return Math.floor(Math.random() * balance) + 1;
     default:
       return +bet;
@@ -34,31 +29,30 @@ const calcBetAmount = (bet, balance) => {
 const addBetStatistics = async (user, bet, winnings) => {
   // If user won 5k coins or more, give them the Rainbow Badge
   if (winnings >= 5000) {
-    await addPurchased(user, 'badge', trainerCardBadgeTypes.Rainbow);
+    await addPurchased(user, "badge", trainerCardBadgeTypes.Rainbow);
   }
 
   // Total times gambled
-  const games_played = await addStatistic(user, 'gc_games_played');
+  const games_played = await addStatistic(user, "gc_games_played");
   // Total amount bet
-  addStatistic(user, 'gc_coins_bet', bet);
+  addStatistic(user, "gc_coins_bet", bet);
   // Total amount won
-  addStatistic(user, 'gc_coins_won', winnings);
+  addStatistic(user, "gc_coins_won", winnings);
 
   // Total wins
-  if (winnings > 0) addStatistic(user, 'gc_games_won');
+  if (winnings > 0) addStatistic(user, "gc_games_won");
   // Total ties
-  if (winnings == 0) addStatistic(user, 'gc_games_tied');
+  if (winnings == 0) addStatistic(user, "gc_games_tied");
   // Total losses
-  if (winnings < 0) addStatistic(user, 'gc_games_lost');
+  if (winnings < 0) addStatistic(user, "gc_games_lost");
 
   // If user played 1k or more games, give them the Marsh Badge
   if (games_played >= 1e3) {
-    await addPurchased(user, 'badge', trainerCardBadgeTypes.Marsh);
+    await addPurchased(user, "badge", trainerCardBadgeTypes.Marsh);
   }
 };
 
 module.exports = {
-  betRegex,
   validBet,
   calcBetAmount,
   addBetStatistics,

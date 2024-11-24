@@ -1,51 +1,53 @@
-const { EmbedBuilder, ApplicationCommandType, ApplicationCommandOptionType } = require('discord.js');
-const { getLastClaim } = require('../helpers.js');
-const { getStatistic } = require('../database.js');
+const {
+  EmbedBuilder,
+  ApplicationCommandType,
+  ApplicationCommandOptionType,
+} = require("discord.js");
+const { getStatistic } = require("../database.js");
 
 module.exports = {
-  type        : ApplicationCommandType.User,
-  name        : 'statistics',
-  aliases     : ['stats'],
-  description : 'Get an overview of your statistics for this server',
-  args        : [
+  type: ApplicationCommandType.User,
+  name: "statistics",
+  aliases: ["stats"],
+  description: "Obtenez une vue d'ensemble de vos statistiques pour ce serveur",
+  args: [
     {
-      name: 'user',
+      name: "user",
       type: ApplicationCommandOptionType.User,
-      description: 'Get another users statistics',
+      description: "Obtenir les statistiques d'un autre utilisateur",
       required: false,
     },
   ],
-  guildOnly   : true,
-  cooldown    : 3,
-  botperms    : ['SendMessages', 'EmbedLinks'],
-  userperms   : [],
-  channels    : ['bot-commands', 'game-corner'],
-  execute     : async (interaction) => {
-    const id = interaction.options.get('user')?.value;
+  guildOnly: true,
+  cooldown: 3,
+  botperms: ["SendMessages", "EmbedLinks"],
+  userperms: [],
+  execute: async (interaction) => {
+    const id = interaction.options.get("user")?.value;
 
     let user = interaction.user;
 
     if (id) {
-      const member = await interaction.member.guild.members.fetch(id).catch(e => {});
+      const member = await interaction.member.guild.members
+        .fetch(id)
+        .catch((e) => {});
       if (!member) {
-        const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid user ID specified.`);
+        const embed = new EmbedBuilder()
+          .setColor("#e74c3c")
+          .setDescription(`${interaction.user}\nID utilisateur invalide.`);
         return interaction.reply({ embeds: [embed] });
       }
       user = member.user;
     }
 
     const embed = new EmbedBuilder()
-      .setTitle('Statistics')
+      .setTitle("Statistiques")
       .setDescription(user.toString())
-      .setColor('#3498db');
+      .setColor("#3498db");
 
     const [
       messages,
       commands,
-      // Other
-      daily_claim,
-      timely_claim,
-      clicks,
       // Games Corner
       gc_games_played,
       gc_games_won,
@@ -57,60 +59,47 @@ module.exports = {
       qz_answered,
       qz_coins_won,
     ] = await Promise.all([
-      getStatistic(user, 'messages'),
-      getStatistic(user, 'commands'),
-      getLastClaim(user, 'daily_claim'),
-      getLastClaim(user, 'timely_claim'),
-      getStatistic(user, 'clicks'),
+      getStatistic(user, "messages"),
+      getStatistic(user, "commands"),
       // Games Corner
-      getStatistic(user, 'gc_games_played'),
-      getStatistic(user, 'gc_games_won'),
-      getStatistic(user, 'gc_games_tied'),
-      getStatistic(user, 'gc_games_lost'),
-      getStatistic(user, 'gc_coins_bet'),
-      getStatistic(user, 'gc_coins_won'),
+      getStatistic(user, "gc_games_played"),
+      getStatistic(user, "gc_games_won"),
+      getStatistic(user, "gc_games_tied"),
+      getStatistic(user, "gc_games_lost"),
+      getStatistic(user, "gc_coins_bet"),
+      getStatistic(user, "gc_coins_won"),
       // Quiz
-      getStatistic(user, 'qz_answered'),
-      getStatistic(user, 'qz_coins_won'),
+      getStatistic(user, "qz_answered"),
+      getStatistic(user, "qz_coins_won"),
     ]);
 
     embed.addFields({
-      name: '__***#general***__',
+      name: "__***#general***__",
       value: [
-        `**❯ Messages:** ${messages.toLocaleString('en-US')}`,
-        `**❯ Commands:** ${commands.toLocaleString('en-US')}`,
-      ].join('\n'),
+        `**❯ Messages:** ${messages.toLocaleString("fr-FR")}`,
+        `**❯ Commandes:** ${commands.toLocaleString("fr-FR")}`,
+      ].join("\n"),
     });
 
     embed.addFields({
-      name: '__***#claims***__',
+      name: "__***#casino***__",
       value: [
-        `**❯ Claim:** ${daily_claim.streak.toLocaleString('en-US')}`,
-        `**❯ Timely:** ${timely_claim.streak.toLocaleString('en-US')}`,
-        `**❯ Clicks:** ${clicks.toLocaleString('en-US')}`,
-      ].join('\n'),
+        `**❯ Jeux joués:** ${gc_games_played.toLocaleString("fr-FR")}`,
+        `**❯ Jeux gagnés:** ${gc_games_won.toLocaleString("fr-FR")}`,
+        `**❯ Jeux à égalité:** ${gc_games_tied.toLocaleString("fr-FR")}`,
+        `**❯ Jeux perdus:** ${gc_games_lost.toLocaleString("fr-FR")}`,
+        `**❯ PokéCoins misés:** ${gc_coins_bet.toLocaleString("fr-FR")}`,
+        `**❯ PokéCoins gagnés:** ${gc_coins_won.toLocaleString("fr-FR")}`,
+      ].join("\n"),
     });
 
     embed.addFields({
-      name: '__***#game-corner***__',
+      name: "__***#poke-quiz***__",
       value: [
-        `**❯ Games Played:** ${gc_games_played.toLocaleString('en-US')}`,
-        `**❯ Games Won:** ${gc_games_won.toLocaleString('en-US')}`,
-        `**❯ Games Tied:** ${gc_games_tied.toLocaleString('en-US')}`,
-        `**❯ Games Lost:** ${gc_games_lost.toLocaleString('en-US')}`,
-        `**❯ Coins Bet:** ${gc_coins_bet.toLocaleString('en-US')}`,
-        `**❯ Coins Won:** ${gc_coins_won.toLocaleString('en-US')}`,
-      ].join('\n'),
+        `**❯ Réponses correctes:** ${qz_answered.toLocaleString("fr-FR")}`,
+        `**❯ PokéCoins gagnés:** ${qz_coins_won.toLocaleString("fr-FR")}`,
+      ].join("\n"),
     });
-
-    embed.addFields({
-      name: '__***#bot-coins***__',
-      value: [
-        `**❯ Q's Answered:** ${qz_answered.toLocaleString('en-US')}`,
-        `**❯ Coins Won:** ${qz_coins_won.toLocaleString('en-US')}`,
-      ].join('\n'),
-    });
-
 
     return interaction.reply({ embeds: [embed] });
   },

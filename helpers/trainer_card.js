@@ -1,12 +1,12 @@
 const trainerCardColors = [
-  'blue',
-  'purple',
-  'pink',
-  'red',
-  'green',
-  'bronze',
-  'silver',
-  'gold',
+  "blue",
+  "purple",
+  "pink",
+  "red",
+  "green",
+  "bronze",
+  "silver",
+  "gold",
 ];
 
 const trainerCardBadgeTypes = {
@@ -21,82 +21,91 @@ const trainerCardBadgeTypes = {
 };
 
 const trainerCardBadges = [
-  { // 0
-    name: 'Boulder',
-    description: 'Purchase something in the profile shop',
-    icon: '<:boulder_badge:785737861768151061>',
+  {
+    // 0
+    name: "Roche",
+    description: "Acheter un objet dans la boutique",
+    icon: "<:badge_roche:1309545097142079538>",
     // card stuff
-    src: './assets/images/badges/0.png',
+    src: "./assets/images/badges/0.png",
     left: 27,
     top: 123,
   },
-  { // 1
-    name: 'Cascade',
-    description: 'Use the bot commands 1,000 times',
-    icon: '<:cascade_badge:785737862166872064>',
+  {
+    // 1
+    name: "Cascade",
+    description: "Utiliser 1,000 fois une commande de bot",
+    icon: "<:badge_cascade:1309545119879270461>",
     // card stuff
-    src: './assets/images/badges/1.png',
+    src: "./assets/images/badges/1.png",
     left: 53,
     top: 123,
   },
-  { // 2
-    name: 'Thunder',
-    description: 'Send 2,500 messages in the server\n(30s cooldown between messages)',
-    icon: '<:thunder_badge:785737862146555925>',
+  {
+    // 2
+    name: "Foudre",
+    description:
+      "Envoyer 2,500 messages dans le server\n(30s entre chaque message)",
+    icon: "<:badge_foudre:1309545260074008706>",
     // card stuff
-    src: './assets/images/badges/2.png',
+    src: "./assets/images/badges/2.png",
     left: 74,
     top: 122,
   },
-  { // 3
-    name: 'Rainbow',
-    description: 'Win a net profit of 5,000 coins or more in one game',
-    icon: '<:rainbow_badge:785737862174736435>',
+  {
+    // 3
+    name: "Prisme",
+    description: "Faire + de 5,000 pièces de gain en une seule partie",
+    icon: "<:badge_prisme:1309545282177863732>",
     // card stuff
-    src: './assets/images/badges/3.png',
+    src: "./assets/images/badges/3.png",
     left: 98,
     top: 122,
   },
-  { // 4
-    name: 'Marsh',
-    description: 'Play in the games corner 1,000 times\n-OR-\nAnswer 100 questions in the bot-coins channel',
-    icon: '<:marsh_badge:785737862280249364>',
+  {
+    // 4
+    name: "Marais",
+    description: "Jouer au casino 1,000 fois\n-OU-Répondre à 100 questions",
+    icon: "<:badge_marais:1309545320614465586>",
     // card stuff
-    src: './assets/images/badges/4.png',
+    src: "./assets/images/badges/4.png",
     left: 123,
     top: 123,
   },
-  { // 5
-    name: 'Soul',
-    description: 'Reach a Balance of over 25,000',
-    icon: '<:soul_badge:785737861981798481>',
+  {
+    // 5
+    name: "Ame",
+    description: "Avoir + de 25,000 pièces en banque",
+    icon: "<:badge_ame:1309545301262209066>",
     // card stuff
-    src: './assets/images/badges/5.png',
+    src: "./assets/images/badges/5.png",
     left: 147,
     top: 123,
   },
-  { // 6
-    name: 'Volcano',
-    description: 'Reach a Timely streak of over 500',
-    icon: '<:volcano_badge:785737862196887612>',
+  {
+    // 6
+    name: "Volcan",
+    description: "???",
+    icon: "<:badge_volcan:1309545341737238612>",
     // card stuff
-    src: './assets/images/badges/6.png',
+    src: "./assets/images/badges/6.png",
     left: 171,
     top: 122,
   },
-  { // 7
-    name: 'Earth',
-    description: 'Reach a Daily streak of over 100',
-    icon: '<:earth_badge:785737862385631312>',
+  {
+    // 7
+    name: "Terre",
+    description: "???",
+    icon: "<:badge_terre:1309545359672086588>",
     // card stuff
-    src: './assets/images/badges/7.png',
+    src: "./assets/images/badges/7.png",
     left: 194,
     top: 122,
   },
 ];
 
 // highest trainer image ID 0 → X
-const totalTrainerImages = 64;
+const totalTrainerImages = 56;
 
 module.exports = {
   trainerCardColors,

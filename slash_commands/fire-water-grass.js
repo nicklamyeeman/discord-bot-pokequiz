@@ -1,7 +1,7 @@
-const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
-const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
-const { getAmount, addAmount } = require('../database.js');
-const { serverIcons } = require('../config.js');
+const { validBet, calcBetAmount, addBetStatistics } = require("../helpers.js");
+const { EmbedBuilder, ApplicationCommandOptionType } = require("discord.js");
+const { getAmount, addAmount } = require("../database.js");
+const { serverIcons } = require("../config.js");
 
 const types = {
   f: 0,
@@ -13,9 +13,9 @@ const types = {
 };
 
 const typeIcons = {
-  0: '<:fire_icon:774090473391783946>',
-  1: '<:water_icon:774090473463349298>',
-  2: '<:grass_icon:774090473476194325>',
+  0: "<:type_feu:1309546684166180956>",
+  1: "<:type_eau:1309546619665907753>",
+  2: "<:type_plante:1309546759542018068>",
 };
 
 const fwg = () => Math.floor(Math.random() * 3);
@@ -27,56 +27,61 @@ const winMultiplier = (player, bot) => {
 };
 
 module.exports = {
-  name        : 'fire-water-grass',
-  aliases     : ['fwg', 'fgw', 'gfw', 'gwf', 'wfg', 'wgf', 'fire-water-grass'],
-  description : 'Fire, Water, Grass (Rock, Paper, Scissors) bet some PokéCoins',
-  args        : [
+  name: "fire-water-grass",
+  aliases: ["fwg", "fgw", "gfw", "gwf", "wfg", "wgf", "fire-water-grass"],
+  description:
+    "Feu, Eau, Plante (Pierre, Feuille, Ciseaux) et misez vos PokéCoins",
+  args: [
     {
-      name: 'bet-amount',
+      name: "bet-amount",
       type: ApplicationCommandOptionType.String,
-      description: 'How much money you want to bet',
+      description: "Combien voulez-vous miser ?",
       required: true,
     },
     {
-      name: 'type',
+      name: "type",
       type: ApplicationCommandOptionType.String,
-      description: 'Which type are you betting on',
+      description: "Sur quel type misez-vous ?",
       required: true,
       choices: [
         {
-          name: 'Fire',
-          value: 'fire',
+          name: "Feu",
+          value: "fire",
         },
         {
-          name: 'Water',
-          value: 'water',
+          name: "Eau",
+          value: "water",
         },
         {
-          name: 'Grass',
-          value: 'grass',
+          name: "Plante",
+          value: "grass",
         },
       ],
     },
   ],
-  guildOnly   : true,
-  cooldown    : 0.5,
-  botperms    : ['SendMessages', 'EmbedLinks'],
-  userperms   : [],
-  channels    : ['game-corner'],
-  execute     : async (interaction) => {
-    let bet = interaction.options.get('bet-amount').value;
-    let type = interaction.options.get('type').value;
+  guildOnly: true,
+  cooldown: 0.5,
+  botperms: ["SendMessages", "EmbedLinks"],
+  userperms: [],
+  channels: ["casino"],
+  execute: async (interaction) => {
+    let bet = interaction.options.get("bet-amount").value;
+    let type = interaction.options.get("type").value;
 
     // Check player has selected a type
     if (!type || types[type.toLowerCase()] == undefined) {
-      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid type selected.`);
+      const embed = new EmbedBuilder()
+        .setColor("#e74c3c")
+        .setDescription(`${interaction.user}\Type sélectionné invalide.`);
       return interaction.reply({ embeds: [embed] });
     }
     type = types[type.toLowerCase()];
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
+      const embed = new EmbedBuilder()
+        .setColor("#e74c3c")
+        .setDescription(`${interaction.user}\nMise invalide.`);
       return interaction.reply({ embeds: [embed] });
     }
 
@@ -85,7 +90,9 @@ module.exports = {
     bet = calcBetAmount(bet, balance);
 
     if (bet > balance || !balance || balance <= 0) {
-      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
+      const embed = new EmbedBuilder()
+        .setColor("#e74c3c")
+        .setDescription(`${interaction.user}\nPas assez d'argent.`);
       return interaction.reply({ embeds: [embed] });
     }
 
@@ -98,20 +105,27 @@ module.exports = {
 
     const output = [
       interaction.user,
-      `__**${multiplier == 0 ? 'LOSE' : multiplier == 1 ? 'TIE' : 'WIN'}**__`,
+      `__**${
+        multiplier == 0 ? "PERDU" : multiplier == 1 ? "ÉGALITÉ" : "GAGNÉ"
+      }**__`,
       `${typeIcons[type]} _vs_ ${typeIcons[botType]}`,
-      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
-    ].join('\n');
+      `**Gains: ${(winnings + bet).toLocaleString("fr-FR")} ${
+        serverIcons.money
+      }**`,
+    ].join("\n");
 
     addAmount(interaction.user, winnings);
     addBetStatistics(interaction.user, bet, winnings);
 
     const embed = new EmbedBuilder()
-      .setColor(multiplier == 0 ? '#e74c3c' : multiplier == 1 ? '#3498db' : '#2ecc71')
+      .setColor(
+        multiplier == 0 ? "#e74c3c" : multiplier == 1 ? "#3498db" : "#2ecc71"
+      )
       .setDescription(output)
-      .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
+      .setFooter({
+        text: `Solde: ${(balance + winnings).toLocaleString("fr-FR")}`,
+      });
 
     return interaction.reply({ embeds: [embed] });
-
   },
 };

@@ -1,16 +1,16 @@
-const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
-const { getAmount, addAmount } = require('../database.js');
-const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
-const { serverIcons } = require('../config.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require("discord.js");
+const { getAmount, addAmount } = require("../database.js");
+const { validBet, calcBetAmount, addBetStatistics } = require("../helpers.js");
+const { serverIcons } = require("../config.js");
 
 const slots = {
-  seven: '<:slots_7:1032158048577400833>',
-  rocket: '<:slots_r:1032158039526092890>',
-  pikachu: '<:slots_pikachu:1032158041338036335>',
-  psyduck: '<:slots_psyduck:1032158043129008238>',
-  magnemite: '<:slots_magnemite:1032158044919971921>',
-  shelder: '<:slot_shelder:1032158037349245009>',
-  berry: '<:slots_berry:1032158046736109579>',
+  seven: "<:slot_7:1309762878324342894>",
+  rocket: "<:slot_r:1309762900067614750>",
+  pikachu: "<:slot_pikachu:1309762927745830922>",
+  psyduck: "<:slot_psykokwak:1309762952273854524>",
+  magnemite: "<:slot_magneti:1309763005055242301>",
+  shelder: "<:slot_kokiyas:1309762976756011099>",
+  berry: "<:slot_baies:1309763029730066442>",
 };
 
 const columnOptions = [
@@ -96,7 +96,7 @@ const columns = [
 ];
 
 const spinSlots = () => {
-  const spinIcons = [[],[],[]];
+  const spinIcons = [[], [], []];
   return spinIcons.map((col, index) => {
     const column = columns[index];
     const rand = Math.floor(Math.random() * column.length);
@@ -107,18 +107,23 @@ const spinSlots = () => {
 const calcWinningsMultiplier = (slotIcons, lines) => {
   let multiplier = 0;
 
-  const row1 = slotIcons.map(r => r[0]);
-  const row2 = slotIcons.map(r => r[1]);
-  const row3 = slotIcons.map(r => r[2]);
+  const row1 = slotIcons.map((r) => r[0]);
+  const row2 = slotIcons.map((r) => r[1]);
+  const row3 = slotIcons.map((r) => r[2]);
 
   // Each Row
-  if (lines >= 2 && new Set(row1).size == 1) multiplier += columnOptions.find(i => i[0] == row1[0])[1];
-  if (new Set(row2).size == 1) multiplier += columnOptions.find(i => i[0] == row2[0])[1];
-  if (lines >= 2 && new Set(row3).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
+  if (lines >= 2 && new Set(row1).size == 1)
+    multiplier += columnOptions.find((i) => i[0] == row1[0])[1];
+  if (new Set(row2).size == 1)
+    multiplier += columnOptions.find((i) => i[0] == row2[0])[1];
+  if (lines >= 2 && new Set(row3).size == 1)
+    multiplier += columnOptions.find((i) => i[0] == row3[0])[1];
 
   // Both Diagonals
-  if (lines >= 3 && new Set([row1[0], row2[1], row3[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row1[0])[1];
-  if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
+  if (lines >= 3 && new Set([row1[0], row2[1], row3[2]]).size == 1)
+    multiplier += columnOptions.find((i) => i[0] == row1[0])[1];
+  if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1)
+    multiplier += columnOptions.find((i) => i[0] == row3[0])[1];
 
   // Berries
   const berry = slots.berry;
@@ -141,74 +146,79 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
 };
 
 module.exports = {
-  name        : 'slots',
-  aliases     : ['slot'],
-  description : 'Spin the slots and bet some PokéCoins',
+  name: "slots",
+  aliases: ["slot"],
+  description: "Faites tourner la machine à sous et misez vos PokéCoins",
   helpFields: [
     [
-      '❯ Lines:',
+      "❯ Lines:",
       [
-        '**`1 Line:`** The middle line across',
-        '**`2 Lines:`** All 3 lines across',
-        '**`3 Lines:`** All 3 lines across and both diagonal lines _(default)_',
-      ].join('\n'),
+        "**`1 Line:`** Ligne horizontale du milieu",
+        "**`2 Lines:`** Les 3 linges horizontales",
+        "**`3 Lines:`** Les 3 lignes horizontales et les deux diagonales _(default)_",
+      ].join("\n"),
     ],
     [
-      '❯ Multipliers:',
+      "❯ Multipliers:",
       [
-        `${columnOptions.filter(([icon, multiplier]) => multiplier > 1).map(([icon, multiplier]) => `${icon}${icon}${icon} ║ **× ${multiplier}**`).join('\n')}`,
+        `${columnOptions
+          .filter(([icon, multiplier]) => multiplier > 1)
+          .map(
+            ([icon, multiplier]) =>
+              `${icon}${icon}${icon} ║ **× ${multiplier}**`
+          )
+          .join("\n")}`,
         `${slots.berry}${slots.berry}➖ ║ **× 6**`,
         `${slots.berry}➖➖ ║ **× 2**`,
-        '',
-        '_**Note:** The multiplier is divided by however many lines you are playing._',
-      ].join('\n'),
+        "",
+        "_**Note:** Le multiplicateur est divisé par le nombre de lignes que vous jouez._",
+      ].join("\n"),
     ],
   ],
-  args        : [
+  args: [
     {
-      name: 'bet-amount',
+      name: "bet-amount",
       type: ApplicationCommandOptionType.String,
-      description: 'How much money you want to bet',
+      description: "Combien voulez-vous miser ?",
       required: true,
     },
     {
-      name: 'lines',
+      name: "lines",
       type: ApplicationCommandOptionType.Integer,
-      description: 'How many lines you want to play (default 3)',
+      description: "Sur combien de lignes voulez-vous jouer ? (par défaut 3)",
       required: false,
       choices: [
         {
-          name: '1',
+          name: "1",
           value: 1,
         },
         {
-          name: '2',
+          name: "2",
           value: 2,
         },
         {
-          name: '3',
+          name: "3",
           value: 3,
         },
       ],
     },
   ],
-  guildOnly   : true,
-  cooldown    : 0.5,
-  botperms    : ['SendMessages', 'EmbedLinks'],
-  userperms   : [],
-  channels    : ['game-corner'],
-  execute      : async (interaction) => {
-    let [
-      bet,
-      lines,
-    ] = [
-      interaction.options.get('bet-amount').value,
-      interaction.options.get('lines')?.value || 3,
+  guildOnly: true,
+  cooldown: 0.5,
+  botperms: ["SendMessages", "EmbedLinks"],
+  userperms: [],
+  channels: ["casino"],
+  execute: async (interaction) => {
+    let [bet, lines] = [
+      interaction.options.get("bet-amount").value,
+      interaction.options.get("lines")?.value || 3,
     ];
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
+      const embed = new EmbedBuilder()
+        .setColor("#e74c3c")
+        .setDescription(`${interaction.user}\nMise invalide.`);
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -217,7 +227,9 @@ module.exports = {
     bet = calcBetAmount(bet, balance);
 
     if (bet > balance || !balance || balance <= 0) {
-      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
+      const embed = new EmbedBuilder()
+        .setColor("#e74c3c")
+        .setDescription(`${interaction.user}\nPas assez d'argent.`);
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -231,21 +243,25 @@ module.exports = {
 
     const output = [
       interaction.user,
-      '',
-      `║ ${slotIcons.map(r => r[0]).join(' ║ ')} ║`,
-      `║ ${slotIcons.map(r => r[1]).join(' ║ ')} ║`,
-      `║ ${slotIcons.map(r => r[2]).join(' ║ ')} ║`,
-      '',
-      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
+      "",
+      `║ ${slotIcons.map((r) => r[0]).join(" ║ ")} ║`,
+      `║ ${slotIcons.map((r) => r[1]).join(" ║ ")} ║`,
+      `║ ${slotIcons.map((r) => r[2]).join(" ║ ")} ║`,
+      "",
+      `**Gains: ${(winnings + bet).toLocaleString("fr-FR")} ${
+        serverIcons.money
+      }**`,
     ];
 
     addAmount(interaction.user, winnings);
     addBetStatistics(interaction.user, bet, winnings);
 
     const embed = new EmbedBuilder()
-      .setColor(multiplier >= 1 ? '#2ecc71' : '#e74c3c')
-      .setDescription(output.join('\n'))
-      .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
+      .setColor(multiplier >= 1 ? "#2ecc71" : "#e74c3c")
+      .setDescription(output.join("\n"))
+      .setFooter({
+        text: `Solde: ${(balance + winnings).toLocaleString("fr-FR")}`,
+      });
     return interaction.reply({ embeds: [embed] });
   },
 };
