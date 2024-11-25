@@ -1,6 +1,10 @@
 name = "poke-quiz"
 main = "./index.js"
 type = "javascript"
+compatibility_date="2024-11-25"
+
+account_id = "9a3591e2beedbd153f862cf845103192"
+workers_dev = true
 
 [[rules]]
 type = "ESModule"
