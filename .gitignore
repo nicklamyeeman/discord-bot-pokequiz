@@ -64,7 +64,7 @@ typings/
 thumbs.db
 
 # config file
-config*.js
+# config*.js
 # database
 database.sqlite
 # any images in the base folder

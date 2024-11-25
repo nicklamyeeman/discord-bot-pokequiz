@@ -1,0 +1,19 @@
+name = "poke-quiz"
+main = "./index.js"
+type = "javascript"
+
+[[rules]]
+type = "ESModule"
+globs = [ "**/*.js" ]
+
+[env.dev]
+
+[env.production]
+
+# [secrets]
+# DISCORD_APP_ID
+# DISCORD_PUBLIC_KEY
+# DISCORD_BOT_TOKEN
+# GUILD_ID
+# BACKUP_CHANNEL_ID
+# QUIZ_CHANNEL_ID
