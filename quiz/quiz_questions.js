@@ -1268,9 +1268,9 @@ const gymLeaderType = () => {
 
 const typeRegionPokemon = () => {
   const randomRegionIndex = Math.floor(
-    Math.random() * regionListWithoutFinalAndNone.length
+    Math.random() * regionList.length
   );
-  const selectedRegion = regionListWithoutFinalAndNone[
+  const selectedRegion = regionList[
     randomRegionIndex
   ].replace(/^[a-z]/, (match) => match.toUpperCase());
   const pokemonInRegion = pokemonList.filter(
