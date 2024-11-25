@@ -1,15 +1,13 @@
 const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { pokemonList, randomFromArray } = require("../helpers.js");
-// Define these when we need them
+
 let BSOD;
 let backdropImage;
 
 const loadQuizImages = async () => {
-  // Load backdrop image
   backdropImage = await loadImage(
     "./assets/images/backdrop/whos_that_pokemon.png"
   );
-  // Load and process BSOD image
   const bsodImage = await loadImage("./assets/images/backdrop/BSOD.png");
   const canvas = createCanvas(bsodImage.width, bsodImage.height);
   const ctx = canvas.getContext("2d");
@@ -44,7 +42,6 @@ const getWhosThatPokemonImage = (pokemon, useFemale = undefined) =>
       `./assets/images/pokemon/${pokemon.id}${useFemale ? "-f" : ""}.png`
     )
       .then((pokemonImage) => {
-        // Make a temp canvas to draw the pokemon image shadow
         const _canvas = createCanvas(pokemonImage.width, pokemonImage.height);
         const _ctx = _canvas.getContext("2d");
         _ctx.fillStyle = "#222";
@@ -63,8 +60,6 @@ const getWhosThatPokemonImage = (pokemon, useFemale = undefined) =>
           pokemonImage.height
         );
         ctx.drawImage(_canvas, 12, 0);
-
-        // export canvas as image
         canvas
           .encode("png")
           .then((img) => resolve(img))
@@ -104,8 +99,6 @@ const getWhosThatPokemonFinalImage = (pokemon, shiny, useFemale = undefined) =>
           pokemonImage.width,
           pokemonImage.height
         );
-
-        // export canvas as image
         canvas
           .encode("png")
           .then((img) => resolve(img))

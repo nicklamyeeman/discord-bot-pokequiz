@@ -24,11 +24,6 @@ const {
 const regexMatches = require("./regexMatches.js");
 const { newQuiz } = require("./quiz/quiz.js");
 const { loadQuizImages } = require("./quiz/quiz_functions.js");
-const {
-  happyHourHours,
-  startHappyHour,
-  endHappyHour,
-} = require("./quiz/happy_hour.js");
 
 const client = new Discord.Client({
   intents: [
@@ -128,24 +123,6 @@ client.once("ready", async () => {
       client.guilds.cache.forEach((guild) => guild.commands.fetch());
     },
     { timezone_offset: 0, run_now: true }
-  );
-
-  // Start happy hour
-  new RunOnInterval(
-    happyHourHours * HOUR,
-    () => {
-      client.guilds.cache.forEach((guild) => startHappyHour(guild));
-    },
-    { timezone_offset: 0 }
-  );
-
-  // End happy hour 1 hour later
-  new RunOnInterval(
-    happyHourHours * HOUR,
-    () => {
-      client.guilds.cache.forEach((guild) => endHappyHour(guild));
-    },
-    { timezone_offset: HOUR }
   );
 
   // Quiz will restart itself, only needs to be run once

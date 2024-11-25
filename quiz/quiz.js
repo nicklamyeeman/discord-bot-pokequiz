@@ -9,25 +9,29 @@ const {
   trainerCardBadgeTypes,
 } = require("../helpers.js");
 const { getQuizQuestion } = require("./quiz_questions.js");
-const {
-  happyHourBonus,
-  isHappyHour,
-  nextHappyHour,
-} = require("./happy_hour.js");
+const { isDaytime, isRushTime, rushTimeBonus } = require("./rush_time.js");
 const { trainerCardBadges } = require("../helpers/trainer_card.js");
 
-// Between 1 and 3 minutes until the next question
+// Entre 1 et 3 minutes avant a prochaine question entre 9h et 21h GMT
 const getTimeLimit = () =>
   Math.floor(Math.random() * (2 * MINUTE)) + 1 * MINUTE;
-const ANSWER_TIME_LIMIT = 5 * SECOND;
+
+// Entre 5 et 10 minutes avant a prochaine question entre 21h et 9h GMT
+const getSlowTimeLimit = () =>
+  Math.floor(Math.random() * (5 * MINUTE)) + 5 * MINUTE;
+
+const ANSWER_TIME_LIMIT = 7 * SECOND;
 
 const newQuiz = async (guild, reoccur = false) => {
-  // If no quiz channel or ID, return
-  if (!quizChannelID) return;
+  if (!quizChannelID) {
+    return;
+  }
   const quiz_channel = await guild.channels.cache.find(
-    (c) => c.id == quizChannelID
+    (channel) => channel.id == quizChannelID
   );
-  if (!quiz_channel) return;
+  if (!quiz_channel) {
+    return;
+  }
 
   // Generate and send a random question
   let quiz;
@@ -39,69 +43,53 @@ const newQuiz = async (guild, reoccur = false) => {
     }
   }
 
-  // How long until the next question
-  let time_limit = getTimeLimit();
+  const daytime = isDaytime();
+  let time_limit = daytime ? getTimeLimit() : getSlowTimeLimit();
 
-  // Is it happy hour?
-  const happyHour = isHappyHour();
-
-  // Check if happy hour starts before this question finishes
-  if (!happyHour && new Date(Date.now() + time_limit) > nextHappyHour()) {
-    time_limit = nextHappyHour() - Date.now() + ANSWER_TIME_LIMIT * 2;
-  }
-
-  // If it's happy hour, reduce the time limit between questions
-  if (happyHour) {
-    time_limit /= happyHourBonus;
+  if (isRushTime) {
     quiz.embed.setFooter({
-      text: `Happy Hour!\n(${happyHourBonus}× plus de questions, ${happyHourBonus}× plus de Shiny)`,
+      text: `Happy Hour!\n(${rushTimeBonus}× plus de questions, ${rushTimeBonus}× plus de Shiny)`,
     });
   }
 
-  // Send the question
   const bot_message = await quiz_channel
     .send({ embeds: [quiz.embed], files: quiz.files })
     .catch((...args) => warn("Unable to send quiz question", ...args));
 
-  // If no bot message for whatever reason, try again in 1 minute
-  if (!bot_message) return setTimeout(() => newQuiz(guild, reoccur), MINUTE);
+  if (!bot_message) {
+    return setTimeout(() => newQuiz(guild, reoccur), MINUTE);
+  }
 
-  // Post another question once the timer finishes
-  if (reoccur)
+  if (reoccur) {
     setTimeout(() => newQuiz(guild, reoccur), time_limit + ANSWER_TIME_LIMIT);
+  }
 
-  // Which messages are we trying to catch
   const filter = (m) =>
     quiz.answer.test(
       m.content
-        .replace(/\s*(town|city|island|fossile)/i, "")
-        .replaceAll(/(é|ê|è)/gi, "e")
-        .replaceAll(/(ô)/gi, "o")
-        .replaceAll(/(ï)/gi, "i")
-        .replaceAll(/(â|à)/gi, "a")
+        .replace(/(baie|fossile)\s*/i, "")
+        .replaceAll(/(é|ê|è|ë)/gi, "e")
+        .replaceAll(/(ô|ö)/gi, "o")
+        .replaceAll(/(î|ï)/gi, "i")
+        .replaceAll(/(â|à|ä)/gi, "a")
         .replaceAll(/(ç)/gi, "c")
     );
 
-  // Our finished timestamp
   let finished = 0;
 
-  // Our list of winners
   const winners = new Set();
   const winner_data = [];
 
-  // Gather correct answers
   const correctCollector = quiz_channel.createMessageCollector({
     filter,
     time: time_limit,
   });
+
   correctCollector.on("collect", async (m) => {
     const user = m.author;
-
-    // If this is the first answer
     if (!finished) {
       finished = m.createdTimestamp;
     } else {
-      // If player already answered, return
       if (winners.has(user.id)) {
         return;
       }
@@ -116,7 +104,6 @@ const newQuiz = async (guild, reoccur = false) => {
       addStatistic(user, "qz_answered_shiny");
     }
 
-    // Add coins to the users balance
     const [balance, answered] = await Promise.all([
       addAmount(user, amount),
       addStatistic(user, "qz_answered"),
@@ -171,24 +158,20 @@ const newQuiz = async (guild, reoccur = false) => {
     }
   });
 
-  // errors: ['time'] treats ending because of the time limit as an error
   quiz_channel
     .awaitMessages({ filter, max: 1, time: time_limit, errors: ["time"] })
     .then(() => {
-      // Update the message
       const botEmbed = bot_message.embeds[0];
       setTimeout(() => {
-        // Stop collecting answers
         correctCollector.stop();
         incorrectCollector.stop();
 
-        // Send out the correct users and amounts
         if (winner_data.length) {
           const description = winner_data
             .sort((a, b) => b.amount - a.amount)
             .map((w) => `${w.user}: **+${w.amount} ${serverIcons.money}**`);
           const embed = new EmbedBuilder()
-            .setTitle("**Réponses correctes :**")
+            .setTitle("**Classement :**")
             .setDescription(description.join("\n"))
             .setColor("#2ecc71");
 
@@ -202,7 +185,6 @@ const newQuiz = async (guild, reoccur = false) => {
       }, ANSWER_TIME_LIMIT);
     })
     .catch(() => {
-      // Update the message
       const botEmbed = bot_message.embeds[0];
       quiz.end(bot_message, botEmbed);
     });

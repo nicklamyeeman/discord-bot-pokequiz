@@ -15,10 +15,10 @@ const {
   berryType,
 } = require("../helpers.js");
 const {
-  isHappyHour,
-  happyHourBonus,
-  incrementHappyHourShinyCount,
-} = require("./happy_hour.js");
+  isRushTime,
+  rushTimeBonus,
+  incrementRushTimeShinyCount,
+} = require("./rush_time.js");
 const {
   getRandomPokemon,
   getWhosThatPokemonImage,
@@ -26,36 +26,59 @@ const {
   isFemale,
 } = require("./quiz_functions.js");
 
-// Between 30 and 60 coins per question
 const getAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 const getShinyAmount = () => 100 + getAmount();
+
 const shinyChance = 54;
 const isShiny = (chance = shinyChance) => {
   const shiny = !Math.floor(
-    Math.random() * (isHappyHour() ? chance / happyHourBonus : chance)
+    Math.random() * (isRushTime ? chance / rushTimeBonus : chance)
   );
-  if (shiny && isHappyHour()) {
-    incrementHappyHourShinyCount();
+  if (shiny && isRushTime) {
+    incrementRushTimeShinyCount();
   }
   return shiny;
 };
-const getPokemonByName = (name) => pokemonList.find((p) => p.name == name);
-const pokemonNameNormalized = (name) =>
-  name
-    .replace(/\s?\(.+\)$/, "")
-    .replaceAll(/(é|ê|è)/gi, "e")
-    .replaceAll(/(ô)/gi, "o")
-    .replaceAll(/(ï)/gi, "i")
-    .replaceAll(/(â|à)/gi, "a")
+
+const answerNormalized = (answer) =>
+  answer
+    .replaceAll(/(é|ê|è|ë)/gi, "e")
+    .replaceAll(/(ô|ö)/gi, "o")
+    .replaceAll(/(î|ï)/gi, "i")
+    .replaceAll(/(â|à|ä)/gi, "a")
     .replaceAll(/(ç)/gi, "c")
-    .replaceAll(/\W/g, ".?");
-const evolutionsNormalized = (evolution) =>
-  evolution.replace(/\W|_/g, ".?").replace(/(Niveau)\s*/gi, "($1)?");
+    .replaceAll(/\W|_/gi, ".?");
+
+const pokemonNameNormalized = (name) =>
+  answerNormalized(name.replace(/\s?\(.+\)$/, ""));
 const pokemonNameAnswer = (name) =>
   new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, "i");
-const berryList = Object.keys(berryType).filter((b) => isNaN(b) && b != "None");
+const evolutionNormalized = (evolution) =>
+  answerNormalized(evolution.replace(/(Niveau)\s*/gi, "($1)?"));
+const evolutionAnswer = (evolution) =>
+  new RegExp(`^\\W*${evolutionNormalized(evolution)}\\b`, "i");
+const fossilNormalized = (fossil) =>
+  answerNormalized(fossil.replace(/fossile\s*/i, ""));
+const fossilAnswer = (fossil) =>
+  new RegExp(`^\\W*${fossilNormalized(fossil)}\\b`, "i");
+const berryNormalized = (berry) => answerNormalized(berry);
+const berryAnswer = (berry) =>
+  new RegExp(`^\\W*${berryNormalized(berry)}\\b`, "i");
+const regionNormalized = (region) => answerNormalized(region);
+const regionAnswer = (region) =>
+  new RegExp(`^\\W*${regionNormalized(region)}\\b`, "i");
+const townNormalized = (town) => answerNormalized(town);
+const townAnswer = (town) => new RegExp(`^\\W*${townNormalized(town)}\\b`, "i");
+const typeNormalized = (type) => answerNormalized(type);
+const typeAnswer = (type) => new RegExp(`^\\W*${typeNormalized(type)}\\b`, "i");
+const gymLeaderNormalized = (leader) =>
+  answerNormalized(leader.replaceAll(/\d/gi, ""));
+const gymLeaderAnswer = (leader) =>
+  new RegExp(`^\\W*${gymLeaderNormalized(leader)}\\b`, "i");
 
-const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(
+const getPokemonByName = (name) => pokemonList.find((p) => p.name == name);
+const berryList = Object.keys(berryType).filter((b) => isNaN(b) && b != "None");
+const regionList = enumStrings(GameConstants.Region).filter(
   (t) => t != "final" && t != "none"
 );
 const pokemonListWithEvolution = pokemonList.filter(
@@ -67,6 +90,7 @@ const badgeList = Object.keys(BadgeEnums).filter(
 const gymsWithBadges = Object.keys(GymList).filter((t) =>
   badgeList.includes(BadgeEnums[GymList[t].badgeReward])
 );
+
 const allGyms = Object.keys(GymList);
 const allGymTypes = {};
 Object.keys(GymList).forEach((gym) => {
@@ -82,13 +106,6 @@ Object.keys(GymList).forEach((gym) => {
   allGymTypes[gym] = mainTypes;
 });
 
-const regionRegex = new RegExp(
-  `^(${Object.keys(GameConstants.Region)
-    .filter((v) => isNaN(+v))
-    .join("|")})_`,
-  "i"
-);
-
 const whosThatPokemon = () =>
   new Promise((resolve) => {
     (async () => {
@@ -103,7 +120,6 @@ const whosThatPokemon = () =>
       const description = ["Quel est le nom de ce Pokémon ?"];
       description.push(`**+${amount} ${serverIcons.money}**`);
 
-      // If shiny award more coins
       if (shiny) {
         const shiny_amount = getShinyAmount();
         description.push(`**+${shiny_amount}** ✨`);
@@ -150,7 +166,7 @@ const whosThatPokemon = () =>
 
 const whatIsThatBerry = () => {
   const berry = randomFromArray(berryList);
-  const answer = new RegExp(`^\\W*#?(Baie)?.?${berry}\\b`, "i");
+  const answer = berryAnswer(berry);
 
   const amount = getAmount();
 
@@ -159,7 +175,6 @@ const whatIsThatBerry = () => {
 
   const imageUrl = `assets/images/items/berry/${berry}.png`;
 
-  // Create the attachment
   const attachment = new AttachmentBuilder()
     .setFile(imageUrl)
     .setName("berry.png");
@@ -221,10 +236,11 @@ const howDoesThisPokemonEvolve = () =>
       ];
 
       const allAnswers = [...levelEvolution, ...itemEvolution].map((e) =>
-        e.replaceAll(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`)
+        e.replaceAll(/_/g, " ")
       );
+
       const answer = new RegExp(
-        `^\\W*#?${allAnswers.map((e) => evolutionsNormalized(e)).join("|")}\\b`,
+        `^\\W*${allAnswers.map((e) => evolutionNormalized(e)).join("|")}\\b`,
         "i"
       );
       let amount = getAmount();
@@ -337,9 +353,7 @@ const whosThePokemonEvolution = () =>
       const shiny = isShiny();
       const female = isFemale(pokemon);
 
-      const description = [
-        "Quelles sont les possibles évolutions de ce Pokémon ?",
-      ];
+      const description = ["Quelles sont les évolutions de ce Pokémon ?"];
       description.push(`**+${amount} ${serverIcons.money}**`);
 
       // If shiny award more coins
@@ -407,9 +421,7 @@ const whosThePokemonPrevolution = () =>
       const shiny = isShiny();
       const female = isFemale(pokemon);
 
-      const description = [
-        "Quelles sont les possibles pré-évolutions de ce Pokémon ?",
-      ];
+      const description = ["Quelles est la pré-évolution de ce Pokémon ?"];
       description.push(`**+${amount} ${serverIcons.money}**`);
 
       // If shiny award more coins
@@ -446,7 +458,7 @@ const whosThePokemonPrevolution = () =>
             name: "whoFinal.png",
           });
           const embed = new EmbedBuilder()
-            .setTitle(`C'est ${prevolution.name}!`)
+            .setTitle(`La pré-évolution est : ${prevolution.name}!`)
             .setImage("attachment://whoFinal.png")
             .setColor("#e74c3c");
           m.channel
@@ -467,9 +479,10 @@ const pokemonType = () =>
         memeAnswer = "bir[bd]";
       }
       const answer = new RegExp(
-        `^\\W*(${types.join("\\W*")}|${types.reverse().join("\\W*")}${
-          memeAnswer && `|${memeAnswer}`
-        })\\b`,
+        `^\\W*(${types.map((t) => typeNormalized(t)).join("\\W*")}|${types
+          .reverse()
+          .map((t) => typeNormalized(t))
+          .join("\\W*")}${memeAnswer && `|${memeAnswer}`})\\b`,
         "i"
       );
 
@@ -515,7 +528,7 @@ const pokemonType = () =>
             name: "whoFinal.png",
           });
           const embed = new EmbedBuilder()
-            .setTitle(`C'est ${types.join(" & ")}!`)
+            .setTitle(`Le(s) type(s) correct(s): ${types.join(" & ")}!`)
             .setImage("attachment://whoFinal.png")
             .setColor("#e74c3c");
           m.channel
@@ -593,7 +606,7 @@ const pokemonID = () =>
           });
           const embed = new EmbedBuilder()
             .setTitle(
-              `C'est ${pokemon.id < 0 ? "-" : ""}#${Math.floor(
+              `C'est le numéro ${pokemon.id < 0 ? "-" : ""}#${Math.floor(
                 Math.abs(pokemon.id)
               )
                 .toString()
@@ -613,10 +626,7 @@ const pokemonRegion = () =>
   new Promise((resolve) => {
     (async () => {
       const pokemon = getRandomPokemon();
-      const answer = new RegExp(
-        `^\\W*${GameConstants.Region[pokemon.nativeRegion]}\\b`,
-        "i"
-      );
+      const answer = regionAnswer(GameConstants.Region[pokemon.nativeRegion]);
 
       let amount = getAmount();
 
@@ -661,7 +671,7 @@ const pokemonRegion = () =>
           });
           const embed = new EmbedBuilder()
             .setTitle(
-              `C'est ${upperCaseFirstLetter(
+              `Ce Pokémon vient de ${upperCaseFirstLetter(
                 GameConstants.Region[pokemon.nativeRegion]
               )}!`
             )
@@ -737,10 +747,7 @@ const pokemonFossil = () => {
   const [fossil, pokemonName] = randomFromArray(
     Object.entries(GameConstants.FossilToPokemon)
   );
-  const answer = new RegExp(
-    `^\\W*${fossil.replace(/fossile\s*/i, "").replace(/\W/g, ".?")}\\b`,
-    "i"
-  );
+  const answer = fossilAnswer(fossil);
 
   const pokemon = pokemonList.find((p) => p.name == pokemonName);
 
@@ -785,7 +792,7 @@ const pokemonFossil = () => {
     files: [pokemonAttachment],
     end: (m, e) => {
       const embed = new EmbedBuilder()
-        .setTitle(`C'est ${fossil} !`)
+        .setTitle(`C'est le ${fossil} !`)
         .setImage("attachment://fossil.png")
         .setColor("#e74c3c");
       m.channel
@@ -798,12 +805,7 @@ const pokemonFossil = () => {
 const startingTown = () => {
   const town = randomFromArray(GameConstants.StartingTowns);
   const region = GameConstants.StartingTowns.findIndex((t) => t == town);
-  const answer = new RegExp(
-    `^\\W*${town
-      .replace(/\s*(town|city|island)/i, "")
-      .replace(/\W/g, ".?")}\\b`,
-    "i"
-  );
+  const answer = townAnswer(town);
 
   const amount = getAmount();
 
@@ -837,7 +839,7 @@ const startingTown = () => {
     files: [shipAttachment],
     end: async (m, e) => {
       const embed = new EmbedBuilder()
-        .setTitle(`C'est ${town} !`)
+        .setTitle(`Tout commence à ${town} !`)
         .setImage("attachment://town.png")
         .setColor("#e74c3c");
       m.channel
@@ -850,17 +852,11 @@ const startingTown = () => {
 const badgeGymLeader = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(
-    `^\\W*${gym.leaderName
-      .replace(/\d/g, "")
-      .replace(/\W/g, ".?")
-      .replace(/(Cipher\.\?Admin)/gi, "($1)?")}\\b`,
-    "i"
-  );
+  const answer = gymLeaderAnswer(gym.leaderName);
 
   const amount = getAmount();
 
-  const description = ["Quel Champion d'Arène offre ce badge ?"];
+  const description = ["Quel Champion d'arène offre ce badge ?"];
   description.push(`***Badge ${badge}***`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
@@ -870,7 +866,7 @@ const badgeGymLeader = () => {
     .setName("badge.png");
 
   const embed = new EmbedBuilder()
-    .setTitle("Trouvez le Champion d'Arène !")
+    .setTitle("Trouvez le Champion d'arène !")
     .setDescription(description.join("\n"))
     .setThumbnail("attachment://badge.png")
     .setColor("#3498db");
@@ -900,12 +896,7 @@ const badgeGymLeader = () => {
 const badgeGymLocation = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(
-    `^\\W*${gym.town
-      .replace(/\s*(town|city|island|du)/i, "")
-      .replace(/\W/g, ".?")}\\b`,
-    "i"
-  );
+  const answer = townAnswer(gym.town);
 
   const amount = getAmount();
 
@@ -938,7 +929,7 @@ const badgeGymLocation = () => {
     files: [badgeAttachment],
     end: (m, e) => {
       const embed = new EmbedBuilder()
-        .setTitle(`C'est ${gym.town} !`)
+        .setTitle(`C'est à ${gym.town} !`)
         .setImage("attachment://town.png")
         .setColor("#e74c3c");
       m.channel
@@ -956,19 +947,17 @@ const pokemonGymLeader = () => {
     GymList[g].pokemons.find((p) => p.name == pokemonName)
   );
   const leaders = gyms.map((g) => GymList[g].leaderName);
-  const leadersRegex = leaders
-    .map((l) =>
-      l
-        .replace(/\d/g, ".?")
-        .replace(/\W/g, ".?")
-        .replace(/(Cipher\.\?Admin)/gi, "($1)?")
-    )
-    .join("|");
-  const answer = new RegExp(`^\\W*(${leadersRegex})\\b`, "i");
+
+  const answer = new RegExp(
+    `^\\W*(${leaders.map((l) => gymLeaderNormalized(l)).join("|")})\\b`,
+    "i"
+  );
 
   let amount = getAmount();
 
-  const description = ["Quel Champion d'Arène utilise ce Pokémon?"];
+  const description = [
+    "Quel Champion d'arène (ou tout membre de la Ligue) utilise ce Pokémon?",
+  ];
   description.push(`||${pokemonName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
@@ -1009,7 +998,12 @@ const pokemonGymLeader = () => {
     files: [pokemonAttachment],
     end: (m, e) => {
       const embed = new EmbedBuilder()
-        .setTitle(`C'est ${gymLeaderToShow.leaderName} !`)
+        .setTitle(`Les Champions possibles sont :`)
+        .setDescription(
+          `${leaders.splice(0, 10).join("\n")}${
+            leaders.length ? "\net plus..." : "!"
+          }`
+        )
         .setImage("attachment://gymLeader.png")
         .setColor("#e74c3c");
       m.channel
@@ -1083,12 +1077,7 @@ const gymLeaderPokemon = () => {
 
 const gymLeaderLocation = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
-  const answer = new RegExp(
-    `^\\W*${gym.town
-      .replace(/\s*(town|city|island|du)/i, "")
-      .replace(/\W/g, ".?")}\\b`,
-    "i"
-  );
+  const answer = townAnswer(gym.town);
 
   const amount = getAmount();
 
@@ -1119,7 +1108,7 @@ const gymLeaderLocation = () => {
     files: [gymLeaderAttachment],
     end: (m, e) => {
       const embed = new EmbedBuilder()
-        .setTitle(`C'est ${gym.town} !`)
+        .setTitle(`C'est à ${gym.town} !`)
         .setImage("attachment://town.png")
         .setColor("#e74c3c");
       m.channel
@@ -1132,8 +1121,16 @@ const gymLeaderLocation = () => {
 const gymLeaderBadge = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
+
+  const regionRegex = new RegExp(
+    `^(${Object.keys(GameConstants.Region)
+      .filter((v) => isNaN(+v))
+      .join("|")})_`,
+    "i"
+  );
+
   const answer = new RegExp(
-    `^\\W*${badge.replace(regionRegex, "").replace(/\W|_/g, ".?")}\\b`,
+    `^\\W*${answerNormalized(badge.replace(regionRegex, ""))}\\b`,
     "i"
   );
 

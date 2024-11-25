@@ -4,7 +4,7 @@ module.exports = {
     0: "Normal",
     1: "Feu",
     2: "Eau",
-    3: "Electrik",
+    3: "Électrik",
     4: "Plante",
     5: "Glace",
     6: "Combat",
@@ -16,15 +16,15 @@ module.exports = {
     12: "Roche",
     13: "Spectre",
     14: "Dragon",
-    15: "Tenebres",
+    15: "Ténèbres",
     16: "Acier",
-    17: "Fee",
+    17: "Fée",
     None: -1,
     "-1": "None",
     Normal: 0,
     Feu: 1,
     Eau: 2,
-    Electrik: 3,
+    Électrik: 3,
     Plante: 4,
     Glace: 5,
     Combat: 6,
@@ -36,9 +36,9 @@ module.exports = {
     Roche: 12,
     Spectre: 13,
     Dragon: 14,
-    Tenebres: 15,
+    Ténèbres: 15,
     Acier: 16,
-    Fee: 17,
+    Fée: 17,
   },
   pokemonList: [
     {
@@ -3233,7 +3233,7 @@ module.exports = {
     },
     {
       id: 19.01,
-      name: "Rattata d Alola",
+      name: "Rattata d'Alola",
       nativeRegion: 6,
       catchRate: 255,
       type: [15, 0],
@@ -3242,15 +3242,15 @@ module.exports = {
       eggCycles: 15,
       evolutions: [
         {
-          basePokemon: "Rattata d Alola",
-          evolvedPokemon: "Rattatac d Alola",
+          basePokemon: "Rattata d'Alola",
+          evolvedPokemon: "Rattatac d'Alola",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Rattata d Alola",
-              hint: "Rattata d Alola needs to be caught.",
+              pokemon: "Rattata d'Alola",
+              hint: "Rattata d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -3262,21 +3262,21 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Rattata d Alola",
-              hint: "Your Rattata d Alola needs to be at least level 20.",
+              pokemon: "Rattata d'Alola",
+              hint: "Your Rattata d'Alola needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Rattatac d Alola",
-              hint: "Rattatac d Alola cannot be caught yet.",
+              pokemon: "Rattatac d'Alola",
+              hint: "Rattatac d'Alola cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Rattata d Alola",
+              pokemon: "Rattata d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -3477,7 +3477,7 @@ module.exports = {
     },
     {
       id: 20.01,
-      name: "Rattatac d Alola",
+      name: "Rattatac d'Alola",
       nativeRegion: 6,
       catchRate: 127,
       type: [15, 0],
@@ -3533,15 +3533,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Rattata d Alola",
-            evolvedPokemon: "Rattatac d Alola",
+            basePokemon: "Rattata d'Alola",
+            evolvedPokemon: "Rattatac d'Alola",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Rattata d Alola",
-                hint: "Rattata d Alola needs to be caught.",
+                pokemon: "Rattata d'Alola",
+                hint: "Rattata d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -3553,21 +3553,21 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Rattata d Alola",
-                hint: "Your Rattata d Alola needs to be at least level 20.",
+                pokemon: "Rattata d'Alola",
+                hint: "Your Rattata d'Alola needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Rattatac d Alola",
-                hint: "Rattatac d Alola cannot be caught yet.",
+                pokemon: "Rattatac d'Alola",
+                hint: "Rattatac d'Alola cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Rattata d Alola",
+                pokemon: "Rattata d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -4179,7 +4179,7 @@ module.exports = {
         },
         {
           basePokemon: "Pikachu",
-          evolvedPokemon: "Raichu d Alola",
+          evolvedPokemon: "Raichu d'Alola",
           trigger: 2,
           restrictions: [
             {
@@ -4447,7 +4447,7 @@ module.exports = {
     },
     {
       id: 26.01,
-      name: "Raichu d Alola",
+      name: "Raichu d'Alola",
       nativeRegion: 6,
       catchRate: 75,
       type: [3, 10],
@@ -4472,7 +4472,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Pikachu",
-            evolvedPokemon: "Raichu d Alola",
+            evolvedPokemon: "Raichu d'Alola",
             trigger: 2,
             restrictions: [
               {
@@ -4634,7 +4634,7 @@ module.exports = {
     },
     {
       id: 27.01,
-      name: "Sabelette d Alola",
+      name: "Sabelette d'Alola",
       nativeRegion: 6,
       catchRate: 255,
       type: [5, 16],
@@ -4643,15 +4643,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Sabelette d Alola",
-          evolvedPokemon: "Sablaireau d Alola",
+          basePokemon: "Sabelette d'Alola",
+          evolvedPokemon: "Sablaireau d'Alola",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Sabelette d Alola",
-              hint: "Sabelette d Alola needs to be caught.",
+              pokemon: "Sabelette d'Alola",
+              hint: "Sabelette d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -4663,7 +4663,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Sabelette d Alola",
+              pokemon: "Sabelette d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -4823,7 +4823,7 @@ module.exports = {
     },
     {
       id: 28.01,
-      name: "Sablaireau d Alola",
+      name: "Sablaireau d'Alola",
       nativeRegion: 6,
       catchRate: 90,
       type: [5, 16],
@@ -4847,15 +4847,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Sabelette d Alola",
-            evolvedPokemon: "Sablaireau d Alola",
+            basePokemon: "Sabelette d'Alola",
+            evolvedPokemon: "Sablaireau d'Alola",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Sabelette d Alola",
-                hint: "Sabelette d Alola needs to be caught.",
+                pokemon: "Sabelette d'Alola",
+                hint: "Sabelette d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -4867,7 +4867,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Sabelette d Alola",
+                pokemon: "Sabelette d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -5880,7 +5880,7 @@ module.exports = {
     },
     {
       id: 37.01,
-      name: "Goupix d Alola",
+      name: "Goupix d'Alola",
       nativeRegion: 6,
       catchRate: 190,
       type: [5],
@@ -5889,15 +5889,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Goupix d Alola",
-          evolvedPokemon: "Feunard d Alola",
+          basePokemon: "Goupix d'Alola",
+          evolvedPokemon: "Feunard d'Alola",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Goupix d Alola",
-              hint: "Goupix d Alola needs to be caught.",
+              pokemon: "Goupix d'Alola",
+              hint: "Goupix d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -5909,7 +5909,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Goupix d Alola",
+              pokemon: "Goupix d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -6013,7 +6013,7 @@ module.exports = {
     },
     {
       id: 38.01,
-      name: "Feunard d Alola",
+      name: "Feunard d'Alola",
       nativeRegion: 6,
       catchRate: 75,
       type: [5, 17],
@@ -6037,15 +6037,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Goupix d Alola",
-            evolvedPokemon: "Feunard d Alola",
+            basePokemon: "Goupix d'Alola",
+            evolvedPokemon: "Feunard d'Alola",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Goupix d Alola",
-                hint: "Goupix d Alola needs to be caught.",
+                pokemon: "Goupix d'Alola",
+                hint: "Goupix d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -6057,7 +6057,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Goupix d Alola",
+                pokemon: "Goupix d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -7790,7 +7790,7 @@ module.exports = {
     },
     {
       id: 50.01,
-      name: "Taupiqueur d Alola",
+      name: "Taupiqueur d'Alola",
       nativeRegion: 6,
       catchRate: 255,
       type: [8, 16],
@@ -7799,15 +7799,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Taupiqueur d Alola",
-          evolvedPokemon: "Triopikeur d Alola",
+          basePokemon: "Taupiqueur d'Alola",
+          evolvedPokemon: "Triopikeur d'Alola",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Taupiqueur d Alola",
-              hint: "Taupiqueur d Alola needs to be caught.",
+              pokemon: "Taupiqueur d'Alola",
+              hint: "Taupiqueur d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -7819,21 +7819,21 @@ module.exports = {
             {
               requiredValue: 26,
               option: 2,
-              pokemon: "Taupiqueur d Alola",
-              hint: "Your Taupiqueur d Alola needs to be at least level 26.",
+              pokemon: "Taupiqueur d'Alola",
+              hint: "Your Taupiqueur d'Alola needs to be at least level 26.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Triopikeur d Alola",
-              hint: "Triopikeur d Alola cannot be caught yet.",
+              pokemon: "Triopikeur d'Alola",
+              hint: "Triopikeur d'Alola cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Taupiqueur d Alola",
+              pokemon: "Taupiqueur d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -7982,7 +7982,7 @@ module.exports = {
     },
     {
       id: 51.01,
-      name: "Triopikeur d Alola",
+      name: "Triopikeur d'Alola",
       nativeRegion: 6,
       catchRate: 50,
       type: [8, 16],
@@ -8024,15 +8024,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Taupiqueur d Alola",
-            evolvedPokemon: "Triopikeur d Alola",
+            basePokemon: "Taupiqueur d'Alola",
+            evolvedPokemon: "Triopikeur d'Alola",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Taupiqueur d Alola",
-                hint: "Taupiqueur d Alola needs to be caught.",
+                pokemon: "Taupiqueur d'Alola",
+                hint: "Taupiqueur d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -8044,21 +8044,21 @@ module.exports = {
               {
                 requiredValue: 26,
                 option: 2,
-                pokemon: "Taupiqueur d Alola",
-                hint: "Your Taupiqueur d Alola needs to be at least level 26.",
+                pokemon: "Taupiqueur d'Alola",
+                hint: "Your Taupiqueur d'Alola needs to be at least level 26.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Triopikeur d Alola",
-                hint: "Triopikeur d Alola cannot be caught yet.",
+                pokemon: "Triopikeur d'Alola",
+                hint: "Triopikeur d'Alola cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Taupiqueur d Alola",
+                pokemon: "Taupiqueur d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -8241,7 +8241,7 @@ module.exports = {
     },
     {
       id: 52.02,
-      name: "Miaouss d Alola",
+      name: "Miaouss d'Alola",
       nativeRegion: 6,
       catchRate: 255,
       type: [15],
@@ -8250,15 +8250,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Miaouss d Alola",
-          evolvedPokemon: "Persian d Alola",
+          basePokemon: "Miaouss d'Alola",
+          evolvedPokemon: "Persian d'Alola",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Miaouss d Alola",
-              hint: "Miaouss d Alola needs to be caught.",
+              pokemon: "Miaouss d'Alola",
+              hint: "Miaouss d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -8270,7 +8270,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Miaouss d Alola",
+              pokemon: "Miaouss d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -8500,7 +8500,7 @@ module.exports = {
     },
     {
       id: 53.01,
-      name: "Persian d Alola",
+      name: "Persian d'Alola",
       nativeRegion: 6,
       catchRate: 90,
       type: [15],
@@ -8529,15 +8529,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Miaouss d Alola",
-            evolvedPokemon: "Persian d Alola",
+            basePokemon: "Miaouss d'Alola",
+            evolvedPokemon: "Persian d'Alola",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Miaouss d Alola",
-                hint: "Miaouss d Alola needs to be caught.",
+                pokemon: "Miaouss d'Alola",
+                hint: "Miaouss d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -8549,7 +8549,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Miaouss d Alola",
+                pokemon: "Miaouss d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -12074,7 +12074,7 @@ module.exports = {
     },
     {
       id: 74.01,
-      name: "Racaillou d Alola",
+      name: "Racaillou d'Alola",
       nativeRegion: 6,
       catchRate: 255,
       type: [12, 3],
@@ -12083,15 +12083,15 @@ module.exports = {
       eggCycles: 15,
       evolutions: [
         {
-          basePokemon: "Racaillou d Alola",
-          evolvedPokemon: "Gravalanch d Alola",
+          basePokemon: "Racaillou d'Alola",
+          evolvedPokemon: "Gravalanch d'Alola",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Racaillou d Alola",
-              hint: "Racaillou d Alola needs to be caught.",
+              pokemon: "Racaillou d'Alola",
+              hint: "Racaillou d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -12103,21 +12103,21 @@ module.exports = {
             {
               requiredValue: 25,
               option: 2,
-              pokemon: "Racaillou d Alola",
-              hint: "Your Racaillou d Alola needs to be at least level 25.",
+              pokemon: "Racaillou d'Alola",
+              hint: "Your Racaillou d'Alola needs to be at least level 25.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Gravalanch d Alola",
-              hint: "Gravalanch d Alola cannot be caught yet.",
+              pokemon: "Gravalanch d'Alola",
+              hint: "Gravalanch d'Alola cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Racaillou d Alola",
+              pokemon: "Racaillou d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -12363,7 +12363,7 @@ module.exports = {
     },
     {
       id: 75.01,
-      name: "Gravalanch d Alola",
+      name: "Gravalanch d'Alola",
       nativeRegion: 6,
       catchRate: 120,
       type: [12, 3],
@@ -12372,15 +12372,15 @@ module.exports = {
       eggCycles: 23,
       evolutions: [
         {
-          basePokemon: "Gravalanch d Alola",
-          evolvedPokemon: "Grolem d Alola",
+          basePokemon: "Gravalanch d'Alola",
+          evolvedPokemon: "Grolem d'Alola",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Gravalanch d Alola",
-              hint: "Gravalanch d Alola needs to be caught.",
+              pokemon: "Gravalanch d'Alola",
+              hint: "Gravalanch d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -12392,7 +12392,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Gravalanch d Alola",
+              pokemon: "Gravalanch d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -12429,15 +12429,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Racaillou d Alola",
-            evolvedPokemon: "Gravalanch d Alola",
+            basePokemon: "Racaillou d'Alola",
+            evolvedPokemon: "Gravalanch d'Alola",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Racaillou d Alola",
-                hint: "Racaillou d Alola needs to be caught.",
+                pokemon: "Racaillou d'Alola",
+                hint: "Racaillou d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -12449,21 +12449,21 @@ module.exports = {
               {
                 requiredValue: 25,
                 option: 2,
-                pokemon: "Racaillou d Alola",
-                hint: "Your Racaillou d Alola needs to be at least level 25.",
+                pokemon: "Racaillou d'Alola",
+                hint: "Your Racaillou d'Alola needs to be at least level 25.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Gravalanch d Alola",
-                hint: "Gravalanch d Alola cannot be caught yet.",
+                pokemon: "Gravalanch d'Alola",
+                hint: "Gravalanch d'Alola cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Racaillou d Alola",
+                pokemon: "Racaillou d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -12542,7 +12542,7 @@ module.exports = {
     },
     {
       id: 76.01,
-      name: "Grolem d Alola",
+      name: "Grolem d'Alola",
       nativeRegion: 6,
       catchRate: 45,
       type: [12, 3],
@@ -12566,15 +12566,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Gravalanch d Alola",
-            evolvedPokemon: "Grolem d Alola",
+            basePokemon: "Gravalanch d'Alola",
+            evolvedPokemon: "Grolem d'Alola",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Gravalanch d Alola",
-                hint: "Gravalanch d Alola needs to be caught.",
+                pokemon: "Gravalanch d'Alola",
+                hint: "Gravalanch d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -12586,7 +12586,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Gravalanch d Alola",
+                pokemon: "Gravalanch d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -14753,7 +14753,7 @@ module.exports = {
     },
     {
       id: 88.01,
-      name: "Tadmorv d Alola",
+      name: "Tadmorv d'Alola",
       nativeRegion: 6,
       catchRate: 190,
       type: [7, 15],
@@ -14762,15 +14762,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Tadmorv d Alola",
-          evolvedPokemon: "Grotadmorv d Alola",
+          basePokemon: "Tadmorv d'Alola",
+          evolvedPokemon: "Grotadmorv d'Alola",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Tadmorv d Alola",
-              hint: "Tadmorv d Alola needs to be caught.",
+              pokemon: "Tadmorv d'Alola",
+              hint: "Tadmorv d'Alola needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -14782,21 +14782,21 @@ module.exports = {
             {
               requiredValue: 38,
               option: 2,
-              pokemon: "Tadmorv d Alola",
-              hint: "Your Tadmorv d Alola needs to be at least level 38.",
+              pokemon: "Tadmorv d'Alola",
+              hint: "Your Tadmorv d'Alola needs to be at least level 38.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Grotadmorv d Alola",
-              hint: "Grotadmorv d Alola cannot be caught yet.",
+              pokemon: "Grotadmorv d'Alola",
+              hint: "Grotadmorv d'Alola cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tadmorv d Alola",
+              pokemon: "Tadmorv d'Alola",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -14919,7 +14919,7 @@ module.exports = {
     },
     {
       id: 89.01,
-      name: "Grotadmorv d Alola",
+      name: "Grotadmorv d'Alola",
       nativeRegion: 6,
       catchRate: 75,
       type: [7, 15],
@@ -14943,15 +14943,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Tadmorv d Alola",
-            evolvedPokemon: "Grotadmorv d Alola",
+            basePokemon: "Tadmorv d'Alola",
+            evolvedPokemon: "Grotadmorv d'Alola",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Tadmorv d Alola",
-                hint: "Tadmorv d Alola needs to be caught.",
+                pokemon: "Tadmorv d'Alola",
+                hint: "Tadmorv d'Alola needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -14963,21 +14963,21 @@ module.exports = {
               {
                 requiredValue: 38,
                 option: 2,
-                pokemon: "Tadmorv d Alola",
-                hint: "Your Tadmorv d Alola needs to be at least level 38.",
+                pokemon: "Tadmorv d'Alola",
+                hint: "Your Tadmorv d'Alola needs to be at least level 38.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Grotadmorv d Alola",
-                hint: "Grotadmorv d Alola cannot be caught yet.",
+                pokemon: "Grotadmorv d'Alola",
+                hint: "Grotadmorv d'Alola cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Tadmorv d Alola",
+                pokemon: "Tadmorv d'Alola",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -17032,7 +17032,7 @@ module.exports = {
         },
         {
           basePokemon: "Noeunoeuf",
-          evolvedPokemon: "Noadkoko d Alola",
+          evolvedPokemon: "Noadkoko d'Alola",
           trigger: 2,
           restrictions: [
             {
@@ -17277,7 +17277,7 @@ module.exports = {
     },
     {
       id: 103.01,
-      name: "Noadkoko d Alola",
+      name: "Noadkoko d'Alola",
       nativeRegion: 6,
       catchRate: 45,
       type: [4, 14],
@@ -17337,7 +17337,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Noeunoeuf",
-            evolvedPokemon: "Noadkoko d Alola",
+            evolvedPokemon: "Noadkoko d'Alola",
             trigger: 2,
             restrictions: [
               {
@@ -17439,7 +17439,7 @@ module.exports = {
         },
         {
           basePokemon: "Osselait",
-          evolvedPokemon: "Ossatueur d Alola",
+          evolvedPokemon: "Ossatueur d'Alola",
           trigger: 1,
           restrictions: [
             {
@@ -17465,8 +17465,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ossatueur d Alola",
-              hint: "Ossatueur d Alola cannot be caught yet.",
+              pokemon: "Ossatueur d'Alola",
+              hint: "Ossatueur d'Alola cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -17667,7 +17667,7 @@ module.exports = {
     },
     {
       id: 105.01,
-      name: "Ossatueur d Alola",
+      name: "Ossatueur d'Alola",
       nativeRegion: 6,
       catchRate: 75,
       type: [1, 13],
@@ -17701,7 +17701,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Osselait",
-            evolvedPokemon: "Ossatueur d Alola",
+            evolvedPokemon: "Ossatueur d'Alola",
             trigger: 1,
             restrictions: [
               {
@@ -17727,8 +17727,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ossatueur d Alola",
-                hint: "Ossatueur d Alola cannot be caught yet.",
+                pokemon: "Ossatueur d'Alola",
+                hint: "Ossatueur d'Alola cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -22554,7 +22554,7 @@ module.exports = {
         },
         {
           basePokemon: "Évoli",
-          evolvedPokemon: "Pyllali",
+          evolvedPokemon: "Phyllali",
           trigger: 1,
           restrictions: [
             {
@@ -22580,8 +22580,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Pyllali",
-              hint: "Pyllali cannot be caught yet.",
+              pokemon: "Phyllali",
+              hint: "Phyllali cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22611,7 +22611,7 @@ module.exports = {
         },
         {
           basePokemon: "Évoli",
-          evolvedPokemon: "Pyllali",
+          evolvedPokemon: "Phyllali",
           trigger: 1,
           restrictions: [
             {
@@ -22637,8 +22637,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Pyllali",
-              hint: "Pyllali cannot be caught yet.",
+              pokemon: "Phyllali",
+              hint: "Phyllali cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22668,7 +22668,7 @@ module.exports = {
         },
         {
           basePokemon: "Évoli",
-          evolvedPokemon: "Pyllali",
+          evolvedPokemon: "Phyllali",
           trigger: 1,
           restrictions: [
             {
@@ -22694,8 +22694,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Pyllali",
-              hint: "Pyllali cannot be caught yet.",
+              pokemon: "Phyllali",
+              hint: "Phyllali cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22725,7 +22725,7 @@ module.exports = {
         },
         {
           basePokemon: "Évoli",
-          evolvedPokemon: "Pyllali",
+          evolvedPokemon: "Phyllali",
           trigger: 1,
           restrictions: [
             {
@@ -22751,8 +22751,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Pyllali",
-              hint: "Pyllali cannot be caught yet.",
+              pokemon: "Phyllali",
+              hint: "Phyllali cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -23053,7 +23053,7 @@ module.exports = {
         },
         {
           basePokemon: "Évoli",
-          evolvedPokemon: "Pyllali",
+          evolvedPokemon: "Phyllali",
           trigger: 2,
           restrictions: [
             {
@@ -27389,7 +27389,7 @@ module.exports = {
             dungeon: "Pikachu Valley",
           },
         ],
-        7: ["Pikachu", "Raichu", "Raichu d Alola"],
+        7: ["Pikachu", "Raichu", "Raichu d'Alola"],
       },
       catchRatePercent: 51,
       eggSteps: 320,
@@ -64534,7 +64534,7 @@ module.exports = {
     },
     {
       id: 470,
-      name: "Pyllali",
+      name: "Phyllali",
       type: [4],
       eggCycles: 53,
       levelType: 2,
@@ -64571,7 +64571,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Évoli",
-            evolvedPokemon: "Pyllali",
+            evolvedPokemon: "Phyllali",
             trigger: 1,
             restrictions: [
               {
@@ -64597,8 +64597,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Pyllali",
-                hint: "Pyllali cannot be caught yet.",
+                pokemon: "Phyllali",
+                hint: "Phyllali cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64628,7 +64628,7 @@ module.exports = {
           },
           {
             basePokemon: "Évoli",
-            evolvedPokemon: "Pyllali",
+            evolvedPokemon: "Phyllali",
             trigger: 1,
             restrictions: [
               {
@@ -64654,8 +64654,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Pyllali",
-                hint: "Pyllali cannot be caught yet.",
+                pokemon: "Phyllali",
+                hint: "Phyllali cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64685,7 +64685,7 @@ module.exports = {
           },
           {
             basePokemon: "Évoli",
-            evolvedPokemon: "Pyllali",
+            evolvedPokemon: "Phyllali",
             trigger: 1,
             restrictions: [
               {
@@ -64711,8 +64711,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Pyllali",
-                hint: "Pyllali cannot be caught yet.",
+                pokemon: "Phyllali",
+                hint: "Phyllali cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64742,7 +64742,7 @@ module.exports = {
           },
           {
             basePokemon: "Évoli",
-            evolvedPokemon: "Pyllali",
+            evolvedPokemon: "Phyllali",
             trigger: 1,
             restrictions: [
               {
@@ -64768,8 +64768,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Pyllali",
-                hint: "Pyllali cannot be caught yet.",
+                pokemon: "Phyllali",
+                hint: "Phyllali cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64799,7 +64799,7 @@ module.exports = {
           },
           {
             basePokemon: "Évoli",
-            evolvedPokemon: "Pyllali",
+            evolvedPokemon: "Phyllali",
             trigger: 2,
             restrictions: [
               {
@@ -67144,7 +67144,7 @@ module.exports = {
     },
     {
       id: 493.03,
-      name: "Arceus (Electrik)",
+      name: "Arceus (Électrik)",
       type: [3],
       eggCycles: 120,
       levelType: 4,
@@ -67468,7 +67468,7 @@ module.exports = {
     },
     {
       id: 493.15,
-      name: "Arceus (Tenebres)",
+      name: "Arceus (Ténèbres)",
       type: [15],
       eggCycles: 120,
       levelType: 4,
@@ -67522,7 +67522,7 @@ module.exports = {
     },
     {
       id: 493.17,
-      name: "Arceus (Fee)",
+      name: "Arceus (Fée)",
       type: [17],
       eggCycles: 120,
       levelType: 4,
@@ -100717,7 +100717,7 @@ module.exports = {
     },
     {
       id: 773.03,
-      name: "Silvallié (Electrik)",
+      name: "Silvallié (Électrik)",
       type: [3],
       eggCycles: 120,
       levelType: 4,
@@ -101065,7 +101065,7 @@ module.exports = {
     },
     {
       id: 773.15,
-      name: "Silvallié (Tenebres)",
+      name: "Silvallié (Ténèbres)",
       type: [15],
       eggCycles: 120,
       levelType: 4,
@@ -101123,7 +101123,7 @@ module.exports = {
     },
     {
       id: 773.17,
-      name: "Silvallié (Fee)",
+      name: "Silvallié (Fée)",
       type: [17],
       eggCycles: 120,
       levelType: 4,
@@ -122548,10 +122548,10 @@ module.exports = {
     114: "Galar_Feu",
     115: "Galar_Combat",
     116: "Galar_Spectre",
-    117: "Galar_Fee",
+    117: "Galar_Fée",
     118: "Galar_Roche",
     119: "Galar_Glace",
-    120: "Galar_Tenebres",
+    120: "Galar_Ténèbres",
     121: "Galar_Dragon",
     122: "Elite_Marnie",
     123: "Elite_Bede",
@@ -122564,7 +122564,7 @@ module.exports = {
     130: "Elite_CrownChampion",
     137: "Paldea_Insecte",
     138: "Paldea_Plante",
-    139: "Paldea_Electrik",
+    139: "Paldea_Électrik",
     140: "Paldea_Eau",
     141: "Paldea_Normal",
     142: "Paldea_Spectre",
@@ -122576,10 +122576,10 @@ module.exports = {
     148: "Elite_Hassel",
     149: "Elite_PaldeaChampion",
     150: "Elite_Nemona",
-    151: "Paldea_Team_Tenebres",
+    151: "Paldea_Team_Ténèbres",
     152: "Paldea_Team_Feu",
     153: "Paldea_Team_Poison",
-    154: "Paldea_Team_Fee",
+    154: "Paldea_Team_Fée",
     155: "Paldea_Team_Combat",
     156: "Elite_Clavell",
     157: "Elite_Penny",
@@ -122679,10 +122679,10 @@ module.exports = {
     Galar_Feu: 114,
     Galar_Combat: 115,
     Galar_Spectre: 116,
-    Galar_Fee: 117,
+    Galar_Fée: 117,
     Galar_Roche: 118,
     Galar_Glace: 119,
-    Galar_Tenebres: 120,
+    Galar_Ténèbres: 120,
     Galar_Dragon: 121,
     Elite_Marnie: 122,
     Elite_Bede: 123,
@@ -122695,7 +122695,7 @@ module.exports = {
     Elite_CrownChampion: 130,
     Paldea_Insecte: 137,
     Paldea_Plante: 138,
-    Paldea_Electrik: 139,
+    Paldea_Électrik: 139,
     Paldea_Eau: 140,
     Paldea_Normal: 141,
     Paldea_Spectre: 142,
@@ -122707,10 +122707,10 @@ module.exports = {
     Elite_Hassel: 148,
     Elite_PaldeaChampion: 149,
     Elite_Nemona: 150,
-    Paldea_Team_Tenebres: 151,
+    Paldea_Team_Ténèbres: 151,
     Paldea_Team_Feu: 152,
     Paldea_Team_Poison: 153,
-    Paldea_Team_Fee: 154,
+    Paldea_Team_Fée: 154,
     Paldea_Team_Combat: 155,
     Elite_Clavell: 156,
     Elite_Penny: 157,
@@ -124464,7 +124464,7 @@ module.exports = {
       badgeReward: 26,
       moneyReward: 7500,
       defeatMessage:
-        "…It's over. But it's an odd feeling. I'm not angry that I lost. In fact, I feel happy. Happy that I witnessed the rise of a great new Champion!",
+        "…It's over. But it's an odd Féeling. I'm not angry that I lost. In fact, I Féel happy. Happy that I witnessed the rise of a great new Champion!",
       optionalArgs: {},
       flags: {
         quest: true,
@@ -126003,7 +126003,7 @@ module.exports = {
       badgeReward: 67,
       moneyReward: 500,
       defeatMessage:
-        "That battle has made me feel really glad you were my first challenger as a Gym Leader… I give you this in honor of the strength you and your Pokémon showed!",
+        "That battle has made me Féel really glad you were my first challenger as a Gym Leader… I give you this in honor of the strength you and your Pokémon showed!",
       optionalArgs: {},
       flags: {
         quest: true,
@@ -126051,7 +126051,7 @@ module.exports = {
       badgeReward: 68,
       moneyReward: 800,
       defeatMessage:
-        "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I feel revitalized and refreshed now! Here! Proof that you beat me!",
+        "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I Féel revitalized and refreshed now! Here! Proof that you beat me!",
       optionalArgs: {},
       flags: {
         quest: true,
@@ -126162,7 +126162,7 @@ module.exports = {
       badgeReward: 70,
       moneyReward: 2600,
       defeatMessage:
-        "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my feet! Take this!",
+        "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my Féet! Take this!",
       optionalArgs: {},
       flags: {
         quest: true,
@@ -127564,7 +127564,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Persian d Alola",
+          name: "Persian d'Alola",
           maxHealth: 103271750,
           level: 44,
           requirements: [],
@@ -127600,7 +127600,7 @@ module.exports = {
       town: "Ile Noadkoko",
       pokemons: [
         {
-          name: "Triopikeur d Alola",
+          name: "Triopikeur d'Alola",
           maxHealth: 85759429,
           level: 47,
           requirements: [
@@ -127785,7 +127785,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Triopikeur d Alola",
+          name: "Triopikeur d'Alola",
           maxHealth: 95774052,
           level: 57,
           requirements: [],
@@ -128025,7 +128025,7 @@ module.exports = {
       town: "Champion Tili",
       pokemons: [
         {
-          name: "Raichu d Alola",
+          name: "Raichu d'Alola",
           maxHealth: 91545555,
           level: 59,
           requirements: [],
@@ -128117,7 +128117,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Pyllali",
+          name: "Phyllali",
           maxHealth: 89636471,
           level: 58,
           requirements: [
@@ -128346,7 +128346,7 @@ module.exports = {
       badgeReward: 115,
       moneyReward: 80000,
       defeatMessage:
-        "Your strength nearly made me want to turn and run in my bare feet.",
+        "Your strength nearly made me want to turn and run in my bare Féet.",
       optionalArgs: {
         displayName: "Bea's Stow-on-Side Gym",
       },
@@ -130880,7 +130880,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Pyllali",
+          name: "Phyllali",
           maxHealth: 203123316,
           level: 62,
           requirements: [],
