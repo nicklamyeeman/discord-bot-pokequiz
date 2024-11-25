@@ -279,7 +279,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Florizarre",
-          evolvedPokemon: "Mega Florizarre",
+          evolvedPokemon: "Méga-Florizarre",
           trigger: 2,
           restrictions: [
             {
@@ -308,7 +308,7 @@ module.exports = {
               option: 1,
               name: "Florizarre",
               megaStone: 49,
-              hint: "Florizarre needs the Florizarreite Mega Stone.<br />Needs at least 70,500 attack to Mega Evolve.",
+              hint: "Florizarre needs the Florizarreite Méga-Stone.<br />Needs at least 70,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -383,7 +383,7 @@ module.exports = {
     },
     {
       id: 3.01,
-      name: "Mega Florizarre",
+      name: "Méga-Florizarre",
       type: [4, 7],
       eggCycles: 45,
       levelType: 3,
@@ -408,7 +408,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Florizarre",
-            evolvedPokemon: "Mega Florizarre",
+            evolvedPokemon: "Méga-Florizarre",
             trigger: 2,
             restrictions: [
               {
@@ -437,7 +437,7 @@ module.exports = {
                 option: 1,
                 name: "Florizarre",
                 megaStone: 49,
-                hint: "Florizarre needs the Florizarreite Mega Stone.<br />Needs at least 70,500 attack to Mega Evolve.",
+                hint: "Florizarre needs the Florizarreite Méga-Stone.<br />Needs at least 70,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -489,7 +489,7 @@ module.exports = {
     },
     {
       id: 4,
-      name: "Salameche",
+      name: "Salamèche",
       catchRate: 45,
       type: [1],
       levelType: 3,
@@ -497,15 +497,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Salameche",
+          basePokemon: "Salamèche",
           evolvedPokemon: "Reptincel",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Salameche",
-              hint: "Salameche needs to be caught.",
+              pokemon: "Salamèche",
+              hint: "Salamèche needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -517,8 +517,8 @@ module.exports = {
             {
               requiredValue: 16,
               option: 2,
-              pokemon: "Salameche",
-              hint: "Your Salameche needs to be at least level 16.",
+              pokemon: "Salamèche",
+              hint: "Your Salamèche needs to be at least level 16.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -531,7 +531,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Salameche",
+              pokemon: "Salamèche",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -667,15 +667,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Salameche",
+            basePokemon: "Salamèche",
             evolvedPokemon: "Reptincel",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Salameche",
-                hint: "Salameche needs to be caught.",
+                pokemon: "Salamèche",
+                hint: "Salamèche needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -687,8 +687,8 @@ module.exports = {
               {
                 requiredValue: 16,
                 option: 2,
-                pokemon: "Salameche",
-                hint: "Your Salameche needs to be at least level 16.",
+                pokemon: "Salamèche",
+                hint: "Your Salamèche needs to be at least level 16.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -701,7 +701,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Salameche",
+                pokemon: "Salamèche",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -725,7 +725,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Dracaufeu",
-          evolvedPokemon: "Mega Dracaufeu X",
+          evolvedPokemon: "Méga-Dracaufeu X",
           trigger: 2,
           restrictions: [
             {
@@ -754,7 +754,7 @@ module.exports = {
               option: 1,
               name: "Dracaufeu",
               megaStone: 14,
-              hint: "Dracaufeu needs the Dracaufeuite X Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+              hint: "Dracaufeu needs the Dracaufeuite X Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
             {
@@ -770,7 +770,7 @@ module.exports = {
         },
         {
           basePokemon: "Dracaufeu",
-          evolvedPokemon: "Mega Dracaufeu Y",
+          evolvedPokemon: "Méga-Dracaufeu Y",
           trigger: 2,
           restrictions: [
             {
@@ -799,7 +799,7 @@ module.exports = {
               option: 1,
               name: "Dracaufeu",
               megaStone: 15,
-              hint: "Dracaufeu needs the Dracaufeuite Y Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+              hint: "Dracaufeu needs the Dracaufeuite Y Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
             {
@@ -881,7 +881,7 @@ module.exports = {
     },
     {
       id: 6.01,
-      name: "Mega Dracaufeu X",
+      name: "Méga-Dracaufeu X",
       type: [1, 14],
       eggCycles: 45,
       levelType: 3,
@@ -906,7 +906,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Dracaufeu",
-            evolvedPokemon: "Mega Dracaufeu X",
+            evolvedPokemon: "Méga-Dracaufeu X",
             trigger: 2,
             restrictions: [
               {
@@ -935,7 +935,7 @@ module.exports = {
                 option: 1,
                 name: "Dracaufeu",
                 megaStone: 14,
-                hint: "Dracaufeu needs the Dracaufeuite X Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+                hint: "Dracaufeu needs the Dracaufeuite X Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
               {
@@ -956,7 +956,7 @@ module.exports = {
     },
     {
       id: 6.02,
-      name: "Mega Dracaufeu Y",
+      name: "Méga-Dracaufeu Y",
       type: [1, 9],
       eggCycles: 45,
       levelType: 3,
@@ -981,7 +981,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Dracaufeu",
-            evolvedPokemon: "Mega Dracaufeu Y",
+            evolvedPokemon: "Méga-Dracaufeu Y",
             trigger: 2,
             restrictions: [
               {
@@ -1010,7 +1010,7 @@ module.exports = {
                 option: 1,
                 name: "Dracaufeu",
                 megaStone: 15,
-                hint: "Dracaufeu needs the Dracaufeuite Y Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+                hint: "Dracaufeu needs the Dracaufeuite Y Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
               {
@@ -1303,7 +1303,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Tortank",
-          evolvedPokemon: "Mega Tortank",
+          evolvedPokemon: "Méga-Tortank",
           trigger: 2,
           restrictions: [
             {
@@ -1332,7 +1332,7 @@ module.exports = {
               option: 1,
               name: "Tortank",
               megaStone: 10,
-              hint: "Tortank needs the Blastoisinite Mega Stone.<br />Needs at least 69,500 attack to Mega Evolve.",
+              hint: "Tortank needs the Blastoisinite Méga-Stone.<br />Needs at least 69,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -1407,7 +1407,7 @@ module.exports = {
     },
     {
       id: 9.01,
-      name: "Mega Tortank",
+      name: "Méga-Tortank",
       type: [2],
       eggCycles: 45,
       levelType: 3,
@@ -1432,7 +1432,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Tortank",
-            evolvedPokemon: "Mega Tortank",
+            evolvedPokemon: "Méga-Tortank",
             trigger: 2,
             restrictions: [
               {
@@ -1461,7 +1461,7 @@ module.exports = {
                 option: 1,
                 name: "Tortank",
                 megaStone: 10,
-                hint: "Tortank needs the Blastoisinite Mega Stone.<br />Needs at least 69,500 attack to Mega Evolve.",
+                hint: "Tortank needs the Blastoisinite Méga-Stone.<br />Needs at least 69,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -2344,7 +2344,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Dardargnan",
-          evolvedPokemon: "Mega Dardargnan",
+          evolvedPokemon: "Méga-Dardargnan",
           trigger: 2,
           restrictions: [
             {
@@ -2373,7 +2373,7 @@ module.exports = {
               option: 1,
               name: "Dardargnan",
               megaStone: 9,
-              hint: "Dardargnan needs the Dardargnanite Mega Stone.<br />Needs at least 37,000 attack to Mega Evolve.",
+              hint: "Dardargnan needs the Dardargnanite Méga-Stone.<br />Needs at least 37,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -2472,7 +2472,7 @@ module.exports = {
     },
     {
       id: 15.01,
-      name: "Mega Dardargnan",
+      name: "Méga-Dardargnan",
       type: [11, 7],
       eggCycles: 35,
       levelType: 2,
@@ -2497,7 +2497,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Dardargnan",
-            evolvedPokemon: "Mega Dardargnan",
+            evolvedPokemon: "Méga-Dardargnan",
             trigger: 2,
             restrictions: [
               {
@@ -2526,7 +2526,7 @@ module.exports = {
                 option: 1,
                 name: "Dardargnan",
                 megaStone: 9,
-                hint: "Dardargnan needs the Dardargnanite Mega Stone.<br />Needs at least 37,000 attack to Mega Evolve.",
+                hint: "Dardargnan needs the Dardargnanite Méga-Stone.<br />Needs at least 37,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -2865,7 +2865,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Roucarnage",
-          evolvedPokemon: "Mega Roucarnage",
+          evolvedPokemon: "Méga-Roucarnage",
           trigger: 2,
           restrictions: [
             {
@@ -2894,7 +2894,7 @@ module.exports = {
               option: 1,
               name: "Roucarnage",
               megaStone: 37,
-              hint: "Roucarnage needs the Roucarnageite Mega Stone.<br />Needs at least 56,000 attack to Mega Evolve.",
+              hint: "Roucarnage needs the Roucarnageite Méga-Stone.<br />Needs at least 56,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -2977,7 +2977,7 @@ module.exports = {
     },
     {
       id: 18.01,
-      name: "Mega Roucarnage",
+      name: "Méga-Roucarnage",
       type: [0, 9],
       eggCycles: 35,
       levelType: 2,
@@ -3002,7 +3002,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Roucarnage",
-            evolvedPokemon: "Mega Roucarnage",
+            evolvedPokemon: "Méga-Roucarnage",
             trigger: 2,
             restrictions: [
               {
@@ -3031,7 +3031,7 @@ module.exports = {
                 option: 1,
                 name: "Roucarnage",
                 megaStone: 37,
-                hint: "Roucarnage needs the Roucarnageite Mega Stone.<br />Needs at least 56,000 attack to Mega Evolve.",
+                hint: "Roucarnage needs the Roucarnageite Méga-Stone.<br />Needs at least 56,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -5509,7 +5509,7 @@ module.exports = {
     },
     {
       id: 35,
-      name: "Melofee",
+      name: "Mélofée",
       catchRate: 150,
       type: [17],
       levelType: 1,
@@ -5517,15 +5517,15 @@ module.exports = {
       eggCycles: 10,
       evolutions: [
         {
-          basePokemon: "Melofee",
-          evolvedPokemon: "Melodelfe",
+          basePokemon: "Mélofée",
+          evolvedPokemon: "Mélodelfe",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Melofee",
-              hint: "Melofee needs to be caught.",
+              pokemon: "Mélofée",
+              hint: "Mélofée needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -5537,7 +5537,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Melofee",
+              pokemon: "Mélofée",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -5612,14 +5612,14 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Melo",
-            evolvedPokemon: "Melofee",
+            basePokemon: "Mélo",
+            evolvedPokemon: "Mélofée",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Melo",
+                pokemon: "Mélo",
                 hint: "Melo needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
@@ -5632,7 +5632,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Melo",
+                pokemon: "Mélo",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -5649,7 +5649,7 @@ module.exports = {
     },
     {
       id: 36,
-      name: "Melodelfe",
+      name: "Mélodelfe",
       catchRate: 25,
       type: [17],
       levelType: 1,
@@ -5706,15 +5706,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Melofee",
-            evolvedPokemon: "Melodelfe",
+            basePokemon: "Mélofée",
+            evolvedPokemon: "Mélodelfe",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Melofee",
-                hint: "Melofee needs to be caught.",
+                pokemon: "Mélofée",
+                hint: "Mélofée needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -5726,7 +5726,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Melofee",
+                pokemon: "Mélofée",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -7487,7 +7487,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Mimitoss",
-          evolvedPokemon: "Aeromite",
+          evolvedPokemon: "Aéromite",
           trigger: 1,
           restrictions: [
             {
@@ -7513,8 +7513,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Aeromite",
-              hint: "Aeromite cannot be caught yet.",
+              pokemon: "Aéromite",
+              hint: "Aéromite cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -7585,7 +7585,7 @@ module.exports = {
     },
     {
       id: 49,
-      name: "Aeromite",
+      name: "Aéromite",
       catchRate: 75,
       type: [11, 7],
       levelType: 2,
@@ -7615,7 +7615,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Mimitoss",
-            evolvedPokemon: "Aeromite",
+            evolvedPokemon: "Aéromite",
             trigger: 1,
             restrictions: [
               {
@@ -7641,8 +7641,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Aeromite",
-                hint: "Aeromite cannot be caught yet.",
+                pokemon: "Aéromite",
+                hint: "Aéromite cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -8977,7 +8977,7 @@ module.exports = {
     },
     {
       id: 56,
-      name: "Ferosinge",
+      name: "Férosinge",
       catchRate: 190,
       type: [6],
       levelType: 2,
@@ -8985,15 +8985,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Ferosinge",
+          basePokemon: "Férosinge",
           evolvedPokemon: "Colossinge",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Ferosinge",
-              hint: "Ferosinge needs to be caught.",
+              pokemon: "Férosinge",
+              hint: "Férosinge needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -9005,8 +9005,8 @@ module.exports = {
             {
               requiredValue: 28,
               option: 2,
-              pokemon: "Ferosinge",
-              hint: "Your Ferosinge needs to be at least level 28.",
+              pokemon: "Férosinge",
+              hint: "Your Férosinge needs to be at least level 28.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -9019,7 +9019,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ferosinge",
+              pokemon: "Férosinge",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -9167,15 +9167,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Ferosinge",
+            basePokemon: "Férosinge",
             evolvedPokemon: "Colossinge",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Ferosinge",
-                hint: "Ferosinge needs to be caught.",
+                pokemon: "Férosinge",
+                hint: "Férosinge needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -9187,8 +9187,8 @@ module.exports = {
               {
                 requiredValue: 28,
                 option: 2,
-                pokemon: "Ferosinge",
-                hint: "Your Ferosinge needs to be at least level 28.",
+                pokemon: "Férosinge",
+                hint: "Your Férosinge needs to be at least level 28.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -9201,7 +9201,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ferosinge",
+                pokemon: "Férosinge",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -9541,7 +9541,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Ptitard",
-          evolvedPokemon: "Tetarte",
+          evolvedPokemon: "Têtarte",
           trigger: 1,
           restrictions: [
             {
@@ -9567,8 +9567,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tetarte",
-              hint: "Tetarte cannot be caught yet.",
+              pokemon: "Têtarte",
+              hint: "Têtarte cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -9584,7 +9584,7 @@ module.exports = {
         },
         {
           basePokemon: "Ptitard",
-          evolvedPokemon: "Pinkan Tetarte",
+          evolvedPokemon: "Pinkan Têtarte",
           trigger: 0,
           restrictions: [
             {
@@ -9733,7 +9733,7 @@ module.exports = {
     },
     {
       id: 61,
-      name: "Tetarte",
+      name: "Têtarte",
       catchRate: 120,
       type: [2],
       levelType: 3,
@@ -9741,15 +9741,15 @@ module.exports = {
       eggCycles: 30,
       evolutions: [
         {
-          basePokemon: "Tetarte",
+          basePokemon: "Têtarte",
           evolvedPokemon: "Tartard",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Tetarte",
-              hint: "Tetarte needs to be caught.",
+              pokemon: "Têtarte",
+              hint: "Têtarte needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -9761,7 +9761,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tetarte",
+              pokemon: "Têtarte",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -9771,15 +9771,15 @@ module.exports = {
           stone: 2,
         },
         {
-          basePokemon: "Tetarte",
+          basePokemon: "Têtarte",
           evolvedPokemon: "Tarpaud",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Tetarte",
-              hint: "Tetarte needs to be caught.",
+              pokemon: "Têtarte",
+              hint: "Têtarte needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -9791,7 +9791,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tetarte",
+              pokemon: "Têtarte",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -9908,7 +9908,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Ptitard",
-            evolvedPokemon: "Tetarte",
+            evolvedPokemon: "Têtarte",
             trigger: 1,
             restrictions: [
               {
@@ -9934,8 +9934,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Tetarte",
-                hint: "Tetarte cannot be caught yet.",
+                pokemon: "Têtarte",
+                hint: "Têtarte cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -9989,15 +9989,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Tetarte",
+            basePokemon: "Têtarte",
             evolvedPokemon: "Tartard",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Tetarte",
-                hint: "Tetarte needs to be caught.",
+                pokemon: "Têtarte",
+                hint: "Têtarte needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -10009,7 +10009,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Tetarte",
+                pokemon: "Têtarte",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -10304,7 +10304,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Alakazam",
-          evolvedPokemon: "Mega Alakazam",
+          evolvedPokemon: "Méga-Alakazam",
           trigger: 2,
           restrictions: [
             {
@@ -10333,7 +10333,7 @@ module.exports = {
               option: 1,
               name: "Alakazam",
               megaStone: 4,
-              hint: "Alakazam needs the Alakazite Mega Stone.<br />Needs at least 48,000 attack to Mega Evolve.",
+              hint: "Alakazam needs the Alakazite Méga-Stone.<br />Needs at least 48,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -10408,7 +10408,7 @@ module.exports = {
     },
     {
       id: 65.01,
-      name: "Mega Alakazam",
+      name: "Méga-Alakazam",
       type: [10],
       eggCycles: 45,
       levelType: 3,
@@ -10433,7 +10433,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Alakazam",
-            evolvedPokemon: "Mega Alakazam",
+            evolvedPokemon: "Méga-Alakazam",
             trigger: 2,
             restrictions: [
               {
@@ -10462,7 +10462,7 @@ module.exports = {
                 option: 1,
                 name: "Alakazam",
                 megaStone: 4,
-                hint: "Alakazam needs the Alakazite Mega Stone.<br />Needs at least 48,000 attack to Mega Evolve.",
+                hint: "Alakazam needs the Alakazite Méga-Stone.<br />Needs at least 48,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -10918,7 +10918,7 @@ module.exports = {
     },
     {
       id: 69,
-      name: "Chetiflor",
+      name: "Chétiflor",
       catchRate: 255,
       type: [4, 7],
       levelType: 3,
@@ -10926,15 +10926,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Chetiflor",
+          basePokemon: "Chétiflor",
           evolvedPokemon: "Boustiflor",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Chetiflor",
-              hint: "Chetiflor needs to be caught.",
+              pokemon: "Chétiflor",
+              hint: "Chétiflor needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -10946,8 +10946,8 @@ module.exports = {
             {
               requiredValue: 21,
               option: 2,
-              pokemon: "Chetiflor",
-              hint: "Your Chetiflor needs to be at least level 21.",
+              pokemon: "Chétiflor",
+              hint: "Your Chétiflor needs to be at least level 21.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -10960,7 +10960,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Chetiflor",
+              pokemon: "Chétiflor",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -10969,15 +10969,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Chetiflor",
+          basePokemon: "Chétiflor",
           evolvedPokemon: "Valencian Boustiflor",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Chetiflor",
-              hint: "Chetiflor needs to be caught.",
+              pokemon: "Chétiflor",
+              hint: "Chétiflor needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -10990,15 +10990,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Chetiflor",
+          basePokemon: "Chétiflor",
           evolvedPokemon: "Boustiflor (Fantaisie)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Chetiflor",
-              hint: "Chetiflor needs to be caught.",
+              pokemon: "Chétiflor",
+              hint: "Chétiflor needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -11216,15 +11216,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Chetiflor",
+            basePokemon: "Chétiflor",
             evolvedPokemon: "Boustiflor",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Chetiflor",
-                hint: "Chetiflor needs to be caught.",
+                pokemon: "Chétiflor",
+                hint: "Chétiflor needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -11236,8 +11236,8 @@ module.exports = {
               {
                 requiredValue: 21,
                 option: 2,
-                pokemon: "Chetiflor",
-                hint: "Your Chetiflor needs to be at least level 21.",
+                pokemon: "Chétiflor",
+                hint: "Your Chétiflor needs to be at least level 21.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -11250,7 +11250,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Chetiflor",
+                pokemon: "Chétiflor",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -13301,7 +13301,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Flagadoss",
-          evolvedPokemon: "Mega Flagadoss",
+          evolvedPokemon: "Méga-Flagadoss",
           trigger: 2,
           restrictions: [
             {
@@ -13330,7 +13330,7 @@ module.exports = {
               option: 1,
               name: "Flagadoss",
               megaStone: 45,
-              hint: "Flagadoss needs the Flagadossnite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+              hint: "Flagadoss needs the Flagadossnite Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -13430,7 +13430,7 @@ module.exports = {
     },
     {
       id: 80.01,
-      name: "Mega Flagadoss",
+      name: "Méga-Flagadoss",
       type: [2, 10],
       eggCycles: 30,
       levelType: 2,
@@ -13455,7 +13455,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Flagadoss",
-            evolvedPokemon: "Mega Flagadoss",
+            evolvedPokemon: "Méga-Flagadoss",
             trigger: 2,
             restrictions: [
               {
@@ -13484,7 +13484,7 @@ module.exports = {
                 option: 1,
                 name: "Flagadoss",
                 megaStone: 45,
-                hint: "Flagadoss needs the Flagadossnite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+                hint: "Flagadoss needs the Flagadossnite Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -13558,7 +13558,7 @@ module.exports = {
     },
     {
       id: 81,
-      name: "Magneti",
+      name: "Magnéti",
       catchRate: 190,
       type: [3, 16],
       levelType: 2,
@@ -13566,15 +13566,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Magneti",
-          evolvedPokemon: "Magneton",
+          basePokemon: "Magnéti",
+          evolvedPokemon: "Magnéton",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneti",
-              hint: "Magneti needs to be caught.",
+              pokemon: "Magnéti",
+              hint: "Magnéti needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13586,21 +13586,21 @@ module.exports = {
             {
               requiredValue: 30,
               option: 2,
-              pokemon: "Magneti",
-              hint: "Your Magneti needs to be at least level 30.",
+              pokemon: "Magnéti",
+              hint: "Your Magnéti needs to be at least level 30.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
-              hint: "Magneton cannot be caught yet.",
+              pokemon: "Magnéton",
+              hint: "Magnéton cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneti",
+              pokemon: "Magnéti",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -13668,7 +13668,7 @@ module.exports = {
     },
     {
       id: 82,
-      name: "Magneton",
+      name: "Magnéton",
       catchRate: 60,
       type: [3, 16],
       levelType: 2,
@@ -13676,15 +13676,15 @@ module.exports = {
       eggCycles: 30,
       evolutions: [
         {
-          basePokemon: "Magneton",
-          evolvedPokemon: "Magnezone",
+          basePokemon: "Magnéton",
+          evolvedPokemon: "Magnézone",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Magneton needs to be caught.",
+              pokemon: "Magnéton",
+              hint: "Magnéton needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13696,21 +13696,21 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Your Magneton needs to be at least level 20.",
+              pokemon: "Magnéton",
+              hint: "Your Magnéton needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magnezone",
-              hint: "Magnezone cannot be caught yet.",
+              pokemon: "Magnézone",
+              hint: "Magnézone cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
+              pokemon: "Magnéton",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -13733,15 +13733,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Magneton",
-          evolvedPokemon: "Magnezone",
+          basePokemon: "Magnéton",
+          evolvedPokemon: "Magnézone",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Magneton needs to be caught.",
+              pokemon: "Magnéton",
+              hint: "Magnéton needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13753,21 +13753,21 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Your Magneton needs to be at least level 20.",
+              pokemon: "Magnéton",
+              hint: "Your Magnéton needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magnezone",
-              hint: "Magnezone cannot be caught yet.",
+              pokemon: "Magnézone",
+              hint: "Magnézone cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
+              pokemon: "Magnéton",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -13790,15 +13790,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Magneton",
-          evolvedPokemon: "Magnezone",
+          basePokemon: "Magnéton",
+          evolvedPokemon: "Magnézone",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Magneton needs to be caught.",
+              pokemon: "Magnéton",
+              hint: "Magnéton needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13810,21 +13810,21 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Your Magneton needs to be at least level 20.",
+              pokemon: "Magnéton",
+              hint: "Your Magnéton needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magnezone",
-              hint: "Magnezone cannot be caught yet.",
+              pokemon: "Magnézone",
+              hint: "Magnézone cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
+              pokemon: "Magnéton",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -13847,15 +13847,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Magneton",
-          evolvedPokemon: "Magnezone",
+          basePokemon: "Magnéton",
+          evolvedPokemon: "Magnézone",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Magneton needs to be caught.",
+              pokemon: "Magnéton",
+              hint: "Magnéton needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13867,21 +13867,21 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Your Magneton needs to be at least level 20.",
+              pokemon: "Magnéton",
+              hint: "Your Magnéton needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magnezone",
-              hint: "Magnezone cannot be caught yet.",
+              pokemon: "Magnézone",
+              hint: "Magnézone cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
+              pokemon: "Magnéton",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -13904,15 +13904,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Magneton",
-          evolvedPokemon: "Magnezone",
+          basePokemon: "Magnéton",
+          evolvedPokemon: "Magnézone",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Magneton needs to be caught.",
+              pokemon: "Magnéton",
+              hint: "Magnéton needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13924,21 +13924,21 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Your Magneton needs to be at least level 20.",
+              pokemon: "Magnéton",
+              hint: "Your Magnéton needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magnezone",
-              hint: "Magnezone cannot be caught yet.",
+              pokemon: "Magnézone",
+              hint: "Magnézone cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
+              pokemon: "Magnéton",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -13961,15 +13961,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Magneton",
-          evolvedPokemon: "Magnezone",
+          basePokemon: "Magnéton",
+          evolvedPokemon: "Magnézone",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Magneton",
-              hint: "Magneton needs to be caught.",
+              pokemon: "Magnéton",
+              hint: "Magnéton needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -13981,7 +13981,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Magneton",
+              pokemon: "Magnéton",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -14059,15 +14059,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Magneti",
-            evolvedPokemon: "Magneton",
+            basePokemon: "Magnéti",
+            evolvedPokemon: "Magnéton",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneti",
-                hint: "Magneti needs to be caught.",
+                pokemon: "Magnéti",
+                hint: "Magnéti needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -14079,21 +14079,21 @@ module.exports = {
               {
                 requiredValue: 30,
                 option: 2,
-                pokemon: "Magneti",
-                hint: "Your Magneti needs to be at least level 30.",
+                pokemon: "Magnéti",
+                hint: "Your Magnéti needs to be at least level 30.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
-                hint: "Magneton cannot be caught yet.",
+                pokemon: "Magnéton",
+                hint: "Magnéton cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneti",
+                pokemon: "Magnéti",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -15739,7 +15739,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Ectoplasma",
-          evolvedPokemon: "Mega Ectoplasma",
+          evolvedPokemon: "Méga-Ectoplasma",
           trigger: 2,
           restrictions: [
             {
@@ -15768,7 +15768,7 @@ module.exports = {
               option: 1,
               name: "Ectoplasma",
               megaStone: 20,
-              hint: "Ectoplasma needs the Ectoplasmaite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.",
+              hint: "Ectoplasma needs the Ectoplasmaite Méga-Stone.<br />Needs at least 55,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -15847,7 +15847,7 @@ module.exports = {
     },
     {
       id: 94.01,
-      name: "Mega Ectoplasma",
+      name: "Méga-Ectoplasma",
       type: [13, 7],
       eggCycles: 45,
       levelType: 3,
@@ -15872,7 +15872,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Ectoplasma",
-            evolvedPokemon: "Mega Ectoplasma",
+            evolvedPokemon: "Méga-Ectoplasma",
             trigger: 2,
             restrictions: [
               {
@@ -15901,7 +15901,7 @@ module.exports = {
                 option: 1,
                 name: "Ectoplasma",
                 megaStone: 20,
-                hint: "Ectoplasma needs the Ectoplasmaite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.",
+                hint: "Ectoplasma needs the Ectoplasmaite Méga-Stone.<br />Needs at least 55,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -16678,7 +16678,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Voltorbe",
-          evolvedPokemon: "Electrode",
+          evolvedPokemon: "Électrode",
           trigger: 1,
           restrictions: [
             {
@@ -16704,8 +16704,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Electrode",
-              hint: "Electrode cannot be caught yet.",
+              pokemon: "Électrode",
+              hint: "Électrode cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -16777,7 +16777,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Voltorbe de Hisui",
-          evolvedPokemon: "Electrode de Hisui",
+          evolvedPokemon: "Électrode de Hisui",
           trigger: 2,
           restrictions: [
             {
@@ -16826,7 +16826,7 @@ module.exports = {
     },
     {
       id: 101,
-      name: "Electrode",
+      name: "Électrode",
       catchRate: 60,
       type: [3],
       levelType: 2,
@@ -16884,7 +16884,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Voltorbe",
-            evolvedPokemon: "Electrode",
+            evolvedPokemon: "Électrode",
             trigger: 1,
             restrictions: [
               {
@@ -16910,8 +16910,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Electrode",
-                hint: "Electrode cannot be caught yet.",
+                pokemon: "Électrode",
+                hint: "Électrode cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -16932,7 +16932,7 @@ module.exports = {
     },
     {
       id: 101.01,
-      name: "Electrode de Hisui",
+      name: "Électrode de Hisui",
       nativeRegion: 8,
       catchRate: 60,
       type: [3, 4],
@@ -16959,7 +16959,7 @@ module.exports = {
     },
     {
       id: 101.02,
-      name: "Monarque Electrode",
+      name: "Monarque Électrode",
       nativeRegion: 8,
       catchRate: 60,
       type: [3, 4],
@@ -18423,7 +18423,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Rhinocorne",
-          evolvedPokemon: "Rhinoferos",
+          evolvedPokemon: "Rhinoféros",
           trigger: 1,
           restrictions: [
             {
@@ -18449,8 +18449,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Rhinoferos",
-              hint: "Rhinoferos cannot be caught yet.",
+              pokemon: "Rhinoféros",
+              hint: "Rhinoféros cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -18542,7 +18542,7 @@ module.exports = {
     },
     {
       id: 112,
-      name: "Rhinoferos",
+      name: "Rhinoféros",
       catchRate: 60,
       type: [8, 12],
       levelType: 4,
@@ -18550,15 +18550,15 @@ module.exports = {
       eggCycles: 30,
       evolutions: [
         {
-          basePokemon: "Rhinoferos",
+          basePokemon: "Rhinoféros",
           evolvedPokemon: "Rhinastoc",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Rhinoferos",
-              hint: "Rhinoferos needs to be caught.",
+              pokemon: "Rhinoféros",
+              hint: "Rhinoféros needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -18570,7 +18570,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Rhinoferos",
+              pokemon: "Rhinoféros",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -18657,7 +18657,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Rhinocorne",
-            evolvedPokemon: "Rhinoferos",
+            evolvedPokemon: "Rhinoféros",
             trigger: 1,
             restrictions: [
               {
@@ -18683,8 +18683,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Rhinoferos",
-                hint: "Rhinoferos cannot be caught yet.",
+                pokemon: "Rhinoféros",
+                hint: "Rhinoféros cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -18983,7 +18983,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Kangourex",
-          evolvedPokemon: "Mega Kangourex",
+          evolvedPokemon: "Méga-Kangourex",
           trigger: 2,
           restrictions: [
             {
@@ -19012,7 +19012,7 @@ module.exports = {
               option: 1,
               name: "Kangourex",
               megaStone: 25,
-              hint: "Kangourex needs the Kangourexite Mega Stone.<br />Needs at least 54,500 attack to Mega Evolve.",
+              hint: "Kangourex needs the Kangourexite Méga-Stone.<br />Needs at least 54,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -19073,7 +19073,7 @@ module.exports = {
     },
     {
       id: 115.01,
-      name: "Mega Kangourex",
+      name: "Méga-Kangourex",
       type: [0],
       eggCycles: 20,
       levelType: 3,
@@ -19098,7 +19098,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Kangourex",
-            evolvedPokemon: "Mega Kangourex",
+            evolvedPokemon: "Méga-Kangourex",
             trigger: 2,
             restrictions: [
               {
@@ -19127,7 +19127,7 @@ module.exports = {
                 option: 1,
                 name: "Kangourex",
                 megaStone: 25,
-                hint: "Kangourex needs the Kangourexite Mega Stone.<br />Needs at least 54,500 attack to Mega Evolve.",
+                hint: "Kangourex needs the Kangourexite Méga-Stone.<br />Needs at least 54,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -19483,7 +19483,7 @@ module.exports = {
     },
     {
       id: 118,
-      name: "Poissirene",
+      name: "Poissirène",
       catchRate: 225,
       type: [2],
       levelType: 2,
@@ -19491,15 +19491,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Poissirene",
+          basePokemon: "Poissirène",
           evolvedPokemon: "Poissoroy",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Poissirene",
-              hint: "Poissirene needs to be caught.",
+              pokemon: "Poissirène",
+              hint: "Poissirène needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -19511,8 +19511,8 @@ module.exports = {
             {
               requiredValue: 33,
               option: 2,
-              pokemon: "Poissirene",
-              hint: "Your Poissirene needs to be at least level 33.",
+              pokemon: "Poissirène",
+              hint: "Your Poissirène needs to be at least level 33.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -19525,7 +19525,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Poissirene",
+              pokemon: "Poissirène",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -19809,15 +19809,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Poissirene",
+            basePokemon: "Poissirène",
             evolvedPokemon: "Poissoroy",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Poissirene",
-                hint: "Poissirene needs to be caught.",
+                pokemon: "Poissirène",
+                hint: "Poissirène needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -19829,8 +19829,8 @@ module.exports = {
               {
                 requiredValue: 33,
                 option: 2,
-                pokemon: "Poissirene",
-                hint: "Your Poissirene needs to be at least level 33.",
+                pokemon: "Poissirène",
+                hint: "Your Poissirène needs to be at least level 33.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -19843,7 +19843,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Poissirene",
+                pokemon: "Poissirène",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -20281,7 +20281,7 @@ module.exports = {
     },
     {
       id: 123,
-      name: "Insecateur",
+      name: "Insécateur",
       catchRate: 45,
       type: [11, 9],
       levelType: 2,
@@ -20289,15 +20289,15 @@ module.exports = {
       eggCycles: 25,
       evolutions: [
         {
-          basePokemon: "Insecateur",
+          basePokemon: "Insécateur",
           evolvedPokemon: "Cizayox",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Insecateur",
-              hint: "Insecateur needs to be caught.",
+              pokemon: "Insécateur",
+              hint: "Insécateur needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -20309,7 +20309,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Insecateur",
+              pokemon: "Insécateur",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -20319,15 +20319,15 @@ module.exports = {
           stone: 8,
         },
         {
-          basePokemon: "Insecateur",
-          evolvedPokemon: "Hachecateur",
+          basePokemon: "Insécateur",
+          evolvedPokemon: "Hachécateur",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Insecateur",
-              hint: "Insecateur needs to be caught.",
+              pokemon: "Insécateur",
+              hint: "Insécateur needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -20339,7 +20339,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Insecateur",
+              pokemon: "Insécateur",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -20499,7 +20499,7 @@ module.exports = {
     },
     {
       id: 125,
-      name: "Elektek",
+      name: "Élektek",
       catchRate: 45,
       type: [3],
       levelType: 2,
@@ -20507,15 +20507,15 @@ module.exports = {
       eggCycles: 25,
       evolutions: [
         {
-          basePokemon: "Elektek",
-          evolvedPokemon: "Elekable",
+          basePokemon: "Élektek",
+          evolvedPokemon: "Élekable",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Elektek",
-              hint: "Elektek needs to be caught.",
+              pokemon: "Élektek",
+              hint: "Élektek needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -20527,7 +20527,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Elektek",
+              pokemon: "Élektek",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -20609,7 +20609,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Elekid",
-            evolvedPokemon: "Elektek",
+            evolvedPokemon: "Élektek",
             trigger: 1,
             restrictions: [
               {
@@ -20635,8 +20635,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Elektek",
-                hint: "Elektek cannot be caught yet.",
+                pokemon: "Élektek",
+                hint: "Élektek cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -20830,7 +20830,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Scarabrute",
-          evolvedPokemon: "Mega Scarabrute",
+          evolvedPokemon: "Méga-Scarabrute",
           trigger: 2,
           restrictions: [
             {
@@ -20859,7 +20859,7 @@ module.exports = {
               option: 1,
               name: "Scarabrute",
               megaStone: 38,
-              hint: "Scarabrute needs the Scarabruteite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.",
+              hint: "Scarabrute needs the Scarabruteite Méga-Stone.<br />Needs at least 57,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -20939,7 +20939,7 @@ module.exports = {
     },
     {
       id: 127.01,
-      name: "Mega Scarabrute",
+      name: "Méga-Scarabrute",
       type: [11, 9],
       eggCycles: 25,
       levelType: 3,
@@ -20964,7 +20964,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Scarabrute",
-            evolvedPokemon: "Mega Scarabrute",
+            evolvedPokemon: "Méga-Scarabrute",
             trigger: 2,
             restrictions: [
               {
@@ -20993,7 +20993,7 @@ module.exports = {
                 option: 1,
                 name: "Scarabrute",
                 megaStone: 38,
-                hint: "Scarabrute needs the Scarabruteite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.",
+                hint: "Scarabrute needs the Scarabruteite Méga-Stone.<br />Needs at least 57,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -21164,7 +21164,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Magicarpe",
-          evolvedPokemon: "Leviator",
+          evolvedPokemon: "Léviator",
           trigger: 1,
           restrictions: [
             {
@@ -21190,8 +21190,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Leviator",
-              hint: "Leviator cannot be caught yet.",
+              pokemon: "Léviator",
+              hint: "Léviator cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -21774,7 +21774,7 @@ module.exports = {
     },
     {
       id: 130,
-      name: "Leviator",
+      name: "Léviator",
       catchRate: 45,
       type: [2, 9],
       levelType: 4,
@@ -21782,15 +21782,15 @@ module.exports = {
       eggCycles: 8,
       evolutions: [
         {
-          basePokemon: "Leviator",
-          evolvedPokemon: "Mega Leviator",
+          basePokemon: "Léviator",
+          evolvedPokemon: "Méga-Léviator",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Leviator",
-              hint: "Leviator needs to be caught.",
+              pokemon: "Léviator",
+              hint: "Léviator needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -21802,7 +21802,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Leviator",
+              pokemon: "Léviator",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -21810,9 +21810,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Leviator",
+              name: "Léviator",
               megaStone: 22,
-              hint: "Leviator needs the Leviatorite Mega Stone.<br />Needs at least 74,000 attack to Mega Evolve.",
+              hint: "Léviator needs the Léviatorite Méga-Stone.<br />Needs at least 74,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -22042,7 +22042,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Magicarpe",
-            evolvedPokemon: "Leviator",
+            evolvedPokemon: "Léviator",
             trigger: 1,
             restrictions: [
               {
@@ -22068,8 +22068,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Leviator",
-                hint: "Leviator cannot be caught yet.",
+                pokemon: "Léviator",
+                hint: "Léviator cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -22089,14 +22089,14 @@ module.exports = {
             0: 7.02,
           },
         },
-        15: ["Red Leviator"],
+        15: ["Red Léviator"],
       },
       catchRatePercent: 17,
       eggSteps: 320,
     },
     {
       id: 130.01,
-      name: "Mega Leviator",
+      name: "Méga-Léviator",
       type: [2, 15],
       eggCycles: 8,
       levelType: 4,
@@ -22120,15 +22120,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Leviator",
-            evolvedPokemon: "Mega Leviator",
+            basePokemon: "Léviator",
+            evolvedPokemon: "Méga-Léviator",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Leviator",
-                hint: "Leviator needs to be caught.",
+                pokemon: "Léviator",
+                hint: "Léviator needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -22140,7 +22140,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Leviator",
+                pokemon: "Léviator",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -22148,9 +22148,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Leviator",
+                name: "Léviator",
                 megaStone: 22,
-                hint: "Leviator needs the Leviatorite Mega Stone.<br />Needs at least 74,000 attack to Mega Evolve.",
+                hint: "Léviator needs the Léviatorite Méga-Stone.<br />Needs at least 74,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -22295,7 +22295,7 @@ module.exports = {
     },
     {
       id: 132,
-      name: "Metamorph",
+      name: "Métamorph",
       catchRate: 35,
       type: [0],
       levelType: 2,
@@ -22381,7 +22381,7 @@ module.exports = {
     },
     {
       id: 133,
-      name: "Evoli",
+      name: "Évoli",
       catchRate: 45,
       type: [0],
       levelType: 2,
@@ -22389,15 +22389,15 @@ module.exports = {
       eggCycles: 35,
       evolutions: [
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Aquali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22409,7 +22409,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22419,15 +22419,15 @@ module.exports = {
           stone: 2,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Voltali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22439,7 +22439,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22449,15 +22449,15 @@ module.exports = {
           stone: 3,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Pyroli",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22469,7 +22469,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22479,15 +22479,15 @@ module.exports = {
           stone: 1,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Mentali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22499,7 +22499,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22516,15 +22516,15 @@ module.exports = {
           stone: 7,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Noctali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22536,7 +22536,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22553,15 +22553,15 @@ module.exports = {
           stone: 7,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Pyllali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22573,8 +22573,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22587,7 +22587,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22610,15 +22610,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Pyllali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22630,8 +22630,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22644,7 +22644,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22667,15 +22667,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Pyllali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22687,8 +22687,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22701,7 +22701,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22724,15 +22724,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Pyllali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22744,8 +22744,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22758,7 +22758,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22781,15 +22781,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Givrali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22801,8 +22801,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22815,7 +22815,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22838,15 +22838,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Givrali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22858,8 +22858,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22872,7 +22872,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22895,15 +22895,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Givrali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22915,8 +22915,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22929,7 +22929,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -22952,15 +22952,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Givrali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -22972,8 +22972,8 @@ module.exports = {
             {
               requiredValue: 20,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 20.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 20.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -22986,7 +22986,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -23009,15 +23009,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Nymphali",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -23029,8 +23029,8 @@ module.exports = {
             {
               requiredValue: 29,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Your Evoli needs to be at least level 29.",
+              pokemon: "Évoli",
+              hint: "Your Évoli needs to be at least level 29.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -23043,7 +23043,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -23052,15 +23052,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Pyllali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -23072,7 +23072,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -23089,15 +23089,15 @@ module.exports = {
           stone: 0,
         },
         {
-          basePokemon: "Evoli",
+          basePokemon: "Évoli",
           evolvedPokemon: "Givrali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Evoli",
-              hint: "Evoli needs to be caught.",
+              pokemon: "Évoli",
+              hint: "Évoli needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -23109,7 +23109,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Evoli",
+              pokemon: "Évoli",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -23187,7 +23187,7 @@ module.exports = {
     },
     {
       id: 133.01,
-      name: "Evoli Gigamax",
+      name: "Évoli Gigamax",
       catchRate: 45,
       type: [0],
       levelType: 2,
@@ -23216,7 +23216,7 @@ module.exports = {
           },
           {
             dungeon: "Max Lair",
-            requirements: "Evoli Gigamax needs to be caught.",
+            requirements: "Évoli Gigamax needs to be caught.",
           },
         ],
       },
@@ -23261,15 +23261,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Aquali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -23281,7 +23281,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -23333,15 +23333,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Voltali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -23353,7 +23353,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -23405,15 +23405,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Pyroli",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -23425,7 +23425,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -23836,7 +23836,7 @@ module.exports = {
     },
     {
       id: 142,
-      name: "Ptera",
+      name: "Ptéra",
       catchRate: 45,
       type: [12, 9],
       levelType: 4,
@@ -23844,15 +23844,15 @@ module.exports = {
       eggCycles: 35,
       evolutions: [
         {
-          basePokemon: "Ptera",
-          evolvedPokemon: "Mega Ptera",
+          basePokemon: "Ptéra",
+          evolvedPokemon: "Méga-Ptéra",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Ptera",
-              hint: "Ptera needs to be caught.",
+              pokemon: "Ptéra",
+              hint: "Ptéra needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -23864,7 +23864,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ptera",
+              pokemon: "Ptéra",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -23872,9 +23872,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Ptera",
+              name: "Ptéra",
               megaStone: 2,
-              hint: "Ptera needs the Pteraite Mega Stone.<br />Needs at least 58,500 attack to Mega Evolve.",
+              hint: "Ptéra needs the Ptéraite Méga-Stone.<br />Needs at least 58,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -23902,14 +23902,14 @@ module.exports = {
           7: [
             {
               route: 48,
-              requirements: "Ptera needs to be caught.",
+              requirements: "Ptéra needs to be caught.",
             },
           ],
         },
         2: [
           {
             dungeon: "Rock Peak Ruins",
-            requirements: "Ptera needs to be caught.",
+            requirements: "Ptéra needs to be caught.",
           },
         ],
         9: ["Old Amber"],
@@ -23919,7 +23919,7 @@ module.exports = {
     },
     {
       id: 142.01,
-      name: "Mega Ptera",
+      name: "Méga-Ptéra",
       type: [12, 9],
       eggCycles: 35,
       levelType: 3,
@@ -23943,15 +23943,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Ptera",
-            evolvedPokemon: "Mega Ptera",
+            basePokemon: "Ptéra",
+            evolvedPokemon: "Méga-Ptéra",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Ptera",
-                hint: "Ptera needs to be caught.",
+                pokemon: "Ptéra",
+                hint: "Ptéra needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -23963,7 +23963,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ptera",
+                pokemon: "Ptéra",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -23971,9 +23971,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Ptera",
+                name: "Ptéra",
                 megaStone: 2,
-                hint: "Ptera needs the Pteraite Mega Stone.<br />Needs at least 58,500 attack to Mega Evolve.",
+                hint: "Ptéra needs the Ptéraite Méga-Stone.<br />Needs at least 58,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -24199,7 +24199,7 @@ module.exports = {
     },
     {
       id: 145,
-      name: "Electhor",
+      name: "Électhor",
       catchRate: 3,
       type: [3, 9],
       levelType: 4,
@@ -24244,7 +24244,7 @@ module.exports = {
     },
     {
       id: 145.01,
-      name: "Electhor de Galar",
+      name: "Électhor de Galar",
       nativeRegion: 7,
       catchRate: 3,
       type: [6, 9],
@@ -24742,7 +24742,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Mewtwo",
-          evolvedPokemon: "Mega Mewtwo X",
+          evolvedPokemon: "Méga-Mewtwo X",
           trigger: 2,
           restrictions: [
             {
@@ -24771,7 +24771,7 @@ module.exports = {
               option: 1,
               name: "Mewtwo",
               megaStone: 35,
-              hint: "Mewtwo needs the Mewtwonite X Mega Stone.<br />Needs at least 117,500 attack to Mega Evolve.",
+              hint: "Mewtwo needs the Mewtwonite X Méga-Stone.<br />Needs at least 117,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
             {
@@ -24787,7 +24787,7 @@ module.exports = {
         },
         {
           basePokemon: "Mewtwo",
-          evolvedPokemon: "Mega Mewtwo Y",
+          evolvedPokemon: "Méga-Mewtwo Y",
           trigger: 2,
           restrictions: [
             {
@@ -24816,7 +24816,7 @@ module.exports = {
               option: 1,
               name: "Mewtwo",
               megaStone: 36,
-              hint: "Mewtwo needs the Mewtwonite Y Mega Stone.<br />Needs at least 117,500 attack to Mega Evolve.",
+              hint: "Mewtwo needs the Mewtwonite Y Méga-Stone.<br />Needs at least 117,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
             {
@@ -24858,7 +24858,7 @@ module.exports = {
     },
     {
       id: 150.01,
-      name: "Mega Mewtwo X",
+      name: "Méga-Mewtwo X",
       type: [10, 6],
       eggCycles: 120,
       levelType: 4,
@@ -24883,7 +24883,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Mewtwo",
-            evolvedPokemon: "Mega Mewtwo X",
+            evolvedPokemon: "Méga-Mewtwo X",
             trigger: 2,
             restrictions: [
               {
@@ -24912,7 +24912,7 @@ module.exports = {
                 option: 1,
                 name: "Mewtwo",
                 megaStone: 35,
-                hint: "Mewtwo needs the Mewtwonite X Mega Stone.<br />Needs at least 117,500 attack to Mega Evolve.",
+                hint: "Mewtwo needs the Mewtwonite X Méga-Stone.<br />Needs at least 117,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
               {
@@ -24933,7 +24933,7 @@ module.exports = {
     },
     {
       id: 150.02,
-      name: "Mega Mewtwo Y",
+      name: "Méga-Mewtwo Y",
       type: [10],
       eggCycles: 120,
       levelType: 4,
@@ -24958,7 +24958,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Mewtwo",
-            evolvedPokemon: "Mega Mewtwo Y",
+            evolvedPokemon: "Méga-Mewtwo Y",
             trigger: 2,
             restrictions: [
               {
@@ -24987,7 +24987,7 @@ module.exports = {
                 option: 1,
                 name: "Mewtwo",
                 megaStone: 36,
-                hint: "Mewtwo needs the Mewtwonite Y Mega Stone.<br />Needs at least 117,500 attack to Mega Evolve.",
+                hint: "Mewtwo needs the Mewtwonite Y Méga-Stone.<br />Needs at least 117,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
               {
@@ -25142,7 +25142,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Macronium",
-          evolvedPokemon: "Meganium",
+          evolvedPokemon: "Méganium",
           trigger: 1,
           restrictions: [
             {
@@ -25168,8 +25168,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Meganium",
-              hint: "Meganium cannot be caught yet.",
+              pokemon: "Méganium",
+              hint: "Méganium cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -25252,7 +25252,7 @@ module.exports = {
     },
     {
       id: 154,
-      name: "Meganium",
+      name: "Méganium",
       catchRate: 45,
       type: [4],
       levelType: 3,
@@ -25277,7 +25277,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Macronium",
-            evolvedPokemon: "Meganium",
+            evolvedPokemon: "Méganium",
             trigger: 1,
             restrictions: [
               {
@@ -25303,8 +25303,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Meganium",
-                hint: "Meganium cannot be caught yet.",
+                pokemon: "Méganium",
+                hint: "Méganium cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -25325,7 +25325,7 @@ module.exports = {
     },
     {
       id: 155,
-      name: "Hericendre",
+      name: "Héricendre",
       catchRate: 45,
       type: [1],
       levelType: 3,
@@ -25333,15 +25333,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Hericendre",
+          basePokemon: "Héricendre",
           evolvedPokemon: "Feurisson",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Hericendre",
-              hint: "Hericendre needs to be caught.",
+              pokemon: "Héricendre",
+              hint: "Héricendre needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -25353,8 +25353,8 @@ module.exports = {
             {
               requiredValue: 14,
               option: 2,
-              pokemon: "Hericendre",
-              hint: "Your Hericendre needs to be at least level 14.",
+              pokemon: "Héricendre",
+              hint: "Your Héricendre needs to be at least level 14.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -25367,7 +25367,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Hericendre",
+              pokemon: "Héricendre",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -25520,15 +25520,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Hericendre",
+            basePokemon: "Héricendre",
             evolvedPokemon: "Feurisson",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Hericendre",
-                hint: "Hericendre needs to be caught.",
+                pokemon: "Héricendre",
+                hint: "Héricendre needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -25540,8 +25540,8 @@ module.exports = {
               {
                 requiredValue: 14,
                 option: 2,
-                pokemon: "Hericendre",
-                hint: "Your Hericendre needs to be at least level 14.",
+                pokemon: "Héricendre",
+                hint: "Your Héricendre needs to be at least level 14.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -25554,7 +25554,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Hericendre",
+                pokemon: "Héricendre",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -27396,7 +27396,7 @@ module.exports = {
     },
     {
       id: 173,
-      name: "Melo",
+      name: "Mélo",
       catchRate: 150,
       type: [17],
       levelType: 1,
@@ -27404,14 +27404,14 @@ module.exports = {
       eggCycles: 8,
       evolutions: [
         {
-          basePokemon: "Melo",
-          evolvedPokemon: "Melofee",
+          basePokemon: "Mélo",
+          evolvedPokemon: "Mélofée",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Melo",
+              pokemon: "Mélo",
               hint: "Melo needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
@@ -27424,7 +27424,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Melo",
+              pokemon: "Mélo",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -27467,7 +27467,7 @@ module.exports = {
             dungeon: "Mt. Coronet South",
           },
         ],
-        7: ["Melofee", "Melodelfe"],
+        7: ["Mélofée", "Mélodelfe"],
       },
       catchRatePercent: 42,
       eggSteps: 320,
@@ -28185,7 +28185,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Pharamp",
-          evolvedPokemon: "Mega Pharamp",
+          evolvedPokemon: "Méga-Pharamp",
           trigger: 2,
           restrictions: [
             {
@@ -28214,7 +28214,7 @@ module.exports = {
               option: 1,
               name: "Pharamp",
               megaStone: 6,
-              hint: "Pharamp needs the Pharampite Mega Stone.<br />Needs at least 73,500 attack to Mega Evolve.",
+              hint: "Pharamp needs the Pharampite Méga-Stone.<br />Needs at least 73,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -28294,7 +28294,7 @@ module.exports = {
     },
     {
       id: 181.01,
-      name: "Mega Pharamp",
+      name: "Méga-Pharamp",
       type: [3, 14],
       eggCycles: 45,
       levelType: 3,
@@ -28319,7 +28319,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Pharamp",
-            evolvedPokemon: "Mega Pharamp",
+            evolvedPokemon: "Méga-Pharamp",
             trigger: 2,
             restrictions: [
               {
@@ -28348,7 +28348,7 @@ module.exports = {
                 option: 1,
                 name: "Pharamp",
                 megaStone: 6,
-                hint: "Pharamp needs the Pharampite Mega Stone.<br />Needs at least 73,500 attack to Mega Evolve.",
+                hint: "Pharamp needs the Pharampite Méga-Stone.<br />Needs at least 73,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -28799,15 +28799,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Manzai",
+            basePokemon: "Manzaï",
             evolvedPokemon: "Simularbre",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Manzai",
-                hint: "Manzai needs to be caught.",
+                pokemon: "Manzaï",
+                hint: "Manzaï needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -28819,8 +28819,8 @@ module.exports = {
               {
                 requiredValue: 32,
                 option: 2,
-                pokemon: "Manzai",
-                hint: "Your Manzai needs to be at least level 32.",
+                pokemon: "Manzaï",
+                hint: "Your Manzaï needs to be at least level 32.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -28833,7 +28833,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Manzai",
+                pokemon: "Manzaï",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -28901,15 +28901,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Tetarte",
+            basePokemon: "Têtarte",
             evolvedPokemon: "Tarpaud",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Tetarte",
-                hint: "Tetarte needs to be caught.",
+                pokemon: "Têtarte",
+                hint: "Têtarte needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -28921,7 +28921,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Tetarte",
+                pokemon: "Têtarte",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -29533,7 +29533,7 @@ module.exports = {
               requiredValue: 1,
               option: 0,
               pokemon: "Yanmega",
-              hint: "Yanmega cannot be caught yet.",
+              hint: "YanMéga-cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -29980,15 +29980,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Mentali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -30000,7 +30000,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -30059,15 +30059,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Noctali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -30079,7 +30079,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -30102,7 +30102,7 @@ module.exports = {
     },
     {
       id: 198,
-      name: "Cornebre",
+      name: "Cornèbre",
       catchRate: 30,
       type: [15, 9],
       levelType: 3,
@@ -30110,15 +30110,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Cornebre",
+          basePokemon: "Cornèbre",
           evolvedPokemon: "Corboss",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cornebre",
-              hint: "Cornebre needs to be caught.",
+              pokemon: "Cornèbre",
+              hint: "Cornèbre needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -30130,7 +30130,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Cornebre",
+              pokemon: "Cornèbre",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -30300,7 +30300,7 @@ module.exports = {
     },
     {
       id: 200,
-      name: "Feuforeve",
+      name: "Feuforêve",
       catchRate: 45,
       type: [13],
       levelType: 1,
@@ -30308,14 +30308,14 @@ module.exports = {
       eggCycles: 25,
       evolutions: [
         {
-          basePokemon: "Feuforeve",
-          evolvedPokemon: "Magireve",
+          basePokemon: "Feuforêve",
+          evolvedPokemon: "Magirêve",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Feuforeve",
+              pokemon: "Feuforêve",
               hint: "Feuforeve needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
@@ -30328,7 +30328,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Feuforeve",
+              pokemon: "Feuforêve",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -30338,14 +30338,14 @@ module.exports = {
           stone: 16,
         },
         {
-          basePokemon: "Feuforeve",
-          evolvedPokemon: "Magireve (Illusion)",
+          basePokemon: "Feuforêve",
+          evolvedPokemon: "Magirêve (Illusion)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Feuforeve",
+              pokemon: "Feuforêve",
               hint: "Feuforeve needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
@@ -31641,7 +31641,7 @@ module.exports = {
     },
     {
       id: 202,
-      name: "Qulbutoke",
+      name: "Qulbutoké",
       catchRate: 45,
       type: [10],
       levelType: 2,
@@ -31707,15 +31707,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Okeoke",
-            evolvedPokemon: "Qulbutoke",
+            basePokemon: "Okéoké",
+            evolvedPokemon: "Qulbutoké",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Okeoke",
-                hint: "Okeoke needs to be caught.",
+                pokemon: "Okéoké",
+                hint: "Okéoké needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -31727,21 +31727,21 @@ module.exports = {
               {
                 requiredValue: 15,
                 option: 2,
-                pokemon: "Okeoke",
-                hint: "Your Okeoke needs to be at least level 15.",
+                pokemon: "Okéoké",
+                hint: "Your Okéoké needs to be at least level 15.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Qulbutoke",
+                pokemon: "Qulbutoké",
                 hint: "Qulbutoke cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Okeoke",
+                pokemon: "Okéoké",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -32258,7 +32258,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Steelix",
-          evolvedPokemon: "Mega Steelix",
+          evolvedPokemon: "Méga-Steelix",
           trigger: 2,
           restrictions: [
             {
@@ -32287,7 +32287,7 @@ module.exports = {
               option: 1,
               name: "Steelix",
               megaStone: 46,
-              hint: "Steelix needs the Steelixite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.",
+              hint: "Steelix needs the Steelixite Méga-Stone.<br />Needs at least 55,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -32379,7 +32379,7 @@ module.exports = {
     },
     {
       id: 208.01,
-      name: "Mega Steelix",
+      name: "Méga-Steelix",
       type: [16, 8],
       eggCycles: 38,
       levelType: 2,
@@ -32404,7 +32404,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Steelix",
-            evolvedPokemon: "Mega Steelix",
+            evolvedPokemon: "Méga-Steelix",
             trigger: 2,
             restrictions: [
               {
@@ -32433,7 +32433,7 @@ module.exports = {
                 option: 1,
                 name: "Steelix",
                 megaStone: 46,
-                hint: "Steelix needs the Steelixite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.",
+                hint: "Steelix needs the Steelixite Méga-Stone.<br />Needs at least 55,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -32804,7 +32804,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Cizayox",
-          evolvedPokemon: "Mega Cizayox",
+          evolvedPokemon: "Méga-Cizayox",
           trigger: 2,
           restrictions: [
             {
@@ -32833,7 +32833,7 @@ module.exports = {
               option: 1,
               name: "Cizayox",
               megaStone: 43,
-              hint: "Cizayox needs the Cizayoxite Mega Stone.<br />Needs at least 61,500 attack to Mega Evolve.",
+              hint: "Cizayox needs the Cizayoxite Méga-Stone.<br />Needs at least 61,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -32867,15 +32867,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Insecateur",
+            basePokemon: "Insécateur",
             evolvedPokemon: "Cizayox",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Insecateur",
-                hint: "Insecateur needs to be caught.",
+                pokemon: "Insécateur",
+                hint: "Insécateur needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -32887,7 +32887,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Insecateur",
+                pokemon: "Insécateur",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -32904,7 +32904,7 @@ module.exports = {
     },
     {
       id: 212.01,
-      name: "Mega Cizayox",
+      name: "Méga-Cizayox",
       type: [11, 16],
       eggCycles: 38,
       levelType: 2,
@@ -32929,7 +32929,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Cizayox",
-            evolvedPokemon: "Mega Cizayox",
+            evolvedPokemon: "Méga-Cizayox",
             trigger: 2,
             restrictions: [
               {
@@ -32958,7 +32958,7 @@ module.exports = {
                 option: 1,
                 name: "Cizayox",
                 megaStone: 43,
-                hint: "Cizayox needs the Cizayoxite Mega Stone.<br />Needs at least 61,500 attack to Mega Evolve.",
+                hint: "Cizayox needs the Cizayoxite Méga-Stone.<br />Needs at least 61,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -33051,7 +33051,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Scarhino",
-          evolvedPokemon: "Mega Scarhino",
+          evolvedPokemon: "Méga-Scarhino",
           trigger: 2,
           restrictions: [
             {
@@ -33080,7 +33080,7 @@ module.exports = {
               option: 1,
               name: "Scarhino",
               megaStone: 23,
-              hint: "Scarhino needs the Heracronite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.",
+              hint: "Scarhino needs the Heracronite Méga-Stone.<br />Needs at least 55,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -33173,7 +33173,7 @@ module.exports = {
     },
     {
       id: 214.01,
-      name: "Mega Scarhino",
+      name: "Méga-Scarhino",
       type: [11, 6],
       eggCycles: 25,
       levelType: 4,
@@ -33198,7 +33198,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Scarhino",
-            evolvedPokemon: "Mega Scarhino",
+            evolvedPokemon: "Méga-Scarhino",
             trigger: 2,
             restrictions: [
               {
@@ -33227,7 +33227,7 @@ module.exports = {
                 option: 1,
                 name: "Scarhino",
                 megaStone: 23,
-                hint: "Scarhino needs the Heracronite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.",
+                hint: "Scarhino needs the Heracronite Méga-Stone.<br />Needs at least 55,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -34217,7 +34217,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Corayon de Galar",
-          evolvedPokemon: "Corayome",
+          evolvedPokemon: "Corayôme",
           trigger: 1,
           restrictions: [
             {
@@ -34243,8 +34243,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Corayome",
-              hint: "Corayome cannot be caught yet.",
+              pokemon: "Corayôme",
+              hint: "Corayôme cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -34287,7 +34287,7 @@ module.exports = {
     },
     {
       id: 223,
-      name: "Remoraid",
+      name: "Rémoraid",
       catchRate: 190,
       type: [2],
       levelType: 2,
@@ -34295,14 +34295,14 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Remoraid",
+          basePokemon: "Rémoraid",
           evolvedPokemon: "Octillery",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Remoraid",
+              pokemon: "Rémoraid",
               hint: "Remoraid needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
@@ -34315,7 +34315,7 @@ module.exports = {
             {
               requiredValue: 25,
               option: 2,
-              pokemon: "Remoraid",
+              pokemon: "Rémoraid",
               hint: "Your Remoraid needs to be at least level 25.",
               __class: "PokemonLevelRequirement",
             },
@@ -34329,7 +34329,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Remoraid",
+              pokemon: "Rémoraid",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -34541,14 +34541,14 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Remoraid",
+            basePokemon: "Rémoraid",
             evolvedPokemon: "Octillery",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Remoraid",
+                pokemon: "Rémoraid",
                 hint: "Remoraid needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
@@ -34561,7 +34561,7 @@ module.exports = {
               {
                 requiredValue: 25,
                 option: 2,
-                pokemon: "Remoraid",
+                pokemon: "Rémoraid",
                 hint: "Your Remoraid needs to be at least level 25.",
                 __class: "PokemonLevelRequirement",
               },
@@ -34575,7 +34575,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Remoraid",
+                pokemon: "Rémoraid",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -34843,7 +34843,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Malosse",
-          evolvedPokemon: "Demolosse",
+          evolvedPokemon: "Démolosse",
           trigger: 1,
           restrictions: [
             {
@@ -34869,8 +34869,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Demolosse",
-              hint: "Demolosse cannot be caught yet.",
+              pokemon: "Démolosse",
+              hint: "Démolosse cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -34934,7 +34934,7 @@ module.exports = {
     },
     {
       id: 229,
-      name: "Demolosse",
+      name: "Démolosse",
       catchRate: 45,
       type: [15, 1],
       levelType: 4,
@@ -34942,15 +34942,15 @@ module.exports = {
       eggCycles: 30,
       evolutions: [
         {
-          basePokemon: "Demolosse",
-          evolvedPokemon: "Mega Demolosse",
+          basePokemon: "Démolosse",
+          evolvedPokemon: "Méga-Démolosse",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Demolosse",
-              hint: "Demolosse needs to be caught.",
+              pokemon: "Démolosse",
+              hint: "Démolosse needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -34962,7 +34962,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Demolosse",
+              pokemon: "Démolosse",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -34970,9 +34970,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Demolosse",
+              name: "Démolosse",
               megaStone: 24,
-              hint: "Demolosse needs the Demolosseinite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.",
+              hint: "Démolosse needs the Démolosseinite Méga-Stone.<br />Needs at least 64,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -35006,7 +35006,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Malosse",
-            evolvedPokemon: "Demolosse",
+            evolvedPokemon: "Démolosse",
             trigger: 1,
             restrictions: [
               {
@@ -35032,8 +35032,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Demolosse",
-                hint: "Demolosse cannot be caught yet.",
+                pokemon: "Démolosse",
+                hint: "Démolosse cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -35055,7 +35055,7 @@ module.exports = {
     },
     {
       id: 229.01,
-      name: "Mega Demolosse",
+      name: "Méga-Démolosse",
       type: [15, 1],
       eggCycles: 30,
       levelType: 4,
@@ -35079,15 +35079,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Demolosse",
-            evolvedPokemon: "Mega Demolosse",
+            basePokemon: "Démolosse",
+            evolvedPokemon: "Méga-Démolosse",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Demolosse",
-                hint: "Demolosse needs to be caught.",
+                pokemon: "Démolosse",
+                hint: "Démolosse needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -35099,7 +35099,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Demolosse",
+                pokemon: "Démolosse",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -35107,9 +35107,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Demolosse",
+                name: "Démolosse",
                 megaStone: 24,
-                hint: "Demolosse needs the Demolosseinite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.",
+                hint: "Démolosse needs the Démolosseinite Méga-Stone.<br />Needs at least 64,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -36013,7 +36013,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Elekid",
-          evolvedPokemon: "Elektek",
+          evolvedPokemon: "Élektek",
           trigger: 1,
           restrictions: [
             {
@@ -36039,8 +36039,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Elektek",
-              hint: "Elektek cannot be caught yet.",
+              pokemon: "Élektek",
+              hint: "Élektek cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -36115,7 +36115,7 @@ module.exports = {
           },
         ],
         6: ["Electric"],
-        7: ["Elektek", "Elekable"],
+        7: ["Élektek", "Élekable"],
       },
       catchRatePercent: 17,
       eggSteps: 800,
@@ -36243,7 +36243,7 @@ module.exports = {
     },
     {
       id: 241,
-      name: "Ecremeuh",
+      name: "Écrémeuh",
       catchRate: 45,
       type: [0],
       levelType: 4,
@@ -36810,7 +36810,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Tyranocif",
-          evolvedPokemon: "Mega Tyranocif",
+          evolvedPokemon: "Méga-Tyranocif",
           trigger: 2,
           restrictions: [
             {
@@ -36839,7 +36839,7 @@ module.exports = {
               option: 1,
               name: "Tyranocif",
               megaStone: 48,
-              hint: "Tyranocif needs the Tyranocifite Mega Stone.<br />Needs at least 102,500 attack to Mega Evolve.",
+              hint: "Tyranocif needs the Tyranocifite Méga-Stone.<br />Needs at least 102,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -36923,7 +36923,7 @@ module.exports = {
     },
     {
       id: 248.01,
-      name: "Mega Tyranocif",
+      name: "Méga-Tyranocif",
       type: [12, 15],
       eggCycles: 90,
       levelType: 4,
@@ -36948,7 +36948,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Tyranocif",
-            evolvedPokemon: "Mega Tyranocif",
+            evolvedPokemon: "Méga-Tyranocif",
             trigger: 2,
             restrictions: [
               {
@@ -36977,7 +36977,7 @@ module.exports = {
                 option: 1,
                 name: "Tyranocif",
                 megaStone: 48,
-                hint: "Tyranocif needs the Tyranocifite Mega Stone.<br />Needs at least 102,500 attack to Mega Evolve.",
+                hint: "Tyranocif needs the Tyranocifite Méga-Stone.<br />Needs at least 102,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -37326,7 +37326,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Jungko",
-          evolvedPokemon: "Mega Jungko",
+          evolvedPokemon: "Méga-Jungko",
           trigger: 2,
           restrictions: [
             {
@@ -37355,7 +37355,7 @@ module.exports = {
               option: 1,
               name: "Jungko",
               megaStone: 42,
-              hint: "Jungko needs the Sceptilite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.",
+              hint: "Jungko needs the Sceptilite Méga-Stone.<br />Needs at least 64,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -37435,7 +37435,7 @@ module.exports = {
     },
     {
       id: 254.01,
-      name: "Mega Jungko",
+      name: "Méga-Jungko",
       type: [4, 14],
       eggCycles: 45,
       levelType: 3,
@@ -37460,7 +37460,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Jungko",
-            evolvedPokemon: "Mega Jungko",
+            evolvedPokemon: "Méga-Jungko",
             trigger: 2,
             restrictions: [
               {
@@ -37489,7 +37489,7 @@ module.exports = {
                 option: 1,
                 name: "Jungko",
                 megaStone: 42,
-                hint: "Jungko needs the Sceptilite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.",
+                hint: "Jungko needs the Sceptilite Méga-Stone.<br />Needs at least 64,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -37587,7 +37587,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Galifeu",
-          evolvedPokemon: "Brasegali",
+          evolvedPokemon: "Braségali",
           trigger: 1,
           restrictions: [
             {
@@ -37613,8 +37613,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Brasegali",
-              hint: "Brasegali cannot be caught yet.",
+              pokemon: "Braségali",
+              hint: "Braségali cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -37709,7 +37709,7 @@ module.exports = {
     },
     {
       id: 257,
-      name: "Brasegali",
+      name: "Braségali",
       type: [1, 6],
       eggCycles: 45,
       levelType: 3,
@@ -37717,15 +37717,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Brasegali",
-          evolvedPokemon: "Mega Brasegali",
+          basePokemon: "Braségali",
+          evolvedPokemon: "Méga-Braségali",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Brasegali",
-              hint: "Brasegali needs to be caught.",
+              pokemon: "Braségali",
+              hint: "Braségali needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -37737,7 +37737,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Brasegali",
+              pokemon: "Braségali",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -37745,9 +37745,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Brasegali",
+              name: "Braségali",
               megaStone: 11,
-              hint: "Brasegali needs the Brasegaliite Mega Stone.<br />Needs at least 78,500 attack to Mega Evolve.",
+              hint: "Braségali needs the Braségaliite Méga-Stone.<br />Needs at least 78,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -37779,7 +37779,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Galifeu",
-            evolvedPokemon: "Brasegali",
+            evolvedPokemon: "Braségali",
             trigger: 1,
             restrictions: [
               {
@@ -37805,8 +37805,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Brasegali",
-                hint: "Brasegali cannot be caught yet.",
+                pokemon: "Braségali",
+                hint: "Braségali cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -37827,7 +37827,7 @@ module.exports = {
     },
     {
       id: 257.01,
-      name: "Mega Brasegali",
+      name: "Méga-Braségali",
       type: [1, 6],
       eggCycles: 45,
       levelType: 3,
@@ -37851,15 +37851,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Brasegali",
-            evolvedPokemon: "Mega Brasegali",
+            basePokemon: "Braségali",
+            evolvedPokemon: "Méga-Braségali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Brasegali",
-                hint: "Brasegali needs to be caught.",
+                pokemon: "Braségali",
+                hint: "Braségali needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -37871,7 +37871,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Brasegali",
+                pokemon: "Braségali",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -37879,9 +37879,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Brasegali",
+                name: "Braségali",
                 megaStone: 11,
-                hint: "Brasegali needs the Brasegaliite Mega Stone.<br />Needs at least 78,500 attack to Mega Evolve.",
+                hint: "Braségali needs the Braségaliite Méga-Stone.<br />Needs at least 78,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -38106,7 +38106,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "LGaleking",
-          evolvedPokemon: "Mega LGaleking",
+          evolvedPokemon: "Méga-LGaleking",
           trigger: 2,
           restrictions: [
             {
@@ -38135,7 +38135,7 @@ module.exports = {
               option: 1,
               name: "LGaleking",
               megaStone: 47,
-              hint: "LGaleking needs the LGalekingite Mega Stone.<br />Needs at least 82,000 attack to Mega Evolve.",
+              hint: "LGaleking needs the LGalekingite Méga-Stone.<br />Needs at least 82,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -38215,7 +38215,7 @@ module.exports = {
     },
     {
       id: 260.01,
-      name: "Mega LGaleking",
+      name: "Méga-LGaleking",
       type: [2, 8],
       eggCycles: 45,
       levelType: 3,
@@ -38240,7 +38240,7 @@ module.exports = {
         5: [
           {
             basePokemon: "LGaleking",
-            evolvedPokemon: "Mega LGaleking",
+            evolvedPokemon: "Méga-LGaleking",
             trigger: 2,
             restrictions: [
               {
@@ -38269,7 +38269,7 @@ module.exports = {
                 option: 1,
                 name: "LGaleking",
                 megaStone: 47,
-                hint: "LGaleking needs the LGalekingite Mega Stone.<br />Needs at least 82,000 attack to Mega Evolve.",
+                hint: "LGaleking needs the LGalekingite Méga-Stone.<br />Needs at least 82,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -38283,7 +38283,7 @@ module.exports = {
     },
     {
       id: 261,
-      name: "Medhyena",
+      name: "Medhyèna",
       type: [15],
       eggCycles: 15,
       levelType: 2,
@@ -38291,15 +38291,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Medhyena",
-          evolvedPokemon: "Grahyena",
+          basePokemon: "Medhyèna",
+          evolvedPokemon: "Grahyèna",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Medhyena",
-              hint: "Medhyena needs to be caught.",
+              pokemon: "Medhyèna",
+              hint: "Medhyèna needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -38311,21 +38311,21 @@ module.exports = {
             {
               requiredValue: 18,
               option: 2,
-              pokemon: "Medhyena",
-              hint: "Your Medhyena needs to be at least level 18.",
+              pokemon: "Medhyèna",
+              hint: "Your Medhyèna needs to be at least level 18.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Grahyena",
-              hint: "Grahyena cannot be caught yet.",
+              pokemon: "Grahyèna",
+              hint: "Grahyèna cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Medhyena",
+              pokemon: "Medhyèna",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -38396,7 +38396,7 @@ module.exports = {
     },
     {
       id: 262,
-      name: "Grahyena",
+      name: "Grahyèna",
       type: [15],
       eggCycles: 23,
       levelType: 2,
@@ -38438,15 +38438,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Medhyena",
-            evolvedPokemon: "Grahyena",
+            basePokemon: "Medhyèna",
+            evolvedPokemon: "Grahyèna",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Medhyena",
-                hint: "Medhyena needs to be caught.",
+                pokemon: "Medhyèna",
+                hint: "Medhyèna needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -38458,21 +38458,21 @@ module.exports = {
               {
                 requiredValue: 18,
                 option: 2,
-                pokemon: "Medhyena",
-                hint: "Your Medhyena needs to be at least level 18.",
+                pokemon: "Medhyèna",
+                hint: "Your Medhyèna needs to be at least level 18.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Grahyena",
-                hint: "Grahyena cannot be caught yet.",
+                pokemon: "Grahyèna",
+                hint: "Grahyèna cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Medhyena",
+                pokemon: "Medhyèna",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -38496,7 +38496,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Zigzaton",
-          evolvedPokemon: "Lineon",
+          evolvedPokemon: "Linéon",
           trigger: 1,
           restrictions: [
             {
@@ -38522,8 +38522,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lineon",
-              hint: "Lineon cannot be caught yet.",
+              pokemon: "Linéon",
+              hint: "Linéon cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -38598,7 +38598,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Zigzaton de Galar",
-          evolvedPokemon: "Lineon de Galar",
+          evolvedPokemon: "Linéon de Galar",
           trigger: 1,
           restrictions: [
             {
@@ -38624,8 +38624,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lineon de Galar",
-              hint: "Lineon de Galar cannot be caught yet.",
+              pokemon: "Linéon de Galar",
+              hint: "Linéon de Galar cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -38682,7 +38682,7 @@ module.exports = {
     },
     {
       id: 264,
-      name: "Lineon",
+      name: "Linéon",
       type: [0],
       eggCycles: 23,
       levelType: 2,
@@ -38721,7 +38721,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Zigzaton",
-            evolvedPokemon: "Lineon",
+            evolvedPokemon: "Linéon",
             trigger: 1,
             restrictions: [
               {
@@ -38747,8 +38747,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lineon",
-                hint: "Lineon cannot be caught yet.",
+                pokemon: "Linéon",
+                hint: "Linéon cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -38769,7 +38769,7 @@ module.exports = {
     },
     {
       id: 264.01,
-      name: "Lineon de Galar",
+      name: "Linéon de Galar",
       nativeRegion: 7,
       type: [15, 0],
       eggCycles: 23,
@@ -38778,15 +38778,15 @@ module.exports = {
       catchRate: 90,
       evolutions: [
         {
-          basePokemon: "Lineon de Galar",
+          basePokemon: "Linéon de Galar",
           evolvedPokemon: "Ixon",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Lineon de Galar",
-              hint: "Lineon de Galar needs to be caught.",
+              pokemon: "Linéon de Galar",
+              hint: "Linéon de Galar needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -38798,8 +38798,8 @@ module.exports = {
             {
               requiredValue: 35,
               option: 2,
-              pokemon: "Lineon de Galar",
-              hint: "Your Lineon de Galar needs to be at least level 35.",
+              pokemon: "Linéon de Galar",
+              hint: "Your Linéon de Galar needs to be at least level 35.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -38812,7 +38812,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lineon de Galar",
+              pokemon: "Linéon de Galar",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -38866,7 +38866,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Zigzaton de Galar",
-            evolvedPokemon: "Lineon de Galar",
+            evolvedPokemon: "Linéon de Galar",
             trigger: 1,
             restrictions: [
               {
@@ -38892,8 +38892,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lineon de Galar",
-                hint: "Lineon de Galar cannot be caught yet.",
+                pokemon: "Linéon de Galar",
+                hint: "Linéon de Galar cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -39532,7 +39532,7 @@ module.exports = {
     },
     {
       id: 270,
-      name: "Nenupiot",
+      name: "Nénupiot",
       type: [2, 4],
       eggCycles: 15,
       levelType: 3,
@@ -39540,15 +39540,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Nenupiot",
+          basePokemon: "Nénupiot",
           evolvedPokemon: "Lombre",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Nenupiot",
-              hint: "Nenupiot needs to be caught.",
+              pokemon: "Nénupiot",
+              hint: "Nénupiot needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -39560,8 +39560,8 @@ module.exports = {
             {
               requiredValue: 14,
               option: 2,
-              pokemon: "Nenupiot",
-              hint: "Your Nenupiot needs to be at least level 14.",
+              pokemon: "Nénupiot",
+              hint: "Your Nénupiot needs to be at least level 14.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -39574,7 +39574,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Nenupiot",
+              pokemon: "Nénupiot",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -39741,15 +39741,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Nenupiot",
+            basePokemon: "Nénupiot",
             evolvedPokemon: "Lombre",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Nenupiot",
-                hint: "Nenupiot needs to be caught.",
+                pokemon: "Nénupiot",
+                hint: "Nénupiot needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -39761,8 +39761,8 @@ module.exports = {
               {
                 requiredValue: 14,
                 option: 2,
-                pokemon: "Nenupiot",
-                hint: "Your Nenupiot needs to be at least level 14.",
+                pokemon: "Nénupiot",
+                hint: "Your Nénupiot needs to be at least level 14.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -39775,7 +39775,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Nenupiot",
+                pokemon: "Nénupiot",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -40182,7 +40182,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Nirondelle",
-          evolvedPokemon: "Heledelle",
+          evolvedPokemon: "Hélédelle",
           trigger: 1,
           restrictions: [
             {
@@ -40208,8 +40208,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Heledelle",
-              hint: "Heledelle cannot be caught yet.",
+              pokemon: "Hélédelle",
+              hint: "Hélédelle cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -40264,7 +40264,7 @@ module.exports = {
     },
     {
       id: 277,
-      name: "Heledelle",
+      name: "Hélédelle",
       type: [0, 9],
       eggCycles: 23,
       levelType: 3,
@@ -40296,7 +40296,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Nirondelle",
-            evolvedPokemon: "Heledelle",
+            evolvedPokemon: "Hélédelle",
             trigger: 1,
             restrictions: [
               {
@@ -40322,8 +40322,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Heledelle",
-                hint: "Heledelle cannot be caught yet.",
+                pokemon: "Hélédelle",
+                hint: "Hélédelle cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -40345,7 +40345,7 @@ module.exports = {
     },
     {
       id: 278,
-      name: "Goelise",
+      name: "Goélise",
       type: [2, 9],
       eggCycles: 20,
       levelType: 2,
@@ -40353,15 +40353,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Goelise",
+          basePokemon: "Goélise",
           evolvedPokemon: "Bekipan",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Goelise",
-              hint: "Goelise needs to be caught.",
+              pokemon: "Goélise",
+              hint: "Goélise needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -40373,8 +40373,8 @@ module.exports = {
             {
               requiredValue: 25,
               option: 2,
-              pokemon: "Goelise",
-              hint: "Your Goelise needs to be at least level 25.",
+              pokemon: "Goélise",
+              hint: "Your Goélise needs to be at least level 25.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -40387,7 +40387,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Goelise",
+              pokemon: "Goélise",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -40863,15 +40863,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Goelise",
+            basePokemon: "Goélise",
             evolvedPokemon: "Bekipan",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Goelise",
-                hint: "Goelise needs to be caught.",
+                pokemon: "Goélise",
+                hint: "Goélise needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -40883,8 +40883,8 @@ module.exports = {
               {
                 requiredValue: 25,
                 option: 2,
-                pokemon: "Goelise",
-                hint: "Your Goelise needs to be at least level 25.",
+                pokemon: "Goélise",
+                hint: "Your Goélise needs to be at least level 25.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -40897,7 +40897,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Goelise",
+                pokemon: "Goélise",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -41221,7 +41221,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Gardevoir",
-          evolvedPokemon: "Mega Gardevoir",
+          evolvedPokemon: "Méga-Gardevoir",
           trigger: 2,
           restrictions: [
             {
@@ -41250,7 +41250,7 @@ module.exports = {
               option: 1,
               name: "Gardevoir",
               megaStone: 19,
-              hint: "Gardevoir needs the Gardevoirite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.",
+              hint: "Gardevoir needs the Gardevoirite Méga-Stone.<br />Needs at least 63,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -41355,7 +41355,7 @@ module.exports = {
     },
     {
       id: 282.01,
-      name: "Mega Gardevoir",
+      name: "Méga-Gardevoir",
       type: [10, 17],
       eggCycles: 45,
       levelType: 4,
@@ -41380,7 +41380,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Gardevoir",
-            evolvedPokemon: "Mega Gardevoir",
+            evolvedPokemon: "Méga-Gardevoir",
             trigger: 2,
             restrictions: [
               {
@@ -41409,7 +41409,7 @@ module.exports = {
                 option: 1,
                 name: "Gardevoir",
                 megaStone: 19,
-                hint: "Gardevoir needs the Gardevoirite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.",
+                hint: "Gardevoir needs the Gardevoirite Méga-Stone.<br />Needs at least 63,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -41888,7 +41888,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Vigoroth",
-          evolvedPokemon: "Monaflemit",
+          evolvedPokemon: "Monaflèmit",
           trigger: 1,
           restrictions: [
             {
@@ -41914,8 +41914,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Monaflemit",
-              hint: "Monaflemit cannot be caught yet.",
+              pokemon: "Monaflèmit",
+              hint: "Monaflèmit cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -42010,7 +42010,7 @@ module.exports = {
     },
     {
       id: 289,
-      name: "Monaflemit",
+      name: "Monaflèmit",
       type: [0],
       eggCycles: 35,
       levelType: 4,
@@ -42040,7 +42040,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Vigoroth",
-            evolvedPokemon: "Monaflemit",
+            evolvedPokemon: "Monaflèmit",
             trigger: 1,
             restrictions: [
               {
@@ -42066,8 +42066,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Monaflemit",
-                hint: "Monaflemit cannot be caught yet.",
+                pokemon: "Monaflèmit",
+                hint: "Monaflèmit cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -43443,7 +43443,7 @@ module.exports = {
     },
     {
       id: 302,
-      name: "Tenefix",
+      name: "Ténéfix",
       type: [15, 13],
       eggCycles: 25,
       levelType: 3,
@@ -43451,15 +43451,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Tenefix",
-          evolvedPokemon: "Mega Tenefix",
+          basePokemon: "Ténéfix",
+          evolvedPokemon: "Méga-Ténéfix",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Tenefix",
-              hint: "Tenefix needs to be caught.",
+              pokemon: "Ténéfix",
+              hint: "Ténéfix needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -43471,7 +43471,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tenefix",
+              pokemon: "Ténéfix",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -43479,9 +43479,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Tenefix",
+              name: "Ténéfix",
               megaStone: 40,
-              hint: "Tenefix needs the Sablenite Mega Stone.<br />Needs at least 38,000 attack to Mega Evolve.",
+              hint: "Ténéfix needs the Sablenite Méga-Stone.<br />Needs at least 38,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -43530,7 +43530,7 @@ module.exports = {
     },
     {
       id: 302.01,
-      name: "Mega Tenefix",
+      name: "Méga-Ténéfix",
       type: [15, 13],
       eggCycles: 25,
       levelType: 3,
@@ -43554,15 +43554,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Tenefix",
-            evolvedPokemon: "Mega Tenefix",
+            basePokemon: "Ténéfix",
+            evolvedPokemon: "Méga-Ténéfix",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Tenefix",
-                hint: "Tenefix needs to be caught.",
+                pokemon: "Ténéfix",
+                hint: "Ténéfix needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -43574,7 +43574,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Tenefix",
+                pokemon: "Ténéfix",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -43582,9 +43582,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Tenefix",
+                name: "Ténéfix",
                 megaStone: 40,
-                hint: "Tenefix needs the Sablenite Mega Stone.<br />Needs at least 38,000 attack to Mega Evolve.",
+                hint: "Ténéfix needs the Sablenite Méga-Stone.<br />Needs at least 38,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -43607,7 +43607,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Mysdibule",
-          evolvedPokemon: "Mega Mysdibule",
+          evolvedPokemon: "Méga-Mysdibule",
           trigger: 2,
           restrictions: [
             {
@@ -43636,7 +43636,7 @@ module.exports = {
               option: 1,
               name: "Mysdibule",
               megaStone: 31,
-              hint: "Mysdibule needs the Mawilite Mega Stone.<br />Needs at least 36,500 attack to Mega Evolve.",
+              hint: "Mysdibule needs the Mawilite Méga-Stone.<br />Needs at least 36,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -43708,7 +43708,7 @@ module.exports = {
     },
     {
       id: 303.01,
-      name: "Mega Mysdibule",
+      name: "Méga-Mysdibule",
       type: [16, 17],
       eggCycles: 20,
       levelType: 1,
@@ -43733,7 +43733,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Mysdibule",
-            evolvedPokemon: "Mega Mysdibule",
+            evolvedPokemon: "Méga-Mysdibule",
             trigger: 2,
             restrictions: [
               {
@@ -43762,7 +43762,7 @@ module.exports = {
                 option: 1,
                 name: "Mysdibule",
                 megaStone: 31,
-                hint: "Mysdibule needs the Mawilite Mega Stone.<br />Needs at least 36,500 attack to Mega Evolve.",
+                hint: "Mysdibule needs the Mawilite Méga-Stone.<br />Needs at least 36,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -44035,7 +44035,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Galeking",
-          evolvedPokemon: "Mega Galeking",
+          evolvedPokemon: "Méga-Galeking",
           trigger: 2,
           restrictions: [
             {
@@ -44064,7 +44064,7 @@ module.exports = {
               option: 1,
               name: "Galeking",
               megaStone: 3,
-              hint: "Galeking needs the Galekingite Mega Stone.<br />Needs at least 62,000 attack to Mega Evolve.",
+              hint: "Galeking needs the Galekingite Méga-Stone.<br />Needs at least 62,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -44161,7 +44161,7 @@ module.exports = {
     },
     {
       id: 306.01,
-      name: "Mega Galeking",
+      name: "Méga-Galeking",
       type: [16],
       eggCycles: 80,
       levelType: 4,
@@ -44186,7 +44186,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Galeking",
-            evolvedPokemon: "Mega Galeking",
+            evolvedPokemon: "Méga-Galeking",
             trigger: 2,
             restrictions: [
               {
@@ -44215,7 +44215,7 @@ module.exports = {
                 option: 1,
                 name: "Galeking",
                 megaStone: 3,
-                hint: "Galeking needs the Galekingite Mega Stone.<br />Needs at least 62,000 attack to Mega Evolve.",
+                hint: "Galeking needs the Galekingite Méga-Stone.<br />Needs at least 62,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -44229,7 +44229,7 @@ module.exports = {
     },
     {
       id: 307,
-      name: "Meditikka",
+      name: "Méditikka",
       type: [6, 10],
       eggCycles: 20,
       levelType: 2,
@@ -44237,15 +44237,15 @@ module.exports = {
       catchRate: 180,
       evolutions: [
         {
-          basePokemon: "Meditikka",
+          basePokemon: "Méditikka",
           evolvedPokemon: "Charmina",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Meditikka",
-              hint: "Meditikka needs to be caught.",
+              pokemon: "Méditikka",
+              hint: "Méditikka needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -44257,8 +44257,8 @@ module.exports = {
             {
               requiredValue: 37,
               option: 2,
-              pokemon: "Meditikka",
-              hint: "Your Meditikka needs to be at least level 37.",
+              pokemon: "Méditikka",
+              hint: "Your Méditikka needs to be at least level 37.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -44271,7 +44271,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Meditikka",
+              pokemon: "Méditikka",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -44373,15 +44373,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Meditikka",
+            basePokemon: "Méditikka",
             evolvedPokemon: "Charmina",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Meditikka",
-                hint: "Meditikka needs to be caught.",
+                pokemon: "Méditikka",
+                hint: "Méditikka needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -44393,8 +44393,8 @@ module.exports = {
               {
                 requiredValue: 37,
                 option: 2,
-                pokemon: "Meditikka",
-                hint: "Your Meditikka needs to be at least level 37.",
+                pokemon: "Méditikka",
+                hint: "Your Méditikka needs to be at least level 37.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -44407,7 +44407,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Meditikka",
+                pokemon: "Méditikka",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -44422,7 +44422,7 @@ module.exports = {
     },
     {
       id: 308.01,
-      name: "Mega Charmina",
+      name: "Méga-Charmina",
       type: [6, 10],
       eggCycles: 20,
       levelType: 2,
@@ -44458,7 +44458,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Dynavolt",
-          evolvedPokemon: "Elecsprint",
+          evolvedPokemon: "Élecsprint",
           trigger: 1,
           restrictions: [
             {
@@ -44484,8 +44484,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Elecsprint",
-              hint: "Elecsprint cannot be caught yet.",
+              pokemon: "Élecsprint",
+              hint: "Élecsprint cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -44573,7 +44573,7 @@ module.exports = {
     },
     {
       id: 310,
-      name: "Elecsprint",
+      name: "Élecsprint",
       type: [3],
       eggCycles: 30,
       levelType: 4,
@@ -44581,15 +44581,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Elecsprint",
-          evolvedPokemon: "Mega Elecsprint",
+          basePokemon: "Élecsprint",
+          evolvedPokemon: "Méga-Élecsprint",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Elecsprint",
-              hint: "Elecsprint needs to be caught.",
+              pokemon: "Élecsprint",
+              hint: "Élecsprint needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -44601,7 +44601,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Elecsprint",
+              pokemon: "Élecsprint",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -44609,9 +44609,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Elecsprint",
+              name: "Élecsprint",
               megaStone: 30,
-              hint: "Elecsprint needs the Manectite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.",
+              hint: "Élecsprint needs the Manectite Méga-Stone.<br />Needs at least 55,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -44639,7 +44639,7 @@ module.exports = {
           2: [
             {
               route: 118,
-              requirements: "Elecsprint needs to be caught.",
+              requirements: "Élecsprint needs to be caught.",
             },
           ],
           6: [
@@ -44669,7 +44669,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Dynavolt",
-            evolvedPokemon: "Elecsprint",
+            evolvedPokemon: "Élecsprint",
             trigger: 1,
             restrictions: [
               {
@@ -44695,8 +44695,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Elecsprint",
-                hint: "Elecsprint cannot be caught yet.",
+                pokemon: "Élecsprint",
+                hint: "Élecsprint cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -44718,7 +44718,7 @@ module.exports = {
     },
     {
       id: 310.01,
-      name: "Mega Elecsprint",
+      name: "Méga-Élecsprint",
       type: [3],
       eggCycles: 30,
       levelType: 4,
@@ -44742,15 +44742,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Elecsprint",
-            evolvedPokemon: "Mega Elecsprint",
+            basePokemon: "Élecsprint",
+            evolvedPokemon: "Méga-Élecsprint",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Elecsprint",
-                hint: "Elecsprint needs to be caught.",
+                pokemon: "Élecsprint",
+                hint: "Élecsprint needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -44762,7 +44762,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Elecsprint",
+                pokemon: "Élecsprint",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -44770,9 +44770,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Elecsprint",
+                name: "Élecsprint",
                 megaStone: 30,
-                hint: "Elecsprint needs the Manectite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.",
+                hint: "Élecsprint needs the Manectite Méga-Stone.<br />Needs at least 55,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -44836,7 +44836,7 @@ module.exports = {
     },
     {
       id: 312,
-      name: "Negapi",
+      name: "Négapi",
       type: [3],
       eggCycles: 20,
       levelType: 2,
@@ -45009,7 +45009,7 @@ module.exports = {
     },
     {
       id: 315,
-      name: "Roselia",
+      name: "Rosélia",
       type: [4, 7],
       eggCycles: 20,
       levelType: 3,
@@ -45017,15 +45017,15 @@ module.exports = {
       catchRate: 150,
       evolutions: [
         {
-          basePokemon: "Roselia",
+          basePokemon: "Rosélia",
           evolvedPokemon: "Roserade",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Roselia",
-              hint: "Roselia needs to be caught.",
+              pokemon: "Rosélia",
+              hint: "Rosélia needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -45037,7 +45037,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Roselia",
+              pokemon: "Rosélia",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -45067,7 +45067,7 @@ module.exports = {
           2: [
             {
               route: 117,
-              requirements: "Roselia needs to be caught.",
+              requirements: "Rosélia needs to be caught.",
             },
           ],
           3: [
@@ -45151,7 +45151,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Rozbouton",
-            evolvedPokemon: "Roselia",
+            evolvedPokemon: "Rosélia",
             trigger: 2,
             restrictions: [
               {
@@ -45484,7 +45484,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Sharpedo",
-          evolvedPokemon: "Mega Sharpedo",
+          evolvedPokemon: "Méga-Sharpedo",
           trigger: 2,
           restrictions: [
             {
@@ -45513,7 +45513,7 @@ module.exports = {
               option: 1,
               name: "Sharpedo",
               megaStone: 44,
-              hint: "Sharpedo needs the Sharpedonite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.",
+              hint: "Sharpedo needs the Sharpedonite Méga-Stone.<br />Needs at least 55,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -45657,7 +45657,7 @@ module.exports = {
     },
     {
       id: 319.01,
-      name: "Mega Sharpedo",
+      name: "Méga-Sharpedo",
       type: [2, 15],
       eggCycles: 30,
       levelType: 4,
@@ -45682,7 +45682,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Sharpedo",
-            evolvedPokemon: "Mega Sharpedo",
+            evolvedPokemon: "Méga-Sharpedo",
             trigger: 2,
             restrictions: [
               {
@@ -45711,7 +45711,7 @@ module.exports = {
                 option: 1,
                 name: "Sharpedo",
                 megaStone: 44,
-                hint: "Sharpedo needs the Sharpedonite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.",
+                hint: "Sharpedo needs the Sharpedonite Méga-Stone.<br />Needs at least 55,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -46025,7 +46025,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Chamallot",
-          evolvedPokemon: "Camerupt",
+          evolvedPokemon: "Camérupt",
           trigger: 1,
           restrictions: [
             {
@@ -46051,8 +46051,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Camerupt",
-              hint: "Camerupt cannot be caught yet.",
+              pokemon: "Camérupt",
+              hint: "Camérupt cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -46118,7 +46118,7 @@ module.exports = {
     },
     {
       id: 323,
-      name: "Camerupt",
+      name: "Camérupt",
       type: [1, 8],
       eggCycles: 30,
       levelType: 2,
@@ -46126,15 +46126,15 @@ module.exports = {
       catchRate: 150,
       evolutions: [
         {
-          basePokemon: "Camerupt",
-          evolvedPokemon: "Mega Camerupt",
+          basePokemon: "Camérupt",
+          evolvedPokemon: "Méga-Camérupt",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Camerupt",
-              hint: "Camerupt needs to be caught.",
+              pokemon: "Camérupt",
+              hint: "Camérupt needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -46146,7 +46146,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Camerupt",
+              pokemon: "Camérupt",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -46154,9 +46154,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Camerupt",
+              name: "Camérupt",
               megaStone: 13,
-              hint: "Camerupt needs the Cameruptite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.",
+              hint: "Camérupt needs the Caméruptite Méga-Stone.<br />Needs at least 64,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -46200,7 +46200,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Chamallot",
-            evolvedPokemon: "Camerupt",
+            evolvedPokemon: "Camérupt",
             trigger: 1,
             restrictions: [
               {
@@ -46226,8 +46226,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Camerupt",
-                hint: "Camerupt cannot be caught yet.",
+                pokemon: "Camérupt",
+                hint: "Camérupt cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -46248,7 +46248,7 @@ module.exports = {
     },
     {
       id: 323.01,
-      name: "Mega Camerupt",
+      name: "Méga-Camérupt",
       type: [1, 8],
       eggCycles: 30,
       levelType: 2,
@@ -46272,15 +46272,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Camerupt",
-            evolvedPokemon: "Mega Camerupt",
+            basePokemon: "Camérupt",
+            evolvedPokemon: "Méga-Camérupt",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Camerupt",
-                hint: "Camerupt needs to be caught.",
+                pokemon: "Camérupt",
+                hint: "Camérupt needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -46292,7 +46292,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Camerupt",
+                pokemon: "Camérupt",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -46300,9 +46300,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Camerupt",
+                name: "Camérupt",
                 megaStone: 13,
-                hint: "Camerupt needs the Cameruptite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.",
+                hint: "Camérupt needs the Caméruptite Méga-Stone.<br />Needs at least 64,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -46724,7 +46724,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Vibraninf",
-          evolvedPokemon: "Libegon",
+          evolvedPokemon: "Libégon",
           trigger: 1,
           restrictions: [
             {
@@ -46750,8 +46750,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Libegon",
-              hint: "Libegon cannot be caught yet.",
+              pokemon: "Libégon",
+              hint: "Libégon cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -46839,7 +46839,7 @@ module.exports = {
     },
     {
       id: 330,
-      name: "Libegon",
+      name: "Libégon",
       type: [8, 14],
       eggCycles: 45,
       levelType: 3,
@@ -46877,7 +46877,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Vibraninf",
-            evolvedPokemon: "Libegon",
+            evolvedPokemon: "Libégon",
             trigger: 1,
             restrictions: [
               {
@@ -46903,8 +46903,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Libegon",
-                hint: "Libegon cannot be caught yet.",
+                pokemon: "Libégon",
+                hint: "Libégon cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -47357,7 +47357,7 @@ module.exports = {
     },
     {
       id: 334.01,
-      name: "Mega Altaria",
+      name: "Méga-Altaria",
       type: [14, 17],
       eggCycles: 20,
       levelType: 0,
@@ -47433,7 +47433,7 @@ module.exports = {
     },
     {
       id: 336,
-      name: "Seviper",
+      name: "Séviper",
       type: [7],
       eggCycles: 20,
       levelType: 5,
@@ -47481,7 +47481,7 @@ module.exports = {
     },
     {
       id: 337,
-      name: "Seleroc",
+      name: "Séléroc",
       type: [12, 10],
       eggCycles: 25,
       levelType: 1,
@@ -47969,7 +47969,7 @@ module.exports = {
     },
     {
       id: 341,
-      name: "Ecrapince",
+      name: "Écrapince",
       type: [2],
       eggCycles: 15,
       levelType: 5,
@@ -47977,15 +47977,15 @@ module.exports = {
       catchRate: 205,
       evolutions: [
         {
-          basePokemon: "Ecrapince",
+          basePokemon: "Écrapince",
           evolvedPokemon: "Colhomard",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Ecrapince",
-              hint: "Ecrapince needs to be caught.",
+              pokemon: "Écrapince",
+              hint: "Écrapince needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -47997,8 +47997,8 @@ module.exports = {
             {
               requiredValue: 30,
               option: 2,
-              pokemon: "Ecrapince",
-              hint: "Your Ecrapince needs to be at least level 30.",
+              pokemon: "Écrapince",
+              hint: "Your Écrapince needs to be at least level 30.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -48011,7 +48011,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ecrapince",
+              pokemon: "Écrapince",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -48141,15 +48141,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Ecrapince",
+            basePokemon: "Écrapince",
             evolvedPokemon: "Colhomard",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Ecrapince",
-                hint: "Ecrapince needs to be caught.",
+                pokemon: "Écrapince",
+                hint: "Écrapince needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -48161,8 +48161,8 @@ module.exports = {
               {
                 requiredValue: 30,
                 option: 2,
-                pokemon: "Ecrapince",
-                hint: "Your Ecrapince needs to be at least level 30.",
+                pokemon: "Écrapince",
+                hint: "Your Écrapince needs to be at least level 30.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -48175,7 +48175,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ecrapince",
+                pokemon: "Écrapince",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -48936,7 +48936,7 @@ module.exports = {
     },
     {
       id: 351,
-      name: "Morpheo",
+      name: "Morphéo",
       type: [0],
       eggCycles: 25,
       levelType: 2,
@@ -48970,7 +48970,7 @@ module.exports = {
     },
     {
       id: 351.01,
-      name: "Morpheo (Solaire)",
+      name: "Morphéo (Solaire)",
       type: [1],
       eggCycles: 25,
       levelType: 2,
@@ -48996,7 +48996,7 @@ module.exports = {
           {
             dungeon: "Weather Institute",
             requirements:
-              "Morpheo needs to be caught and The weather needs to be Harsh Sunlight.",
+              "Morphéo needs to be caught and The weather needs to be Harsh Sunlight.",
           },
         ],
       },
@@ -49005,7 +49005,7 @@ module.exports = {
     },
     {
       id: 351.02,
-      name: "Morpheo (Eau de Pluie)",
+      name: "Morphéo (Eau de Pluie)",
       type: [2],
       eggCycles: 25,
       levelType: 2,
@@ -49031,7 +49031,7 @@ module.exports = {
           {
             dungeon: "Weather Institute",
             requirements:
-              "Morpheo needs to be caught and The weather needs to be Rain or Thunderstorm.",
+              "Morphéo needs to be caught and The weather needs to be Rain or Thunderstorm.",
           },
         ],
       },
@@ -49040,7 +49040,7 @@ module.exports = {
     },
     {
       id: 351.03,
-      name: "Morpheo (Blizzard)",
+      name: "Morphéo (Blizzard)",
       type: [5],
       eggCycles: 25,
       levelType: 2,
@@ -49066,7 +49066,7 @@ module.exports = {
           {
             dungeon: "Weather Institute",
             requirements:
-              "Morpheo needs to be caught and The weather needs to be Snow or Blizzard or Hail.",
+              "Morphéo needs to be caught and The weather needs to be Snow or Blizzard or Hail.",
           },
         ],
       },
@@ -49406,7 +49406,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Branette",
-          evolvedPokemon: "Mega Branette",
+          evolvedPokemon: "Méga-Branette",
           trigger: 2,
           restrictions: [
             {
@@ -49435,7 +49435,7 @@ module.exports = {
               option: 1,
               name: "Branette",
               megaStone: 8,
-              hint: "Branette needs the Banettite Mega Stone.<br />Needs at least 57,500 attack to Mega Evolve.",
+              hint: "Branette needs the Banettite Méga-Stone.<br />Needs at least 57,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -49540,7 +49540,7 @@ module.exports = {
     },
     {
       id: 354.01,
-      name: "Mega Branette",
+      name: "Méga-Branette",
       type: [13],
       eggCycles: 38,
       levelType: 1,
@@ -49565,7 +49565,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Branette",
-            evolvedPokemon: "Mega Branette",
+            evolvedPokemon: "Méga-Branette",
             trigger: 2,
             restrictions: [
               {
@@ -49594,7 +49594,7 @@ module.exports = {
                 option: 1,
                 name: "Branette",
                 megaStone: 8,
-                hint: "Branette needs the Banettite Mega Stone.<br />Needs at least 57,500 attack to Mega Evolve.",
+                hint: "Branette needs the Banettite Méga-Stone.<br />Needs at least 57,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -49608,7 +49608,7 @@ module.exports = {
     },
     {
       id: 355,
-      name: "Skelenox",
+      name: "Skelénox",
       type: [13],
       eggCycles: 25,
       levelType: 1,
@@ -49616,15 +49616,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Skelenox",
+          basePokemon: "Skelénox",
           evolvedPokemon: "Teraclope",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Skelenox",
-              hint: "Skelenox needs to be caught.",
+              pokemon: "Skelénox",
+              hint: "Skelénox needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -49636,8 +49636,8 @@ module.exports = {
             {
               requiredValue: 37,
               option: 2,
-              pokemon: "Skelenox",
-              hint: "Your Skelenox needs to be at least level 37.",
+              pokemon: "Skelénox",
+              hint: "Your Skelénox needs to be at least level 37.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -49650,7 +49650,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Skelenox",
+              pokemon: "Skelénox",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -49972,15 +49972,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Skelenox",
+            basePokemon: "Skelénox",
             evolvedPokemon: "Teraclope",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Skelenox",
-                hint: "Skelenox needs to be caught.",
+                pokemon: "Skelénox",
+                hint: "Skelénox needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -49992,8 +49992,8 @@ module.exports = {
               {
                 requiredValue: 37,
                 option: 2,
-                pokemon: "Skelenox",
-                hint: "Your Skelenox needs to be at least level 37.",
+                pokemon: "Skelénox",
+                hint: "Your Skelénox needs to be at least level 37.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -50006,7 +50006,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Skelenox",
+                pokemon: "Skelénox",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -50075,7 +50075,7 @@ module.exports = {
     },
     {
       id: 358,
-      name: "Eoko",
+      name: "Éoko",
       type: [10],
       eggCycles: 25,
       levelType: 1,
@@ -50119,7 +50119,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Korillon",
-            evolvedPokemon: "Eoko",
+            evolvedPokemon: "Éoko",
             trigger: 2,
             restrictions: [
               {
@@ -50170,7 +50170,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Absol",
-          evolvedPokemon: "Mega Absol",
+          evolvedPokemon: "Méga-Absol",
           trigger: 2,
           restrictions: [
             {
@@ -50199,7 +50199,7 @@ module.exports = {
               option: 1,
               name: "Absol",
               megaStone: 1,
-              hint: "Absol needs the Absolite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.",
+              hint: "Absol needs the Absolite Méga-Stone.<br />Needs at least 57,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -50304,7 +50304,7 @@ module.exports = {
     },
     {
       id: 359.01,
-      name: "Mega Absol",
+      name: "Méga-Absol",
       type: [15],
       eggCycles: 25,
       levelType: 3,
@@ -50329,7 +50329,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Absol",
-            evolvedPokemon: "Mega Absol",
+            evolvedPokemon: "Méga-Absol",
             trigger: 2,
             restrictions: [
               {
@@ -50358,7 +50358,7 @@ module.exports = {
                 option: 1,
                 name: "Absol",
                 megaStone: 1,
-                hint: "Absol needs the Absolite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.",
+                hint: "Absol needs the Absolite Méga-Stone.<br />Needs at least 57,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -50372,7 +50372,7 @@ module.exports = {
     },
     {
       id: 360,
-      name: "Okeoke",
+      name: "Okéoké",
       type: [10],
       eggCycles: 16,
       levelType: 2,
@@ -50380,15 +50380,15 @@ module.exports = {
       catchRate: 125,
       evolutions: [
         {
-          basePokemon: "Okeoke",
-          evolvedPokemon: "Qulbutoke",
+          basePokemon: "Okéoké",
+          evolvedPokemon: "Qulbutoké",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Okeoke",
-              hint: "Okeoke needs to be caught.",
+              pokemon: "Okéoké",
+              hint: "Okéoké needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -50400,21 +50400,21 @@ module.exports = {
             {
               requiredValue: 15,
               option: 2,
-              pokemon: "Okeoke",
-              hint: "Your Okeoke needs to be at least level 15.",
+              pokemon: "Okéoké",
+              hint: "Your Okéoké needs to be at least level 15.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Qulbutoke",
+              pokemon: "Qulbutoké",
               hint: "Qulbutoke cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Okeoke",
+              pokemon: "Okéoké",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -50447,7 +50447,7 @@ module.exports = {
             },
           ],
         },
-        7: ["Qulbutoke"],
+        7: ["Qulbutoké"],
       },
       catchRatePercent: 37,
       eggSteps: 640,
@@ -50650,7 +50650,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Oniglali",
-          evolvedPokemon: "Mega Oniglali",
+          evolvedPokemon: "Méga-Oniglali",
           trigger: 2,
           restrictions: [
             {
@@ -50679,7 +50679,7 @@ module.exports = {
               option: 1,
               name: "Oniglali",
               megaStone: 21,
-              hint: "Oniglali needs the Glalitite Mega Stone.<br />Needs at least 60,000 attack to Mega Evolve.",
+              hint: "Oniglali needs the Glalitite Méga-Stone.<br />Needs at least 60,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -50812,7 +50812,7 @@ module.exports = {
     },
     {
       id: 362.01,
-      name: "Mega Oniglali",
+      name: "Méga-Oniglali",
       type: [5],
       eggCycles: 30,
       levelType: 2,
@@ -50837,7 +50837,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Oniglali",
-            evolvedPokemon: "Mega Oniglali",
+            evolvedPokemon: "Méga-Oniglali",
             trigger: 2,
             restrictions: [
               {
@@ -50866,7 +50866,7 @@ module.exports = {
                 option: 1,
                 name: "Oniglali",
                 megaStone: 21,
-                hint: "Oniglali needs the Glalitite Mega Stone.<br />Needs at least 60,000 attack to Mega Evolve.",
+                hint: "Oniglali needs the Glalitite Méga-Stone.<br />Needs at least 60,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -51831,7 +51831,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Drattak",
-          evolvedPokemon: "Mega Drattak",
+          evolvedPokemon: "Méga-Drattak",
           trigger: 2,
           restrictions: [
             {
@@ -51860,7 +51860,7 @@ module.exports = {
               option: 1,
               name: "Drattak",
               megaStone: 41,
-              hint: "Drattak needs the Salamencite Mega Stone.<br />Needs at least 97,500 attack to Mega Evolve.",
+              hint: "Drattak needs the Salamencite Méga-Stone.<br />Needs at least 97,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -51954,7 +51954,7 @@ module.exports = {
     },
     {
       id: 373.01,
-      name: "Mega Drattak",
+      name: "Méga-Drattak",
       type: [14, 9],
       eggCycles: 90,
       levelType: 4,
@@ -51979,7 +51979,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Drattak",
-            evolvedPokemon: "Mega Drattak",
+            evolvedPokemon: "Méga-Drattak",
             trigger: 2,
             restrictions: [
               {
@@ -52008,7 +52008,7 @@ module.exports = {
                 option: 1,
                 name: "Drattak",
                 megaStone: 41,
-                hint: "Drattak needs the Salamencite Mega Stone.<br />Needs at least 97,500 attack to Mega Evolve.",
+                hint: "Drattak needs the Salamencite Méga-Stone.<br />Needs at least 97,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -52031,7 +52031,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Terhal",
-          evolvedPokemon: "Metang",
+          evolvedPokemon: "Métang",
           trigger: 1,
           restrictions: [
             {
@@ -52057,8 +52057,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Metang",
-              hint: "Metang cannot be caught yet.",
+              pokemon: "Métang",
+              hint: "Métang cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -52113,7 +52113,7 @@ module.exports = {
     },
     {
       id: 375,
-      name: "Metang",
+      name: "Métang",
       type: [16, 10],
       eggCycles: 60,
       levelType: 4,
@@ -52121,15 +52121,15 @@ module.exports = {
       catchRate: 3,
       evolutions: [
         {
-          basePokemon: "Metang",
-          evolvedPokemon: "Metalosse",
+          basePokemon: "Métang",
+          evolvedPokemon: "Métalosse",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Metang",
-              hint: "Metang needs to be caught.",
+              pokemon: "Métang",
+              hint: "Métang needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -52141,21 +52141,21 @@ module.exports = {
             {
               requiredValue: 45,
               option: 2,
-              pokemon: "Metang",
-              hint: "Your Metang needs to be at least level 45.",
+              pokemon: "Métang",
+              hint: "Your Métang needs to be at least level 45.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Metalosse",
-              hint: "Metalosse cannot be caught yet.",
+              pokemon: "Métalosse",
+              hint: "Métalosse cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Metang",
+              pokemon: "Métang",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -52199,7 +52199,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Terhal",
-            evolvedPokemon: "Metang",
+            evolvedPokemon: "Métang",
             trigger: 1,
             restrictions: [
               {
@@ -52225,8 +52225,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Metang",
-                hint: "Metang cannot be caught yet.",
+                pokemon: "Métang",
+                hint: "Métang cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -52247,7 +52247,7 @@ module.exports = {
     },
     {
       id: 376,
-      name: "Metalosse",
+      name: "Métalosse",
       type: [16, 10],
       eggCycles: 90,
       levelType: 4,
@@ -52255,15 +52255,15 @@ module.exports = {
       catchRate: 3,
       evolutions: [
         {
-          basePokemon: "Metalosse",
-          evolvedPokemon: "Mega Metalosse",
+          basePokemon: "Métalosse",
+          evolvedPokemon: "Méga-Métalosse",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Metalosse",
-              hint: "Metalosse needs to be caught.",
+              pokemon: "Métalosse",
+              hint: "Métalosse needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -52275,7 +52275,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Metalosse",
+              pokemon: "Métalosse",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -52283,9 +52283,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Metalosse",
+              name: "Métalosse",
               megaStone: 33,
-              hint: "Metalosse needs the Metalosseite Mega Stone.<br />Needs at least 94,000 attack to Mega Evolve.",
+              hint: "Métalosse needs the Métalosseite Méga-Stone.<br />Needs at least 94,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -52332,15 +52332,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Metang",
-            evolvedPokemon: "Metalosse",
+            basePokemon: "Métang",
+            evolvedPokemon: "Métalosse",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Metang",
-                hint: "Metang needs to be caught.",
+                pokemon: "Métang",
+                hint: "Métang needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -52352,21 +52352,21 @@ module.exports = {
               {
                 requiredValue: 45,
                 option: 2,
-                pokemon: "Metang",
-                hint: "Your Metang needs to be at least level 45.",
+                pokemon: "Métang",
+                hint: "Your Métang needs to be at least level 45.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Metalosse",
-                hint: "Metalosse cannot be caught yet.",
+                pokemon: "Métalosse",
+                hint: "Métalosse cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Metang",
+                pokemon: "Métang",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -52382,7 +52382,7 @@ module.exports = {
     },
     {
       id: 376.01,
-      name: "Mega Metalosse",
+      name: "Méga-Métalosse",
       type: [16, 10],
       eggCycles: 90,
       levelType: 4,
@@ -52406,15 +52406,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Metalosse",
-            evolvedPokemon: "Mega Metalosse",
+            basePokemon: "Métalosse",
+            evolvedPokemon: "Méga-Métalosse",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Metalosse",
-                hint: "Metalosse needs to be caught.",
+                pokemon: "Métalosse",
+                hint: "Métalosse needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -52426,7 +52426,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Metalosse",
+                pokemon: "Métalosse",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -52434,9 +52434,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Metalosse",
+                name: "Métalosse",
                 megaStone: 33,
-                hint: "Metalosse needs the Metalosseite Mega Stone.<br />Needs at least 94,000 attack to Mega Evolve.",
+                hint: "Métalosse needs the Métalosseite Méga-Stone.<br />Needs at least 94,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -52573,7 +52573,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Latias",
-          evolvedPokemon: "Mega Latias",
+          evolvedPokemon: "Méga-Latias",
           trigger: 2,
           restrictions: [
             {
@@ -52602,7 +52602,7 @@ module.exports = {
               option: 1,
               name: "Latias",
               megaStone: 26,
-              hint: "Latias needs the Latiasite Mega Stone.<br />Needs at least 81,000 attack to Mega Evolve.",
+              hint: "Latias needs the Latiasite Méga-Stone.<br />Needs at least 81,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -52652,7 +52652,7 @@ module.exports = {
     },
     {
       id: 380.01,
-      name: "Mega Latias",
+      name: "Méga-Latias",
       type: [14, 10],
       eggCycles: 120,
       levelType: 4,
@@ -52677,7 +52677,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Latias",
-            evolvedPokemon: "Mega Latias",
+            evolvedPokemon: "Méga-Latias",
             trigger: 2,
             restrictions: [
               {
@@ -52706,7 +52706,7 @@ module.exports = {
                 option: 1,
                 name: "Latias",
                 megaStone: 26,
-                hint: "Latias needs the Latiasite Mega Stone.<br />Needs at least 81,000 attack to Mega Evolve.",
+                hint: "Latias needs the Latiasite Méga-Stone.<br />Needs at least 81,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -52729,7 +52729,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Latios",
-          evolvedPokemon: "Mega Latios",
+          evolvedPokemon: "Méga-Latios",
           trigger: 2,
           restrictions: [
             {
@@ -52758,7 +52758,7 @@ module.exports = {
               option: 1,
               name: "Latios",
               megaStone: 27,
-              hint: "Latios needs the Latiosite Mega Stone.<br />Needs at least 86,500 attack to Mega Evolve.",
+              hint: "Latios needs the Latiosite Méga-Stone.<br />Needs at least 86,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -52808,7 +52808,7 @@ module.exports = {
     },
     {
       id: 381.01,
-      name: "Mega Latios",
+      name: "Méga-Latios",
       type: [14, 10],
       eggCycles: 120,
       levelType: 4,
@@ -52833,7 +52833,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Latios",
-            evolvedPokemon: "Mega Latios",
+            evolvedPokemon: "Méga-Latios",
             trigger: 2,
             restrictions: [
               {
@@ -52862,7 +52862,7 @@ module.exports = {
                 option: 1,
                 name: "Latios",
                 megaStone: 27,
-                hint: "Latios needs the Latiosite Mega Stone.<br />Needs at least 86,500 attack to Mega Evolve.",
+                hint: "Latios needs the Latiosite Méga-Stone.<br />Needs at least 86,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -52914,7 +52914,7 @@ module.exports = {
               option: 1,
               name: "Kyogre",
               megaStone: 12,
-              hint: "Kyogre needs the Blue Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.",
+              hint: "Kyogre needs the Blue Orb Méga-Stone.<br />Needs at least 116,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -53012,7 +53012,7 @@ module.exports = {
                 option: 1,
                 name: "Kyogre",
                 megaStone: 12,
-                hint: "Kyogre needs the Blue Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.",
+                hint: "Kyogre needs the Blue Orb Méga-Stone.<br />Needs at least 116,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -53064,7 +53064,7 @@ module.exports = {
               option: 1,
               name: "Groudon",
               megaStone: 39,
-              hint: "Groudon needs the Red Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.",
+              hint: "Groudon needs the Red Orb Méga-Stone.<br />Needs at least 116,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -53162,7 +53162,7 @@ module.exports = {
                 option: 1,
                 name: "Groudon",
                 megaStone: 39,
-                hint: "Groudon needs the Red Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.",
+                hint: "Groudon needs the Red Orb Méga-Stone.<br />Needs at least 116,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -53219,7 +53219,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Rayquaza",
-          evolvedPokemon: "Mega Rayquaza",
+          evolvedPokemon: "Méga-Rayquaza",
           trigger: 2,
           restrictions: [
             {
@@ -53248,7 +53248,7 @@ module.exports = {
               option: 1,
               name: "Rayquaza",
               megaStone: 34,
-              hint: "Rayquaza needs the Meteorite Mega Stone.<br />Needs at least 131,000 attack to Mega Evolve.",
+              hint: "Rayquaza needs the Meteorite Méga-Stone.<br />Needs at least 131,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -53284,7 +53284,7 @@ module.exports = {
     },
     {
       id: 384.01,
-      name: "Mega Rayquaza",
+      name: "Méga-Rayquaza",
       type: [14, 9],
       eggCycles: 120,
       levelType: 4,
@@ -53309,7 +53309,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Rayquaza",
-            evolvedPokemon: "Mega Rayquaza",
+            evolvedPokemon: "Méga-Rayquaza",
             trigger: 2,
             restrictions: [
               {
@@ -53338,7 +53338,7 @@ module.exports = {
                 option: 1,
                 name: "Rayquaza",
                 megaStone: 34,
-                hint: "Rayquaza needs the Meteorite Mega Stone.<br />Needs at least 131,000 attack to Mega Evolve.",
+                hint: "Rayquaza needs the Meteorite Méga-Stone.<br />Needs at least 131,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -54375,7 +54375,7 @@ module.exports = {
     },
     {
       id: 396,
-      name: "Etourmi",
+      name: "Étourmi",
       type: [0, 9],
       eggCycles: 15,
       levelType: 3,
@@ -54383,15 +54383,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Etourmi",
-          evolvedPokemon: "Etourvol",
+          basePokemon: "Étourmi",
+          evolvedPokemon: "Étourvol",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Etourmi",
-              hint: "Etourmi needs to be caught.",
+              pokemon: "Étourmi",
+              hint: "Étourmi needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -54403,21 +54403,21 @@ module.exports = {
             {
               requiredValue: 14,
               option: 2,
-              pokemon: "Etourmi",
-              hint: "Your Etourmi needs to be at least level 14.",
+              pokemon: "Étourmi",
+              hint: "Your Étourmi needs to be at least level 14.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Etourvol",
-              hint: "Etourvol cannot be caught yet.",
+              pokemon: "Étourvol",
+              hint: "Étourvol cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Etourmi",
+              pokemon: "Étourmi",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -54469,7 +54469,7 @@ module.exports = {
     },
     {
       id: 397,
-      name: "Etourvol",
+      name: "Étourvol",
       type: [0, 9],
       eggCycles: 23,
       levelType: 3,
@@ -54477,15 +54477,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Etourvol",
-          evolvedPokemon: "Etouraptor",
+          basePokemon: "Étourvol",
+          evolvedPokemon: "Étouraptor",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Etourvol",
-              hint: "Etourvol needs to be caught.",
+              pokemon: "Étourvol",
+              hint: "Étourvol needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -54497,21 +54497,21 @@ module.exports = {
             {
               requiredValue: 34,
               option: 2,
-              pokemon: "Etourvol",
-              hint: "Your Etourvol needs to be at least level 34.",
+              pokemon: "Étourvol",
+              hint: "Your Étourvol needs to be at least level 34.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Etouraptor",
-              hint: "Etouraptor cannot be caught yet.",
+              pokemon: "Étouraptor",
+              hint: "Étouraptor cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Etourvol",
+              pokemon: "Étourvol",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -54573,15 +54573,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Etourmi",
-            evolvedPokemon: "Etourvol",
+            basePokemon: "Étourmi",
+            evolvedPokemon: "Étourvol",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Etourmi",
-                hint: "Etourmi needs to be caught.",
+                pokemon: "Étourmi",
+                hint: "Étourmi needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -54593,21 +54593,21 @@ module.exports = {
               {
                 requiredValue: 14,
                 option: 2,
-                pokemon: "Etourmi",
-                hint: "Your Etourmi needs to be at least level 14.",
+                pokemon: "Étourmi",
+                hint: "Your Étourmi needs to be at least level 14.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Etourvol",
-                hint: "Etourvol cannot be caught yet.",
+                pokemon: "Étourvol",
+                hint: "Étourvol cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Etourmi",
+                pokemon: "Étourmi",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -54622,7 +54622,7 @@ module.exports = {
     },
     {
       id: 398,
-      name: "Etouraptor",
+      name: "Étouraptor",
       type: [0, 9],
       eggCycles: 35,
       levelType: 3,
@@ -54651,15 +54651,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Etourvol",
-            evolvedPokemon: "Etouraptor",
+            basePokemon: "Étourvol",
+            evolvedPokemon: "Étouraptor",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Etourvol",
-                hint: "Etourvol needs to be caught.",
+                pokemon: "Étourvol",
+                hint: "Étourvol needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -54671,21 +54671,21 @@ module.exports = {
               {
                 requiredValue: 34,
                 option: 2,
-                pokemon: "Etourvol",
-                hint: "Your Etourvol needs to be at least level 34.",
+                pokemon: "Étourvol",
+                hint: "Your Étourvol needs to be at least level 34.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Etouraptor",
-                hint: "Etouraptor cannot be caught yet.",
+                pokemon: "Étouraptor",
+                hint: "Étouraptor cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Etourvol",
+                pokemon: "Étourvol",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -54930,7 +54930,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Crikzik",
-          evolvedPokemon: "Melokrik",
+          evolvedPokemon: "Mélokrik",
           trigger: 1,
           restrictions: [
             {
@@ -54956,8 +54956,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Melokrik",
-              hint: "Melokrik cannot be caught yet.",
+              pokemon: "Mélokrik",
+              hint: "Mélokrik cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -55026,7 +55026,7 @@ module.exports = {
     },
     {
       id: 402,
-      name: "Melokrik",
+      name: "Mélokrik",
       type: [11],
       eggCycles: 23,
       levelType: 3,
@@ -55058,7 +55058,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Crikzik",
-            evolvedPokemon: "Melokrik",
+            evolvedPokemon: "Mélokrik",
             trigger: 1,
             restrictions: [
               {
@@ -55084,8 +55084,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Melokrik",
-                hint: "Melokrik cannot be caught yet.",
+                pokemon: "Mélokrik",
+                hint: "Mélokrik cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -55105,7 +55105,7 @@ module.exports = {
             0: 1.61,
           },
         },
-        15: ["Alpha Melokrik"],
+        15: ["Alpha Mélokrik"],
       },
       catchRatePercent: 17,
       eggSteps: 920,
@@ -55481,7 +55481,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Rozbouton",
-          evolvedPokemon: "Roselia",
+          evolvedPokemon: "Rosélia",
           trigger: 2,
           restrictions: [
             {
@@ -55584,7 +55584,7 @@ module.exports = {
           },
         ],
         6: ["Grass"],
-        7: ["Roselia", "Roserade"],
+        7: ["Rosélia", "Roserade"],
       },
       catchRatePercent: 63,
       eggSteps: 640,
@@ -55628,15 +55628,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Roselia",
+            basePokemon: "Rosélia",
             evolvedPokemon: "Roserade",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Roselia",
-                hint: "Roselia needs to be caught.",
+                pokemon: "Rosélia",
+                hint: "Rosélia needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -55648,7 +55648,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Roselia",
+                pokemon: "Rosélia",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -58345,7 +58345,7 @@ module.exports = {
     },
     {
       id: 418,
-      name: "Mustebouee",
+      name: "Mustébouée",
       type: [2],
       eggCycles: 20,
       levelType: 2,
@@ -58353,15 +58353,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Mustebouee",
-          evolvedPokemon: "Musteflott",
+          basePokemon: "Mustébouée",
+          evolvedPokemon: "Mustéflott",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Mustebouee",
-              hint: "Mustebouee needs to be caught.",
+              pokemon: "Mustébouée",
+              hint: "Mustébouée needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -58373,21 +58373,21 @@ module.exports = {
             {
               requiredValue: 26,
               option: 2,
-              pokemon: "Mustebouee",
-              hint: "Your Mustebouee needs to be at least level 26.",
+              pokemon: "Mustébouée",
+              hint: "Your Mustébouée needs to be at least level 26.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Musteflott",
-              hint: "Musteflott cannot be caught yet.",
+              pokemon: "Mustéflott",
+              hint: "Mustéflott cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Mustebouee",
+              pokemon: "Mustébouée",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -58448,7 +58448,7 @@ module.exports = {
     },
     {
       id: 419,
-      name: "Musteflott",
+      name: "Mustéflott",
       type: [2],
       eggCycles: 30,
       levelType: 2,
@@ -58513,15 +58513,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Mustebouee",
-            evolvedPokemon: "Musteflott",
+            basePokemon: "Mustébouée",
+            evolvedPokemon: "Mustéflott",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Mustebouee",
-                hint: "Mustebouee needs to be caught.",
+                pokemon: "Mustébouée",
+                hint: "Mustébouée needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -58533,21 +58533,21 @@ module.exports = {
               {
                 requiredValue: 26,
                 option: 2,
-                pokemon: "Mustebouee",
-                hint: "Your Mustebouee needs to be at least level 26.",
+                pokemon: "Mustébouée",
+                hint: "Your Mustébouée needs to be at least level 26.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Musteflott",
-                hint: "Musteflott cannot be caught yet.",
+                pokemon: "Mustéflott",
+                hint: "Mustéflott cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Mustebouee",
+                pokemon: "Mustébouée",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -59732,7 +59732,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Lockpin",
-          evolvedPokemon: "Mega Lockpin",
+          evolvedPokemon: "Méga-Lockpin",
           trigger: 2,
           restrictions: [
             {
@@ -59761,7 +59761,7 @@ module.exports = {
               option: 1,
               name: "Lockpin",
               megaStone: 28,
-              hint: "Lockpin needs the Lopunnite Mega Stone.<br />Needs at least 47,500 attack to Mega Evolve.",
+              hint: "Lockpin needs the Lopunnite Méga-Stone.<br />Needs at least 47,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -59844,7 +59844,7 @@ module.exports = {
     },
     {
       id: 428.01,
-      name: "Mega Lockpin",
+      name: "Méga-Lockpin",
       type: [0, 6],
       eggCycles: 30,
       levelType: 2,
@@ -59869,7 +59869,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Lockpin",
-            evolvedPokemon: "Mega Lockpin",
+            evolvedPokemon: "Méga-Lockpin",
             trigger: 2,
             restrictions: [
               {
@@ -59898,7 +59898,7 @@ module.exports = {
                 option: 1,
                 name: "Lockpin",
                 megaStone: 28,
-                hint: "Lockpin needs the Lopunnite Mega Stone.<br />Needs at least 47,500 attack to Mega Evolve.",
+                hint: "Lockpin needs the Lopunnite Méga-Stone.<br />Needs at least 47,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -59912,7 +59912,7 @@ module.exports = {
     },
     {
       id: 429,
-      name: "Magireve",
+      name: "Magirêve",
       type: [13],
       eggCycles: 38,
       levelType: 1,
@@ -59936,14 +59936,14 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Feuforeve",
-            evolvedPokemon: "Magireve",
+            basePokemon: "Feuforêve",
+            evolvedPokemon: "Magirêve",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Feuforeve",
+                pokemon: "Feuforêve",
                 hint: "Feuforeve needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
@@ -59956,7 +59956,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Feuforeve",
+                pokemon: "Feuforêve",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -59996,15 +59996,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Cornebre",
+            basePokemon: "Cornèbre",
             evolvedPokemon: "Corboss",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Cornebre",
-                hint: "Cornebre needs to be caught.",
+                pokemon: "Cornèbre",
+                hint: "Cornèbre needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -60016,7 +60016,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Cornebre",
+                pokemon: "Cornèbre",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -60207,7 +60207,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Korillon",
-          evolvedPokemon: "Eoko",
+          evolvedPokemon: "Éoko",
           trigger: 2,
           restrictions: [
             {
@@ -60292,7 +60292,7 @@ module.exports = {
             dungeon: "Reflection Cave",
           },
         ],
-        7: ["Eoko"],
+        7: ["Éoko"],
         12: ["Payapa"],
       },
       catchRatePercent: 36,
@@ -60513,7 +60513,7 @@ module.exports = {
     },
     {
       id: 436,
-      name: "Archeomire",
+      name: "Archéomire",
       type: [16, 10],
       eggCycles: 20,
       levelType: 2,
@@ -60521,15 +60521,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Archeomire",
-          evolvedPokemon: "Archeodong",
+          basePokemon: "Archéomire",
+          evolvedPokemon: "Archéodong",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Archeomire",
-              hint: "Archeomire needs to be caught.",
+              pokemon: "Archéomire",
+              hint: "Archéomire needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -60541,21 +60541,21 @@ module.exports = {
             {
               requiredValue: 33,
               option: 2,
-              pokemon: "Archeomire",
-              hint: "Your Archeomire needs to be at least level 33.",
+              pokemon: "Archéomire",
+              hint: "Your Archéomire needs to be at least level 33.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Archeodong",
-              hint: "Archeodong cannot be caught yet.",
+              pokemon: "Archéodong",
+              hint: "Archéodong cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Archeomire",
+              pokemon: "Archéomire",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -60646,7 +60646,7 @@ module.exports = {
     },
     {
       id: 437,
-      name: "Archeodong",
+      name: "Archéodong",
       type: [16, 10],
       eggCycles: 30,
       levelType: 2,
@@ -60738,15 +60738,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Archeomire",
-            evolvedPokemon: "Archeodong",
+            basePokemon: "Archéomire",
+            evolvedPokemon: "Archéodong",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Archeomire",
-                hint: "Archeomire needs to be caught.",
+                pokemon: "Archéomire",
+                hint: "Archéomire needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -60758,21 +60758,21 @@ module.exports = {
               {
                 requiredValue: 33,
                 option: 2,
-                pokemon: "Archeomire",
-                hint: "Your Archeomire needs to be at least level 33.",
+                pokemon: "Archéomire",
+                hint: "Your Archéomire needs to be at least level 33.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Archeodong",
-                hint: "Archeodong cannot be caught yet.",
+                pokemon: "Archéodong",
+                hint: "Archéodong cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Archeomire",
+                pokemon: "Archéomire",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -60787,7 +60787,7 @@ module.exports = {
     },
     {
       id: 438,
-      name: "Manzai",
+      name: "Manzaï",
       type: [12],
       eggCycles: 16,
       levelType: 2,
@@ -60795,15 +60795,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Manzai",
+          basePokemon: "Manzaï",
           evolvedPokemon: "Simularbre",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Manzai",
-              hint: "Manzai needs to be caught.",
+              pokemon: "Manzaï",
+              hint: "Manzaï needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -60815,8 +60815,8 @@ module.exports = {
             {
               requiredValue: 32,
               option: 2,
-              pokemon: "Manzai",
-              hint: "Your Manzai needs to be at least level 32.",
+              pokemon: "Manzaï",
+              hint: "Your Manzaï needs to be at least level 32.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -60829,7 +60829,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Manzai",
+              pokemon: "Manzaï",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -61469,7 +61469,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Carchakrok",
-          evolvedPokemon: "Mega Carchakrok",
+          evolvedPokemon: "Méga-Carchakrok",
           trigger: 2,
           restrictions: [
             {
@@ -61498,7 +61498,7 @@ module.exports = {
               option: 1,
               name: "Carchakrok",
               megaStone: 18,
-              hint: "Carchakrok needs the Carchakrokite Mega Stone.<br />Needs at least 93,000 attack to Mega Evolve.",
+              hint: "Carchakrok needs the Carchakrokite Méga-Stone.<br />Needs at least 93,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -61592,7 +61592,7 @@ module.exports = {
     },
     {
       id: 445.01,
-      name: "Mega Carchakrok",
+      name: "Méga-Carchakrok",
       type: [14, 8],
       eggCycles: 90,
       levelType: 4,
@@ -61617,7 +61617,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Carchakrok",
-            evolvedPokemon: "Mega Carchakrok",
+            evolvedPokemon: "Méga-Carchakrok",
             trigger: 2,
             restrictions: [
               {
@@ -61646,7 +61646,7 @@ module.exports = {
                 option: 1,
                 name: "Carchakrok",
                 megaStone: 18,
-                hint: "Carchakrok needs the Carchakrokite Mega Stone.<br />Needs at least 93,000 attack to Mega Evolve.",
+                hint: "Carchakrok needs the Carchakrokite Méga-Stone.<br />Needs at least 93,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -61846,7 +61846,7 @@ module.exports = {
           },
         ],
         6: ["Fighting"],
-        7: ["Lucario", "Mega Lucario"],
+        7: ["Lucario", "Méga-Lucario"],
         12: ["Chople"],
         21: ["Pink"],
       },
@@ -61864,7 +61864,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Lucario",
-          evolvedPokemon: "Mega Lucario",
+          evolvedPokemon: "Méga-Lucario",
           trigger: 2,
           restrictions: [
             {
@@ -61893,7 +61893,7 @@ module.exports = {
               option: 1,
               name: "Lucario",
               megaStone: 29,
-              hint: "Lucario needs the Lucarionite Mega Stone.<br />Needs at least 72,500 attack to Mega Evolve.",
+              hint: "Lucario needs the Lucarionite Méga-Stone.<br />Needs at least 72,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -61975,7 +61975,7 @@ module.exports = {
     },
     {
       id: 448.01,
-      name: "Mega Lucario",
+      name: "Méga-Lucario",
       type: [6, 16],
       eggCycles: 25,
       levelType: 3,
@@ -62000,7 +62000,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Lucario",
-            evolvedPokemon: "Mega Lucario",
+            evolvedPokemon: "Méga-Lucario",
             trigger: 2,
             restrictions: [
               {
@@ -62029,7 +62029,7 @@ module.exports = {
                 option: 1,
                 name: "Lucario",
                 megaStone: 29,
-                hint: "Lucario needs the Lucarionite Mega Stone.<br />Needs at least 72,500 attack to Mega Evolve.",
+                hint: "Lucario needs the Lucarionite Méga-Stone.<br />Needs at least 72,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -62739,7 +62739,7 @@ module.exports = {
     },
     {
       id: 456,
-      name: "Ecayon",
+      name: "Écayon",
       type: [2],
       eggCycles: 20,
       levelType: 0,
@@ -62747,15 +62747,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Ecayon",
-          evolvedPokemon: "Lumineon",
+          basePokemon: "Écayon",
+          evolvedPokemon: "Luminéon",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Ecayon",
-              hint: "Ecayon needs to be caught.",
+              pokemon: "Écayon",
+              hint: "Écayon needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -62767,21 +62767,21 @@ module.exports = {
             {
               requiredValue: 31,
               option: 2,
-              pokemon: "Ecayon",
-              hint: "Your Ecayon needs to be at least level 31.",
+              pokemon: "Écayon",
+              hint: "Your Écayon needs to be at least level 31.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lumineon",
-              hint: "Lumineon cannot be caught yet.",
+              pokemon: "Luminéon",
+              hint: "Luminéon cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ecayon",
+              pokemon: "Écayon",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -62866,7 +62866,7 @@ module.exports = {
     },
     {
       id: 457,
-      name: "Lumineon",
+      name: "Luminéon",
       type: [2],
       eggCycles: 30,
       levelType: 0,
@@ -62919,15 +62919,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Ecayon",
-            evolvedPokemon: "Lumineon",
+            basePokemon: "Écayon",
+            evolvedPokemon: "Luminéon",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Ecayon",
-                hint: "Ecayon needs to be caught.",
+                pokemon: "Écayon",
+                hint: "Écayon needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -62939,21 +62939,21 @@ module.exports = {
               {
                 requiredValue: 31,
                 option: 2,
-                pokemon: "Ecayon",
-                hint: "Your Ecayon needs to be at least level 31.",
+                pokemon: "Écayon",
+                hint: "Your Écayon needs to be at least level 31.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lumineon",
-                hint: "Lumineon cannot be caught yet.",
+                pokemon: "Luminéon",
+                hint: "Luminéon cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ecayon",
+                pokemon: "Écayon",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -63254,7 +63254,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Blizzaroi",
-          evolvedPokemon: "Mega Blizzaroi",
+          evolvedPokemon: "Méga-Blizzaroi",
           trigger: 2,
           restrictions: [
             {
@@ -63283,7 +63283,7 @@ module.exports = {
               option: 1,
               name: "Blizzaroi",
               megaStone: 0,
-              hint: "Blizzaroi needs the Abomasite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+              hint: "Blizzaroi needs the Abomasite Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -63411,7 +63411,7 @@ module.exports = {
     },
     {
       id: 460.01,
-      name: "Mega Blizzaroi",
+      name: "Méga-Blizzaroi",
       type: [4, 5],
       eggCycles: 30,
       levelType: 4,
@@ -63436,7 +63436,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Blizzaroi",
-            evolvedPokemon: "Mega Blizzaroi",
+            evolvedPokemon: "Méga-Blizzaroi",
             trigger: 2,
             restrictions: [
               {
@@ -63465,7 +63465,7 @@ module.exports = {
                 option: 1,
                 name: "Blizzaroi",
                 megaStone: 0,
-                hint: "Blizzaroi needs the Abomasite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.",
+                hint: "Blizzaroi needs the Abomasite Méga-Stone.<br />Needs at least 71,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -63576,7 +63576,7 @@ module.exports = {
     },
     {
       id: 462,
-      name: "Magnezone",
+      name: "Magnézone",
       type: [3, 16],
       eggCycles: 45,
       levelType: 2,
@@ -63626,15 +63626,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Magneton",
-            evolvedPokemon: "Magnezone",
+            basePokemon: "Magnéton",
+            evolvedPokemon: "Magnézone",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Magneton needs to be caught.",
+                pokemon: "Magnéton",
+                hint: "Magnéton needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -63646,21 +63646,21 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Your Magneton needs to be at least level 20.",
+                pokemon: "Magnéton",
+                hint: "Your Magnéton needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magnezone",
-                hint: "Magnezone cannot be caught yet.",
+                pokemon: "Magnézone",
+                hint: "Magnézone cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
+                pokemon: "Magnéton",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -63683,15 +63683,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Magneton",
-            evolvedPokemon: "Magnezone",
+            basePokemon: "Magnéton",
+            evolvedPokemon: "Magnézone",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Magneton needs to be caught.",
+                pokemon: "Magnéton",
+                hint: "Magnéton needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -63703,21 +63703,21 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Your Magneton needs to be at least level 20.",
+                pokemon: "Magnéton",
+                hint: "Your Magnéton needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magnezone",
-                hint: "Magnezone cannot be caught yet.",
+                pokemon: "Magnézone",
+                hint: "Magnézone cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
+                pokemon: "Magnéton",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -63740,15 +63740,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Magneton",
-            evolvedPokemon: "Magnezone",
+            basePokemon: "Magnéton",
+            evolvedPokemon: "Magnézone",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Magneton needs to be caught.",
+                pokemon: "Magnéton",
+                hint: "Magnéton needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -63760,21 +63760,21 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Your Magneton needs to be at least level 20.",
+                pokemon: "Magnéton",
+                hint: "Your Magnéton needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magnezone",
-                hint: "Magnezone cannot be caught yet.",
+                pokemon: "Magnézone",
+                hint: "Magnézone cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
+                pokemon: "Magnéton",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -63797,15 +63797,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Magneton",
-            evolvedPokemon: "Magnezone",
+            basePokemon: "Magnéton",
+            evolvedPokemon: "Magnézone",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Magneton needs to be caught.",
+                pokemon: "Magnéton",
+                hint: "Magnéton needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -63817,21 +63817,21 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Your Magneton needs to be at least level 20.",
+                pokemon: "Magnéton",
+                hint: "Your Magnéton needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magnezone",
-                hint: "Magnezone cannot be caught yet.",
+                pokemon: "Magnézone",
+                hint: "Magnézone cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
+                pokemon: "Magnéton",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -63854,15 +63854,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Magneton",
-            evolvedPokemon: "Magnezone",
+            basePokemon: "Magnéton",
+            evolvedPokemon: "Magnézone",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Magneton needs to be caught.",
+                pokemon: "Magnéton",
+                hint: "Magnéton needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -63874,21 +63874,21 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Your Magneton needs to be at least level 20.",
+                pokemon: "Magnéton",
+                hint: "Your Magnéton needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magnezone",
-                hint: "Magnezone cannot be caught yet.",
+                pokemon: "Magnézone",
+                hint: "Magnézone cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
+                pokemon: "Magnéton",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -63911,15 +63911,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Magneton",
-            evolvedPokemon: "Magnezone",
+            basePokemon: "Magnéton",
+            evolvedPokemon: "Magnézone",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Magneton",
-                hint: "Magneton needs to be caught.",
+                pokemon: "Magnéton",
+                hint: "Magnéton needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -63931,7 +63931,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Magneton",
+                pokemon: "Magnéton",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64079,15 +64079,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Rhinoferos",
+            basePokemon: "Rhinoféros",
             evolvedPokemon: "Rhinastoc",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Rhinoferos",
-                hint: "Rhinoferos needs to be caught.",
+                pokemon: "Rhinoféros",
+                hint: "Rhinoféros needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64099,7 +64099,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Rhinoferos",
+                pokemon: "Rhinoféros",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64202,7 +64202,7 @@ module.exports = {
     },
     {
       id: 466,
-      name: "Elekable",
+      name: "Élekable",
       type: [3],
       eggCycles: 38,
       levelType: 2,
@@ -64255,15 +64255,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Elektek",
-            evolvedPokemon: "Elekable",
+            basePokemon: "Élektek",
+            evolvedPokemon: "Élekable",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Elektek",
-                hint: "Elektek needs to be caught.",
+                pokemon: "Élektek",
+                hint: "Élektek needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64275,7 +64275,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Elektek",
+                pokemon: "Élektek",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64475,7 +64475,7 @@ module.exports = {
         2: [
           {
             dungeon: "Pinwheel Forest",
-            requirements: "Yanmega needs to be caught.",
+            requirements: "YanMéga-needs to be caught.",
           },
         ],
         5: [
@@ -64508,7 +64508,7 @@ module.exports = {
                 requiredValue: 1,
                 option: 0,
                 pokemon: "Yanmega",
-                hint: "Yanmega cannot be caught yet.",
+                hint: "YanMéga-cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64570,15 +64570,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Pyllali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64590,8 +64590,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -64604,7 +64604,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64627,15 +64627,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Pyllali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64647,8 +64647,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -64661,7 +64661,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64684,15 +64684,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Pyllali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64704,8 +64704,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -64718,7 +64718,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64741,15 +64741,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Pyllali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64761,8 +64761,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -64775,7 +64775,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64798,15 +64798,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Pyllali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64818,7 +64818,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64877,15 +64877,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Givrali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64897,8 +64897,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -64911,7 +64911,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64934,15 +64934,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Givrali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -64954,8 +64954,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -64968,7 +64968,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -64991,15 +64991,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Givrali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -65011,8 +65011,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -65025,7 +65025,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -65048,15 +65048,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Givrali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -65068,8 +65068,8 @@ module.exports = {
               {
                 requiredValue: 20,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 20.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 20.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -65082,7 +65082,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -65105,15 +65105,15 @@ module.exports = {
             ignoreECChange: false,
           },
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Givrali",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -65125,7 +65125,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -65377,7 +65377,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Gallame",
-          evolvedPokemon: "Mega Gallame",
+          evolvedPokemon: "Méga-Gallame",
           trigger: 2,
           restrictions: [
             {
@@ -65406,7 +65406,7 @@ module.exports = {
               option: 1,
               name: "Gallame",
               megaStone: 17,
-              hint: "Gallame needs the Galladite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.",
+              hint: "Gallame needs the Galladite Méga-Stone.<br />Needs at least 63,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -65477,7 +65477,7 @@ module.exports = {
     },
     {
       id: 475.01,
-      name: "Mega Gallame",
+      name: "Méga-Gallame",
       type: [10, 6],
       eggCycles: 45,
       levelType: 4,
@@ -65502,7 +65502,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Gallame",
-            evolvedPokemon: "Mega Gallame",
+            evolvedPokemon: "Méga-Gallame",
             trigger: 2,
             restrictions: [
               {
@@ -65531,7 +65531,7 @@ module.exports = {
                 option: 1,
                 name: "Gallame",
                 megaStone: 17,
-                hint: "Gallame needs the Galladite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.",
+                hint: "Gallame needs the Galladite Méga-Stone.<br />Needs at least 63,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -66220,7 +66220,7 @@ module.exports = {
     },
     {
       id: 479.04,
-      name: "Motisma (Helice)",
+      name: "Motisma (Hélice)",
       type: [3, 9],
       eggCycles: 20,
       levelType: 2,
@@ -66316,7 +66316,7 @@ module.exports = {
     },
     {
       id: 480,
-      name: "Crehelf",
+      name: "Créhelf",
       type: [10],
       eggCycles: 80,
       levelType: 4,
@@ -66353,7 +66353,7 @@ module.exports = {
     },
     {
       id: 481,
-      name: "Crefollet",
+      name: "Créfollet",
       type: [10],
       eggCycles: 80,
       levelType: 4,
@@ -66396,7 +66396,7 @@ module.exports = {
     },
     {
       id: 482,
-      name: "Crefadet",
+      name: "Créfadet",
       type: [10],
       eggCycles: 80,
       levelType: 4,
@@ -67023,7 +67023,7 @@ module.exports = {
     },
     {
       id: 492.01,
-      name: "Shaymin (Celeste)",
+      name: "Shaymin (Céleste)",
       type: [4, 9],
       eggCycles: 120,
       levelType: 3,
@@ -67582,7 +67582,7 @@ module.exports = {
     },
     {
       id: 495,
-      name: "Vipelierre",
+      name: "Vipélierre",
       type: [4],
       eggCycles: 20,
       levelType: 3,
@@ -67590,15 +67590,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Vipelierre",
+          basePokemon: "Vipélierre",
           evolvedPokemon: "Lianaja",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Vipelierre",
-              hint: "Vipelierre needs to be caught.",
+              pokemon: "Vipélierre",
+              hint: "Vipélierre needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -67610,8 +67610,8 @@ module.exports = {
             {
               requiredValue: 17,
               option: 2,
-              pokemon: "Vipelierre",
-              hint: "Your Vipelierre needs to be at least level 17.",
+              pokemon: "Vipélierre",
+              hint: "Your Vipélierre needs to be at least level 17.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -67624,7 +67624,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Vipelierre",
+              pokemon: "Vipélierre",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -67726,15 +67726,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Vipelierre",
+            basePokemon: "Vipélierre",
             evolvedPokemon: "Lianaja",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Vipelierre",
-                hint: "Vipelierre needs to be caught.",
+                pokemon: "Vipélierre",
+                hint: "Vipélierre needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -67746,8 +67746,8 @@ module.exports = {
               {
                 requiredValue: 17,
                 option: 2,
-                pokemon: "Vipelierre",
-                hint: "Your Vipelierre needs to be at least level 17.",
+                pokemon: "Vipélierre",
+                hint: "Your Vipélierre needs to be at least level 17.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -67760,7 +67760,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Vipelierre",
+                pokemon: "Vipélierre",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -69049,7 +69049,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Chacripan",
-          evolvedPokemon: "Leopardus",
+          evolvedPokemon: "Léopardus",
           trigger: 1,
           restrictions: [
             {
@@ -69075,8 +69075,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Leopardus",
-              hint: "Leopardus cannot be caught yet.",
+              pokemon: "Léopardus",
+              hint: "Léopardus cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -69156,7 +69156,7 @@ module.exports = {
     },
     {
       id: 510,
-      name: "Leopardus",
+      name: "Léopardus",
       type: [15],
       eggCycles: 30,
       levelType: 2,
@@ -69234,7 +69234,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Chacripan",
-            evolvedPokemon: "Leopardus",
+            evolvedPokemon: "Léopardus",
             trigger: 1,
             restrictions: [
               {
@@ -69260,8 +69260,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Leopardus",
-                hint: "Leopardus cannot be caught yet.",
+                pokemon: "Léopardus",
+                hint: "Léopardus cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -69954,7 +69954,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Colombeau",
-          evolvedPokemon: "Deflaisan",
+          evolvedPokemon: "Déflaisan",
           trigger: 1,
           restrictions: [
             {
@@ -69980,8 +69980,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Deflaisan",
-              hint: "Deflaisan cannot be caught yet.",
+              pokemon: "Déflaisan",
+              hint: "Déflaisan cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -70102,7 +70102,7 @@ module.exports = {
     },
     {
       id: 521,
-      name: "Deflaisan",
+      name: "Déflaisan",
       type: [0, 9],
       eggCycles: 35,
       levelType: 3,
@@ -70158,7 +70158,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Colombeau",
-            evolvedPokemon: "Deflaisan",
+            evolvedPokemon: "Déflaisan",
             trigger: 1,
             restrictions: [
               {
@@ -70184,8 +70184,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Deflaisan",
-                hint: "Deflaisan cannot be caught yet.",
+                pokemon: "Déflaisan",
+                hint: "Déflaisan cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -70206,7 +70206,7 @@ module.exports = {
     },
     {
       id: 522,
-      name: "Zebibron",
+      name: "Zébibron",
       type: [3],
       eggCycles: 20,
       levelType: 2,
@@ -70214,15 +70214,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Zebibron",
-          evolvedPokemon: "Zeblitz",
+          basePokemon: "Zébibron",
+          evolvedPokemon: "Zéblitz",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Zebibron",
-              hint: "Zebibron needs to be caught.",
+              pokemon: "Zébibron",
+              hint: "Zébibron needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -70234,21 +70234,21 @@ module.exports = {
             {
               requiredValue: 27,
               option: 2,
-              pokemon: "Zebibron",
-              hint: "Your Zebibron needs to be at least level 27.",
+              pokemon: "Zébibron",
+              hint: "Your Zébibron needs to be at least level 27.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Zeblitz",
-              hint: "Zeblitz cannot be caught yet.",
+              pokemon: "Zéblitz",
+              hint: "Zéblitz cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Zebibron",
+              pokemon: "Zébibron",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -70277,7 +70277,7 @@ module.exports = {
           4: [
             {
               route: 3,
-              requirements: "Zebibron needs to be caught.",
+              requirements: "Zébibron needs to be caught.",
             },
           ],
         },
@@ -70288,7 +70288,7 @@ module.exports = {
     },
     {
       id: 523,
-      name: "Zeblitz",
+      name: "Zéblitz",
       type: [3],
       eggCycles: 30,
       levelType: 2,
@@ -70314,25 +70314,25 @@ module.exports = {
           4: [
             {
               route: 7,
-              requirements: "Zeblitz needs to be caught.",
+              requirements: "Zéblitz needs to be caught.",
             },
             {
               route: 3,
-              requirements: "Zeblitz needs to be caught.",
+              requirements: "Zéblitz needs to be caught.",
             },
           ],
         },
         5: [
           {
-            basePokemon: "Zebibron",
-            evolvedPokemon: "Zeblitz",
+            basePokemon: "Zébibron",
+            evolvedPokemon: "Zéblitz",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Zebibron",
-                hint: "Zebibron needs to be caught.",
+                pokemon: "Zébibron",
+                hint: "Zébibron needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -70344,21 +70344,21 @@ module.exports = {
               {
                 requiredValue: 27,
                 option: 2,
-                pokemon: "Zebibron",
-                hint: "Your Zebibron needs to be at least level 27.",
+                pokemon: "Zébibron",
+                hint: "Your Zébibron needs to be at least level 27.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Zeblitz",
-                hint: "Zeblitz cannot be caught yet.",
+                pokemon: "Zéblitz",
+                hint: "Zéblitz cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Zebibron",
+                pokemon: "Zébibron",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -70382,7 +70382,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Nodulithe",
-          evolvedPokemon: "Geolithe",
+          evolvedPokemon: "Géolithe",
           trigger: 1,
           restrictions: [
             {
@@ -70408,8 +70408,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Geolithe",
-              hint: "Geolithe cannot be caught yet.",
+              pokemon: "Géolithe",
+              hint: "Géolithe cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -70474,7 +70474,7 @@ module.exports = {
     },
     {
       id: 525,
-      name: "Geolithe",
+      name: "Géolithe",
       type: [12],
       eggCycles: 23,
       levelType: 3,
@@ -70482,15 +70482,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Geolithe",
+          basePokemon: "Géolithe",
           evolvedPokemon: "Gigalithe",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Geolithe",
-              hint: "Geolithe needs to be caught.",
+              pokemon: "Géolithe",
+              hint: "Géolithe needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -70502,7 +70502,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Geolithe",
+              pokemon: "Géolithe",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -70580,7 +70580,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Nodulithe",
-            evolvedPokemon: "Geolithe",
+            evolvedPokemon: "Géolithe",
             trigger: 1,
             restrictions: [
               {
@@ -70606,8 +70606,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Geolithe",
-                hint: "Geolithe cannot be caught yet.",
+                pokemon: "Géolithe",
+                hint: "Géolithe cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -70669,15 +70669,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Geolithe",
+            basePokemon: "Géolithe",
             evolvedPokemon: "Gigalithe",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Geolithe",
-                hint: "Geolithe needs to be caught.",
+                pokemon: "Géolithe",
+                hint: "Géolithe needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -70689,7 +70689,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Geolithe",
+                pokemon: "Géolithe",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -71104,7 +71104,7 @@ module.exports = {
     },
     {
       id: 531,
-      name: "Nanmeouie",
+      name: "Nanméouïe",
       type: [0],
       eggCycles: 20,
       levelType: 1,
@@ -71112,15 +71112,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Nanmeouie",
-          evolvedPokemon: "Mega Nanmeouie",
+          basePokemon: "Nanméouïe",
+          evolvedPokemon: "Méga-Nanméouïe",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Nanmeouie",
-              hint: "Nanmeouie needs to be caught.",
+              pokemon: "Nanméouïe",
+              hint: "Nanméouïe needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -71132,7 +71132,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Nanmeouie",
+              pokemon: "Nanméouïe",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -71140,9 +71140,9 @@ module.exports = {
             {
               requiredValue: 1,
               option: 1,
-              name: "Nanmeouie",
+              name: "Nanméouïe",
               megaStone: 7,
-              hint: "Nanmeouie needs the Audinite Mega Stone.<br />Needs at least 52,000 attack to Mega Evolve.",
+              hint: "Nanméouïe needs the Audinite Méga-Stone.<br />Needs at least 52,000 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -71233,7 +71233,7 @@ module.exports = {
     },
     {
       id: 531.01,
-      name: "Mega Nanmeouie",
+      name: "Méga-Nanméouïe",
       type: [0, 17],
       eggCycles: 20,
       levelType: 1,
@@ -71257,15 +71257,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Nanmeouie",
-            evolvedPokemon: "Mega Nanmeouie",
+            basePokemon: "Nanméouïe",
+            evolvedPokemon: "Méga-Nanméouïe",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Nanmeouie",
-                hint: "Nanmeouie needs to be caught.",
+                pokemon: "Nanméouïe",
+                hint: "Nanméouïe needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -71277,7 +71277,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Nanmeouie",
+                pokemon: "Nanméouïe",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -71285,9 +71285,9 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 1,
-                name: "Nanmeouie",
+                name: "Nanméouïe",
                 megaStone: 7,
-                hint: "Nanmeouie needs the Audinite Mega Stone.<br />Needs at least 52,000 attack to Mega Evolve.",
+                hint: "Nanméouïe needs the Audinite Méga-Stone.<br />Needs at least 52,000 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -71391,7 +71391,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Ouvrifier",
-          evolvedPokemon: "Betochef",
+          evolvedPokemon: "Bétochef",
           trigger: 2,
           restrictions: [
             {
@@ -71532,7 +71532,7 @@ module.exports = {
     },
     {
       id: 534,
-      name: "Betochef",
+      name: "Bétochef",
       type: [6],
       eggCycles: 45,
       levelType: 3,
@@ -71576,7 +71576,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Ouvrifier",
-            evolvedPokemon: "Betochef",
+            evolvedPokemon: "Bétochef",
             trigger: 2,
             restrictions: [
               {
@@ -71620,7 +71620,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Tritonde",
-          evolvedPokemon: "Batracne",
+          evolvedPokemon: "Batracné",
           trigger: 1,
           restrictions: [
             {
@@ -71646,8 +71646,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Batracne",
-              hint: "Batracne cannot be caught yet.",
+              pokemon: "Batracné",
+              hint: "Batracné cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -71721,7 +71721,7 @@ module.exports = {
     },
     {
       id: 536,
-      name: "Batracne",
+      name: "Batracné",
       type: [2, 8],
       eggCycles: 30,
       levelType: 3,
@@ -71729,15 +71729,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Batracne",
+          basePokemon: "Batracné",
           evolvedPokemon: "Crapustule",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Batracne",
-              hint: "Batracne needs to be caught.",
+              pokemon: "Batracné",
+              hint: "Batracné needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -71749,8 +71749,8 @@ module.exports = {
             {
               requiredValue: 36,
               option: 2,
-              pokemon: "Batracne",
-              hint: "Your Batracne needs to be at least level 36.",
+              pokemon: "Batracné",
+              hint: "Your Batracné needs to be at least level 36.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -71763,7 +71763,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Batracne",
+              pokemon: "Batracné",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -71840,7 +71840,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Tritonde",
-            evolvedPokemon: "Batracne",
+            evolvedPokemon: "Batracné",
             trigger: 1,
             restrictions: [
               {
@@ -71866,8 +71866,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Batracne",
-                hint: "Batracne cannot be caught yet.",
+                pokemon: "Batracné",
+                hint: "Batracné cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -71956,15 +71956,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Batracne",
+            basePokemon: "Batracné",
             evolvedPokemon: "Crapustule",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Batracne",
-                hint: "Batracne needs to be caught.",
+                pokemon: "Batracné",
+                hint: "Batracné needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -71976,8 +71976,8 @@ module.exports = {
               {
                 requiredValue: 36,
                 option: 2,
-                pokemon: "Batracne",
-                hint: "Your Batracne needs to be at least level 36.",
+                pokemon: "Batracné",
+                hint: "Your Batracné needs to be at least level 36.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -71990,7 +71990,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Batracne",
+                pokemon: "Batracné",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -72085,7 +72085,7 @@ module.exports = {
     },
     {
       id: 539,
-      name: "Karaclee",
+      name: "Karaclée",
       type: [6],
       eggCycles: 20,
       levelType: 2,
@@ -72111,15 +72111,15 @@ module.exports = {
           4: [
             {
               route: 23,
-              requirements: "Karaclee needs to be caught.",
+              requirements: "Karaclée needs to be caught.",
             },
             {
               route: 15,
-              requirements: "Karaclee needs to be caught.",
+              requirements: "Karaclée needs to be caught.",
             },
             {
               route: 18,
-              requirements: "Karaclee needs to be caught.",
+              requirements: "Karaclée needs to be caught.",
             },
           ],
           5: [
@@ -72151,11 +72151,11 @@ module.exports = {
         2: [
           {
             dungeon: "Victory Road unys",
-            requirements: "Karaclee needs to be caught.",
+            requirements: "Karaclée needs to be caught.",
           },
           {
             dungeon: "Pinwheel Forest",
-            requirements: "Karaclee needs to be caught.",
+            requirements: "Karaclée needs to be caught.",
           },
         ],
         6: ["Fighting"],
@@ -73653,7 +73653,7 @@ module.exports = {
     },
     {
       id: 551,
-      name: "Mascaiman",
+      name: "Mascaïman",
       type: [8, 15],
       eggCycles: 20,
       levelType: 3,
@@ -73661,15 +73661,15 @@ module.exports = {
       catchRate: 180,
       evolutions: [
         {
-          basePokemon: "Mascaiman",
+          basePokemon: "Mascaïman",
           evolvedPokemon: "Escroco",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Mascaiman",
-              hint: "Mascaiman needs to be caught.",
+              pokemon: "Mascaïman",
+              hint: "Mascaïman needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -73681,8 +73681,8 @@ module.exports = {
             {
               requiredValue: 29,
               option: 2,
-              pokemon: "Mascaiman",
-              hint: "Your Mascaiman needs to be at least level 29.",
+              pokemon: "Mascaïman",
+              hint: "Your Mascaïman needs to be at least level 29.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -73695,7 +73695,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Mascaiman",
+              pokemon: "Mascaïman",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -73839,15 +73839,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Mascaiman",
+            basePokemon: "Mascaïman",
             evolvedPokemon: "Escroco",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Mascaiman",
-                hint: "Mascaiman needs to be caught.",
+                pokemon: "Mascaïman",
+                hint: "Mascaïman needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -73859,8 +73859,8 @@ module.exports = {
               {
                 requiredValue: 29,
                 option: 2,
-                pokemon: "Mascaiman",
-                hint: "Your Mascaiman needs to be at least level 29.",
+                pokemon: "Mascaïman",
+                hint: "Your Mascaïman needs to be at least level 29.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -73873,7 +73873,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Mascaiman",
+                pokemon: "Mascaïman",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -74710,7 +74710,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Baggiguane",
-          evolvedPokemon: "Baggaid",
+          evolvedPokemon: "Baggaïd",
           trigger: 1,
           restrictions: [
             {
@@ -74736,8 +74736,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Baggaid",
-              hint: "Baggaid cannot be caught yet.",
+              pokemon: "Baggaïd",
+              hint: "Baggaïd cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -74828,7 +74828,7 @@ module.exports = {
     },
     {
       id: 560,
-      name: "Baggaid",
+      name: "Baggaïd",
       type: [15, 6],
       eggCycles: 23,
       levelType: 2,
@@ -74874,7 +74874,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Baggiguane",
-            evolvedPokemon: "Baggaid",
+            evolvedPokemon: "Baggaïd",
             trigger: 1,
             restrictions: [
               {
@@ -74900,8 +74900,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Baggaid",
-                hint: "Baggaid cannot be caught yet.",
+                pokemon: "Baggaïd",
+                hint: "Baggaïd cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -74922,7 +74922,7 @@ module.exports = {
     },
     {
       id: 561,
-      name: "Cryptero",
+      name: "Cryptéro",
       type: [10, 9],
       eggCycles: 20,
       levelType: 2,
@@ -75068,7 +75068,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Tutafeh de Galar",
-          evolvedPokemon: "Tutetekri",
+          evolvedPokemon: "Tutétékri",
           trigger: 1,
           restrictions: [
             {
@@ -75094,8 +75094,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tutetekri",
-              hint: "Tutetekri cannot be caught yet.",
+              pokemon: "Tutétékri",
+              hint: "Tutétékri cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -75239,7 +75239,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Carapagos",
-          evolvedPokemon: "Megapagos",
+          evolvedPokemon: "Mégapagos",
           trigger: 1,
           restrictions: [
             {
@@ -75265,8 +75265,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Megapagos",
-              hint: "Megapagos cannot be caught yet.",
+              pokemon: "Mégapagos",
+              hint: "Mégapagos cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -75312,7 +75312,7 @@ module.exports = {
     },
     {
       id: 565,
-      name: "Megapagos",
+      name: "Mégapagos",
       type: [2, 12],
       eggCycles: 45,
       levelType: 2,
@@ -75339,14 +75339,14 @@ module.exports = {
             {
               route: 51,
               requirements:
-                "Megapagos needs to be caught and The weather needs to be Clear or Rain or Thunderstorm.",
+                "Mégapagos needs to be caught and The weather needs to be Clear or Rain or Thunderstorm.",
             },
           ],
         },
         5: [
           {
             basePokemon: "Carapagos",
-            evolvedPokemon: "Megapagos",
+            evolvedPokemon: "Mégapagos",
             trigger: 1,
             restrictions: [
               {
@@ -75372,8 +75372,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Megapagos",
-                hint: "Megapagos cannot be caught yet.",
+                pokemon: "Mégapagos",
+                hint: "Mégapagos cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -75394,7 +75394,7 @@ module.exports = {
     },
     {
       id: 566,
-      name: "Arkeapti",
+      name: "Arkéapti",
       type: [12, 9],
       eggCycles: 30,
       levelType: 2,
@@ -75402,15 +75402,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Arkeapti",
-          evolvedPokemon: "Aeropteryx",
+          basePokemon: "Arkéapti",
+          evolvedPokemon: "Aéroptéryx",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Arkeapti",
-              hint: "Arkeapti needs to be caught.",
+              pokemon: "Arkéapti",
+              hint: "Arkéapti needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -75422,21 +75422,21 @@ module.exports = {
             {
               requiredValue: 37,
               option: 2,
-              pokemon: "Arkeapti",
-              hint: "Your Arkeapti needs to be at least level 37.",
+              pokemon: "Arkéapti",
+              hint: "Your Arkéapti needs to be at least level 37.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Aeropteryx",
-              hint: "Aeropteryx cannot be caught yet.",
+              pokemon: "Aéroptéryx",
+              hint: "Aéroptéryx cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Arkeapti",
+              pokemon: "Arkéapti",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -75465,7 +75465,7 @@ module.exports = {
           7: [
             {
               route: 50,
-              requirements: "Arkeapti needs to be caught.",
+              requirements: "Arkéapti needs to be caught.",
             },
           ],
         },
@@ -75476,7 +75476,7 @@ module.exports = {
     },
     {
       id: 567,
-      name: "Aeropteryx",
+      name: "Aéroptéryx",
       type: [12, 9],
       eggCycles: 45,
       levelType: 2,
@@ -75500,15 +75500,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Arkeapti",
-            evolvedPokemon: "Aeropteryx",
+            basePokemon: "Arkéapti",
+            evolvedPokemon: "Aéroptéryx",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Arkeapti",
-                hint: "Arkeapti needs to be caught.",
+                pokemon: "Arkéapti",
+                hint: "Arkéapti needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -75520,21 +75520,21 @@ module.exports = {
               {
                 requiredValue: 37,
                 option: 2,
-                pokemon: "Arkeapti",
-                hint: "Your Arkeapti needs to be at least level 37.",
+                pokemon: "Arkéapti",
+                hint: "Your Arkéapti needs to be at least level 37.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Aeropteryx",
-                hint: "Aeropteryx cannot be caught yet.",
+                pokemon: "Aéroptéryx",
+                hint: "Aéroptéryx cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Arkeapti",
+                pokemon: "Arkéapti",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -76289,7 +76289,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Scrutella",
-          evolvedPokemon: "Mesmerella",
+          evolvedPokemon: "Mesmérella",
           trigger: 1,
           restrictions: [
             {
@@ -76315,8 +76315,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Mesmerella",
-              hint: "Mesmerella cannot be caught yet.",
+              pokemon: "Mesmérella",
+              hint: "Mesmérella cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -76383,7 +76383,7 @@ module.exports = {
     },
     {
       id: 575,
-      name: "Mesmerella",
+      name: "Mesmérella",
       type: [10],
       eggCycles: 30,
       levelType: 3,
@@ -76391,15 +76391,15 @@ module.exports = {
       catchRate: 100,
       evolutions: [
         {
-          basePokemon: "Mesmerella",
-          evolvedPokemon: "Siderella",
+          basePokemon: "Mesmérella",
+          evolvedPokemon: "Sidérella",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Mesmerella",
-              hint: "Mesmerella needs to be caught.",
+              pokemon: "Mesmérella",
+              hint: "Mesmérella needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -76411,21 +76411,21 @@ module.exports = {
             {
               requiredValue: 41,
               option: 2,
-              pokemon: "Mesmerella",
-              hint: "Your Mesmerella needs to be at least level 41.",
+              pokemon: "Mesmérella",
+              hint: "Your Mesmérella needs to be at least level 41.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Siderella",
-              hint: "Siderella cannot be caught yet.",
+              pokemon: "Sidérella",
+              hint: "Sidérella cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Mesmerella",
+              pokemon: "Mesmérella",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -76480,7 +76480,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Scrutella",
-            evolvedPokemon: "Mesmerella",
+            evolvedPokemon: "Mesmérella",
             trigger: 1,
             restrictions: [
               {
@@ -76506,8 +76506,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Mesmerella",
-                hint: "Mesmerella cannot be caught yet.",
+                pokemon: "Mesmérella",
+                hint: "Mesmérella cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -76528,7 +76528,7 @@ module.exports = {
     },
     {
       id: 576,
-      name: "Siderella",
+      name: "Sidérella",
       type: [10],
       eggCycles: 45,
       levelType: 3,
@@ -76568,15 +76568,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Mesmerella",
-            evolvedPokemon: "Siderella",
+            basePokemon: "Mesmérella",
+            evolvedPokemon: "Sidérella",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Mesmerella",
-                hint: "Mesmerella needs to be caught.",
+                pokemon: "Mesmérella",
+                hint: "Mesmérella needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -76588,21 +76588,21 @@ module.exports = {
               {
                 requiredValue: 41,
                 option: 2,
-                pokemon: "Mesmerella",
-                hint: "Your Mesmerella needs to be at least level 41.",
+                pokemon: "Mesmérella",
+                hint: "Your Mesmérella needs to be at least level 41.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Siderella",
-                hint: "Siderella cannot be caught yet.",
+                pokemon: "Sidérella",
+                hint: "Sidérella cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Mesmerella",
+                pokemon: "Mesmérella",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -76617,7 +76617,7 @@ module.exports = {
     },
     {
       id: 577,
-      name: "Nucleos",
+      name: "Nucléos",
       type: [10],
       eggCycles: 20,
       levelType: 3,
@@ -76625,15 +76625,15 @@ module.exports = {
       catchRate: 200,
       evolutions: [
         {
-          basePokemon: "Nucleos",
-          evolvedPokemon: "Meios",
+          basePokemon: "Nucléos",
+          evolvedPokemon: "Méios",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Nucleos",
-              hint: "Nucleos needs to be caught.",
+              pokemon: "Nucléos",
+              hint: "Nucléos needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -76645,21 +76645,21 @@ module.exports = {
             {
               requiredValue: 32,
               option: 2,
-              pokemon: "Nucleos",
-              hint: "Your Nucleos needs to be at least level 32.",
+              pokemon: "Nucléos",
+              hint: "Your Nucléos needs to be at least level 32.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Meios",
-              hint: "Meios cannot be caught yet.",
+              pokemon: "Méios",
+              hint: "Méios cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Nucleos",
+              pokemon: "Nucléos",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -76719,7 +76719,7 @@ module.exports = {
     },
     {
       id: 578,
-      name: "Meios",
+      name: "Méios",
       type: [10],
       eggCycles: 30,
       levelType: 3,
@@ -76727,15 +76727,15 @@ module.exports = {
       catchRate: 100,
       evolutions: [
         {
-          basePokemon: "Meios",
+          basePokemon: "Méios",
           evolvedPokemon: "Symbios",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Meios",
-              hint: "Meios needs to be caught.",
+              pokemon: "Méios",
+              hint: "Méios needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -76747,8 +76747,8 @@ module.exports = {
             {
               requiredValue: 41,
               option: 2,
-              pokemon: "Meios",
-              hint: "Your Meios needs to be at least level 41.",
+              pokemon: "Méios",
+              hint: "Your Méios needs to be at least level 41.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -76761,7 +76761,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Meios",
+              pokemon: "Méios",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -76811,15 +76811,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Nucleos",
-            evolvedPokemon: "Meios",
+            basePokemon: "Nucléos",
+            evolvedPokemon: "Méios",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Nucleos",
-                hint: "Nucleos needs to be caught.",
+                pokemon: "Nucléos",
+                hint: "Nucléos needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -76831,21 +76831,21 @@ module.exports = {
               {
                 requiredValue: 32,
                 option: 2,
-                pokemon: "Nucleos",
-                hint: "Your Nucleos needs to be at least level 32.",
+                pokemon: "Nucléos",
+                hint: "Your Nucléos needs to be at least level 32.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Meios",
-                hint: "Meios cannot be caught yet.",
+                pokemon: "Méios",
+                hint: "Méios cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Nucleos",
+                pokemon: "Nucléos",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -76905,15 +76905,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Meios",
+            basePokemon: "Méios",
             evolvedPokemon: "Symbios",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Meios",
-                hint: "Meios needs to be caught.",
+                pokemon: "Méios",
+                hint: "Méios needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -76925,8 +76925,8 @@ module.exports = {
               {
                 requiredValue: 41,
                 option: 2,
-                pokemon: "Meios",
-                hint: "Your Meios needs to be at least level 41.",
+                pokemon: "Méios",
+                hint: "Your Méios needs to be at least level 41.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -76939,7 +76939,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Meios",
+                pokemon: "Méios",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -76963,7 +76963,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Couaneton",
-          evolvedPokemon: "Lakmecygne",
+          evolvedPokemon: "Lakmécygne",
           trigger: 1,
           restrictions: [
             {
@@ -76989,8 +76989,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lakmecygne",
-              hint: "Lakmecygne cannot be caught yet.",
+              pokemon: "Lakmécygne",
+              hint: "Lakmécygne cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -77039,7 +77039,7 @@ module.exports = {
     },
     {
       id: 581,
-      name: "Lakmecygne",
+      name: "Lakmécygne",
       type: [2, 9],
       eggCycles: 30,
       levelType: 2,
@@ -77071,7 +77071,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Couaneton",
-            evolvedPokemon: "Lakmecygne",
+            evolvedPokemon: "Lakmécygne",
             trigger: 1,
             restrictions: [
               {
@@ -77097,8 +77097,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lakmecygne",
-                hint: "Lakmecygne cannot be caught yet.",
+                pokemon: "Lakmécygne",
+                hint: "Lakmécygne cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -77119,7 +77119,7 @@ module.exports = {
     },
     {
       id: 582,
-      name: "Sorbebe",
+      name: "Sorbébé",
       type: [5],
       eggCycles: 20,
       levelType: 4,
@@ -77127,15 +77127,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Sorbebe",
+          basePokemon: "Sorbébé",
           evolvedPokemon: "Sourboul",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Sorbebe",
-              hint: "Sorbebe needs to be caught.",
+              pokemon: "Sorbébé",
+              hint: "Sorbébé needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -77147,8 +77147,8 @@ module.exports = {
             {
               requiredValue: 35,
               option: 2,
-              pokemon: "Sorbebe",
-              hint: "Your Sorbebe needs to be at least level 35.",
+              pokemon: "Sorbébé",
+              hint: "Your Sorbébé needs to be at least level 35.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -77161,7 +77161,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Sorbebe",
+              pokemon: "Sorbébé",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -77417,15 +77417,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Sorbebe",
+            basePokemon: "Sorbébé",
             evolvedPokemon: "Sourboul",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Sorbebe",
-                hint: "Sorbebe needs to be caught.",
+                pokemon: "Sorbébé",
+                hint: "Sorbébé needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -77437,8 +77437,8 @@ module.exports = {
               {
                 requiredValue: 35,
                 option: 2,
-                pokemon: "Sorbebe",
-                hint: "Your Sorbebe needs to be at least level 35.",
+                pokemon: "Sorbébé",
+                hint: "Your Sorbébé needs to be at least level 35.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -77451,7 +77451,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Sorbebe",
+                pokemon: "Sorbébé",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -78300,7 +78300,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Carabing",
-          evolvedPokemon: "Lancargot",
+          evolvedPokemon: "Lançargot",
           trigger: 2,
           restrictions: [
             {
@@ -78409,7 +78409,7 @@ module.exports = {
     },
     {
       id: 589,
-      name: "Lancargot",
+      name: "Lançargot",
       type: [11, 16],
       eggCycles: 23,
       levelType: 2,
@@ -78446,7 +78446,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Carabing",
-            evolvedPokemon: "Lancargot",
+            evolvedPokemon: "Lançargot",
             trigger: 2,
             restrictions: [
               {
@@ -79791,7 +79791,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Anchwatt",
-          evolvedPokemon: "Lamperoie",
+          evolvedPokemon: "Lampéroie",
           trigger: 1,
           restrictions: [
             {
@@ -79817,8 +79817,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lamperoie",
-              hint: "Lamperoie cannot be caught yet.",
+              pokemon: "Lampéroie",
+              hint: "Lampéroie cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -79865,7 +79865,7 @@ module.exports = {
     },
     {
       id: 603,
-      name: "Lamperoie",
+      name: "Lampéroie",
       type: [3],
       eggCycles: 30,
       levelType: 4,
@@ -79873,15 +79873,15 @@ module.exports = {
       catchRate: 60,
       evolutions: [
         {
-          basePokemon: "Lamperoie",
+          basePokemon: "Lampéroie",
           evolvedPokemon: "Ohmassacre",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Lamperoie",
-              hint: "Lamperoie needs to be caught.",
+              pokemon: "Lampéroie",
+              hint: "Lampéroie needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -79893,7 +79893,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lamperoie",
+              pokemon: "Lampéroie",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -79927,7 +79927,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Anchwatt",
-            evolvedPokemon: "Lamperoie",
+            evolvedPokemon: "Lampéroie",
             trigger: 1,
             restrictions: [
               {
@@ -79953,8 +79953,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lamperoie",
-                hint: "Lamperoie cannot be caught yet.",
+                pokemon: "Lampéroie",
+                hint: "Lampéroie cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -80007,15 +80007,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Lamperoie",
+            basePokemon: "Lampéroie",
             evolvedPokemon: "Ohmassacre",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Lamperoie",
-                hint: "Lamperoie needs to be caught.",
+                pokemon: "Lampéroie",
+                hint: "Lampéroie needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -80027,7 +80027,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lamperoie",
+                pokemon: "Lampéroie",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -80232,7 +80232,7 @@ module.exports = {
     },
     {
       id: 607,
-      name: "Funecire",
+      name: "Funécire",
       type: [13, 1],
       eggCycles: 20,
       levelType: 3,
@@ -80240,15 +80240,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Funecire",
-          evolvedPokemon: "Melancolux",
+          basePokemon: "Funécire",
+          evolvedPokemon: "Mélancolux",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Funecire",
-              hint: "Funecire needs to be caught.",
+              pokemon: "Funécire",
+              hint: "Funécire needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -80260,21 +80260,21 @@ module.exports = {
             {
               requiredValue: 41,
               option: 2,
-              pokemon: "Funecire",
-              hint: "Your Funecire needs to be at least level 41.",
+              pokemon: "Funécire",
+              hint: "Your Funécire needs to be at least level 41.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Melancolux",
-              hint: "Melancolux cannot be caught yet.",
+              pokemon: "Mélancolux",
+              hint: "Mélancolux cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Funecire",
+              pokemon: "Funécire",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -80331,7 +80331,7 @@ module.exports = {
     },
     {
       id: 608,
-      name: "Melancolux",
+      name: "Mélancolux",
       type: [13, 1],
       eggCycles: 30,
       levelType: 3,
@@ -80339,15 +80339,15 @@ module.exports = {
       catchRate: 90,
       evolutions: [
         {
-          basePokemon: "Melancolux",
+          basePokemon: "Mélancolux",
           evolvedPokemon: "Lugulabre",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Melancolux",
-              hint: "Melancolux needs to be caught.",
+              pokemon: "Mélancolux",
+              hint: "Mélancolux needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -80359,7 +80359,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Melancolux",
+              pokemon: "Mélancolux",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -80403,15 +80403,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Funecire",
-            evolvedPokemon: "Melancolux",
+            basePokemon: "Funécire",
+            evolvedPokemon: "Mélancolux",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Funecire",
-                hint: "Funecire needs to be caught.",
+                pokemon: "Funécire",
+                hint: "Funécire needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -80423,21 +80423,21 @@ module.exports = {
               {
                 requiredValue: 41,
                 option: 2,
-                pokemon: "Funecire",
-                hint: "Your Funecire needs to be at least level 41.",
+                pokemon: "Funécire",
+                hint: "Your Funécire needs to be at least level 41.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Melancolux",
-                hint: "Melancolux cannot be caught yet.",
+                pokemon: "Mélancolux",
+                hint: "Mélancolux cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Funecire",
+                pokemon: "Funécire",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -80488,15 +80488,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Melancolux",
+            basePokemon: "Mélancolux",
             evolvedPokemon: "Lugulabre",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Melancolux",
-                hint: "Melancolux needs to be caught.",
+                pokemon: "Mélancolux",
+                hint: "Mélancolux needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -80508,7 +80508,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Melancolux",
+                pokemon: "Mélancolux",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -83429,7 +83429,7 @@ module.exports = {
     },
     {
       id: 641,
-      name: "Boreas",
+      name: "Boréas",
       type: [9],
       eggCycles: 120,
       levelType: 4,
@@ -83461,14 +83461,14 @@ module.exports = {
             },
           },
         ],
-        15: ["Boreas 3"],
+        15: ["Boréas 3"],
       },
       catchRatePercent: 2,
       eggSteps: 4800,
     },
     {
       id: 641.01,
-      name: "Boreas (Totemique)",
+      name: "Boréas (Totemique)",
       type: [9],
       eggCycles: 120,
       levelType: 4,
@@ -83639,7 +83639,7 @@ module.exports = {
     },
     {
       id: 645,
-      name: "Demeteros",
+      name: "Démétéros",
       type: [8, 9],
       eggCycles: 120,
       levelType: 4,
@@ -83666,14 +83666,14 @@ module.exports = {
             dungeon: "Abundant Shrine",
           },
         ],
-        15: ["Demeteros 3"],
+        15: ["Démétéros 3"],
       },
       catchRatePercent: 2,
       eggSteps: 4800,
     },
     {
       id: 645.01,
-      name: "Demeteros (Totemique)",
+      name: "Démétéros (Totemique)",
       type: [8, 9],
       eggCycles: 120,
       levelType: 4,
@@ -84630,7 +84630,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Marisson",
-          evolvedPokemon: "Boguerisse",
+          evolvedPokemon: "Boguérisse",
           trigger: 1,
           restrictions: [
             {
@@ -84656,8 +84656,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Boguerisse",
-              hint: "Boguerisse cannot be caught yet.",
+              pokemon: "Boguérisse",
+              hint: "Boguérisse cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -84696,7 +84696,7 @@ module.exports = {
     },
     {
       id: 651,
-      name: "Boguerisse",
+      name: "Boguérisse",
       type: [4],
       eggCycles: 30,
       levelType: 3,
@@ -84704,15 +84704,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Boguerisse",
-          evolvedPokemon: "Blindepique",
+          basePokemon: "Boguérisse",
+          evolvedPokemon: "Blindépique",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Boguerisse",
-              hint: "Boguerisse needs to be caught.",
+              pokemon: "Boguérisse",
+              hint: "Boguérisse needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -84724,21 +84724,21 @@ module.exports = {
             {
               requiredValue: 36,
               option: 2,
-              pokemon: "Boguerisse",
-              hint: "Your Boguerisse needs to be at least level 36.",
+              pokemon: "Boguérisse",
+              hint: "Your Boguérisse needs to be at least level 36.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Blindepique",
-              hint: "Blindepique cannot be caught yet.",
+              pokemon: "Blindépique",
+              hint: "Blindépique cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Boguerisse",
+              pokemon: "Boguérisse",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -84766,7 +84766,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Marisson",
-            evolvedPokemon: "Boguerisse",
+            evolvedPokemon: "Boguérisse",
             trigger: 1,
             restrictions: [
               {
@@ -84792,8 +84792,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Boguerisse",
-                hint: "Boguerisse cannot be caught yet.",
+                pokemon: "Boguérisse",
+                hint: "Boguérisse cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -84814,7 +84814,7 @@ module.exports = {
     },
     {
       id: 652,
-      name: "Blindepique",
+      name: "Blindépique",
       type: [4, 6],
       eggCycles: 45,
       levelType: 3,
@@ -84845,15 +84845,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Boguerisse",
-            evolvedPokemon: "Blindepique",
+            basePokemon: "Boguérisse",
+            evolvedPokemon: "Blindépique",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Boguerisse",
-                hint: "Boguerisse needs to be caught.",
+                pokemon: "Boguérisse",
+                hint: "Boguérisse needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -84865,21 +84865,21 @@ module.exports = {
               {
                 requiredValue: 36,
                 option: 2,
-                pokemon: "Boguerisse",
-                hint: "Your Boguerisse needs to be at least level 36.",
+                pokemon: "Boguérisse",
+                hint: "Your Boguérisse needs to be at least level 36.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Blindepique",
-                hint: "Blindepique cannot be caught yet.",
+                pokemon: "Blindépique",
+                hint: "Blindépique cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Boguerisse",
+                pokemon: "Boguérisse",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -85177,7 +85177,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Grenousse",
-          evolvedPokemon: "Croaporal",
+          evolvedPokemon: "Croâporal",
           trigger: 1,
           restrictions: [
             {
@@ -85203,8 +85203,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Croaporal",
-              hint: "Croaporal cannot be caught yet.",
+              pokemon: "Croâporal",
+              hint: "Croâporal cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -85243,7 +85243,7 @@ module.exports = {
     },
     {
       id: 657,
-      name: "Croaporal",
+      name: "Croâporal",
       type: [2],
       eggCycles: 30,
       levelType: 3,
@@ -85251,15 +85251,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Croaporal",
+          basePokemon: "Croâporal",
           evolvedPokemon: "Amphinobi",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Croaporal",
-              hint: "Croaporal needs to be caught.",
+              pokemon: "Croâporal",
+              hint: "Croâporal needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -85271,8 +85271,8 @@ module.exports = {
             {
               requiredValue: 36,
               option: 2,
-              pokemon: "Croaporal",
-              hint: "Your Croaporal needs to be at least level 36.",
+              pokemon: "Croâporal",
+              hint: "Your Croâporal needs to be at least level 36.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -85285,7 +85285,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Croaporal",
+              pokemon: "Croâporal",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -85313,7 +85313,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Grenousse",
-            evolvedPokemon: "Croaporal",
+            evolvedPokemon: "Croâporal",
             trigger: 1,
             restrictions: [
               {
@@ -85339,8 +85339,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Croaporal",
-                hint: "Croaporal cannot be caught yet.",
+                pokemon: "Croâporal",
+                hint: "Croâporal cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -85393,15 +85393,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Croaporal",
+            basePokemon: "Croâporal",
             evolvedPokemon: "Amphinobi",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Croaporal",
-                hint: "Croaporal needs to be caught.",
+                pokemon: "Croâporal",
+                hint: "Croâporal needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -85413,8 +85413,8 @@ module.exports = {
               {
                 requiredValue: 36,
                 option: 2,
-                pokemon: "Croaporal",
-                hint: "Your Croaporal needs to be at least level 36.",
+                pokemon: "Croâporal",
+                hint: "Your Croâporal needs to be at least level 36.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -85427,7 +85427,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Croaporal",
+                pokemon: "Croâporal",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -86074,7 +86074,7 @@ module.exports = {
     },
     {
       id: 664,
-      name: "Lepidonille",
+      name: "Lépidonille",
       type: [11],
       eggCycles: 15,
       levelType: 2,
@@ -86082,15 +86082,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Lepidonille",
-          evolvedPokemon: "Peregrain",
+          basePokemon: "Lépidonille",
+          evolvedPokemon: "Pérégrain",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Lepidonille",
-              hint: "Lepidonille needs to be caught.",
+              pokemon: "Lépidonille",
+              hint: "Lépidonille needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86102,21 +86102,21 @@ module.exports = {
             {
               requiredValue: 9,
               option: 2,
-              pokemon: "Lepidonille",
-              hint: "Your Lepidonille needs to be at least level 9.",
+              pokemon: "Lépidonille",
+              hint: "Your Lépidonille needs to be at least level 9.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Peregrain",
-              hint: "Peregrain cannot be caught yet.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lepidonille",
+              pokemon: "Lépidonille",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -86165,7 +86165,7 @@ module.exports = {
     },
     {
       id: 665,
-      name: "Peregrain",
+      name: "Pérégrain",
       type: [11],
       eggCycles: 23,
       levelType: 2,
@@ -86173,15 +86173,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Floraison)",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86193,8 +86193,8 @@ module.exports = {
             {
               requiredValue: 12,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Your Peregrain needs to be at least level 12.",
+              pokemon: "Pérégrain",
+              hint: "Your Pérégrain needs to be at least level 12.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -86207,7 +86207,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Peregrain",
+              pokemon: "Pérégrain",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -86216,15 +86216,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Blizzard)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86237,15 +86237,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Banquise)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86258,15 +86258,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Glace)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86279,15 +86279,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Continent)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86300,15 +86300,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Verdure)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86321,15 +86321,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
-          evolvedPokemon: "Prismillon (Monarche)",
+          basePokemon: "Pérégrain",
+          evolvedPokemon: "Prismillon (Monarchie)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86342,15 +86342,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Metropole)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86363,15 +86363,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Rivage)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86384,15 +86384,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Archipel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86405,15 +86405,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
-          evolvedPokemon: "Prismillon (Secheresse)",
+          basePokemon: "Pérégrain",
+          evolvedPokemon: "Prismillon (Sécheresse)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86426,15 +86426,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Sable)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86447,15 +86447,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Delta)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86468,15 +86468,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Cyclone)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86489,15 +86489,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Mangrove)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86510,15 +86510,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
-          evolvedPokemon: "Prismillon (Zenith)",
+          basePokemon: "Pérégrain",
+          evolvedPokemon: "Prismillon (Zénith)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86531,15 +86531,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Soleil Levant)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86552,15 +86552,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Jungle)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86573,15 +86573,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Poké Ball)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86594,15 +86594,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Peregrain",
+          basePokemon: "Pérégrain",
           evolvedPokemon: "Prismillon (Fantaisie)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Peregrain",
-              hint: "Peregrain needs to be caught.",
+              pokemon: "Pérégrain",
+              hint: "Pérégrain needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -86633,15 +86633,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Lepidonille",
-            evolvedPokemon: "Peregrain",
+            basePokemon: "Lépidonille",
+            evolvedPokemon: "Pérégrain",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Lepidonille",
-                hint: "Lepidonille needs to be caught.",
+                pokemon: "Lépidonille",
+                hint: "Lépidonille needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -86653,21 +86653,21 @@ module.exports = {
               {
                 requiredValue: 9,
                 option: 2,
-                pokemon: "Lepidonille",
-                hint: "Your Lepidonille needs to be at least level 9.",
+                pokemon: "Lépidonille",
+                hint: "Your Lépidonille needs to be at least level 9.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Peregrain",
-                hint: "Peregrain cannot be caught yet.",
+                pokemon: "Pérégrain",
+                hint: "Pérégrain cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lepidonille",
+                pokemon: "Lépidonille",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -86741,15 +86741,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Peregrain",
+            basePokemon: "Pérégrain",
             evolvedPokemon: "Prismillon (Floraison)",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Peregrain",
-                hint: "Peregrain needs to be caught.",
+                pokemon: "Pérégrain",
+                hint: "Pérégrain needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -86761,8 +86761,8 @@ module.exports = {
               {
                 requiredValue: 12,
                 option: 2,
-                pokemon: "Peregrain",
-                hint: "Your Peregrain needs to be at least level 12.",
+                pokemon: "Pérégrain",
+                hint: "Your Pérégrain needs to be at least level 12.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -86775,7 +86775,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Peregrain",
+                pokemon: "Pérégrain",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -86965,7 +86965,7 @@ module.exports = {
     },
     {
       id: 666.06,
-      name: "Prismillon (Monarche)",
+      name: "Prismillon (Monarchie)",
       type: [11, 9],
       eggCycles: 35,
       levelType: 2,
@@ -86991,7 +86991,7 @@ module.exports = {
           {
             dungeon: "Lost Hotel",
             requirements:
-              "Progress further in questline The Great Prismillon Hunt! or Prismillon (Monarche) needs to be caught and Lunar New Year must be started.",
+              "Progress further in questline The Great Prismillon Hunt! or Prismillon (Monarchie) needs to be caught and Lunar New Year must be started.",
           },
         ],
       },
@@ -87115,7 +87115,7 @@ module.exports = {
     },
     {
       id: 666.1,
-      name: "Prismillon (Secheresse)",
+      name: "Prismillon (Sécheresse)",
       type: [11, 9],
       eggCycles: 35,
       levelType: 2,
@@ -87141,7 +87141,7 @@ module.exports = {
           {
             dungeon: "Mt. Moon",
             requirements:
-              "Progress further in questline The Great Prismillon Hunt! or Prismillon (Secheresse) needs to be caught and Lunar New Year must be started.",
+              "Progress further in questline The Great Prismillon Hunt! or Prismillon (Sécheresse) needs to be caught and Lunar New Year must be started.",
           },
         ],
       },
@@ -87290,7 +87290,7 @@ module.exports = {
     },
     {
       id: 666.15,
-      name: "Prismillon (Zenith)",
+      name: "Prismillon (Zénith)",
       type: [11, 9],
       eggCycles: 35,
       levelType: 2,
@@ -87316,7 +87316,7 @@ module.exports = {
           {
             dungeon: "Mt. Chimney Crater",
             requirements:
-              "Progress further in questline The Great Prismillon Hunt! or Prismillon (Zenith) needs to be caught and Lunar New Year must be started.",
+              "Progress further in questline The Great Prismillon Hunt! or Prismillon (Zénith) needs to be caught and Lunar New Year must be started.",
           },
         ],
       },
@@ -87493,7 +87493,7 @@ module.exports = {
     },
     {
       id: 667,
-      name: "Helionceau",
+      name: "Hélionceau",
       type: [1, 0],
       eggCycles: 20,
       levelType: 3,
@@ -87501,15 +87501,15 @@ module.exports = {
       catchRate: 220,
       evolutions: [
         {
-          basePokemon: "Helionceau",
-          evolvedPokemon: "Nemelios",
+          basePokemon: "Hélionceau",
+          evolvedPokemon: "Némélios",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Helionceau",
-              hint: "Helionceau needs to be caught.",
+              pokemon: "Hélionceau",
+              hint: "Hélionceau needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -87521,21 +87521,21 @@ module.exports = {
             {
               requiredValue: 35,
               option: 2,
-              pokemon: "Helionceau",
-              hint: "Your Helionceau needs to be at least level 35.",
+              pokemon: "Hélionceau",
+              hint: "Your Hélionceau needs to be at least level 35.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Nemelios",
-              hint: "Nemelios cannot be caught yet.",
+              pokemon: "Némélios",
+              hint: "Némélios cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Helionceau",
+              pokemon: "Hélionceau",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -87574,7 +87574,7 @@ module.exports = {
     },
     {
       id: 668,
-      name: "Nemelios",
+      name: "Némélios",
       type: [1, 0],
       eggCycles: 30,
       levelType: 3,
@@ -87605,15 +87605,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Helionceau",
-            evolvedPokemon: "Nemelios",
+            basePokemon: "Hélionceau",
+            evolvedPokemon: "Némélios",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Helionceau",
-                hint: "Helionceau needs to be caught.",
+                pokemon: "Hélionceau",
+                hint: "Hélionceau needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -87625,21 +87625,21 @@ module.exports = {
               {
                 requiredValue: 35,
                 option: 2,
-                pokemon: "Helionceau",
-                hint: "Your Helionceau needs to be at least level 35.",
+                pokemon: "Hélionceau",
+                hint: "Your Hélionceau needs to be at least level 35.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Nemelios",
-                hint: "Nemelios cannot be caught yet.",
+                pokemon: "Némélios",
+                hint: "Némélios cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Helionceau",
+                pokemon: "Hélionceau",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -89100,7 +89100,7 @@ module.exports = {
     },
     {
       id: 674,
-      name: "Pandespiegle",
+      name: "Pandespiègle",
       type: [6],
       eggCycles: 25,
       levelType: 2,
@@ -89108,15 +89108,15 @@ module.exports = {
       catchRate: 220,
       evolutions: [
         {
-          basePokemon: "Pandespiegle",
+          basePokemon: "Pandespiègle",
           evolvedPokemon: "Pandarbare",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Pandespiegle",
-              hint: "Pandespiegle needs to be caught.",
+              pokemon: "Pandespiègle",
+              hint: "Pandespiègle needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -89128,8 +89128,8 @@ module.exports = {
             {
               requiredValue: 32,
               option: 2,
-              pokemon: "Pandespiegle",
-              hint: "Your Pandespiegle needs to be at least level 32.",
+              pokemon: "Pandespiègle",
+              hint: "Your Pandespiègle needs to be at least level 32.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -89142,7 +89142,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Pandespiegle",
+              pokemon: "Pandespiègle",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -89254,15 +89254,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Pandespiegle",
+            basePokemon: "Pandespiègle",
             evolvedPokemon: "Pandarbare",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Pandespiegle",
-                hint: "Pandespiegle needs to be caught.",
+                pokemon: "Pandespiègle",
+                hint: "Pandespiègle needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -89274,8 +89274,8 @@ module.exports = {
               {
                 requiredValue: 32,
                 option: 2,
-                pokemon: "Pandespiegle",
-                hint: "Your Pandespiegle needs to be at least level 32.",
+                pokemon: "Pandespiègle",
+                hint: "Your Pandespiègle needs to be at least level 32.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -89288,7 +89288,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Pandespiegle",
+                pokemon: "Pandespiègle",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -89381,7 +89381,7 @@ module.exports = {
     },
     {
       id: 676.02,
-      name: "Couafarel (Etoile)",
+      name: "Couafarel (Étoile)",
       type: [0],
       eggCycles: 20,
       levelType: 2,
@@ -89801,7 +89801,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Monorpale",
-          evolvedPokemon: "Dimocles",
+          evolvedPokemon: "Dimoclès",
           trigger: 1,
           restrictions: [
             {
@@ -89827,8 +89827,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Dimocles",
-              hint: "Dimocles cannot be caught yet.",
+              pokemon: "Dimoclès",
+              hint: "Dimoclès cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -89885,7 +89885,7 @@ module.exports = {
     },
     {
       id: 680,
-      name: "Dimocles",
+      name: "Dimoclès",
       type: [16, 13],
       eggCycles: 30,
       levelType: 2,
@@ -89893,15 +89893,15 @@ module.exports = {
       catchRate: 90,
       evolutions: [
         {
-          basePokemon: "Dimocles",
+          basePokemon: "Dimoclès",
           evolvedPokemon: "Exagide (Parade)",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Dimocles",
-              hint: "Dimocles needs to be caught.",
+              pokemon: "Dimoclès",
+              hint: "Dimoclès needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -89913,7 +89913,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Dimocles",
+              pokemon: "Dimoclès",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -89923,15 +89923,15 @@ module.exports = {
           stone: 16,
         },
         {
-          basePokemon: "Dimocles",
+          basePokemon: "Dimoclès",
           evolvedPokemon: "Exagide (Assaut)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Dimocles",
-              hint: "Dimocles needs to be caught.",
+              pokemon: "Dimoclès",
+              hint: "Dimoclès needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -89981,7 +89981,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Monorpale",
-            evolvedPokemon: "Dimocles",
+            evolvedPokemon: "Dimoclès",
             trigger: 1,
             restrictions: [
               {
@@ -90007,8 +90007,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Dimocles",
-                hint: "Dimocles cannot be caught yet.",
+                pokemon: "Dimoclès",
+                hint: "Dimoclès cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -90061,15 +90061,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Dimocles",
+            basePokemon: "Dimoclès",
             evolvedPokemon: "Exagide (Parade)",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Dimocles",
-                hint: "Dimocles needs to be caught.",
+                pokemon: "Dimoclès",
+                hint: "Dimoclès needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -90081,7 +90081,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Dimocles",
+                pokemon: "Dimoclès",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -91773,15 +91773,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Evoli",
+            basePokemon: "Évoli",
             evolvedPokemon: "Nymphali",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Evoli needs to be caught.",
+                pokemon: "Évoli",
+                hint: "Évoli needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -91793,8 +91793,8 @@ module.exports = {
               {
                 requiredValue: 29,
                 option: 2,
-                pokemon: "Evoli",
-                hint: "Your Evoli needs to be at least level 29.",
+                pokemon: "Évoli",
+                hint: "Your Évoli needs to be at least level 29.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -91807,7 +91807,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Evoli",
+                pokemon: "Évoli",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -91822,7 +91822,7 @@ module.exports = {
     },
     {
       id: 701,
-      name: "Brutalibre",
+      name: "Brutalibré",
       type: [6, 9],
       eggCycles: 20,
       levelType: 2,
@@ -92550,7 +92550,7 @@ module.exports = {
     },
     {
       id: 708,
-      name: "Brocelome",
+      name: "Brocélôme",
       type: [13, 4],
       eggCycles: 20,
       levelType: 2,
@@ -92558,15 +92558,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Brocelome",
-          evolvedPokemon: "Desseliandre",
+          basePokemon: "Brocélôme",
+          evolvedPokemon: "Desséliandre",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Brocelome",
-              hint: "Brocelome needs to be caught.",
+              pokemon: "Brocélôme",
+              hint: "Brocélôme needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -92578,7 +92578,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Brocelome",
+              pokemon: "Brocélôme",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -92648,7 +92648,7 @@ module.exports = {
     },
     {
       id: 709,
-      name: "Desseliandre",
+      name: "Desséliandre",
       type: [13, 4],
       eggCycles: 30,
       levelType: 2,
@@ -92698,15 +92698,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Brocelome",
-            evolvedPokemon: "Desseliandre",
+            basePokemon: "Brocélôme",
+            evolvedPokemon: "Desséliandre",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Brocelome",
-                hint: "Brocelome needs to be caught.",
+                pokemon: "Brocélôme",
+                hint: "Brocélôme needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -92718,7 +92718,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Brocelome",
+                pokemon: "Brocélôme",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -93318,7 +93318,7 @@ module.exports = {
     },
     {
       id: 712,
-      name: "Grelacon",
+      name: "Grelaçon",
       type: [5],
       eggCycles: 20,
       levelType: 2,
@@ -93326,15 +93326,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Grelacon",
-          evolvedPokemon: "Seracrawl",
+          basePokemon: "Grelaçon",
+          evolvedPokemon: "Séracrawl",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Grelacon",
-              hint: "Grelacon needs to be caught.",
+              pokemon: "Grelaçon",
+              hint: "Grelaçon needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -93346,21 +93346,21 @@ module.exports = {
             {
               requiredValue: 37,
               option: 2,
-              pokemon: "Grelacon",
-              hint: "Your Grelacon needs to be at least level 37.",
+              pokemon: "Grelaçon",
+              hint: "Your Grelaçon needs to be at least level 37.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Seracrawl",
-              hint: "Seracrawl cannot be caught yet.",
+              pokemon: "Séracrawl",
+              hint: "Séracrawl cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Grelacon",
+              pokemon: "Grelaçon",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -93369,15 +93369,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Grelacon",
-          evolvedPokemon: "Seracrawl de Hisui",
+          basePokemon: "Grelaçon",
+          evolvedPokemon: "Séracrawl de Hisui",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Grelacon",
-              hint: "Grelacon needs to be caught.",
+              pokemon: "Grelaçon",
+              hint: "Grelaçon needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -93389,21 +93389,21 @@ module.exports = {
             {
               requiredValue: 37,
               option: 2,
-              pokemon: "Grelacon",
-              hint: "Your Grelacon needs to be at least level 37.",
+              pokemon: "Grelaçon",
+              hint: "Your Grelaçon needs to be at least level 37.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Seracrawl de Hisui",
-              hint: "Seracrawl de Hisui cannot be caught yet.",
+              pokemon: "Séracrawl de Hisui",
+              hint: "Séracrawl de Hisui cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Grelacon",
+              pokemon: "Grelaçon",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -93459,7 +93459,7 @@ module.exports = {
     },
     {
       id: 713,
-      name: "Seracrawl",
+      name: "Séracrawl",
       type: [5],
       eggCycles: 30,
       levelType: 2,
@@ -93497,15 +93497,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Grelacon",
-            evolvedPokemon: "Seracrawl",
+            basePokemon: "Grelaçon",
+            evolvedPokemon: "Séracrawl",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Grelacon",
-                hint: "Grelacon needs to be caught.",
+                pokemon: "Grelaçon",
+                hint: "Grelaçon needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -93517,21 +93517,21 @@ module.exports = {
               {
                 requiredValue: 37,
                 option: 2,
-                pokemon: "Grelacon",
-                hint: "Your Grelacon needs to be at least level 37.",
+                pokemon: "Grelaçon",
+                hint: "Your Grelaçon needs to be at least level 37.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Seracrawl",
-                hint: "Seracrawl cannot be caught yet.",
+                pokemon: "Séracrawl",
+                hint: "Séracrawl cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Grelacon",
+                pokemon: "Grelaçon",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -93546,7 +93546,7 @@ module.exports = {
     },
     {
       id: 713.01,
-      name: "Seracrawl de Hisui",
+      name: "Séracrawl de Hisui",
       nativeRegion: 8,
       type: [5, 12],
       eggCycles: 30,
@@ -93570,15 +93570,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Grelacon",
-            evolvedPokemon: "Seracrawl de Hisui",
+            basePokemon: "Grelaçon",
+            evolvedPokemon: "Séracrawl de Hisui",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Grelacon",
-                hint: "Grelacon needs to be caught.",
+                pokemon: "Grelaçon",
+                hint: "Grelaçon needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -93590,21 +93590,21 @@ module.exports = {
               {
                 requiredValue: 37,
                 option: 2,
-                pokemon: "Grelacon",
-                hint: "Your Grelacon needs to be at least level 37.",
+                pokemon: "Grelaçon",
+                hint: "Your Grelaçon needs to be at least level 37.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Seracrawl de Hisui",
-                hint: "Seracrawl de Hisui cannot be caught yet.",
+                pokemon: "Séracrawl de Hisui",
+                hint: "Séracrawl de Hisui cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Grelacon",
+                pokemon: "Grelaçon",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -93619,7 +93619,7 @@ module.exports = {
     },
     {
       id: 713.02,
-      name: "Monarque Seracrawl",
+      name: "Monarque Séracrawl",
       nativeRegion: 8,
       type: [5, 12],
       eggCycles: 20,
@@ -93952,7 +93952,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Diancie",
-          evolvedPokemon: "Mega Diancie",
+          evolvedPokemon: "Méga-Diancie",
           trigger: 2,
           restrictions: [
             {
@@ -93981,7 +93981,7 @@ module.exports = {
               option: 1,
               name: "Diancie",
               megaStone: 16,
-              hint: "Diancie needs the Diancite Mega Stone.<br />Needs at least 75,500 attack to Mega Evolve.",
+              hint: "Diancie needs the Diancite Méga-Stone.<br />Needs at least 75,500 attack to Méga-Evolve.",
               __class: "MegaEvolveRequirement",
             },
           ],
@@ -94017,7 +94017,7 @@ module.exports = {
     },
     {
       id: 719.01,
-      name: "Mega Diancie",
+      name: "Méga-Diancie",
       type: [12, 17],
       eggCycles: 25,
       levelType: 4,
@@ -94042,7 +94042,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Diancie",
-            evolvedPokemon: "Mega Diancie",
+            evolvedPokemon: "Méga-Diancie",
             trigger: 2,
             restrictions: [
               {
@@ -94071,7 +94071,7 @@ module.exports = {
                 option: 1,
                 name: "Diancie",
                 megaStone: 16,
-                hint: "Diancie needs the Diancite Mega Stone.<br />Needs at least 75,500 attack to Mega Evolve.",
+                hint: "Diancie needs the Diancite Méga-Stone.<br />Needs at least 75,500 attack to Méga-Evolve.",
                 __class: "MegaEvolveRequirement",
               },
             ],
@@ -94197,7 +94197,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Brindibou",
-          evolvedPokemon: "Effleche",
+          evolvedPokemon: "Efflèche",
           trigger: 1,
           restrictions: [
             {
@@ -94223,8 +94223,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Effleche",
-              hint: "Effleche cannot be caught yet.",
+              pokemon: "Efflèche",
+              hint: "Efflèche cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -94263,7 +94263,7 @@ module.exports = {
     },
     {
       id: 723,
-      name: "Effleche",
+      name: "Efflèche",
       type: [4, 9],
       eggCycles: 23,
       levelType: 3,
@@ -94271,15 +94271,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Effleche",
-          evolvedPokemon: "Archeduc",
+          basePokemon: "Efflèche",
+          evolvedPokemon: "Archéduc",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Effleche",
-              hint: "Effleche needs to be caught.",
+              pokemon: "Efflèche",
+              hint: "Efflèche needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -94291,21 +94291,21 @@ module.exports = {
             {
               requiredValue: 34,
               option: 2,
-              pokemon: "Effleche",
-              hint: "Your Effleche needs to be at least level 34.",
+              pokemon: "Efflèche",
+              hint: "Your Efflèche needs to be at least level 34.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Archeduc",
-              hint: "Archeduc cannot be caught yet.",
+              pokemon: "Archéduc",
+              hint: "Archéduc cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Effleche",
+              pokemon: "Efflèche",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -94314,15 +94314,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Effleche",
-          evolvedPokemon: "Archeduc de Hisui",
+          basePokemon: "Efflèche",
+          evolvedPokemon: "Archéduc de Hisui",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Effleche",
-              hint: "Effleche needs to be caught.",
+              pokemon: "Efflèche",
+              hint: "Efflèche needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -94334,21 +94334,21 @@ module.exports = {
             {
               requiredValue: 36,
               option: 2,
-              pokemon: "Effleche",
-              hint: "Your Effleche needs to be at least level 36.",
+              pokemon: "Efflèche",
+              hint: "Your Efflèche needs to be at least level 36.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Archeduc de Hisui",
-              hint: "Archeduc de Hisui cannot be caught yet.",
+              pokemon: "Archéduc de Hisui",
+              hint: "Archéduc de Hisui cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Effleche",
+              pokemon: "Efflèche",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -94376,7 +94376,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Brindibou",
-            evolvedPokemon: "Effleche",
+            evolvedPokemon: "Efflèche",
             trigger: 1,
             restrictions: [
               {
@@ -94402,8 +94402,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Effleche",
-                hint: "Effleche cannot be caught yet.",
+                pokemon: "Efflèche",
+                hint: "Efflèche cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -94424,7 +94424,7 @@ module.exports = {
     },
     {
       id: 724,
-      name: "Archeduc",
+      name: "Archéduc",
       type: [4, 13],
       eggCycles: 35,
       levelType: 3,
@@ -94448,15 +94448,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Effleche",
-            evolvedPokemon: "Archeduc",
+            basePokemon: "Efflèche",
+            evolvedPokemon: "Archéduc",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Effleche",
-                hint: "Effleche needs to be caught.",
+                pokemon: "Efflèche",
+                hint: "Efflèche needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -94468,21 +94468,21 @@ module.exports = {
               {
                 requiredValue: 34,
                 option: 2,
-                pokemon: "Effleche",
-                hint: "Your Effleche needs to be at least level 34.",
+                pokemon: "Efflèche",
+                hint: "Your Efflèche needs to be at least level 34.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Archeduc",
-                hint: "Archeduc cannot be caught yet.",
+                pokemon: "Archéduc",
+                hint: "Archéduc cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Effleche",
+                pokemon: "Efflèche",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -94497,7 +94497,7 @@ module.exports = {
     },
     {
       id: 724.01,
-      name: "Archeduc de Hisui",
+      name: "Archéduc de Hisui",
       nativeRegion: 8,
       type: [4, 6],
       eggCycles: 35,
@@ -94521,15 +94521,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Effleche",
-            evolvedPokemon: "Archeduc de Hisui",
+            basePokemon: "Efflèche",
+            evolvedPokemon: "Archéduc de Hisui",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Effleche",
-                hint: "Effleche needs to be caught.",
+                pokemon: "Efflèche",
+                hint: "Efflèche needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -94541,21 +94541,21 @@ module.exports = {
               {
                 requiredValue: 36,
                 option: 2,
-                pokemon: "Effleche",
-                hint: "Your Effleche needs to be at least level 36.",
+                pokemon: "Efflèche",
+                hint: "Your Efflèche needs to be at least level 36.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Archeduc de Hisui",
-                hint: "Archeduc de Hisui cannot be caught yet.",
+                pokemon: "Archéduc de Hisui",
+                hint: "Archéduc de Hisui cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Effleche",
+                pokemon: "Efflèche",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -94654,7 +94654,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Matoufeu",
-          evolvedPokemon: "Felinferno",
+          evolvedPokemon: "Félinferno",
           trigger: 1,
           restrictions: [
             {
@@ -94680,8 +94680,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Felinferno",
-              hint: "Felinferno cannot be caught yet.",
+              pokemon: "Félinferno",
+              hint: "Félinferno cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -94763,7 +94763,7 @@ module.exports = {
     },
     {
       id: 727,
-      name: "Felinferno",
+      name: "Félinferno",
       type: [1, 15],
       eggCycles: 35,
       levelType: 3,
@@ -94788,7 +94788,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Matoufeu",
-            evolvedPokemon: "Felinferno",
+            evolvedPokemon: "Félinferno",
             trigger: 1,
             restrictions: [
               {
@@ -94814,8 +94814,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Felinferno",
-                hint: "Felinferno cannot be caught yet.",
+                pokemon: "Félinferno",
+                hint: "Félinferno cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -97344,7 +97344,7 @@ module.exports = {
         },
         {
           basePokemon: "Rocabot",
-          evolvedPokemon: "Lougaroc (Crepusculaire)",
+          evolvedPokemon: "Lougaroc (Crépusculaire)",
           trigger: 1,
           restrictions: [
             {
@@ -97370,8 +97370,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lougaroc (Crepusculaire)",
-              hint: "Lougaroc (Crepusculaire) cannot be caught yet.",
+              pokemon: "Lougaroc (Crépusculaire)",
+              hint: "Lougaroc (Crépusculaire) cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -97394,7 +97394,7 @@ module.exports = {
         },
         {
           basePokemon: "Rocabot",
-          evolvedPokemon: "Lougaroc (Crepusculaire)",
+          evolvedPokemon: "Lougaroc (Crépusculaire)",
           trigger: 1,
           restrictions: [
             {
@@ -97420,8 +97420,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lougaroc (Crepusculaire)",
-              hint: "Lougaroc (Crepusculaire) cannot be caught yet.",
+              pokemon: "Lougaroc (Crépusculaire)",
+              hint: "Lougaroc (Crépusculaire) cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -97662,7 +97662,7 @@ module.exports = {
     },
     {
       id: 745.02,
-      name: "Lougaroc (Crepusculaire)",
+      name: "Lougaroc (Crépusculaire)",
       type: [12],
       eggCycles: 23,
       levelType: 2,
@@ -97687,7 +97687,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Rocabot",
-            evolvedPokemon: "Lougaroc (Crepusculaire)",
+            evolvedPokemon: "Lougaroc (Crépusculaire)",
             trigger: 1,
             restrictions: [
               {
@@ -97713,8 +97713,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lougaroc (Crepusculaire)",
-                hint: "Lougaroc (Crepusculaire) cannot be caught yet.",
+                pokemon: "Lougaroc (Crépusculaire)",
+                hint: "Lougaroc (Crépusculaire) cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -97737,7 +97737,7 @@ module.exports = {
           },
           {
             basePokemon: "Rocabot",
-            evolvedPokemon: "Lougaroc (Crepusculaire)",
+            evolvedPokemon: "Lougaroc (Crépusculaire)",
             trigger: 1,
             restrictions: [
               {
@@ -97763,8 +97763,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lougaroc (Crepusculaire)",
-                hint: "Lougaroc (Crepusculaire) cannot be caught yet.",
+                pokemon: "Lougaroc (Crépusculaire)",
+                hint: "Lougaroc (Crépusculaire) cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -98038,7 +98038,7 @@ module.exports = {
     },
     {
       id: 747,
-      name: "Vorasterie",
+      name: "Vorastérie",
       type: [7, 2],
       eggCycles: 20,
       levelType: 2,
@@ -98046,15 +98046,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Vorasterie",
-          evolvedPokemon: "Predasterie",
+          basePokemon: "Vorastérie",
+          evolvedPokemon: "Prédastérie",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Vorasterie",
-              hint: "Vorasterie needs to be caught.",
+              pokemon: "Vorastérie",
+              hint: "Vorastérie needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -98066,21 +98066,21 @@ module.exports = {
             {
               requiredValue: 38,
               option: 2,
-              pokemon: "Vorasterie",
-              hint: "Your Vorasterie needs to be at least level 38.",
+              pokemon: "Vorastérie",
+              hint: "Your Vorastérie needs to be at least level 38.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Predasterie",
-              hint: "Predasterie cannot be caught yet.",
+              pokemon: "Prédastérie",
+              hint: "Prédastérie cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Vorasterie",
+              pokemon: "Vorastérie",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -98136,7 +98136,7 @@ module.exports = {
     },
     {
       id: 748,
-      name: "Predasterie",
+      name: "Prédastérie",
       type: [7, 2],
       eggCycles: 30,
       levelType: 2,
@@ -98183,15 +98183,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Vorasterie",
-            evolvedPokemon: "Predasterie",
+            basePokemon: "Vorastérie",
+            evolvedPokemon: "Prédastérie",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Vorasterie",
-                hint: "Vorasterie needs to be caught.",
+                pokemon: "Vorastérie",
+                hint: "Vorastérie needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -98203,21 +98203,21 @@ module.exports = {
               {
                 requiredValue: 38,
                 option: 2,
-                pokemon: "Vorasterie",
-                hint: "Your Vorasterie needs to be at least level 38.",
+                pokemon: "Vorastérie",
+                hint: "Your Vorastérie needs to be at least level 38.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Predasterie",
-                hint: "Predasterie cannot be caught yet.",
+                pokemon: "Prédastérie",
+                hint: "Prédastérie cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Vorasterie",
+                pokemon: "Vorastérie",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -99930,7 +99930,7 @@ module.exports = {
     },
     {
       id: 764,
-      name: "Guerilande",
+      name: "Guérilande",
       type: [17],
       eggCycles: 20,
       levelType: 1,
@@ -100111,7 +100111,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Sovkipou",
-          evolvedPokemon: "Sarmurai",
+          evolvedPokemon: "Sarmuraï",
           trigger: 1,
           restrictions: [
             {
@@ -100137,8 +100137,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Sarmurai",
-              hint: "Sarmurai cannot be caught yet.",
+              pokemon: "Sarmuraï",
+              hint: "Sarmuraï cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -100216,7 +100216,7 @@ module.exports = {
     },
     {
       id: 768,
-      name: "Sarmurai",
+      name: "Sarmuraï",
       type: [11, 2],
       eggCycles: 30,
       levelType: 2,
@@ -100272,7 +100272,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Sovkipou",
-            evolvedPokemon: "Sarmurai",
+            evolvedPokemon: "Sarmuraï",
             trigger: 1,
             restrictions: [
               {
@@ -100298,8 +100298,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Sarmurai",
-                hint: "Sarmurai cannot be caught yet.",
+                pokemon: "Sarmuraï",
+                hint: "Sarmuraï cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -100334,7 +100334,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Bacabouh",
-          evolvedPokemon: "Trepassable",
+          evolvedPokemon: "Trépassable",
           trigger: 1,
           restrictions: [
             {
@@ -100360,8 +100360,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Trepassable",
-              hint: "Trepassable cannot be caught yet.",
+              pokemon: "Trépassable",
+              hint: "Trépassable cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -100410,7 +100410,7 @@ module.exports = {
     },
     {
       id: 770,
-      name: "Trepassable",
+      name: "Trépassable",
       type: [13, 8],
       eggCycles: 23,
       levelType: 2,
@@ -100444,7 +100444,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Bacabouh",
-            evolvedPokemon: "Trepassable",
+            evolvedPokemon: "Trépassable",
             trigger: 1,
             restrictions: [
               {
@@ -100470,8 +100470,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Trepassable",
-                hint: "Trepassable cannot be caught yet.",
+                pokemon: "Trépassable",
+                hint: "Trépassable cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -100547,7 +100547,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Type: 0",
-          evolvedPokemon: "Silvallie (Normal)",
+          evolvedPokemon: "Silvallié (Normal)",
           trigger: 2,
           restrictions: [
             {
@@ -100599,7 +100599,7 @@ module.exports = {
     },
     {
       id: 773,
-      name: "Silvallie (Normal)",
+      name: "Silvallié (Normal)",
       type: [0],
       eggCycles: 120,
       levelType: 4,
@@ -100624,7 +100624,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Type: 0",
-            evolvedPokemon: "Silvallie (Normal)",
+            evolvedPokemon: "Silvallié (Normal)",
             trigger: 2,
             restrictions: [
               {
@@ -100659,7 +100659,7 @@ module.exports = {
     },
     {
       id: 773.01,
-      name: "Silvallie (Feu)",
+      name: "Silvallié (Feu)",
       type: [1],
       eggCycles: 120,
       levelType: 4,
@@ -100688,7 +100688,7 @@ module.exports = {
     },
     {
       id: 773.02,
-      name: "Silvallie (Eau)",
+      name: "Silvallié (Eau)",
       type: [2],
       eggCycles: 120,
       levelType: 4,
@@ -100717,7 +100717,7 @@ module.exports = {
     },
     {
       id: 773.03,
-      name: "Silvallie (Electrik)",
+      name: "Silvallié (Electrik)",
       type: [3],
       eggCycles: 120,
       levelType: 4,
@@ -100746,7 +100746,7 @@ module.exports = {
     },
     {
       id: 773.04,
-      name: "Silvallie (Plante)",
+      name: "Silvallié (Plante)",
       type: [4],
       eggCycles: 120,
       levelType: 4,
@@ -100775,7 +100775,7 @@ module.exports = {
     },
     {
       id: 773.05,
-      name: "Silvallie (Glace)",
+      name: "Silvallié (Glace)",
       type: [5],
       eggCycles: 120,
       levelType: 4,
@@ -100804,7 +100804,7 @@ module.exports = {
     },
     {
       id: 773.06,
-      name: "Silvallie (Combat)",
+      name: "Silvallié (Combat)",
       type: [6],
       eggCycles: 120,
       levelType: 4,
@@ -100833,7 +100833,7 @@ module.exports = {
     },
     {
       id: 773.07,
-      name: "Silvallie (Poison)",
+      name: "Silvallié (Poison)",
       type: [7],
       eggCycles: 120,
       levelType: 4,
@@ -100862,7 +100862,7 @@ module.exports = {
     },
     {
       id: 773.08,
-      name: "Silvallie (Sol)",
+      name: "Silvallié (Sol)",
       type: [8],
       eggCycles: 120,
       levelType: 4,
@@ -100891,7 +100891,7 @@ module.exports = {
     },
     {
       id: 773.09,
-      name: "Silvallie (Vol)",
+      name: "Silvallié (Vol)",
       type: [9],
       eggCycles: 120,
       levelType: 4,
@@ -100920,7 +100920,7 @@ module.exports = {
     },
     {
       id: 773.1,
-      name: "Silvallie (Psy)",
+      name: "Silvallié (Psy)",
       type: [10],
       eggCycles: 120,
       levelType: 4,
@@ -100949,7 +100949,7 @@ module.exports = {
     },
     {
       id: 773.11,
-      name: "Silvallie (Insecte)",
+      name: "Silvallié (Insecte)",
       type: [11],
       eggCycles: 120,
       levelType: 4,
@@ -100978,7 +100978,7 @@ module.exports = {
     },
     {
       id: 773.12,
-      name: "Silvallie (Roche)",
+      name: "Silvallié (Roche)",
       type: [12],
       eggCycles: 120,
       levelType: 4,
@@ -101007,7 +101007,7 @@ module.exports = {
     },
     {
       id: 773.13,
-      name: "Silvallie (Spectre)",
+      name: "Silvallié (Spectre)",
       type: [13],
       eggCycles: 120,
       levelType: 4,
@@ -101036,7 +101036,7 @@ module.exports = {
     },
     {
       id: 773.14,
-      name: "Silvallie (Dragon)",
+      name: "Silvallié (Dragon)",
       type: [14],
       eggCycles: 120,
       levelType: 4,
@@ -101065,7 +101065,7 @@ module.exports = {
     },
     {
       id: 773.15,
-      name: "Silvallie (Tenebres)",
+      name: "Silvallié (Tenebres)",
       type: [15],
       eggCycles: 120,
       levelType: 4,
@@ -101094,7 +101094,7 @@ module.exports = {
     },
     {
       id: 773.16,
-      name: "Silvallie (Acier)",
+      name: "Silvallié (Acier)",
       type: [16],
       eggCycles: 120,
       levelType: 4,
@@ -101123,7 +101123,7 @@ module.exports = {
     },
     {
       id: 773.17,
-      name: "Silvallie (Fee)",
+      name: "Silvallié (Fee)",
       type: [17],
       eggCycles: 120,
       levelType: 4,
@@ -101152,7 +101152,7 @@ module.exports = {
     },
     {
       id: 774,
-      name: "Meteno (Meteore)",
+      name: "Météno (Météore)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101197,7 +101197,7 @@ module.exports = {
     },
     {
       id: 774.01,
-      name: "Meteno (Rouge)",
+      name: "Météno (Rouge)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101232,7 +101232,7 @@ module.exports = {
     },
     {
       id: 774.02,
-      name: "Meteno (Orange)",
+      name: "Météno (Orange)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101267,7 +101267,7 @@ module.exports = {
     },
     {
       id: 774.03,
-      name: "Meteno (Jaune)",
+      name: "Météno (Jaune)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101308,7 +101308,7 @@ module.exports = {
     },
     {
       id: 774.04,
-      name: "Meteno (Vert)",
+      name: "Météno (Vert)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101343,7 +101343,7 @@ module.exports = {
     },
     {
       id: 774.05,
-      name: "Meteno (Bleu)",
+      name: "Météno (Bleu)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101378,7 +101378,7 @@ module.exports = {
     },
     {
       id: 774.06,
-      name: "Meteno (Indigo)",
+      name: "Météno (Indigo)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101413,7 +101413,7 @@ module.exports = {
     },
     {
       id: 774.07,
-      name: "Meteno (Violet)",
+      name: "Météno (Violet)",
       type: [12, 9],
       eggCycles: 25,
       levelType: 3,
@@ -101768,7 +101768,7 @@ module.exports = {
     },
     {
       id: 780,
-      name: "Draieul",
+      name: "Draïeul",
       type: [0, 14],
       eggCycles: 20,
       levelType: 2,
@@ -101858,7 +101858,7 @@ module.exports = {
     },
     {
       id: 782,
-      name: "Bebecaille",
+      name: "Bébécaille",
       type: [14],
       eggCycles: 40,
       levelType: 4,
@@ -101866,15 +101866,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Bebecaille",
-          evolvedPokemon: "Ecaid",
+          basePokemon: "Bébécaille",
+          evolvedPokemon: "Écaïd",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Bebecaille",
-              hint: "Bebecaille needs to be caught.",
+              pokemon: "Bébécaille",
+              hint: "Bébécaille needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -101886,21 +101886,21 @@ module.exports = {
             {
               requiredValue: 35,
               option: 2,
-              pokemon: "Bebecaille",
-              hint: "Your Bebecaille needs to be at least level 35.",
+              pokemon: "Bébécaille",
+              hint: "Your Bébécaille needs to be at least level 35.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ecaid",
-              hint: "Ecaid cannot be caught yet.",
+              pokemon: "Écaïd",
+              hint: "Écaïd cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Bebecaille",
+              pokemon: "Bébécaille",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -101958,7 +101958,7 @@ module.exports = {
     },
     {
       id: 783,
-      name: "Ecaid",
+      name: "Écaïd",
       type: [14, 6],
       eggCycles: 60,
       levelType: 4,
@@ -101966,15 +101966,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Ecaid",
-          evolvedPokemon: "Ekaiser",
+          basePokemon: "Écaïd",
+          evolvedPokemon: "Ékaïser",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Ecaid",
-              hint: "Ecaid needs to be caught.",
+              pokemon: "Écaïd",
+              hint: "Écaïd needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -101986,21 +101986,21 @@ module.exports = {
             {
               requiredValue: 45,
               option: 2,
-              pokemon: "Ecaid",
-              hint: "Your Ecaid needs to be at least level 45.",
+              pokemon: "Écaïd",
+              hint: "Your Écaïd needs to be at least level 45.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ekaiser",
-              hint: "Ekaiser cannot be caught yet.",
+              pokemon: "Ékaïser",
+              hint: "Ékaïser cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Ecaid",
+              pokemon: "Écaïd",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -102044,15 +102044,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Bebecaille",
-            evolvedPokemon: "Ecaid",
+            basePokemon: "Bébécaille",
+            evolvedPokemon: "Écaïd",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Bebecaille",
-                hint: "Bebecaille needs to be caught.",
+                pokemon: "Bébécaille",
+                hint: "Bébécaille needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -102064,21 +102064,21 @@ module.exports = {
               {
                 requiredValue: 35,
                 option: 2,
-                pokemon: "Bebecaille",
-                hint: "Your Bebecaille needs to be at least level 35.",
+                pokemon: "Bébécaille",
+                hint: "Your Bébécaille needs to be at least level 35.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ecaid",
-                hint: "Ecaid cannot be caught yet.",
+                pokemon: "Écaïd",
+                hint: "Écaïd cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Bebecaille",
+                pokemon: "Bébécaille",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -102094,7 +102094,7 @@ module.exports = {
     },
     {
       id: 784,
-      name: "Ekaiser",
+      name: "Ékaïser",
       type: [14, 6],
       eggCycles: 90,
       levelType: 4,
@@ -102127,15 +102127,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Ecaid",
-            evolvedPokemon: "Ekaiser",
+            basePokemon: "Écaïd",
+            evolvedPokemon: "Ékaïser",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Ecaid",
-                hint: "Ecaid needs to be caught.",
+                pokemon: "Écaïd",
+                hint: "Écaïd needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -102147,21 +102147,21 @@ module.exports = {
               {
                 requiredValue: 45,
                 option: 2,
-                pokemon: "Ecaid",
-                hint: "Your Ecaid needs to be at least level 45.",
+                pokemon: "Écaïd",
+                hint: "Your Écaïd needs to be at least level 45.",
                 __class: "PokemonLevelRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ekaiser",
-                hint: "Ekaiser cannot be caught yet.",
+                pokemon: "Ékaïser",
+                hint: "Ékaïser cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Ecaid",
+                pokemon: "Écaïd",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -102177,7 +102177,7 @@ module.exports = {
     },
     {
       id: 784.01,
-      name: "Totem Ekaiser",
+      name: "Totem Ékaïser",
       type: [14, 6],
       eggCycles: 90,
       levelType: 4,
@@ -102821,7 +102821,7 @@ module.exports = {
     },
     {
       id: 793,
-      name: "Zeroid",
+      name: "Zéroïd",
       type: [12, 7],
       eggCycles: 120,
       levelType: 4,
@@ -102927,7 +102927,7 @@ module.exports = {
     },
     {
       id: 796,
-      name: "Cablifere",
+      name: "Câblifère",
       type: [3],
       eggCycles: 120,
       levelType: 4,
@@ -103091,7 +103091,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Necrozma",
-          evolvedPokemon: "Necrozma (Criniere du Couchant)",
+          evolvedPokemon: "Necrozma (Crinière du Couchant)",
           trigger: 2,
           restrictions: [
             {
@@ -103190,7 +103190,7 @@ module.exports = {
     },
     {
       id: 800.01,
-      name: "Necrozma (Criniere du Couchant)",
+      name: "Necrozma (Crinière du Couchant)",
       type: [10, 16],
       eggCycles: 120,
       levelType: 4,
@@ -103198,15 +103198,15 @@ module.exports = {
       catchRate: 3,
       evolutions: [
         {
-          basePokemon: "Necrozma (Criniere du Couchant)",
+          basePokemon: "Necrozma (Crinière du Couchant)",
           evolvedPokemon: "Ultra Necrozma",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Necrozma (Criniere du Couchant)",
-              hint: "Necrozma (Criniere du Couchant) needs to be caught.",
+              pokemon: "Necrozma (Crinière du Couchant)",
+              hint: "Necrozma (Crinière du Couchant) needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -103218,7 +103218,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Necrozma (Criniere du Couchant)",
+              pokemon: "Necrozma (Crinière du Couchant)",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -103247,7 +103247,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Necrozma",
-            evolvedPokemon: "Necrozma (Criniere du Couchant)",
+            evolvedPokemon: "Necrozma (Crinière du Couchant)",
             trigger: 2,
             restrictions: [
               {
@@ -103398,15 +103398,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Necrozma (Criniere du Couchant)",
+            basePokemon: "Necrozma (Crinière du Couchant)",
             evolvedPokemon: "Ultra Necrozma",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Necrozma (Criniere du Couchant)",
-                hint: "Necrozma (Criniere du Couchant) needs to be caught.",
+                pokemon: "Necrozma (Crinière du Couchant)",
+                hint: "Necrozma (Crinière du Couchant) needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -103418,7 +103418,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Necrozma (Criniere du Couchant)",
+                pokemon: "Necrozma (Crinière du Couchant)",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -103540,7 +103540,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Marshadow",
-          evolvedPokemon: "Marshadow (Zenith)",
+          evolvedPokemon: "Marshadow (Zénith)",
           trigger: 2,
           restrictions: [
             {
@@ -103605,7 +103605,7 @@ module.exports = {
     },
     {
       id: 803,
-      name: "Vemini",
+      name: "Vémini",
       type: [7],
       eggCycles: 120,
       levelType: 4,
@@ -103613,15 +103613,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Vemini",
+          basePokemon: "Vémini",
           evolvedPokemon: "Mandrillon",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Vemini",
-              hint: "Vemini needs to be caught.",
+              pokemon: "Vémini",
+              hint: "Vémini needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -103633,8 +103633,8 @@ module.exports = {
             {
               requiredValue: 41,
               option: 2,
-              pokemon: "Vemini",
-              hint: "Your Vemini needs to be at least level 41.",
+              pokemon: "Vémini",
+              hint: "Your Vémini needs to be at least level 41.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -103647,7 +103647,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Vemini",
+              pokemon: "Vémini",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -103703,15 +103703,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Vemini",
+            basePokemon: "Vémini",
             evolvedPokemon: "Mandrillon",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Vemini",
-                hint: "Vemini needs to be caught.",
+                pokemon: "Vémini",
+                hint: "Vémini needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -103723,8 +103723,8 @@ module.exports = {
               {
                 requiredValue: 41,
                 option: 2,
-                pokemon: "Vemini",
-                hint: "Your Vemini needs to be at least level 41.",
+                pokemon: "Vémini",
+                hint: "Your Vémini needs to be at least level 41.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -103737,7 +103737,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Vemini",
+                pokemon: "Vémini",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -104775,7 +104775,7 @@ module.exports = {
     },
     {
       id: 816,
-      name: "Larmeleon",
+      name: "Larméléon",
       type: [2],
       base: {
         hitpoints: 50,
@@ -104791,15 +104791,15 @@ module.exports = {
       catchRate: 45,
       evolutions: [
         {
-          basePokemon: "Larmeleon",
+          basePokemon: "Larméléon",
           evolvedPokemon: "Arrozard",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Larmeleon",
-              hint: "Larmeleon needs to be caught.",
+              pokemon: "Larméléon",
+              hint: "Larméléon needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -104811,8 +104811,8 @@ module.exports = {
             {
               requiredValue: 16,
               option: 2,
-              pokemon: "Larmeleon",
-              hint: "Your Larmeleon needs to be at least level 16.",
+              pokemon: "Larméléon",
+              hint: "Your Larméléon needs to be at least level 16.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -104825,7 +104825,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Larmeleon",
+              pokemon: "Larméléon",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -104867,7 +104867,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Arrozard",
-          evolvedPokemon: "Lezargus",
+          evolvedPokemon: "Lézargus",
           trigger: 1,
           restrictions: [
             {
@@ -104893,8 +104893,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Lezargus",
-              hint: "Lezargus cannot be caught yet.",
+              pokemon: "Lézargus",
+              hint: "Lézargus cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -104910,7 +104910,7 @@ module.exports = {
         },
         {
           basePokemon: "Arrozard",
-          evolvedPokemon: "Lezargus Gigamax",
+          evolvedPokemon: "Lézargus Gigamax",
           trigger: 0,
           restrictions: [
             {
@@ -104940,15 +104940,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Larmeleon",
+            basePokemon: "Larméléon",
             evolvedPokemon: "Arrozard",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Larmeleon",
-                hint: "Larmeleon needs to be caught.",
+                pokemon: "Larméléon",
+                hint: "Larméléon needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -104960,8 +104960,8 @@ module.exports = {
               {
                 requiredValue: 16,
                 option: 2,
-                pokemon: "Larmeleon",
-                hint: "Your Larmeleon needs to be at least level 16.",
+                pokemon: "Larméléon",
+                hint: "Your Larméléon needs to be at least level 16.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -104974,7 +104974,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Larmeleon",
+                pokemon: "Larméléon",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -104989,7 +104989,7 @@ module.exports = {
     },
     {
       id: 818,
-      name: "Lezargus",
+      name: "Lézargus",
       type: [2],
       base: {
         hitpoints: 70,
@@ -105014,7 +105014,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Arrozard",
-            evolvedPokemon: "Lezargus",
+            evolvedPokemon: "Lézargus",
             trigger: 1,
             restrictions: [
               {
@@ -105040,8 +105040,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lezargus",
-                hint: "Lezargus cannot be caught yet.",
+                pokemon: "Lézargus",
+                hint: "Lézargus cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -105062,7 +105062,7 @@ module.exports = {
     },
     {
       id: 818.01,
-      name: "Lezargus Gigamax",
+      name: "Lézargus Gigamax",
       type: [2],
       base: {
         hitpoints: 140,
@@ -105091,7 +105091,7 @@ module.exports = {
           },
           {
             dungeon: "Max Lair",
-            requirements: "Lezargus Gigamax needs to be caught.",
+            requirements: "Lézargus Gigamax needs to be caught.",
           },
         ],
       },
@@ -105799,7 +105799,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Larvadar",
-          evolvedPokemon: "Coleodome",
+          evolvedPokemon: "Coléodôme",
           trigger: 1,
           restrictions: [
             {
@@ -105825,8 +105825,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Coleodome",
-              hint: "Coleodome cannot be caught yet.",
+              pokemon: "Coléodôme",
+              hint: "Coléodôme cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -105898,7 +105898,7 @@ module.exports = {
     },
     {
       id: 825,
-      name: "Coleodome",
+      name: "Coléodôme",
       type: [11, 10],
       base: {
         hitpoints: 50,
@@ -105914,15 +105914,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Coleodome",
+          basePokemon: "Coléodôme",
           evolvedPokemon: "Astronelle",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Coleodome",
-              hint: "Coleodome needs to be caught.",
+              pokemon: "Coléodôme",
+              hint: "Coléodôme needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -105934,8 +105934,8 @@ module.exports = {
             {
               requiredValue: 30,
               option: 2,
-              pokemon: "Coleodome",
-              hint: "Your Coleodome needs to be at least level 30.",
+              pokemon: "Coléodôme",
+              hint: "Your Coléodôme needs to be at least level 30.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -105948,7 +105948,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Coleodome",
+              pokemon: "Coléodôme",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -105957,15 +105957,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Coleodome",
+          basePokemon: "Coléodôme",
           evolvedPokemon: "Astronelle Gigamax",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Coleodome",
-              hint: "Coleodome needs to be caught.",
+              pokemon: "Coléodôme",
+              hint: "Coléodôme needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -106010,7 +106010,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Larvadar",
-            evolvedPokemon: "Coleodome",
+            evolvedPokemon: "Coléodôme",
             trigger: 1,
             restrictions: [
               {
@@ -106036,8 +106036,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Coleodome",
-                hint: "Coleodome cannot be caught yet.",
+                pokemon: "Coléodôme",
+                hint: "Coléodôme cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -106106,15 +106106,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Coleodome",
+            basePokemon: "Coléodôme",
             evolvedPokemon: "Astronelle",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Coleodome",
-                hint: "Coleodome needs to be caught.",
+                pokemon: "Coléodôme",
+                hint: "Coléodôme needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -106126,8 +106126,8 @@ module.exports = {
               {
                 requiredValue: 30,
                 option: 2,
-                pokemon: "Coleodome",
-                hint: "Your Coleodome needs to be at least level 30.",
+                pokemon: "Coléodôme",
+                hint: "Your Coléodôme needs to be at least level 30.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -106140,7 +106140,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Coleodome",
+                pokemon: "Coléodôme",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -106800,7 +106800,7 @@ module.exports = {
     },
     {
       id: 833,
-      name: "Khelocrock",
+      name: "Khélocrok",
       type: [2],
       base: {
         hitpoints: 50,
@@ -106816,15 +106816,15 @@ module.exports = {
       catchRate: 255,
       evolutions: [
         {
-          basePokemon: "Khelocrock",
+          basePokemon: "Khélocrok",
           evolvedPokemon: "Torgarmord",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Khelocrock",
-              hint: "Khelocrock needs to be caught.",
+              pokemon: "Khélocrok",
+              hint: "Khélocrok needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -106836,8 +106836,8 @@ module.exports = {
             {
               requiredValue: 22,
               option: 2,
-              pokemon: "Khelocrock",
-              hint: "Your Khelocrock needs to be at least level 22.",
+              pokemon: "Khélocrok",
+              hint: "Your Khélocrok needs to be at least level 22.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -106850,7 +106850,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Khelocrock",
+              pokemon: "Khélocrok",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -106859,15 +106859,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Khelocrock",
+          basePokemon: "Khélocrok",
           evolvedPokemon: "Torgarmord Gigamax",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Khelocrock",
-              hint: "Khelocrock needs to be caught.",
+              pokemon: "Khélocrok",
+              hint: "Khélocrok needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -107014,15 +107014,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Khelocrock",
+            basePokemon: "Khélocrok",
             evolvedPokemon: "Torgarmord",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Khelocrock",
-                hint: "Khelocrock needs to be caught.",
+                pokemon: "Khélocrok",
+                hint: "Khélocrok needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -107034,8 +107034,8 @@ module.exports = {
               {
                 requiredValue: 22,
                 option: 2,
-                pokemon: "Khelocrock",
-                hint: "Your Khelocrock needs to be at least level 22.",
+                pokemon: "Khélocrok",
+                hint: "Your Khélocrok needs to be at least level 22.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -107048,7 +107048,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Khelocrock",
+                pokemon: "Khélocrok",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -109524,7 +109524,7 @@ module.exports = {
     },
     {
       id: 854,
-      name: "Theffroi",
+      name: "Théffroi",
       type: [13],
       base: {
         hitpoints: 40,
@@ -109537,15 +109537,15 @@ module.exports = {
       eggCycles: 20,
       evolutions: [
         {
-          basePokemon: "Theffroi",
+          basePokemon: "Théffroi",
           evolvedPokemon: "Polthegeist",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Theffroi",
-              hint: "Theffroi needs to be caught.",
+              pokemon: "Théffroi",
+              hint: "Théffroi needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -109557,7 +109557,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Theffroi",
+              pokemon: "Théffroi",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -109620,15 +109620,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Theffroi",
+            basePokemon: "Théffroi",
             evolvedPokemon: "Polthegeist",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Theffroi",
-                hint: "Theffroi needs to be caught.",
+                pokemon: "Théffroi",
+                hint: "Théffroi needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -109640,7 +109640,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Theffroi",
+                pokemon: "Théffroi",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -110549,15 +110549,15 @@ module.exports = {
         },
         5: [
           {
-            basePokemon: "Lineon de Galar",
+            basePokemon: "Linéon de Galar",
             evolvedPokemon: "Ixon",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Lineon de Galar",
-                hint: "Lineon de Galar needs to be caught.",
+                pokemon: "Linéon de Galar",
+                hint: "Linéon de Galar needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -110569,8 +110569,8 @@ module.exports = {
               {
                 requiredValue: 35,
                 option: 2,
-                pokemon: "Lineon de Galar",
-                hint: "Your Lineon de Galar needs to be at least level 35.",
+                pokemon: "Linéon de Galar",
+                hint: "Your Linéon de Galar needs to be at least level 35.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -110583,7 +110583,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Lineon de Galar",
+                pokemon: "Linéon de Galar",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -110700,7 +110700,7 @@ module.exports = {
     },
     {
       id: 864,
-      name: "Corayome",
+      name: "Corayôme",
       type: [13],
       base: {
         hitpoints: 60,
@@ -110725,7 +110725,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Corayon de Galar",
-            evolvedPokemon: "Corayome",
+            evolvedPokemon: "Corayôme",
             trigger: 1,
             restrictions: [
               {
@@ -110751,8 +110751,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Corayome",
-                hint: "Corayome cannot be caught yet.",
+                pokemon: "Corayôme",
+                hint: "Corayôme cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -110936,7 +110936,7 @@ module.exports = {
     },
     {
       id: 867,
-      name: "Tutetekri",
+      name: "Tutétékri",
       type: [8, 13],
       base: {
         hitpoints: 58,
@@ -110961,7 +110961,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Tutafeh de Galar",
-            evolvedPokemon: "Tutetekri",
+            evolvedPokemon: "Tutétékri",
             trigger: 1,
             restrictions: [
               {
@@ -110987,8 +110987,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Tutetekri",
-                hint: "Tutetekri cannot be caught yet.",
+                pokemon: "Tutétékri",
+                hint: "Tutétékri cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -111023,7 +111023,7 @@ module.exports = {
     },
     {
       id: 868,
-      name: "Cremy",
+      name: "Crèmy",
       type: [17],
       base: {
         hitpoints: 45,
@@ -111039,15 +111039,15 @@ module.exports = {
       catchRate: 200,
       evolutions: [
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111060,15 +111060,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111081,15 +111081,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111102,15 +111102,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111123,15 +111123,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111144,15 +111144,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111165,15 +111165,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111186,15 +111186,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111207,15 +111207,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Strawberry Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111228,15 +111228,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111249,15 +111249,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111270,15 +111270,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111291,15 +111291,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111312,15 +111312,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111333,15 +111333,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111354,15 +111354,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111375,15 +111375,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111396,15 +111396,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Berry Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111417,15 +111417,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111438,15 +111438,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111459,15 +111459,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111480,15 +111480,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111501,15 +111501,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111522,15 +111522,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111543,15 +111543,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111564,15 +111564,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111585,15 +111585,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Love Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111606,15 +111606,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111627,15 +111627,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111648,15 +111648,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111669,15 +111669,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111690,15 +111690,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111711,15 +111711,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111732,15 +111732,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111753,15 +111753,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111774,15 +111774,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Star Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111795,15 +111795,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111816,15 +111816,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111837,15 +111837,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111858,15 +111858,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111879,15 +111879,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111900,15 +111900,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111921,15 +111921,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111942,15 +111942,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111963,15 +111963,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Clover Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -111984,15 +111984,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112005,15 +112005,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112026,15 +112026,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112047,15 +112047,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112068,15 +112068,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112089,15 +112089,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112110,15 +112110,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112131,15 +112131,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112152,15 +112152,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Flower Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112173,15 +112173,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Vanilla)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112194,15 +112194,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Ruby Cream)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112215,15 +112215,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Caramel)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112236,15 +112236,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Ruby Swirl)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112257,15 +112257,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Matcha)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112278,15 +112278,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Salted)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112299,15 +112299,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Lemon)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112320,15 +112320,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Mint)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112341,15 +112341,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly (Ribbon Rainbow)",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112362,15 +112362,15 @@ module.exports = {
           ignoreECChange: false,
         },
         {
-          basePokemon: "Cremy",
+          basePokemon: "Crèmy",
           evolvedPokemon: "Charmilly Gigamax",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Cremy",
-              hint: "Cremy needs to be caught.",
+              pokemon: "Crèmy",
+              hint: "Crèmy needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -112769,7 +112769,7 @@ module.exports = {
     },
     {
       id: 875,
-      name: "Bekaglacon (Tete de Gel)",
+      name: "Bekaglaçon (Tête de Gel)",
       type: [5],
       base: {
         hitpoints: 75,
@@ -112815,7 +112815,7 @@ module.exports = {
     },
     {
       id: 875.01,
-      name: "Bekaglacon (Tete Degel)",
+      name: "Bekaglaçon (Tête Dégel)",
       type: [5],
       base: {
         hitpoints: 75,
@@ -112971,7 +112971,7 @@ module.exports = {
     },
     {
       id: 877.01,
-      name: "Morpeko (Affame)",
+      name: "Morpeko (Affamé)",
       type: [3, 15],
       base: {
         hitpoints: 58,
@@ -114123,7 +114123,7 @@ module.exports = {
     },
     {
       id: 890,
-      name: "Ethernatos",
+      name: "Éthernatos",
       type: [7, 14],
       base: {
         hitpoints: 140,
@@ -114154,7 +114154,7 @@ module.exports = {
         19: [
           {
             town: "Energy Plant",
-            npc: "Catch Ethernatos",
+            npc: "Catch Éthernatos",
             requirements: "Requires beating The Darkest Day in Energy Plant.",
           },
         ],
@@ -114164,7 +114164,7 @@ module.exports = {
     },
     {
       id: 890.01,
-      name: "Ethernatos Infinimax",
+      name: "Éthernatos Infinimax",
       type: [7, 14],
       base: {
         hitpoints: 255,
@@ -114962,7 +114962,7 @@ module.exports = {
     },
     {
       id: 900,
-      name: "Hachecateur",
+      name: "Hachécateur",
       catchRate: 15,
       type: [11, 12],
       levelType: 2,
@@ -114986,15 +114986,15 @@ module.exports = {
       locations: {
         5: [
           {
-            basePokemon: "Insecateur",
-            evolvedPokemon: "Hachecateur",
+            basePokemon: "Insécateur",
+            evolvedPokemon: "Hachécateur",
             trigger: 2,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Insecateur",
-                hint: "Insecateur needs to be caught.",
+                pokemon: "Insécateur",
+                hint: "Insécateur needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -115006,7 +115006,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Insecateur",
+                pokemon: "Insécateur",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
@@ -115022,7 +115022,7 @@ module.exports = {
     },
     {
       id: 900.01,
-      name: "Monarque Hachecateur",
+      name: "Monarque Hachécateur",
       catchRate: 15,
       type: [11, 12],
       levelType: 2,
@@ -115251,7 +115251,7 @@ module.exports = {
     },
     {
       id: 905,
-      name: "Amovenus",
+      name: "Amovénus",
       type: [17, 9],
       eggCycles: 120,
       levelType: 4,
@@ -115278,7 +115278,7 @@ module.exports = {
     },
     {
       id: 905.01,
-      name: "Amovenus (Totemique)",
+      name: "Amovénus (Totemique)",
       type: [17, 9],
       eggCycles: 120,
       levelType: 4,
@@ -115596,7 +115596,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Crocogril",
-          evolvedPokemon: "Flamigator",
+          evolvedPokemon: "Flâmigator",
           trigger: 1,
           restrictions: [
             {
@@ -115622,8 +115622,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Flamigator",
-              hint: "Flamigator cannot be caught yet.",
+              pokemon: "Flâmigator",
+              hint: "Flâmigator cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -115651,7 +115651,7 @@ module.exports = {
     },
     {
       id: 911,
-      name: "Flamigator",
+      name: "Flâmigator",
       type: [1, 13],
       base: {
         hitpoints: 104,
@@ -116495,7 +116495,7 @@ module.exports = {
     },
     {
       id: 926,
-      name: "Patachiot",
+      name: "Pâtachiot",
       type: [17],
       base: {
         hitpoints: 37,
@@ -116511,15 +116511,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Patachiot",
+          basePokemon: "Pâtachiot",
           evolvedPokemon: "Briochien",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Patachiot",
-              hint: "Patachiot needs to be caught.",
+              pokemon: "Pâtachiot",
+              hint: "Pâtachiot needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -116531,8 +116531,8 @@ module.exports = {
             {
               requiredValue: 26,
               option: 2,
-              pokemon: "Patachiot",
-              hint: "Your Patachiot needs to be at least level 26.",
+              pokemon: "Pâtachiot",
+              hint: "Your Pâtachiot needs to be at least level 26.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -116545,7 +116545,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Patachiot",
+              pokemon: "Pâtachiot",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -116765,7 +116765,7 @@ module.exports = {
     },
     {
       id: 931,
-      name: "Tapatoes (Vert)",
+      name: "Tapatoès (Vert)",
       type: [0, 9],
       base: {
         hitpoints: 82,
@@ -116792,7 +116792,7 @@ module.exports = {
     },
     {
       id: 931.01,
-      name: "Tapatoes (Bleu)",
+      name: "Tapatoès (Bleu)",
       type: [0, 9],
       base: {
         hitpoints: 82,
@@ -116819,7 +116819,7 @@ module.exports = {
     },
     {
       id: 931.02,
-      name: "Tapatoes (Jaune)",
+      name: "Tapatoès (Jaune)",
       type: [0, 9],
       base: {
         hitpoints: 82,
@@ -116846,7 +116846,7 @@ module.exports = {
     },
     {
       id: 931.03,
-      name: "Tapatoes (Blanc)",
+      name: "Tapatoès (Blanc)",
       type: [0, 9],
       base: {
         hitpoints: 82,
@@ -117187,7 +117187,7 @@ module.exports = {
     },
     {
       id: 938,
-      name: "Tetampoule",
+      name: "Têtampoule",
       type: [3],
       base: {
         hitpoints: 61,
@@ -117203,15 +117203,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Tetampoule",
+          basePokemon: "Têtampoule",
           evolvedPokemon: "Ampibidou",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Tetampoule",
-              hint: "Tetampoule needs to be caught.",
+              pokemon: "Têtampoule",
+              hint: "Têtampoule needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -117223,7 +117223,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Tetampoule",
+              pokemon: "Têtampoule",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -117273,7 +117273,7 @@ module.exports = {
     },
     {
       id: 940,
-      name: "Zapetrel",
+      name: "Zapétrel",
       type: [3, 9],
       base: {
         hitpoints: 40,
@@ -117289,15 +117289,15 @@ module.exports = {
       catchRate: 180,
       evolutions: [
         {
-          basePokemon: "Zapetrel",
+          basePokemon: "Zapétrel",
           evolvedPokemon: "Fulgulairo",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Zapetrel",
-              hint: "Zapetrel needs to be caught.",
+              pokemon: "Zapétrel",
+              hint: "Zapétrel needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -117309,8 +117309,8 @@ module.exports = {
             {
               requiredValue: 25,
               option: 2,
-              pokemon: "Zapetrel",
-              hint: "Your Zapetrel needs to be at least level 25.",
+              pokemon: "Zapétrel",
+              hint: "Your Zapétrel needs to be at least level 25.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -117323,7 +117323,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Zapetrel",
+              pokemon: "Zapétrel",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -117859,7 +117859,7 @@ module.exports = {
     },
     {
       id: 953,
-      name: "Leboulerou",
+      name: "Léboulérou",
       type: [11],
       base: {
         hitpoints: 41,
@@ -117875,15 +117875,15 @@ module.exports = {
       catchRate: 190,
       evolutions: [
         {
-          basePokemon: "Leboulerou",
-          evolvedPokemon: "Berasca",
+          basePokemon: "Léboulérou",
+          evolvedPokemon: "Bérasca",
           trigger: 0,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Leboulerou",
-              hint: "Leboulerou needs to be caught.",
+              pokemon: "Léboulérou",
+              hint: "Léboulérou needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -117909,7 +117909,7 @@ module.exports = {
     },
     {
       id: 954,
-      name: "Berasca",
+      name: "Bérasca",
       type: [11, 10],
       base: {
         hitpoints: 75,
@@ -117953,7 +117953,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Flotillon",
-          evolvedPokemon: "Cleopsytra",
+          evolvedPokemon: "Cléopsytra",
           trigger: 1,
           restrictions: [
             {
@@ -117979,8 +117979,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Cleopsytra",
-              hint: "Cleopsytra cannot be caught yet.",
+              pokemon: "Cléopsytra",
+              hint: "Cléopsytra cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -118008,7 +118008,7 @@ module.exports = {
     },
     {
       id: 956,
-      name: "Cleopsytra",
+      name: "Cléopsytra",
       type: [10],
       base: {
         hitpoints: 95,
@@ -118632,7 +118632,7 @@ module.exports = {
     },
     {
       id: 969,
-      name: "Germeclat",
+      name: "Germéclat",
       type: [12, 7],
       base: {
         hitpoints: 48,
@@ -118648,15 +118648,15 @@ module.exports = {
       catchRate: 70,
       evolutions: [
         {
-          basePokemon: "Germeclat",
-          evolvedPokemon: "Floreclat",
+          basePokemon: "Germéclat",
+          evolvedPokemon: "Floréclat",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Germeclat",
-              hint: "Germeclat needs to be caught.",
+              pokemon: "Germéclat",
+              hint: "Germéclat needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -118668,21 +118668,21 @@ module.exports = {
             {
               requiredValue: 35,
               option: 2,
-              pokemon: "Germeclat",
-              hint: "Your Germeclat needs to be at least level 35.",
+              pokemon: "Germéclat",
+              hint: "Your Germéclat needs to be at least level 35.",
               __class: "PokemonLevelRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Floreclat",
-              hint: "Floreclat cannot be caught yet.",
+              pokemon: "Floréclat",
+              hint: "Floréclat cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Germeclat",
+              pokemon: "Germéclat",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -118704,7 +118704,7 @@ module.exports = {
     },
     {
       id: 970,
-      name: "Floreclat",
+      name: "Floréclat",
       type: [12, 7],
       base: {
         hitpoints: 83,
@@ -118857,7 +118857,7 @@ module.exports = {
     },
     {
       id: 974,
-      name: "Pietace",
+      name: "Piétacé",
       type: [5],
       base: {
         hitpoints: 108,
@@ -118873,15 +118873,15 @@ module.exports = {
       catchRate: 150,
       evolutions: [
         {
-          basePokemon: "Pietace",
-          evolvedPokemon: "Balbaleze",
+          basePokemon: "Piétacé",
+          evolvedPokemon: "Balbalèze",
           trigger: 2,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Pietace",
-              hint: "Pietace needs to be caught.",
+              pokemon: "Piétacé",
+              hint: "Piétacé needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -118893,7 +118893,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Pietace",
+              pokemon: "Piétacé",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -118916,7 +118916,7 @@ module.exports = {
     },
     {
       id: 975,
-      name: "Balbaleze",
+      name: "Balbalèze",
       type: [5],
       base: {
         hitpoints: 170,
@@ -118943,7 +118943,7 @@ module.exports = {
     },
     {
       id: 976,
-      name: "Delestin",
+      name: "Délestin",
       type: [2, 10],
       base: {
         hitpoints: 90,
@@ -118997,7 +118997,7 @@ module.exports = {
     },
     {
       id: 978,
-      name: "Nigirigon (Courbe)",
+      name: "Nigirigon (Courbé)",
       type: [14, 2],
       base: {
         hitpoints: 68,
@@ -119024,7 +119024,7 @@ module.exports = {
     },
     {
       id: 978.01,
-      name: "Nigirigon (Affalee)",
+      name: "Nigirigon (Affalé)",
       type: [14, 2],
       base: {
         hitpoints: 68,
@@ -119504,7 +119504,7 @@ module.exports = {
     },
     {
       id: 987,
-      name: "Flotte-Meche",
+      name: "Flotte-Mèche",
       type: [13, 17],
       base: {
         hitpoints: 55,
@@ -119566,7 +119566,7 @@ module.exports = {
     },
     {
       id: 989,
-      name: "Pelage-Sable",
+      name: "Pelage-Sablé",
       type: [3, 8],
       base: {
         hitpoints: 85,
@@ -119690,7 +119690,7 @@ module.exports = {
     },
     {
       id: 993,
-      name: "Tetes-de-fer",
+      name: "Têtes-de-fer",
       type: [15, 9],
       base: {
         hitpoints: 94,
@@ -119752,7 +119752,7 @@ module.exports = {
     },
     {
       id: 995,
-      name: "Epine-de-fer",
+      name: "Épine-de-fer",
       type: [12, 3],
       base: {
         hitpoints: 100,
@@ -120476,7 +120476,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Poltchageist",
-          evolvedPokemon: "Theffroyable",
+          evolvedPokemon: "Théffroyable",
           trigger: 2,
           restrictions: [
             {
@@ -120518,7 +120518,7 @@ module.exports = {
     },
     {
       id: 1013,
-      name: "Theffroyable",
+      name: "Théffroyable",
       type: [4, 13],
       base: {
         hitpoints: 71,
@@ -120545,7 +120545,7 @@ module.exports = {
     },
     {
       id: 1014,
-      name: "Felicanis",
+      name: "Félicanis",
       type: [7, 6],
       base: {
         hitpoints: 88,
@@ -121078,7 +121078,7 @@ module.exports = {
     },
     {
       id: 1020,
-      name: "Feu-Percant",
+      name: "Feu-Perçant",
       type: [1, 14],
       base: {
         hitpoints: 105,
@@ -121267,7 +121267,7 @@ module.exports = {
     },
     {
       id: 1025,
-      name: "Pechaminus",
+      name: "Pêchaminus",
       type: [7, 13],
       base: {
         hitpoints: 88,
@@ -121368,13 +121368,13 @@ module.exports = {
     FossilToPokemon: {
       "Fossile Nautile": "Amonita",
       "Fossile Dome": "Kabuto",
-      "Vieil Ambre": "Ptera",
+      "Vieil Ambre": "Ptéra",
       "Fossile Racine": "Lilia",
       "Fossile Griffe": "Anorith",
       "Fossile Armure": "Dinoclier",
       "Fossile Crane": "Kranidos",
       "Fossile Plaque": "Carapagos",
-      "Fossile Plume": "Arkeapti",
+      "Fossile Plume": "Arkéapti",
       "Fossile Machoire": "Ptyranidur",
       "Fossile Nageoire": "Amagara",
     },
@@ -121447,7 +121447,7 @@ module.exports = {
       "Clamberclaw Cliffs",
       "Celestica Ruins",
       "Sacred Plaza",
-      "Seracrawl's Legacy",
+      "Séracrawl's Legacy",
       "Ice Column Chamber",
       "Icepeak Cavern",
       "Ancient Snowpoint Temple",
@@ -121654,7 +121654,7 @@ module.exports = {
     MegaStoneType: {
       0: "Abomasite",
       1: "Absolite",
-      2: "Pteraite",
+      2: "Ptéraite",
       3: "Galekingite",
       4: "Alakazite",
       5: "Altarianite",
@@ -121663,9 +121663,9 @@ module.exports = {
       8: "Banettite",
       9: "Dardargnanite",
       10: "Blastoisinite",
-      11: "Brasegaliite",
+      11: "Braségaliite",
       12: "Blue_Orb",
-      13: "Cameruptite",
+      13: "Caméruptite",
       14: "Dracaufeuite_X",
       15: "Dracaufeuite_Y",
       16: "Diancite",
@@ -121674,9 +121674,9 @@ module.exports = {
       19: "Gardevoirite",
       20: "Ectoplasmaite",
       21: "Glalitite",
-      22: "Leviatorite",
+      22: "Léviatorite",
       23: "Heracronite",
-      24: "Demolosseinite",
+      24: "Démolosseinite",
       25: "Kangourexite",
       26: "Latiasite",
       27: "Latiosite",
@@ -121685,7 +121685,7 @@ module.exports = {
       30: "Manectite",
       31: "Mawilite",
       32: "Charminaite",
-      33: "Metalosseite",
+      33: "Métalosseite",
       34: "Meteorite",
       35: "Mewtwonite_X",
       36: "Mewtwonite_Y",
@@ -121704,7 +121704,7 @@ module.exports = {
       49: "Florizarreite",
       Abomasite: 0,
       Absolite: 1,
-      Pteraite: 2,
+      Ptéraite: 2,
       Galekingite: 3,
       Alakazite: 4,
       Altarianite: 5,
@@ -121713,9 +121713,9 @@ module.exports = {
       Banettite: 8,
       Dardargnanite: 9,
       Blastoisinite: 10,
-      Brasegaliite: 11,
+      Braségaliite: 11,
       Blue_Orb: 12,
-      Cameruptite: 13,
+      Caméruptite: 13,
       Dracaufeuite_X: 14,
       Dracaufeuite_Y: 15,
       Diancite: 16,
@@ -121724,9 +121724,9 @@ module.exports = {
       Gardevoirite: 19,
       Ectoplasmaite: 20,
       Glalitite: 21,
-      Leviatorite: 22,
+      Léviatorite: 22,
       Heracronite: 23,
-      Demolosseinite: 24,
+      Démolosseinite: 24,
       Kangourexite: 25,
       Latiasite: 26,
       Latiosite: 27,
@@ -121735,7 +121735,7 @@ module.exports = {
       Manectite: 30,
       Mawilite: 31,
       Charminaite: 32,
-      Metalosseite: 33,
+      Métalosseite: 33,
       Meteorite: 34,
       Mewtwonite_X: 35,
       Mewtwonite_Y: 36,
@@ -121805,13 +121805,13 @@ module.exports = {
     PokemonToFossil: {
       Amonita: "Fossile Nautile",
       Kabuto: "Fossile Dome",
-      Ptera: "Vieil Ambre",
+      Ptéra: "Vieil Ambre",
       Lilia: "Fossile Racine",
       Anorith: "Fossile Griffe",
       Dinoclier: "Fossile Armure",
       Kranidos: "Fossile Crane",
       Carapagos: "Fossile Plaque",
-      Arkeapti: "Fossile Plume",
+      Arkéapti: "Fossile Plume",
       Ptyranidur: "Fossile Machoire",
       Amagara: "Fossile Nageoire",
     },
@@ -122060,7 +122060,7 @@ module.exports = {
         "Clamberclaw Cliffs",
         "Celestica Ruins",
         "Sacred Plaza",
-        "Seracrawl's Legacy",
+        "Séracrawl's Legacy",
         "Ice Column Chamber",
         "Icepeak Cavern",
         "Ancient Snowpoint Temple",
@@ -122358,27 +122358,27 @@ module.exports = {
       "Cuchalaga",
     ],
     UltraBeastType: {
-      0: "Zeroid",
+      0: "Zéroïd",
       1: "Mouscoto",
       2: "Cancrelove",
-      3: "Cablifere",
+      3: "Câblifère",
       4: "Katagami",
       5: "Bamboiselle",
       6: "Pierroteknik",
       7: "Ama-Ama",
       8: "Engloutyran",
-      9: "Vemini",
+      9: "Vémini",
       10: "Mandrillon",
-      Zeroid: 0,
+      Zéroïd: 0,
       Mouscoto: 1,
       Cancrelove: 2,
-      Cablifere: 3,
+      Câblifère: 3,
       Katagami: 4,
       Bamboiselle: 5,
       Pierroteknik: 6,
       "Ama-Ama": 7,
       Engloutyran: 8,
-      Vemini: 9,
+      Vémini: 9,
       Mandrillon: 10,
     },
     unysDungeons: [
@@ -123034,7 +123034,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Aeromite",
+          name: "Aéromite",
           maxHealth: 28400,
           level: 38,
           requirements: [],
@@ -123479,7 +123479,7 @@ module.exports = {
       town: "Elite Peter",
       pokemons: [
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 48300,
           level: 56,
           requirements: [],
@@ -123500,7 +123500,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Ptera",
+          name: "Ptéra",
           maxHealth: 60250,
           level: 58,
           requirements: [],
@@ -123557,7 +123557,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Rhinoferos",
+          name: "Rhinoféros",
           maxHealth: 58340,
           level: 59,
           requirements: [],
@@ -123580,7 +123580,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 65340,
           level: 61,
           requirements: [
@@ -123621,7 +123621,7 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
@@ -123637,7 +123637,7 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
@@ -123653,14 +123653,14 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 57520,
           level: 59,
           requirements: [
@@ -123708,7 +123708,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 57520,
           level: 59,
           requirements: [
@@ -123842,7 +123842,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Insecateur",
+          name: "Insécateur",
           maxHealth: 119000,
           level: 16,
           requirements: [],
@@ -123878,14 +123878,14 @@ module.exports = {
       town: "Doublonville",
       pokemons: [
         {
-          name: "Melofee",
+          name: "Mélofée",
           maxHealth: 130000,
           level: 18,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Ecremeuh",
+          name: "Écrémeuh",
           maxHealth: 170000,
           level: 20,
           requirements: [],
@@ -124016,14 +124016,14 @@ module.exports = {
       town: "Oliville",
       pokemons: [
         {
-          name: "Magneti",
+          name: "Magnéti",
           maxHealth: 177000,
           level: 30,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Magneti",
+          name: "Magnéti",
           maxHealth: 178000,
           level: 30,
           requirements: [],
@@ -124236,7 +124236,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Aeromite",
+          name: "Aéromite",
           maxHealth: 248300,
           level: 41,
           requirements: [],
@@ -124371,7 +124371,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Cornebre",
+          name: "Cornèbre",
           maxHealth: 257000,
           level: 44,
           requirements: [],
@@ -124385,7 +124385,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Demolosse",
+          name: "Démolosse",
           maxHealth: 266000,
           level: 47,
           requirements: [],
@@ -124419,7 +124419,7 @@ module.exports = {
       town: "Champion Peter",
       pokemons: [
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 258300,
           level: 44,
           requirements: [],
@@ -124440,7 +124440,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Ptera",
+          name: "Ptéra",
           maxHealth: 260250,
           level: 46,
           requirements: [],
@@ -124543,7 +124543,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Meditikka",
+          name: "Méditikka",
           maxHealth: 424000,
           level: 16,
           requirements: [],
@@ -124598,14 +124598,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Magneton",
+          name: "Magnéton",
           maxHealth: 483000,
           level: 22,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Elecsprint",
+          name: "Élecsprint",
           maxHealth: 448000,
           level: 24,
           requirements: [],
@@ -124654,7 +124654,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Camerupt",
+          name: "Camérupt",
           maxHealth: 492000,
           level: 26,
           requirements: [],
@@ -124716,14 +124716,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Lineon",
+          name: "Linéon",
           maxHealth: 560000,
           level: 29,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Monaflemit",
+          name: "Monaflèmit",
           maxHealth: 596000,
           level: 31,
           requirements: [],
@@ -124835,7 +124835,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Seleroc",
+          name: "Séléroc",
           maxHealth: 702000,
           level: 42,
           requirements: [],
@@ -124946,7 +124946,7 @@ module.exports = {
       town: "Elite Damien",
       pokemons: [
         {
-          name: "Grahyena",
+          name: "Grahyèna",
           maxHealth: 972000,
           level: 46,
           requirements: [],
@@ -125022,7 +125022,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Tenefix",
+          name: "Ténéfix",
           maxHealth: 1052000,
           level: 50,
           requirements: [],
@@ -125153,7 +125153,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Libegon",
+          name: "Libégon",
           maxHealth: 1076000,
           level: 53,
           requirements: [],
@@ -125222,7 +125222,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 1163000,
           level: 56,
           requirements: [],
@@ -125359,7 +125359,7 @@ module.exports = {
       town: "Unionpolis",
       pokemons: [
         {
-          name: "Skelenox",
+          name: "Skelénox",
           maxHealth: 1450000,
           level: 24,
           requirements: [],
@@ -125373,7 +125373,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Magireve",
+          name: "Magirêve",
           maxHealth: 1480000,
           level: 26,
           requirements: [],
@@ -125407,7 +125407,7 @@ module.exports = {
       town: "Voilaroc",
       pokemons: [
         {
-          name: "Meditikka",
+          name: "Méditikka",
           maxHealth: 1537000,
           level: 28,
           requirements: [],
@@ -125455,7 +125455,7 @@ module.exports = {
       town: "Verchamps",
       pokemons: [
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 1687000,
           level: 33,
           requirements: [],
@@ -125469,7 +125469,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Musteflott",
+          name: "Mustéflott",
           maxHealth: 1693000,
           level: 37,
           requirements: [],
@@ -125503,7 +125503,7 @@ module.exports = {
       town: "Joliberges",
       pokemons: [
         {
-          name: "Magneton",
+          name: "Magnéton",
           maxHealth: 1767000,
           level: 37,
           requirements: [],
@@ -125627,7 +125627,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Elekable",
+          name: "Élekable",
           maxHealth: 1980000,
           level: 50,
           requirements: [],
@@ -125785,7 +125785,7 @@ module.exports = {
       town: "Elite Adrien",
       pokemons: [
         {
-          name: "Demolosse",
+          name: "Démolosse",
           maxHealth: 2845330,
           level: 52,
           requirements: [],
@@ -125861,7 +125861,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Archeodong",
+          name: "Archéodong",
           maxHealth: 3057000,
           level: 54,
           requirements: [],
@@ -126152,7 +126152,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Zeblitz",
+          name: "Zéblitz",
           maxHealth: 4464000,
           level: 58,
           requirements: [],
@@ -126255,14 +126255,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Cryptero",
+          name: "Cryptéro",
           maxHealth: 5664000,
           level: 58,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Lakmecygne",
+          name: "Lakmécygne",
           maxHealth: 5864000,
           level: 58,
           requirements: [],
@@ -126303,7 +126303,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Libegon",
+          name: "Libégon",
           maxHealth: 6662000,
           level: 58,
           requirements: [],
@@ -126365,7 +126365,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Megapagos",
+          name: "Mégapagos",
           maxHealth: 7064000,
           level: 58,
           requirements: [],
@@ -126475,7 +126475,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Karaclee",
+          name: "Karaclée",
           maxHealth: 10957000,
           level: 60,
           requirements: [],
@@ -126496,7 +126496,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Betochef",
+          name: "Bétochef",
           maxHealth: 11960250,
           level: 62,
           requirements: [],
@@ -126530,14 +126530,14 @@ module.exports = {
       town: "Elite Pieris",
       pokemons: [
         {
-          name: "Leopardus",
+          name: "Léopardus",
           maxHealth: 10945330,
           level: 60,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Baggaid",
+          name: "Baggaïd",
           maxHealth: 10948300,
           level: 60,
           requirements: [],
@@ -126599,7 +126599,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Cryptero",
+          name: "Cryptéro",
           maxHealth: 10957000,
           level: 60,
           requirements: [],
@@ -126613,14 +126613,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Siderella",
+          name: "Sidérella",
           maxHealth: 10957000,
           level: 60,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Metalosse",
+          name: "Métalosse",
           maxHealth: 11960250,
           level: 62,
           requirements: [],
@@ -126689,7 +126689,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Aeropteryx",
+          name: "Aéroptéryx",
           maxHealth: 12464000,
           level: 61,
           requirements: [],
@@ -126842,7 +126842,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Brutalibre",
+          name: "Brutalibré",
           maxHealth: 22362000,
           level: 32,
           requirements: [],
@@ -126932,7 +126932,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Magneton",
+          name: "Magnéton",
           maxHealth: 31062000,
           level: 35,
           requirements: [],
@@ -127021,7 +127021,7 @@ module.exports = {
       town: "Flusselles",
       pokemons: [
         {
-          name: "Cryptero",
+          name: "Cryptéro",
           maxHealth: 40058300,
           level: 44,
           requirements: [],
@@ -127084,7 +127084,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Seracrawl",
+          name: "Séracrawl",
           maxHealth: 50062000,
           level: 59,
           requirements: [],
@@ -127118,7 +127118,7 @@ module.exports = {
       town: "Elite Malva",
       pokemons: [
         {
-          name: "Nemelios",
+          name: "Némélios",
           maxHealth: 46492423,
           level: 63,
           requirements: [],
@@ -127180,7 +127180,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 47094530,
           level: 63,
           requirements: [],
@@ -127359,7 +127359,7 @@ module.exports = {
       town: "Champion Dianthea",
       pokemons: [
         {
-          name: "Brutalibre",
+          name: "Brutalibré",
           maxHealth: 40365050,
           level: 64,
           requirements: [],
@@ -127394,7 +127394,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Mega Gardevoir",
+          name: "Méga-Gardevoir",
           maxHealth: 42371780,
           level: 68,
           requirements: [],
@@ -127550,7 +127550,7 @@ module.exports = {
       town: "Malie",
       pokemons: [
         {
-          name: "Tenefix",
+          name: "Ténéfix",
           maxHealth: 101710296,
           level: 43,
           requirements: [],
@@ -127632,7 +127632,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Libegon",
+          name: "Libégon",
           maxHealth: 85759429,
           level: 47,
           requirements: [
@@ -127696,7 +127696,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Libegon",
+          name: "Libégon",
           maxHealth: 91233435,
           level: 53,
           requirements: [
@@ -127771,14 +127771,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Magnezone",
+          name: "Magnézone",
           maxHealth: 82982134,
           level: 56,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Metalosse",
+          name: "Métalosse",
           maxHealth: 84733765,
           level: 56,
           requirements: [],
@@ -127909,7 +127909,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Trepassable",
+          name: "Trépassable",
           maxHealth: 103277813,
           level: 57,
           requirements: [],
@@ -127949,7 +127949,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Brutalibre",
+          name: "Brutalibré",
           maxHealth: 109446185,
           level: 56,
           requirements: [],
@@ -128101,7 +128101,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Archeduc",
+          name: "Archéduc",
           maxHealth: 96725389,
           level: 60,
           requirements: [
@@ -128133,7 +128133,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Felinferno",
+          name: "Félinferno",
           maxHealth: 96725389,
           level: 60,
           requirements: [
@@ -128219,7 +128219,7 @@ module.exports = {
       town: "Skifford",
       pokemons: [
         {
-          name: "Poissirene",
+          name: "Poissirène",
           maxHealth: 119044213,
           level: 22,
           requirements: [],
@@ -128386,7 +128386,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Corayome",
+          name: "Corayôme",
           maxHealth: 131352402,
           level: 35,
           requirements: [],
@@ -128560,7 +128560,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Bekaglacon (Tete de Gel)",
+          name: "Bekaglaçon (Tête de Gel)",
           maxHealth: 140246069,
           level: 41,
           requirements: [
@@ -128575,7 +128575,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Bekaglacon (Tete Degel)",
+          name: "Bekaglaçon (Tête Dégel)",
           maxHealth: 140246069,
           level: 41,
           requirements: [
@@ -128626,7 +128626,7 @@ module.exports = {
       town: "Smashings",
       pokemons: [
         {
-          name: "Baggaid",
+          name: "Baggaïd",
           maxHealth: 145552675,
           level: 44,
           requirements: [],
@@ -128688,7 +128688,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Libegon",
+          name: "Libégon",
           maxHealth: 151276613,
           level: 47,
           requirements: [],
@@ -128738,7 +128738,7 @@ module.exports = {
       town: "Elite Trainer Rosemary",
       pokemons: [
         {
-          name: "Leopardus",
+          name: "Léopardus",
           maxHealth: 160047044,
           level: 47,
           requirements: [],
@@ -128752,7 +128752,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Baggaid",
+          name: "Baggaïd",
           maxHealth: 160047044,
           level: 47,
           requirements: [],
@@ -128892,7 +128892,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Lezargus Gigamax",
+          name: "Lézargus Gigamax",
           maxHealth: 189335021,
           level: 59,
           requirements: [
@@ -128933,7 +128933,7 @@ module.exports = {
               option: 1,
               region: 7,
               starter: 2,
-              hint: "Requires Larmeleon to be chosen as your Galar starter Pokémon.",
+              hint: "Requires Larméléon to be chosen as your Galar starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
@@ -129037,7 +129037,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Lezargus",
+          name: "Lézargus",
           maxHealth: 187453801,
           level: 64,
           requirements: [
@@ -129062,7 +129062,7 @@ module.exports = {
               option: 1,
               region: 7,
               starter: 2,
-              hint: "Requires Larmeleon to be chosen as your Galar starter Pokémon.",
+              hint: "Requires Larméléon to be chosen as your Galar starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
@@ -129078,7 +129078,7 @@ module.exports = {
               option: 1,
               region: 7,
               starter: 2,
-              hint: "Requires Larmeleon to be chosen as your Galar starter Pokémon.",
+              hint: "Requires Larméléon to be chosen as your Galar starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
@@ -129346,7 +129346,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Ekaiser",
+          name: "Ékaïser",
           maxHealth: 248820300,
           level: 75,
           requirements: [],
@@ -129439,7 +129439,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Archeodong",
+          name: "Archéodong",
           maxHealth: 299090814,
           level: 73,
           requirements: [],
@@ -129596,7 +129596,7 @@ module.exports = {
       town: "Levalendura",
       pokemons: [
         {
-          name: "Zapetrel",
+          name: "Zapétrel",
           maxHealth: 203123316,
           level: 23,
           requirements: [],
@@ -129617,7 +129617,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Magireve",
+          name: "Magirêve",
           maxHealth: 203123316,
           level: 24,
           requirements: [],
@@ -129652,7 +129652,7 @@ module.exports = {
       town: "Jarramanca",
       pokemons: [
         {
-          name: "Delestin",
+          name: "Délestin",
           maxHealth: 203123316,
           level: 29,
           requirements: [],
@@ -129715,7 +129715,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Etouraptor",
+          name: "Étouraptor",
           maxHealth: 203123316,
           level: 36,
           requirements: [],
@@ -129820,7 +129820,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Cleopsytra",
+          name: "Cléopsytra",
           maxHealth: 203123316,
           level: 44,
           requirements: [],
@@ -129875,7 +129875,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Balbaleze",
+          name: "Balbalèze",
           maxHealth: 203123316,
           level: 47,
           requirements: [],
@@ -129971,7 +129971,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Camerupt",
+          name: "Camérupt",
           maxHealth: 203123316,
           level: 57,
           requirements: [],
@@ -130032,14 +130032,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Magnezone",
+          name: "Magnézone",
           maxHealth: 203123316,
           level: 58,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Archeodong",
+          name: "Archéodong",
           maxHealth: 203123316,
           level: 58,
           requirements: [],
@@ -130107,7 +130107,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Etouraptor",
+          name: "Étouraptor",
           maxHealth: 203123316,
           level: 59,
           requirements: [],
@@ -130208,7 +130208,7 @@ module.exports = {
       town: "Top Champion Alisma",
       pokemons: [
         {
-          name: "Cleopsytra",
+          name: "Cléopsytra",
           maxHealth: 203123316,
           level: 61,
           requirements: [],
@@ -130222,14 +130222,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Delestin",
+          name: "Délestin",
           maxHealth: 203123316,
           level: 61,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Seracrawl",
+          name: "Séracrawl",
           maxHealth: 203123316,
           level: 61,
           requirements: [],
@@ -130243,7 +130243,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Floreclat",
+          name: "Floréclat",
           maxHealth: 203123316,
           level: 62,
           requirements: [],
@@ -130336,14 +130336,14 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
           shadow: 0,
         },
         {
-          name: "Flamigator",
+          name: "Flâmigator",
           maxHealth: 203123316,
           level: 66,
           requirements: [
@@ -130695,7 +130695,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Demolosse",
+          name: "Démolosse",
           maxHealth: 203123316,
           level: 60,
           requirements: [
@@ -130704,14 +130704,14 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 203123316,
           level: 60,
           requirements: [
@@ -130727,7 +130727,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Leviator",
+          name: "Léviator",
           maxHealth: 203123316,
           level: 60,
           requirements: [
@@ -130752,14 +130752,14 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
           shadow: 0,
         },
         {
-          name: "Demolosse",
+          name: "Démolosse",
           maxHealth: 203123316,
           level: 60,
           requirements: [
@@ -130775,7 +130775,7 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Flamigator",
+          name: "Flâmigator",
           maxHealth: 203123316,
           level: 61,
           requirements: [
@@ -130800,7 +130800,7 @@ module.exports = {
               option: 1,
               region: 0,
               starter: 1,
-              hint: "Requires Salameche to be chosen as your Kanto starter Pokémon.",
+              hint: "Requires Salamèche to be chosen as your Kanto starter Pokémon.",
               __class: "StarterRequirement",
             },
           ],
@@ -131019,14 +131019,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Flotte-Meche",
+          name: "Flotte-Mèche",
           maxHealth: 203123316,
           level: 66,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Pelage-Sable",
+          name: "Pelage-Sablé",
           maxHealth: 203123316,
           level: 66,
           requirements: [],
@@ -131091,14 +131091,14 @@ module.exports = {
           shadow: 0,
         },
         {
-          name: "Tetes-de-fer",
+          name: "Têtes-de-fer",
           maxHealth: 203123316,
           level: 66,
           requirements: [],
           shadow: 0,
         },
         {
-          name: "Epine-de-fer",
+          name: "Épine-de-fer",
           maxHealth: 203123316,
           level: 66,
           requirements: [],

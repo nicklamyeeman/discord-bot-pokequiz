@@ -16,9 +16,9 @@ const {
 } = require("./happy_hour.js");
 const { trainerCardBadges } = require("../helpers/trainer_card.js");
 
-// Between 1 and 6 minutes until the next question
+// Between 1 and 3 minutes until the next question
 const getTimeLimit = () =>
-  Math.floor(Math.random() * (5 * MINUTE)) + 1 * MINUTE;
+  Math.floor(Math.random() * (2 * MINUTE)) + 1 * MINUTE;
 const ANSWER_TIME_LIMIT = 5 * SECOND;
 
 const newQuiz = async (guild, reoccur = false) => {
@@ -75,12 +75,11 @@ const newQuiz = async (guild, reoccur = false) => {
     quiz.answer.test(
       m.content
         .replace(/\s*(town|city|island|fossile)/i, "")
-        .replace(/(é|è)/i, "e")
-        .replace(/(ô)/i, "o")
-        .replace(/(ï)/i, "i")
-        .replace(/(â|à)/i, "a")
-        .replace(/(ç)/i, "c")
-        .replace(/(-')/i, " ")
+        .replaceAll(/(é|ê|è)/gi, "e")
+        .replaceAll(/(ô)/gi, "o")
+        .replaceAll(/(ï)/gi, "i")
+        .replaceAll(/(â|à)/gi, "a")
+        .replaceAll(/(ç)/gi, "c")
     );
 
   // Our finished timestamp

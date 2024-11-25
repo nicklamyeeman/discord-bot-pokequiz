@@ -4,6 +4,7 @@ const { HOUR } = require("../helpers.js");
 
 const happyHourBonus = 7;
 const happyHourHours = 7;
+const slowModeSeconds = 2;
 const isHappyHour = () => Date.now() % (happyHourHours * HOUR) < HOUR;
 const nextHappyHour = (now = new Date()) =>
   new Date(now - (now % (happyHourHours * HOUR)) + happyHourHours * HOUR);
@@ -17,6 +18,15 @@ const startHappyHour = async (guild) => {
     (c) => c.id == quizChannelID
   );
   if (!quiz_channel) return;
+  // players can type as fast as they want
+  quiz_channel.setRateLimitPerUser(0, "Happy Hour!").catch((O_o) => {});
+  setTimeout(
+    () =>
+      quiz_channel
+        .setRateLimitPerUser(slowModeSeconds, "Happy Hour!")
+        .catch((O_o) => {}),
+    HOUR
+  );
   happyHourShinyCount = 0;
   const embed = new EmbedBuilder()
     .setTitle("C'est le Happy Hour!")
@@ -44,6 +54,10 @@ const endHappyHour = async (guild) => {
     (c) => c.id == quizChannelID
   );
   if (!quiz_channel) return;
+  // players can only type once per é seconds
+  quiz_channel
+    .setRateLimitPerUser(slowModeSeconds, "Happy Hour!")
+    .catch((O_o) => {});
   const embed = new EmbedBuilder()
     .setTitle("Le Happy Hour est terminé !")
     .setDescription(

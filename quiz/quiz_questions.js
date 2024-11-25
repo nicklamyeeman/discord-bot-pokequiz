@@ -43,17 +43,12 @@ const getPokemonByName = (name) => pokemonList.find((p) => p.name == name);
 const pokemonNameNormalized = (name) =>
   name
     .replace(/\s?\(.+\)$/, "")
-    .replace(/.*(Magikarp).*/, "$1")
-    .replace(/\W/g, ".?")
-    .replace(
-      /.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/,
-      "($1)|(Revavroom)"
-    )
-    .replace(
-      /(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi,
-      "($1)?"
-    )
-    .replace(/Noble\s*/g, "(Noble|Hisuian)?\\s*");
+    .replaceAll(/(é|ê|è)/gi, "e")
+    .replaceAll(/(ô)/gi, "o")
+    .replaceAll(/(ï)/gi, "i")
+    .replaceAll(/(â|à)/gi, "a")
+    .replaceAll(/(ç)/gi, "c")
+    .replaceAll(/\W/g, ".?");
 const evolutionsNormalized = (evolution) =>
   evolution.replace(/\W|_/g, ".?").replace(/(Niveau)\s*/gi, "($1)?");
 const pokemonNameAnswer = (name) =>
