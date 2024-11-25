@@ -221,7 +221,7 @@ const howDoesThisPokemonEvolve = () =>
       ];
 
       const allAnswers = [...levelEvolution, ...itemEvolution].map((e) =>
-        e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`)
+        e.replaceAll(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`)
       );
       const answer = new RegExp(
         `^\\W*#?${allAnswers.map((e) => evolutionsNormalized(e)).join("|")}\\b`,
