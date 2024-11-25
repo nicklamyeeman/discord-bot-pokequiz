@@ -105,7 +105,7 @@ const trainerCardBadges = [
 ];
 
 // highest trainer image ID 0 → X
-const totalTrainerImages = 56;
+const totalTrainerImages = 60;
 
 module.exports = {
   trainerCardColors,
