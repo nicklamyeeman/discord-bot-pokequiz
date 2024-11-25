@@ -446,7 +446,7 @@ const whosThePokemonPrevolution = () =>
             name: "whoFinal.png",
           });
           const embed = new EmbedBuilder()
-            .setTitle(`It's ${prevolution.name}!`)
+            .setTitle(`C'est ${prevolution.name}!`)
             .setImage("attachment://whoFinal.png")
             .setColor("#e74c3c");
           m.channel
