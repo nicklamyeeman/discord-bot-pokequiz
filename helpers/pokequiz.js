@@ -77128,7 +77128,7 @@ module.exports = {
       evolutions: [
         {
           basePokemon: "Sorbébé",
-          evolvedPokemon: "Sourboul",
+          evolvedPokemon: "Sorboul",
           trigger: 1,
           restrictions: [
             {
@@ -77154,8 +77154,8 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Sourboul",
-              hint: "Sourboul cannot be caught yet.",
+              pokemon: "Sorboul",
+              hint: "Sorboul cannot be caught yet.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -77283,7 +77283,7 @@ module.exports = {
     },
     {
       id: 583,
-      name: "Sourboul",
+      name: "Sorboul",
       type: [5],
       eggCycles: 30,
       levelType: 4,
@@ -77291,15 +77291,15 @@ module.exports = {
       catchRate: 120,
       evolutions: [
         {
-          basePokemon: "Sourboul",
+          basePokemon: "Sorboul",
           evolvedPokemon: "Sourbouboul",
           trigger: 1,
           restrictions: [
             {
               requiredValue: 1,
               option: 2,
-              pokemon: "Sourboul",
-              hint: "Sourboul needs to be caught.",
+              pokemon: "Sorboul",
+              hint: "Sorboul needs to be caught.",
               __class: "ObtainedPokemonRequirement",
             },
             {
@@ -77311,8 +77311,8 @@ module.exports = {
             {
               requiredValue: 47,
               option: 2,
-              pokemon: "Sourboul",
-              hint: "Your Sourboul needs to be at least level 47.",
+              pokemon: "Sorboul",
+              hint: "Your Sorboul needs to be at least level 47.",
               __class: "PokemonLevelRequirement",
             },
             {
@@ -77325,7 +77325,7 @@ module.exports = {
             {
               requiredValue: 1,
               option: 0,
-              pokemon: "Sourboul",
+              pokemon: "Sorboul",
               itemName: "Everstone",
               hint: "Your pokemon must not be holding an Everstone.",
               __class: "HoldingItemRequirement",
@@ -77418,7 +77418,7 @@ module.exports = {
         5: [
           {
             basePokemon: "Sorbébé",
-            evolvedPokemon: "Sourboul",
+            evolvedPokemon: "Sorboul",
             trigger: 1,
             restrictions: [
               {
@@ -77444,8 +77444,8 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Sourboul",
-                hint: "Sourboul cannot be caught yet.",
+                pokemon: "Sorboul",
+                hint: "Sorboul cannot be caught yet.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -77547,15 +77547,15 @@ module.exports = {
         ],
         5: [
           {
-            basePokemon: "Sourboul",
+            basePokemon: "Sorboul",
             evolvedPokemon: "Sourbouboul",
             trigger: 1,
             restrictions: [
               {
                 requiredValue: 1,
                 option: 2,
-                pokemon: "Sourboul",
-                hint: "Sourboul needs to be caught.",
+                pokemon: "Sorboul",
+                hint: "Sorboul needs to be caught.",
                 __class: "ObtainedPokemonRequirement",
               },
               {
@@ -77567,8 +77567,8 @@ module.exports = {
               {
                 requiredValue: 47,
                 option: 2,
-                pokemon: "Sourboul",
-                hint: "Your Sourboul needs to be at least level 47.",
+                pokemon: "Sorboul",
+                hint: "Your Sorboul needs to be at least level 47.",
                 __class: "PokemonLevelRequirement",
               },
               {
@@ -77581,7 +77581,7 @@ module.exports = {
               {
                 requiredValue: 1,
                 option: 0,
-                pokemon: "Sourboul",
+                pokemon: "Sorboul",
                 itemName: "Everstone",
                 hint: "Your pokemon must not be holding an Everstone.",
                 __class: "HoldingItemRequirement",
