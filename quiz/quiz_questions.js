@@ -56,7 +56,7 @@ const pokemonNameNormalized = (name) =>
 const pokemonNameAnswer = (name) =>
   new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, "i");
 const evolutionNormalized = (evolution) =>
-  answerNormalized(evolution.replace(/(Niveau)\s*/gi, "($1)?"));
+  answerNormalized(evolution).replace(/(Niveau)\s*/gi, "($1)?");
 const evolutionAnswer = (evolution) =>
   new RegExp(`^\\W*${evolutionNormalized(evolution)}\\b`, "i");
 const fossilNormalized = (fossil) =>
@@ -1448,26 +1448,26 @@ const selectWeightedOption = (options_array) => {
 
 const quizTypes = [
   new WeightedOption(whosThatPokemon, 150),
-  new WeightedOption(pokemonType, 85),
-  new WeightedOption(howDoesThisPokemonEvolve, 80),
-  new WeightedOption(whosThePokemonEvolution, 80),
-  new WeightedOption(whosThePokemonPrevolution, 80),
-  new WeightedOption(pokemonRegion, 45),
-  new WeightedOption(typeRegionPokemon, 45),
-  new WeightedOption(dualTypePokemon, 60),
-  new WeightedOption(pokemonID, 60),
-  new WeightedOption(fossilPokemon, 5),
-  new WeightedOption(pokemonFossil, 5),
-  new WeightedOption(startingTown, 10),
-  new WeightedOption(whatIsThatBerry, 15),
-  new WeightedOption(badgeGymLeader, 10),
-  new WeightedOption(badgeGymLocation, 5),
-  new WeightedOption(pokemonGymLeader, 45),
-  new WeightedOption(typeGymLeader, 30),
-  new WeightedOption(gymLeaderType, 35),
-  new WeightedOption(gymLeaderPokemon, 40),
-  new WeightedOption(gymLeaderLocation, 10),
-  new WeightedOption(gymLeaderBadge, 10),
+  // new WeightedOption(pokemonType, 85),
+  // new WeightedOption(howDoesThisPokemonEvolve, 80),
+  // new WeightedOption(whosThePokemonEvolution, 80),
+  // new WeightedOption(whosThePokemonPrevolution, 80),
+  // new WeightedOption(pokemonRegion, 45),
+  // new WeightedOption(typeRegionPokemon, 45),
+  // new WeightedOption(dualTypePokemon, 60),
+  // new WeightedOption(pokemonID, 60),
+  // new WeightedOption(fossilPokemon, 5),
+  // new WeightedOption(pokemonFossil, 5),
+  // new WeightedOption(startingTown, 10),
+  // new WeightedOption(whatIsThatBerry, 15),
+  // new WeightedOption(badgeGymLeader, 10),
+  // new WeightedOption(badgeGymLocation, 5),
+  // new WeightedOption(pokemonGymLeader, 45),
+  // new WeightedOption(typeGymLeader, 30),
+  // new WeightedOption(gymLeaderType, 35),
+  // new WeightedOption(gymLeaderPokemon, 40),
+  // new WeightedOption(gymLeaderLocation, 10),
+  // new WeightedOption(gymLeaderBadge, 10),
   // new WeightedOption(___, 1),
 ];
 
