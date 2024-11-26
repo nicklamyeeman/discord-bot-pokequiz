@@ -80,9 +80,6 @@ const getWhosThatPokemonFinalImage = (pokemon, shiny, useFemale = undefined) =>
       backdropImage.width,
       backdropImage.height
     );
-    if (pokemon.gender && pokemon.gender.visualDifference == false) {
-      useFemale = false;
-    }
     if (useFemale == undefined) {
       useFemale = isFemale(pokemon);
     }
@@ -108,7 +105,7 @@ const getWhosThatPokemonFinalImage = (pokemon, shiny, useFemale = undefined) =>
   });
 
 const isFemale = (pokemon) =>
-  pokemon.gender.visualDifference == true
+  !!pokemon.gender && pokemon.gender.visualDifference == true
     ? Math.random() < pokemon.gender.femaleRatio
     : false;
 
