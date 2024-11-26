@@ -49,7 +49,7 @@ const newQuiz = async (guild, reoccur = false) => {
   const isRushTime = getIsRushTime();
 
   if (isRushTime) {
-    time_limit /= rushTimeBonus;
+    time_limit = getTimeLimit() / rushTimeBonus;
     quiz.embed.setFooter({
       text: `Rush Time!\n(${rushTimeBonus}× plus de questions, ${rushTimeBonus}× plus de Shiny)`,
     });
