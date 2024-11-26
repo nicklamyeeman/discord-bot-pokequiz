@@ -7,7 +7,13 @@ const isDaytime = () => {
 };
 
 const rushTimeBonus = 7;
+const rushTimeMinutes = 15;
 let isRushTime = false;
+const getIsRushTime = () => isRushTime;
+
+let userRequestStartRush = false;
+const setUserRequestStartRush = (value) => (userRequestStartRush = value);
+const getUserRequestStartRush = () => userRequestStartRush;
 
 let rushTimeShinyCount = 0;
 const incrementRushTimeShinyCount = () => rushTimeShinyCount++;
@@ -36,6 +42,7 @@ const startRushTime = async (guild) => {
 
   isRushTime = true;
   rushTimeShinyCount = 0;
+  userRequestStartRush = false;
   const embed = new EmbedBuilder()
     .setTitle("C'est le début du Rush !")
     .setDescription(
@@ -65,6 +72,9 @@ const endRushTime = async (guild) => {
   if (!quiz_channel) {
     return;
   }
+  if (!isRushTime) {
+    return;
+  }
 
   const embed = new EmbedBuilder()
     .setTitle("Le Rush est terminé !")
@@ -81,7 +91,10 @@ const endRushTime = async (guild) => {
 module.exports = {
   isDaytime,
   rushTimeBonus,
-  isRushTime,
+  rushTimeMinutes,
+  getIsRushTime,
+  setUserRequestStartRush,
+  getUserRequestStartRush,
   incrementRushTimeShinyCount,
   startRushTime,
   endRushTime,

@@ -12,6 +12,7 @@ const {
   formatChannelList,
   trainerCardBadgeTypes,
   trainerCardBadges,
+  MINUTE,
   HOUR,
   DAY,
 } = require("./helpers.js");
@@ -24,6 +25,12 @@ const {
 const regexMatches = require("./regexMatches.js");
 const { newQuiz } = require("./quiz/quiz.js");
 const { loadQuizImages } = require("./quiz/quiz_functions.js");
+const {
+  getUserRequestStartRush,
+  rushTimeMinutes,
+  startRushTime,
+  endRushTime,
+} = require("./quiz/rush_time.js");
 
 const client = new Discord.Client({
   intents: [
@@ -124,7 +131,6 @@ client.once("ready", async () => {
     },
     { timezone_offset: 0, run_now: true }
   );
-
   // Quiz will restart itself, only needs to be run once
   client.guilds.cache.forEach((guild) => newQuiz(guild, true));
 });
@@ -424,9 +430,21 @@ client
       // Run the command
       try {
         // Send the message object
-        await command.execute(interaction).catch((e) => {
-          throw e;
-        });
+        await command
+          .execute(interaction)
+          .catch((e) => {
+            throw e;
+          })
+          .then(() => {
+            const userRequestStartRush = getUserRequestStartRush();
+            if (userRequestStartRush) {
+              client.guilds.cache.forEach((guild) => startRushTime(guild));
+              client.guilds.cache.forEach((guild) => newQuiz(guild, true));
+              setTimeout(() => {
+                client.guilds.cache.forEach((guild) => endRushTime(guild));
+              }, rushTimeMinutes * MINUTE);
+            }
+          });
         addStatistic(interaction.user, `!${command.name}`);
         const commandsSent = await addStatistic(interaction.user, "commands");
         if (commandsSent >= 1000) {

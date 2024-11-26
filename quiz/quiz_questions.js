@@ -15,7 +15,7 @@ const {
   berryType,
 } = require("../helpers.js");
 const {
-  isRushTime,
+  getIsRushTime,
   rushTimeBonus,
   incrementRushTimeShinyCount,
 } = require("./rush_time.js");
@@ -28,6 +28,8 @@ const {
 
 const getAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 const getShinyAmount = () => 100 + getAmount();
+
+const isRushTime = getIsRushTime();
 
 const shinyChance = 54;
 const isShiny = (chance = shinyChance) => {
@@ -1267,12 +1269,11 @@ const gymLeaderType = () => {
 };
 
 const typeRegionPokemon = () => {
-  const randomRegionIndex = Math.floor(
-    Math.random() * regionList.length
+  const randomRegionIndex = Math.floor(Math.random() * regionList.length);
+  const selectedRegion = regionList[randomRegionIndex].replace(
+    /^[a-z]/,
+    (match) => match.toUpperCase()
   );
-  const selectedRegion = regionList[
-    randomRegionIndex
-  ].replace(/^[a-z]/, (match) => match.toUpperCase());
   const pokemonInRegion = pokemonList.filter(
     (pokemon) => pokemon.nativeRegion === randomRegionIndex
   );

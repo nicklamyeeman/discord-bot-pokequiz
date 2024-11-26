@@ -9,7 +9,7 @@ const {
   trainerCardBadgeTypes,
 } = require("../helpers.js");
 const { getQuizQuestion } = require("./quiz_questions.js");
-const { isDaytime, isRushTime, rushTimeBonus } = require("./rush_time.js");
+const { isDaytime, getIsRushTime, rushTimeBonus } = require("./rush_time.js");
 const { trainerCardBadges } = require("../helpers/trainer_card.js");
 
 // Entre 1 et 3 minutes avant a prochaine question entre 9h et 21h GMT
@@ -20,7 +20,7 @@ const getTimeLimit = () =>
 const getSlowTimeLimit = () =>
   Math.floor(Math.random() * (5 * MINUTE)) + 5 * MINUTE;
 
-const ANSWER_TIME_LIMIT = 7 * SECOND;
+const ANSWER_TIME_LIMIT = 6 * SECOND;
 
 const newQuiz = async (guild, reoccur = false) => {
   if (!quizChannelID) {
@@ -46,9 +46,12 @@ const newQuiz = async (guild, reoccur = false) => {
   const daytime = isDaytime();
   let time_limit = daytime ? getTimeLimit() : getSlowTimeLimit();
 
+  const isRushTime = getIsRushTime();
+
   if (isRushTime) {
+    time_limit /= rushTimeBonus;
     quiz.embed.setFooter({
-      text: `Happy Hour!\n(${rushTimeBonus}× plus de questions, ${rushTimeBonus}× plus de Shiny)`,
+      text: `Rush Time!\n(${rushTimeBonus}× plus de questions, ${rushTimeBonus}× plus de Shiny)`,
     });
   }
 
