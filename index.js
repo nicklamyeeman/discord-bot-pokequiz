@@ -439,7 +439,6 @@ client
             const userRequestStartRush = getUserRequestStartRush();
             if (userRequestStartRush) {
               client.guilds.cache.forEach((guild) => startRushTime(guild));
-              client.guilds.cache.forEach((guild) => newQuiz(guild, true));
               setTimeout(() => {
                 client.guilds.cache.forEach((guild) => endRushTime(guild));
               }, rushTimeMinutes * MINUTE);
